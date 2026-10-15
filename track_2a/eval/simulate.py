@@ -54,16 +54,23 @@ def run_scenario(ds, sid: str, max_turns: int = 30) -> dict:
     transcript = [{"role": "candidate", "text": first}]
     reply = coach.step(s, first, ds=ds)
     transcript.append({"role": "coach", "text": reply})
-    convo = [{"role": "system", "content": sys_prompt}, {"role": "user", "content": reply}]
+    # Only system + one user message per call (the Apertus 1.5 chat template on vLLM
+    # rejects replayed multi-turn assistant messages): the dialogue history is passed as text.
+    history: list[str] = [f"INTERVIEWER: {reply}"]
     turns = 0
     t0 = time.time()
     while not s["finished"] and turns < max_turns:
-        ans = llm.chat(convo, temperature=0.8, max_tokens=160, tag="candidate").strip().strip('"')
+        user_msg = ("Conversation so far:\n" + "\n".join(history[-10:]) +
+                    "\n\nWrite ONLY your next answer as the candidate (1-4 sentences).")
+        ans = llm.chat([{"role": "system", "content": sys_prompt}, {"role": "user", "content": user_msg}],
+                       temperature=0.8, max_tokens=160, tag="candidate").strip().strip('"')
+        for pre in ("CANDIDATE:", "Candidate:", "KANDIDAT:", cand["first_name"] + ":"):
+            if ans.startswith(pre):
+                ans = ans[len(pre):].strip()
         transcript.append({"role": "candidate", "text": ans})
         reply = coach.step(s, ans, ds=ds)
         transcript.append({"role": "coach", "text": reply})
-        convo += [{"role": "assistant", "content": ans}, {"role": "user", "content": reply}]
-        convo = convo[:1] + convo[-12:]  # keep the simulator context short
+        history += [f"CANDIDATE: {ans}", f"INTERVIEWER: {reply}"]
         turns += 1
     return {
         "scenario_id": sid,

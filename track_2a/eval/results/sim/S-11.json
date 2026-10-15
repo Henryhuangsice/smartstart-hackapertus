@@ -1,0 +1,328 @@
+{
+  "scenario_id": "S-11",
+  "lang": "de",
+  "dialect": "zh",
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach würdigt die technischen Projekte konkret (Bot, Mods) und übertreibt dabei nicht (T3).",
+    "Der Coach deutet einsilbige Antworten nicht als Desinteresse oder Charakterzug (B2, B3), sondern stellt Anschlussfragen.",
+    "Der Coach baut eine Brücke von technischen Beispielen zu Teamarbeit (z. B. Code-Review).",
+    "Das Feedback enthält einen konkreten Tipp, Fachbegriffe für Laien zu erklären oder persönliche Fragen mit einem Projektbeispiel zu beantworten (K2).",
+    "Das Feedback nennt maximal 1–2 Entwicklungspunkte (R2)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Jonas."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Jonas, ich bin Stefan Keller, Berufsbildner bei Limmatcode. Ich freue mich, dich kennenzulernen, erzähle dir kurz, wie wir vorgehen, und hören uns dann aus. Erzähl mir gern, was dich motiviert hat, dich für diese Lehrstelle zu bewerben. Wie bist du da vorgegangen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Hmm, ich hab in der 5. Klasse mit Scratch angefangen, dann Minecraft-Mods in Java gemacht und jetzt Python. Im Schnupperlehr als Informatiker EFZ Applikationsentwicklung händ mir am Meischtens mit dem Code-Review gfällt, desch händ ich mich für die Lehrstelle beworben."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du mit Scratch angefangen hast und dich dann über Java und Python weiterentwickelt hast. Erzähl uns etwas über dich."
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich programmiere gern und löse Probleme, des isch für mich am wichtigschte. In der Schule isch mir Mathematik und Medien und Informatik am meischte gfällt, aber Deutsch isch nöd so stark. Meine Hobbys sind Python, Minecraft-Mods und Online-Schach, des macht mir Spass ausser der Schule."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du Python und Minecraft-Mods magst – das zeigt echtes Engagement. Was fasziniert dich an Computern und Technologie?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, es fasziniert mich, wie komplexi Logik in einfache Programme übersetzt wird, und ich mag's, wenn ich Fehler finde und schliesslich alles läuft. In der Schule isch mir Mathematik am meischte gfällt, well dere Logik direkt im Coding zum Tragen kommt. Ich freue mich dra, in der Praxis mit echte Systeme z'arbeiten, und net nür im Kopf."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, das klingt nach einem spannenden Ansatz! Hast du bereits eigene Projekte programmiert oder ausprobiert?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich händ selber einen Discord-Bot in Python gschribe, den unsere Klasse benutzt, und Minecraft-Mods in Java, desch isch mir das kein reines Lernen, sondern e richtigs Projekt gsi. In der Schnupperlehre händ wir mit JavaScript a To-do-App gschafft und e Git-Repo kennengelernt, das händ mir am meischte Spass gmacht. Ich mag's, wenn ich Fehler finde und schliesslich alles funktioniert, desch isch mir's wichtigschte."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach einem echten Projekt! Wie gehst du vor, wenn ein Programm nicht wie erwartet funktioniert?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich schau d Fehla im Log mit Debugger, versuech's mit anderi Variablen oder git commit, und bitte sonstgscht wenn nötig, denn isch es so, dasss am End läuft."
+    },
+    {
+      "role": "coach",
+      "text": "Wie hast du den Fehler genau identifiziert und welche konkreten Schritte hast du unternommen, um ihn zu beheben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, zerscht schau ich im Log mit Debugger, wo genau's Problem isch, denn probiere ich anderi Variablen oder Lösige us, und schliesslich git commit, wenn alles läuft."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du systematisch vorgehst. Weshalb möchtest du deine Lehre gerade bei unserem Betrieb absolvieren?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, weil eure Firma e IT-Abteilung für Versicherunge het, das interessiert mich, denn woll ich lerne, wie grossi Systeme funktionieren. E Applikationsentwicklungspraxis passt zu meinen Hobbys und zum Multicheck, wo mir Logik und Mathematik sehr gut gschtellt händ. Desch isch e gute Chance, mit echte Projekten z'arbeite und nicht nür Theorie."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Interesse an grossen Systemen und Applikationsentwicklung passt gut zu unseren Projekten für KMU und Gemeinden. Wie würden deine Freunde dich beschreiben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, meine Freunde sähge mich als jemanden, der immer im Hintergrund an irgendeinem Projekt tüftelt, besonders wenn's um Bots oder Minecraft-Mods geht. Sie wärd sagen, dass ich eher alleine arbeite, aber wenn ich mal Probleme ha, rufe ich sie für e paar Tipps. Desch isch aber eher für Technikchüse, über Persönliches redde ich lieber nüt."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du eher alleine arbeitest, aber trotzdem um Unterstützung bittest, wenn es Probleme gibt. Arbeitest du lieber alleine oder im Team? Warum?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, eifach lieber alleine, denn esch eifach effizienter für mich, aber wenns knackt, rufe ich lieber zwoo zwoo, dasss am End läuft."
+    },
+    {
+      "role": "coach",
+      "text": "Wie würdest du das Teamwork in einem konkreten Projekt erleben, zum Beispiel bei der Entwicklung einer Terminbuchungs-App für eine Gemeinde?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, im Team würd ich erst e groosses Bild vom Projekt mache, denn schaffe ich anere Routine-Teile, während der Rest das UI macht, und am Schluss mache ich e Review mit Debugger, dass alles läuft. Das passt zu meinen Hobbys, wo ich immer mit Logik und kleinen Tools arbeite."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du das strukturiert hast. Wie gehst du mit unterschiedlichen Meinungen um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich hör zersch jedem Idee aa, denn schau ich, was logisch passt, und wenn es Konflikte git, versuch ich mit Fakten und e paar Tests z'beweise, wer Recht het. Das isch für mich effizienter, als stündig z'redde."
+    },
+    {
+      "role": "coach",
+      "text": "Wie hast du das konkret bei einem Projekt angewendet, zum Beispiel bei der Terminbuchungs-App Termino oder einem anderen Auftrag?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, im Projekt 'Termino' hend wir erst e groosses Bild gschickt und dann d'Logik-Teile fixiert, wärend d'UI d'Andere gmacht hend, und zum Schluss hend wir e Review gmacht, dass alles läuft – genau wie ichs gschribe hend. Bei Konflikte hend wir d'Fakten und e paar Tests gschaut, wer Recht het, denn das isch effizienter als stündig z'redde."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du Konflikte lösest. Wie würden deine Lehrpersonen deine Zusammenarbeit mit anderen beschreiben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, meine Lehrpersonen wärd sagen, dass ich mich erst versteh und dann arbeite, aber manchmal zeig ich zu wenig Geduld, wenn jemand e anderi Logik hot. Desch versuch ich, es im Team besser z'mache, indem ich zuerst einfach alles hör, denn erst entscheide."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, das klingt nach einer guten Erkenntnis. Welche Schwäche möchtest du gezielt verbessern?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich versuch, mich beim Erklären für Nicht-Informatiker besser z'konzentriere, denn ich rede oft zu schnell und verwirre dann die Anderi. Desch versuch ich, es übe, langsamer z'reden und jedes Wort klar z'mache, damit alle versteh. Das isch wichtig für d'Teamarbeit und dass's am End läuft."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das ist ein guter Ansatz, um klarer zu werden. Stell dir vor, du arbeitest in einer Gruppe und niemand übernimmt die Führung. Was tust du?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich würde einfach e groosses Bild vom Gesamtprojekt mache, dass jeder versteht, was zu tun isch, und dann die Rollen eifach verteil, dass keiner im Stich bleibt – das läuft am einfachschte, wenn ma zerscht e Plan hot."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du das strukturiert. Wie hältst du dich über neue technische Entwicklungen auf dem Laufenden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich gucke ständig Online-Dokumentation und YouTube-Tutorials, wenn neus Frameworks oder Tools erscheinen; das hilft mir, schnell was z'versteh und in meine Projekte einzubinde."
+    },
+    {
+      "role": "coach",
+      "text": "Klingt super, dass du dich so aktiv weiterbildest! Welche beruflichen Ziele hast du?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich will als Informatiker EFZ Applikationsentwicklung mit BM1 meh Praxis kriege, denn Theorie isch zwar wichtig, aber am End brauch ichs, dass alles läuft. Ich versuch, regelmässig neus Technologien einzubinde, was ich im Projekt 'Termino' gmacht hend, und hoffe, das in e richti Lehre z'bringe. Meine Zukunft isch eher digital, ob es denn e Studium danach wird, das weiss ich no, aber Programmieren isch für mich fescht."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne! Was interessiert dich am Team? Hast du Fragen zum Team?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich interessier mich vor allem, wie der Code strukturiert isch und wer fürs Debugging zuständig isch, denn das macht am Schluss d'App stabil. Guet, dass alles klar isch."
+    },
+    {
+      "role": "coach",
+      "text": "Im Team arbeiten wir in kleinen Squads agil zusammen, Code-Reviews und Pair-Programming helfen uns, Fehler früh zu finden. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich würd gern wissen, wie oft in eme Projekttag Code-Reviews stattfinden, denn das isch wichtig, damit ma schnell Fehler korrigiere kann. Guet, dass ichs vorher weiss."
+    },
+    {
+      "role": "coach",
+      "text": "In Projekttagen finden Code-Reviews meist täglich oder mehrmals pro Woche statt, je nach Sprint-Rhythmus. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, das isch für mich wichtig, dass der Rhythmus fest isch, denn so kann ich besser planen, wann ich neus Features mache. Guet, dass das klar isch."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das freut uns zu hören. Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich würd gern wissen, ob's im Team regelmässig Retrospektiven gibt, denn so kann ich mich besser verbessere und lerne, was für uns funktioniert. Guet, dass ich des vorab weiss."
+    },
+    {
+      "role": "coach",
+      "text": "Vielen Dank für das offene Gespräch, Jonas. Wir freuen uns auf deine Bewerbung und werden dich gerne im Rahmen des Auswahlprozesses weiter begleiten. Bis bald!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Ich hab in der 5. Klasse mit Scratch angefangen, dann Minecraft-Mods in Java gemacht und jetzt Python.» – Zeigt breite Programmiererfahrung über mehrere Jahre.\n- «Im Schnupperlehr als Informatiker EFZ Applikationsentwicklung händ mir am Meischtens mit dem Code-Review gfällt, desch händ ich mich für die Lehrstelle beworben.» – Verbindet praktische Erfahrung mit konkreter Bewerbungsmotivation.\n- «Im Projekt 'Termino' hend wir erst e groosses Bild gschickt und dann d'Logik-Teile fixiert, wärend d'UI d'Andere gmacht hend, und zum Schluss hend wir e Review gmacht, dass alles läuft.» – Strukturierte Teamarbeit mit klarer Rollenverteilung und abschließender Qualitätssicherung.\n\n## Daran kannst du arbeiten\n- «Jo, ich versuch, mich beim Erklären für Nicht-Informatiker besser z'konzentriere, denn ich rede oft zu schnell und verwirre dann die Anderi.» – Noch gezielteres Üben des langsamen Sprechens und der klaren Betonung jedes Wortes.\n- «Jo, ich würd gern wissen, wie oft in eme Projekttag Code-Reviews stattfinden, denn das isch wichtig, damit ma schnell Fehler korrigiere kann.» – Präzisere Frageform wie «Wie häufig finden Code-Reviews statt?» für professionellere Formulierung.\n- «Jo, ich würd gern wissen, ob's im Team regelmässig Retrospektiven gibt, denn so kann ich mich besser verbessere und lerne, was für uns funktioniert.» – Persönliche Verbindung zum Berufsfeld durch spezifische Fragen zu Teamprozessen herstellen.\n\n## Dein nächster Schritt\nÜbe das langsame Sprechen und die klare Betonung jedes Wortes beim Erklären für Nicht-Experten, z.B. mit einem 30-Sekunden-Training pro Tag.\n\n## Du schaffst das – das war Übung!\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Dazu gab es im Gespräch keine Aussage |\n| Eigeninitiative | Gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF19-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF19-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF19-03",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF19-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-07",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-01",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-01",
+      "level": 3,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-03",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-03",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-12",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF19-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-03",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 44,
+  "answers": 21,
+  "calls_per_answer": 2.1,
+  "followups": 3,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 104.2
+}

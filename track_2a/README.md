@@ -11,6 +11,17 @@ and uses **≈ 2.1 LLM calls per candidate answer** (limit: < 5).
 
 ![Architecture](docs/architecture.png)
 
+
+## Results (Apertus 1.5 8B, details in [technical_report.md](technical_report.md) / `SmartStart_Report.pdf`)
+
+| | Baseline (no retrieval) | **SmartStart** |
+|---|---|---|
+| Coach-action accuracy vs. FHGR experts (100 answers, de/fr/it/gsw) | 0.44 | **0.83** |
+| Quality level within ±1 of expert | 0.97 | **0.99** |
+| Distress-signal recall | 0.00 | **1.00** |
+| LLM calls per candidate answer (28 scenarios, limit < 5) | – | **2.11** |
+| FHGR scenario success criteria met (LLM judge) | – | **100 %** |
+
 ## How it works (one candidate answer)
 
 | Step | What | LLM? |

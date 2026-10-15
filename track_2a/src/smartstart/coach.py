@@ -394,7 +394,7 @@ def step(s: dict, user_text: str, ds: Dataset | None = None) -> str:
         s["answers"] += 1
         s["log"].append({"qid": qid, "question": qtext, "answer": text, "assessment": a,
                          "is_followup": bool(s.get("pending_followup"))})
-        if a["coach_action"] == "support_and_refer" or "distress_signal" in a["problem_flags"]:
+        if "distress_signal" in a["problem_flags"] and a["quality_level"] <= 2:
             s["support_mode"] = True
 
     # ---- decide next move (deterministic policy) -------------------------

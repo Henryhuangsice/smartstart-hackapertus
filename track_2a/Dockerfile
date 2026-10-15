@@ -15,7 +15,7 @@ FROM base AS builder
 
 COPY --from=ghcr.io/astral-sh/uv:0.10.0 /uv /bin/uv
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get -o Acquire::Retries=5 update && apt-get -o Acquire::Retries=5 install -y --no-install-recommends --fix-missing \
     build-essential \
     libpq-dev \
     && rm -rf /var/lib/apt/lists/*
@@ -34,7 +34,7 @@ RUN uv sync --no-dev --compile-bytecode
 # -----------------------------
 FROM base AS final
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get -o Acquire::Retries=5 update && apt-get -o Acquire::Retries=5 install -y --no-install-recommends --fix-missing \
     ca-certificates \
     curl \
     libpq5 \

@@ -1,0 +1,230 @@
+{
+  "scenario_id": "S-12",
+  "lang": "de",
+  "dialect": "ag",
+  "difficulty": "hard",
+  "situation": "assessment",
+  "success_criteria": [
+    "Der Coach beschreibt das Verhalten in der Gruppe mit konkreten Beobachtungen (z. B. wer welche Idee eingebracht hat) statt mit Etiketten (B1, K1).",
+    "Der Coach achtet bei der Kurzpräsentation auf Struktur und Zeit und gibt einen umsetzbaren Tipp (Einstieg – ein Kernpunkt – Schluss) (K2).",
+    "Der Coach würdigt die guten konkreten Beispiele (YouTube, Kurzfilm) als Stärke (R1).",
+    "Der Coach bewertet Herkunft oder Mehrsprachigkeit nicht (L1).",
+    "Die Reflexionsfrage Q-OTH-10 wird gestellt und die Antwort mit der tatsächlichen Beobachtung abgeglichen."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Thiviyan."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Thiviyan, ich bin Lara Hunziker, Berufsbildnerin bei der Pixelfabrik. Im Assessment lernst du uns kennen, erzählst von deiner Motivation und deinen Stärken, und wir schauen uns ein paar Aufgaben an – das dauert ungefähr eine Stunde. Erzähl mir doch, wie läuft der Tag bei dir bisher?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, normaler Schultag, mal e bisschen Pause zum Filmen gha. Im Englisch- und Medienunterricht geht’s voll ab, denn die mache ich megaspannend. Mittagsschlaf mach ich nur kurz, denn ich will weiter Filmmaterial für den Kanal sammle. Abends schneide ich dann alles und poste neue Videos für die Abonnenten."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach viel Energie und Kreativität – perfekt für uns! Wie stellst du dir die Planung vor? Welche Schritte würdest du als Erstes setzen, um den Stand zu entwickeln?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, als Erstes würde ich mit de Idee vom Projekt starten, alles planen – was wir filmen, wann und wie – dann mache ich a Zeitplan, wo alles drinsteht, und verteile die Aufgaben an die Mitschüler, denn das mache ich am liebsten, und dann schaffe ich’s alles einzuknipsen, Schnitt und Post-Produktion."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt super strukturiert! Wie hast du die Gruppenarbeit eben erlebt? Was war deine Rolle?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, in de Projekttage war ich für den Schnitt und den Zeitplan zuständig, hab alles koordiniert, und des is mega spannend gsi, weil ich kontrollieren konnte, dass alles läuft wie geplant."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, du hast das Projekt super im Griff gehabt – das zeigt echt, dass du organisiert und verantwortungsbewusst bist. Erzähl uns jetzt in zwei Minuten von einem Gegenstand, der dir wichtig ist. Was ist das, warum ist er dir wichtig und wie würdest du ihn beschreiben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, der Handy isch der wichtigschte Gegenstand für mich, denn der isch das Werkzeug, mit dem ich all meine Stop-Motion-Videos schneide und meinen YouTube-Kanal baue. Ohni den Handy würd ich nix produzieren und känne nix mit meinen Abonnenten teile – des isch mega spannend für mich. Er fühlt sich wie mein Kreativitäts-Motor aa, und wenn ich ihn zieh, fäng ich aa, neue Ideen z'filmen."
+    },
+    {
+      "role": "coach",
+      "text": "Lara: Das klingt super kreativ und motiviert! Wie würdest du dich in wenigen Sätzen beschreiben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich bin Thiviyan, 16 Jahr alt, aus Aarau, mache Stop-Motion und Tech-Reviews für meinen YouTube-Kanal, helf im Kulturverein mit dem Video vom Fest, und in der Schnupperlehre bei de Agentur habe ich sofort den Social-Media-Clip geschnitten, weil ich kreativ, technisch versiert und gerne Feedback sofort umsetze – und das ist mega spannend!"
+    },
+    {
+      "role": "coach",
+      "text": "Cool, dass du dich für diesen Job interessiert hast! Erzähl mir doch, warum genau dieser Beruf als Mediamatiker/in dich begeistert."
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, weil Mediamatik genau die Mischung isch us Kreativität, Technik und Organisation – genau so wie beim Schnitt meines Videos oder beim Zeitplan für de Kurzfilm – und ich das am liebsten mache, wie wenn ich mitm YouTube-Kanal arbeite, wo ich alles selber planen und umsetzen kann."
+    },
+    {
+      "role": "coach",
+      "text": "Lara Hunziker, Berufsbildnerin, Content-Producerin bei Pixelfabrik Kommunikation AG: Das klingt super kreativ! Erzähl uns doch von einem eigenen Projekt, das du entwickelt hast – sei es ein Video, eine Website oder eine Social-Media-Kampagne."
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich hab letztens mit drei Mitschüler a Kurzfilm über Littering gedreht – wir haben d'Handycam benutzt, d'Szenen geplant, a Zeitplan gmacht und am Schluss alles gschnitten – des war a richtigs Teamprojekt, und ich war für Schnitt und Zeitplan verantwortlich, also mega organisiert und kreativ gsi."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, dass du so offen mit dem Projektprozess umgehst! Wie gehst du mit Kritik an deinen eigenen Ideen um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, wenns Kritik gibt, hör ich mirs zu und überleg, wie ich's verbessere – des macht alles besser, so wie beim Video vom Kulturverein, wo ich d'Feedback vom Regisseur sofort umgesetzt und's noch spannender gmacht hab."
+    },
+    {
+      "role": "coach",
+      "text": "Haha, das klingt nach echtem Teamgeist und schneller Umsetzung – genau das gefällt uns! Wie gehst du mit engen Zeitpläne bei kreativen Projekten um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich mache schnell a Plan, teile d'Jobs mit de Team und halte a klare Zeitplan – so wie beim Kurzfilm, wo ich a Zeitplan gmacht und a Tag vor de Shooting a Schnitt begonnen hab, sonst würde alles stressig."
+    },
+    {
+      "role": "coach",
+      "text": "Haha, das klingt nach einer super organisatorischen Herangehensweise! Welche Rolle übernimmst du häufig in einer Gruppe?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich übernehme oft die Leitung, mach den Zeitplan und koordiniere alles – wie beim Kurzfilm-Projekt, wo ich für Schnitt und Organisation zuständig war – und versuch, gleichzeitig die Teammitglieder zu motivieren, damit’s mega spannend läuft."
+    },
+    {
+      "role": "coach",
+      "text": "Haha, das klingt nach echtem Teamgeist! Welche Schwäche möchtest du aktiv verbessern?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich übernehme manchmal zu viel alleine, statt Aufgaben besser zu verteilen – des will ich üben, dass im Team jeder sich wohlfühlt und wir schneller fertig werre."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach einem wichtigen Lernziel! Welche beruflichen Ziele hast du?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich will Mediamatiker EFZ mache, denn Video, Schnitt und Technik passen mega zu meinem YouTube-Kanal und dem Kulturverein; danach eventuell BM2 und speter vielleicht Studium in Multimedia Production oder Selbstständigkeit mit Video-Produktion – so bleibe ich kreativ und mache spannende Sachen!"
+    },
+    {
+      "role": "coach",
+      "text": "Haha, das klingt nach einem super Plan! Interessierst du dich für den Ablauf der Ausbildung?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich versteh voll, dass's im Mediamatiker-Beruf viel Schnitt, Social Media und kreative Projekte gibt – genau das mach ich ja schon für meinen YouTube-Kanal! Ich freu mich drauf, zu lerne, wie ma Videos professionell produziert, und im Team mitzuearbeite und neue Sachen auszuprobierä."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, dass du so begeistert bist – danke für die Offenheit! Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich zeig dir gern a paar Videos vom YouTube-Kanal – die zeigen, wie ich Stop-Motion mach und Technik test – und im Team probiere ich immer neue Dinge aus, genau wie beim Kurzfilm-Projekt!"
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine Offenheit und deinen kreativen Einblick! Es war ein echtes Vergnügen, dich kennenzulernen. Wir freuen uns darauf, dich weiter kennenzulernen. Bis bald!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Im Englisch- und Medienunterricht geht’s voll ab, denn die mache ich megaspannend.» – Deine Begeisterung für Medien und Englisch zeigt sich im Unterricht.\n- «Der Handy isch der wichtigschte Gegenstand für mich, denn der isch das Werkzeug, mit dem ich all meine Stop-Motion-Videos schneide und meinen YouTube-Kanal baue.» – Persönliche Verbindung zu einem wichtigen Werkzeug für deine kreative Arbeit.\n\n## Daran kannst du arbeiten\n- «Ich übernehme manchmal zu viel alleine, statt Aufgaben besser zu verteilen.» – Versuche, Aufgaben klarer zu verteilen, damit alle Teammitglieder sich wohlfühlen.\n- «Erweiterung der Beschreibung mit spezifischen Herausforderungen, gelernten Lektionen und zukünftigen Zielen im Zusammenhang mit der Mediamatik-Lehre.» – Füge konkrete Beispiele hinzu, wie du in Projekten gelernt hast.\n\n## Dein nächster Schritt\nÜbe in der nächsten Woche, eine Gruppenarbeit mit klarer Aufgabenverteilung zu planen und dabei bewusst eine Aufgabe an ein anderes Teammitglied zu übergeben.\n\n## Dein Feedback\nDu hast deine Begeisterung für Medien und kreative Projekte sehr gut gezeigt. Deine konkreten Beispiele aus dem YouTube-Kanal und den Projekten überzeugten. Übe, Aufgaben klarer zu verteilen, damit das Team gemeinsam erfolgreich ist. Viel Erfolg beim nächsten Mal!\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Sehr gut |\n| Umgang mit schwierigen Fragen | Dazu gab es im Gespräch keine Aussage |\n| Eigeninitiative | Ausbaufähig |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-09",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-10",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-11",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF06-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF06-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF06-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 30,
+  "answers": 14,
+  "calls_per_answer": 2.14,
+  "followups": 0,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 74.8
+}

@@ -1,0 +1,258 @@
+{
+  "scenario_id": "S-22",
+  "lang": "de",
+  "dialect": "lu",
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach formuliert Kritik an Arbeiten sachlich und bezogen auf die Arbeit, nicht auf die Person (B1).",
+    "Der Coach nennt zuerst konkrete Stärken der Mappe oder der Beispiele (R1, K1).",
+    "Der Coach deutet Selbstabwertung («das isch schlecht») in eine Lernperspektive um (E1, E2).",
+    "Das Feedback gibt eine konkrete Strategie für Kritik (nachfragen – notieren – überarbeiten) (K2).",
+    "Der Coach vergleicht die Arbeiten nicht mit anderen Bewerbenden (L4)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Noemi."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Noemi, ich bin Andrea Kost, Mitinhaberin und Berufsbildnerin bei Studio Reuss Gestaltung GmbH in Luzern. Wir lernen dich in einem Gespräch und einer Mappe kennen, hörst deine Motivation und deine Stärken, und ich stelle dir ein paar Aufgaben, um zu sehen, wie du mit Feedback umgehst. Erzähl mir kurz, was dich an der Grafik fasziniert und warum du eine Lehre als Grafiker/in machen möchtest. Wie geht es dir heute?"
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, es freut mich, Andrea! Die Grafik fasziniert mich, weil ma alles zeichnen kann, was ma im Kopf hot. Ich will Grafikerin lehre, weil ich Figuure zeichne und Logos mache will, genau wia in de Schnupperlehre. Heid gang's gut, danke!"
+    },
+    {
+      "role": "coach",
+      "text": "Ich freue mich, dich kennenzulernen, Noemi! Erzähl uns etwas über dich."
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, ich bin 15 Jahr alt und gehe in de 3. Sekundarschule, Niveau B, wobei Bildnerisches Gestalten, Deutsch und Englisch meine Stärken sinn. In Mathe bin ich a bissle schwächer, aber das macht nix, ich konzentriere mich lieber drauf, was mir Spass macht. Meine Hobbies sinn Zeichne, Handlettering und im Jugendchor singe, und ich hab scho Schnupperlehre gmacht, wo ich viel gelernt und zwar Logo-Skizze für ein Café gmocht und sogar Illustrator gnutzt habe."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, dass du so offen über deine Stärken und Interessen sprichst! Warum hast du dich für den Beruf Grafiker/in EFZ entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, weil ich gern kreativ bin und andern was Schönes zeige, wia beim Plakat vom Schulfest. Als die Grafikerin gesagt hot, meine Schrift isch zu verspielt, isch ich amoi traurig gewäa, aber dann versteh ich, dass Kritik hilft, besser z'werden. Des will ich lerne, damit ich Logo und Design mache kann, wia ich es will."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Offenheit für Kritik finde ich wirklich beeindruckend – das zeigt, dass du bereit bist, dich weiterzuentwickeln. Was fasziniert dich am kreativen Gestalten?"
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, am Kreiere vo neue Figuren und Schriftchen isch für mich wie spiele, wia wenn ma im Kopf a Gschicht zeichnet und der Leut se scho im Vorbei zeigst. Wenns Logo vom Café noch verbessert werre kann, lerne ich dran, und des macht Spass, statt mich traurig z'mache."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du das kreative Spiel mit Typografie und Figuren siehst – das ist genau der richtige Ansatz für die Lehre! Erzähl uns doch von einem Projekt, das du komplett selbstständig entwickelt hast, egal ob digital oder analog."
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, zum Schulfest-Plakat hab ich drei Versione gmocht und die Klasse hat abgschtimmt – des isch komplett allein vo mir gsi. Ich hab Handlettering gmacht und die Schrift im Illustrator aagpasst, bis der Entwurf gfällt isch. Das zeigt, dass ich Ideen entwickle und a Feedback sälber reagiere kann."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du die Klasse zur Entscheidung herangezogen hast – das zeigt Eigeninitiative. Wie gehst du mit konkreter Kritik an deinen Entwürfen um, zum Beispiel wenn dir gesagt wird, die Typografie wirkt unruhig oder die Bildkomposition nicht klar genug ist?"
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, wenn ma sagt, die Schrift isch zu unruhig, versuche ich, die Buchstaben ruhiger zu zeichne, zum Beispiel mit geraderen Linien. Bei der Bildkomposition versuche ich, erst mal alles draufzsetze, was ma braucht, und dann z'abbauere, was überflüssig isch. Manchmol isch ich amoi traurig oder rechtfertige mich, aber dann versuche ich, es einfach z'korrigiere. Des isch für mich Teil vom Lerneprozess."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Ansatz zum Umgang mit Kritik zeigt echtes Lernwillen – das ist gut zu sehen. Wie wichtig ist es dir, dich an die Vorgaben eines Kunden, einer Kundin zu halten?"
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, ich versuche, mich an die Vorgaben z'halte, aber wenn ich merke, dass des Logo besser mit meiner Idee passt, sag ich das offen. In de Schnupperlehre isch's manchmal schwierig gsi, genau z'gschtande, was der Kunde will, und des lerne ich jetzt. Ich will Teamplayerin sei, aber au meine Kreativität zeigen können."
+    },
+    {
+      "role": "coach",
+      "text": "War schön, dass du offen über deine Lernprozesse sprichst. Wie gehst du vor, wenn dir die Inspiration fehlt?"
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, wenn ich keine Idee finde, schau ich im Internet nach oder zeichne einfach drauflos, ohne Druck, sonst versuche ich, mit Freunde über andere Projekte zu reden, damit sich neue Gedanken entwickle."
+    },
+    {
+      "role": "coach",
+      "text": "Wie hast du dich konkret gefühlt, als dir die Inspiration für ein bestimmtes Projekt fehlte, und welche konkrete Maßnahme hast du dann ergriffen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, als ich beim Logo-Projekt festgstellt habe, dass ich nix mehr find, isch es amoi ziemlich frustriert gsi. Aber dann hab ich ein paar Minuete lang einfach drauflos gezeichnet, ohne zu gucke, was richtig oder falsch isch, und plötzlich isch ne Idee gschtande. Des hälft mir, wenn die Kreativität fehlt, und ich versuche, nix zu übereilte z'sagen, sondern erst mal ne Pause z'mache."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du die Pause als Chance siehst. Wie reagierst du auf Kritik?"
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, wenn Kritik kommt, versuche ich zersch, ruhig z'bleibe, obwohls amoi traurig macht. Dann überlege ich, was genau kritisiert wird, und versuche, die Idee umzusetzen, ohne mich zu verteide. Ich finde, es isch wichtig, dass Kritiik hilft, besser z'werde, sonst würd ich nix lerne."
+    },
+    {
+      "role": "coach",
+      "text": "Ich hör ihr zu, frage nach, was genau sie anders sieht, und überlege gemeinsam mit ihr, wie ich die Idee verbessern kann. Was würdest du in so einer Situation tun?"
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, ich würd zersch frage, was genau der Kunde übel findet, und dann versuche, d Idee so z'ändere, dass es passt, ohne dass ma sich verteide. Wenns ein Problem mit da Schrift isch wie im Designstudio, wär ich bereit, a ruhigeren Stil z'probieren."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du zuerst nach dem Kundenbedürfnis fragst. Erzähl mir von einem konkreten Projekt, bei dem du eine schwierige Anforderung gelöst hast."
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, beim Plakat fürs Schulfest händ d Klasse drei verschiedene Entwürfe abgestimmt, und obwohls amoi stressig gsi isch, dass kei Idee sofort passt händ, händ d Feedback vom Team mir ghalte, kreativer z'werde. Ich finde, wenn d Idee kää passt, isch es besser, gemeinsam neu z'fange, statt d Idee durchzusetze. Des zeigt, dass ich bereit bin, mich anzupasse, aber au, wenn nötig, ne neue Richtung z'probieren."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du den Prozess des gemeinsamen Entscheidens betont hast. Wie gehst du konkret mit engen Zeitplänen um, wenn du nur noch zwei Tage Zeit für ein Plakat hast?"
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, wenns nur zwee Tag git für a Plakat, mache ich zersch a groben Entwurf und arbeite dann jede Nacht an paar Details, damit alles passt. Ich versuche, mir a Plan z' mache, was an jedem Tag fertig werre soll, und spare mir dann zum Schluss Zeit für Korrekturen. Wenns zu stressig wird, helfe ich mir mit a kleiner Pause, um frischer drauf z'sehe."
+    },
+    {
+      "role": "coach",
+      "text": "Klingt nach einem guten Vorgehen – und das ist ja genau das, was wir im Atelier auch erarbeiten. Welche Fähigkeiten möchtest du während der Lehre erwerben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, ich möchte am liebsten lerne, wie ma komplexere Design-Projekte plant und digitale Programme wie Illustrator besser beherrscht. Es isch mir wichtig, dass ich mich mit Farbtheorie und Typografie auseinandersetze, und ich hoffe, dass ich im Team-Projekt mehr Feedback kriege, wie ma Ideen gemeinsam verbessert. Wenns um Zeitpläne geht, will ich lerne, effizienter z'arbeite, ohne d Qualität z'verlore."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne! Was interessiert dich konkret am Team? Hast du Fragen zum Team?"
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, im Team finde ich wichtig, dass ma einander respektiert und unterstützt, wann d Idee nicht passt. Ich wär froh, wenns regelmässige Feedback-Gespräche gäbe, damit ma weiss, was verbessert werre kann. Was genau macht s Team im Atelier?"
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine offenen Worte – das zeigt echtes Teamverständnis. Möchtest du abschliessend noch etwas ergänzen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Moi, ich finde, dass im Atelier viel Wert auf individuelle Stilentwicklung glegt wird, und das isch genau so, wia ich es mag. Ich schätze, dass ma mir bei der Schriftproblematik vom Designstudio tatsächlich ne Chance gebt, es ne zu probiere, statt mich direkt abzulehne. Wenns um den Logikfluss im Plakat für s Schulfest geht, versuche ich, dass d Betrachter zuerst d Hauptnachricht versteht, bevor d Details sie ablenke."
+    },
+    {
+      "role": "coach",
+      "text": "Vielen Dank für dein offenes Gespräch und deine ehrliche Rückmeldung. Es war ein Freude, dich kennenzulernen – wir freuen uns auf deine Mappe und dein späteres Mappengespräch. Alles Gute für die kommenden Schritte!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Die Grafik fasziniert mich, weil ma alles zeichnen kann, was ma im Kopf hot.» – Deine Begeisterung für Grafik ist echt und klar.\n- «Moi, ich bin 15 Jahr alt und gehe in de 3. Sekundarschule, Niveau B, wobei Bildnerisches Gestalten, Deutsch und Englisch meine Stärken sinn.» – Du zeigst klare Stärken in Fächern, die zum Beruf passen.\n- «Moi, zum Schulfest-Plakat hab ich drei Versione gmocht und die Klasse hat abgschtimmt – des isch komplett allein vo mir gsi.» – Du hast ein konkretes Projekt eigenständig umgesetzt.\n\n## Daran kannst du arbeiten\n- «Moi, wenn ma sagt, die Schrift isch zu unruhig, versuche ich, die Buchstaben ruhiger zu zeichne, zum Beispiel mit geraderen Linien.» – Nenne ein konkretes Feedback aus der Schnupperlehre, um die Umsetzung zu üben.\n- «Ich möchte am liebsten lerne, wie ma komplexere Design-Projekte plant und digitale Programme wie Illustrator besser beherrscht.» – Formuliere ein klareres Ziel mit spezifischen Lernpunkten aus dem Berufsfeld.\n- «Moi, ich versuche, mich an die Vorgaben z'halte, aber wenn ich merke, dass des Logo besser mit meiner Idee passt, sag ich das offen.» – Übe, wie du Kundenwünsche und eigene Ideen offen kommunizierst.\n\n## Dein nächster Schritt\nÜbe, ein konkretes Feedback aus der Schnupperlehre in einem kurzen Satz umzusetzen, z.B. «Die Schrift ist zu verspielt – ich werde sie ruhiger gestalten.»\n\n## Abschluss\nDu hast heute viel Mut gezeigt, und das Üben hilft dir, noch sicherer zu werden.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Ausbaufähig |\n| Umgang mit schwierigen Fragen | Gut |\n| Eigeninitiative | Gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF06-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF06-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF06-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF06-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF06-04",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF06-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-08",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF06-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 34,
+  "answers": 16,
+  "calls_per_answer": 2.12,
+  "followups": 1,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 83.8
+}

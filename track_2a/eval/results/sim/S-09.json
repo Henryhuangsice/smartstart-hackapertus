@@ -1,0 +1,272 @@
+{
+  "scenario_id": "S-09",
+  "lang": "fr",
+  "dialect": null,
+  "difficulty": "medium",
+  "situation": "follow_up_interview",
+  "success_criteria": [
+    "Le coach mène l'entretien et le feedback en français et tutoie la candidate.",
+    "Le coach aborde la remarque sur la réserve du deuxième jour de façon constructive, comme une occasion d'apprendre (E1).",
+    "Le feedback valorise la qualité de la réflexion avec une citation précise (K1, R1).",
+    "Le coach demande ce que la candidate retient concrètement du stage pour l'apprentissage (goal_orientation).",
+    "Le feedback propose un seul prochain pas concret et réaliste (R2, R3)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Bonjour, je suis Inès."
+    },
+    {
+      "role": "coach",
+      "text": "Bonjour Inès, je suis Sophie Fournier, formatrice en entreprise ASSC à l'Hôpital régional de la Morge. Je vais te guider aujourd’hui à travers ton stage : nous parlerons de ton parcours, de tes motivations, de tes forces et de quelques situations concrètes, avant de répondre à tes questions. Raconte-moi un peu comment tu te sens aujourd’hui."
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j'irai mieux avec le temps, j’ai un peu tremblé quand j’ai vu le patient très faible au début du stage, mais ensuite ma formatrice m’a appris à garder mon calme et à gérer mes émotions, donc je me sens prête à parler de mon parcours."
+    },
+    {
+      "role": "coach",
+      "text": "D’accord, c’est rassurant d’entendre que tu as progressé. Comment as-tu vécu ton stage chez nous ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j’ai adoré le côté organisation du service de médecine, faire les repas et accompagner les patients m’a vraiment motivée, même si j’ai été un peu surprise quand j’ai vu ce patient très faible et que je tremblais un peu. Le deuxième jour, après avoir discuté avec ma formatrice, j’ai pris confiance et j’ai compris que le métier d’ASSC demande beaucoup de calme et de présence, comme quand on démonte un mouvement d’horlogerie avec précision."
+    },
+    {
+      "role": "coach",
+      "text": "C'est très intéressant de voir ce qui t'a marquée ! Qu'est-ce qui t'a le plus surprise ou surprise pendant ta semaine de stage ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, c'est le rythme du service qui m'a surprise au début, surtout en voyant le nombre de patients qui arrivent en même temps, mais après le stage d'horlogerie j'ai compris qu'il faut rester concentrée comme avec un mouvement à remonter."
+    },
+    {
+      "role": "coach",
+      "text": "C'est vrai, j'ai eu un peu du mal à me lâcher au début, mais j'ai pris confiance avec le temps. Comment as-tu ressenti cette situation ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, ça m’a un peu stressée au début quand j’ai vu le patient très faible, mais ma formatrice m’a montré qu’il faut garder son calme comme quand tu démontes un mouvement d’horlogerie avec les doigts. J’ai appris à respirer et à me concentrer sur la tâche, même si le deuxième jour j’étais encore un peu réservée."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as bien compris l’importance du calme, peux-tu décrire la situation concrète où tu as dû rester sereine et les gestes précis que tu as adoptés pour gérer cette situation ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, quand j’ai dû prendre les signes vitaux au patient qui tremblait, j’ai pris une grande inspiration avant de toucher le matériel, comme on prend son temps quand on remonte un mouvement d’horlogerie, et j’ai vérifié chaque pression avec soin pour ne pas me tromper."
+    },
+    {
+      "role": "coach",
+      "text": "C'est très intéressant de voir comment tu as géré cette situation avec calme. Qu'est-ce que tu as appris de tes stages jusqu'à maintenant ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j’ai compris qu’on peut rester sereine même quand les choses sont un peu stressantes, comme quand on démonte un mouvement ou quand on prend les signes vitaux, et que le calme aide à être plus précise et efficace."
+    },
+    {
+      "role": "coach",
+      "text": "C'est une excellente observation ! Et comment réagis-tu concrètement quand tu te trouves face à une situation difficile ou chargée d'émotions, par exemple avec un patient ou un collègue ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, je respire d’abord comme quand je remonte un mouvement, puis je demande à ma formatrice ou à un collègue si j’ai besoin d’aide, surtout si un patient est très nerveux ou si le rythme devient trop intense."
+    },
+    {
+      "role": "coach",
+      "text": "C'est important de respecter la confidentialité des informations médicales. Comment définirais-tu la discrétion avec les données des patients dans ton travail quotidien ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, pour moi la discrétion c'est comme quand je travaille avec les miniatures et les bijoux en perles, je ne partage pas ce que j'ai fait avec les autres, c'est pareil avec les informations médicales, je les garde pour moi et je ne les dis à personne sans avoir besoin d'aide."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as bien compris l'importance du secret professionnel. Peux-tu me donner un exemple précis où tu as dû garder une information médicale confidentielle lors d'un stage ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, pendant le stage au service de médecine, j’ai vu que certaines informations sur un patient étaient très sensibles, et ma formatrice m’a rappelé de ne jamais en parler aux autres, même si j’étais curieuse, comme quand je fais des bijoux et que je garde un secret sur le design."
+    },
+    {
+      "role": "coach",
+      "text": "C'est très juste, tu as bien compris l'importance du secret professionnel. Comment réagis-tu à la critique ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, quand on me donne une critique, je la prends comme une leçon pour améliorer ma précision, un peu comme quand je rectifie un mouvement d'horlogerie qui ne fonctionne pas bien, et je demande ensuite comment faire mieux. Je ne me prends pas trop au sérieux et j'apprécie que les autres veuillent me voir progresser."
+    },
+    {
+      "role": "coach",
+      "text": "Je comprends que c'est une situation délicate. Comment réagirais-tu si une collègue te disait que tu as mal fait un travail alors que tu es convaincu(e) de t'être bien exécuté(e)?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, je l'écouterais d'abord comme quand un samaritain me guide sur le terrain, puis je demanderais avec précision les points exacts où j'ai pu me tromper, un peu comme si c'était une pièce de précision qu'il faut réajuster, et je m'efforcerais de corriger rapidement sans perdre le calme."
+    },
+    {
+      "role": "coach",
+      "text": "C'est une excellente façon d'aborder les erreurs, et ça montre que tu sais rester calme et constructive. Pourquoi aimerais-tu faire ton apprentissage justement dans notre entreprise ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j'aimerais faire mon apprentissage ici parce que j'aime aider les gens comme les samaritains et que le stage à l'hôpital m'a montré qu'on y apprend aussi beaucoup d'organisation et d'empathie, et c'est quelque chose que j'ai envie de continuer à développer."
+    },
+    {
+      "role": "coach",
+      "text": "C'est une excellente motivation, merci pour cette ouverture. Quelles compétences aimerais-tu acquérir pendant ton apprentissage ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j’aimerais bien améliorer mon allemand oral, surtout pour mieux comprendre les patients étrangers et les documents médicaux, et aussi apprendre à gérer les situations stressantes comme quand on doit prendre la décision rapide d’un samaritain sur le terrain."
+    },
+    {
+      "role": "coach",
+      "text": "Bien sûr, je peux t’en dire plus sur le processus de sélection. Est-ce que tu aimerais en savoir plus sur les prochaines étapes ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j’aimerais bien savoir comment se passe le processus de sélection et les prochaines étapes pour m’y préparer au mieux, comme quand je prépare un bijou étape par étape avant d’en faire la présentation finale."
+    },
+    {
+      "role": "coach",
+      "text": "Le processus comprend un stage d'observation de 2 jours, un dossier en ligne, un test d'aptitudes, un entretien avec une formatrice et un infirmier chef, puis un entretien de suivi après le stage.  \nTu as encore une autre question ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j’aimerais savoir exactement ce qu’on m’attend au premier jour, surtout comment s’organisent les journées et si on me donne des outils ou du matériel dès le début, pour que je sois prête à m’investir tout de suite comme quand je commence un nouveau bijou."
+    },
+    {
+      "role": "coach",
+      "text": "Au premier jour, tu participeras à un stage d’observation de 2 jours obligatoire, où tu seras encadrée par une formatrice dédiée, tu recevras une formation théorique et pratique sur les outils et le matériel nécessaires, et tu suivras un cours BLS‑AED. Tu as encore une autre question ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, c’est rassurant d’entendre ça, parce que je veux être prête dès le premier jour comme quand je commence une miniature, et je veux savoir si le BLS‑AED est vraiment obligatoire ou si c’est juste un cours optionnel, pour organiser mon mental avant."
+    },
+    {
+      "role": "coach",
+      "text": "C’est obligatoire, c’est un cours inclus dans la formation. Pour terminer, est-ce que tu aimerais encore ajouter quelque chose ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, je comprends que le BLS‑AED fasse partie intégrante du programme, ce qui m’aide à me préparer comme quand je commence une miniature étape par étape, et je me sens prête à m’investir dès le premier jour avec le matériel et la formation que l’on me donnera."
+    },
+    {
+      "role": "coach",
+      "text": "Merci beaucoup pour ta réflexion et ton investissement. C’est avec plaisir que nous t’accueillerons dès le 20 août 2027. À très bientôt pour le stage d’observation et le début de ton apprentissage.\n\n---\n**Pour terminer : tu reçois maintenant ton feedback personnel.**\n\n## Tes points forts\n- «j’ai compris qu’on peut rester sereine même quand les choses sont un peu stressantes» – montre une prise de conscience claire des compétences acquises.\n- «je respire d’abord comme quand je remonte un mouvement, puis je demande à ma formatrice ou à un collègue si j’ai besoin d’aide» – utilise une analogie personnelle pour gérer le stress et demander de l’aide.\n\n## Ce que tu peux encore améliorer\n- «j’ai été un peu surprise quand j’ai vu ce patient très faible et que je tremblais un peu» – pas encore expliqué comment la surprise a été transformée en apprentissage concret.\n  Tip: Décris une situation précise où tu as appliqué le calme et la gestion des émotions après la formation.\n- «j’ai été un peu réservée le deuxième jour» – reste vague sur la manière dont la réserve a évolué.\n  Tip: Donne un exemple concret d’un geste ou d’une action qui a réduit ta réserve.\n- «je ne partage pas ce que j'ai fait avec les autres, c'est pareil avec les informations médicales, je les garde pour moi» – manque d’exemple réel où la discrétion a été cruciale.\n  Tip: Raconte une situation où tu as dû garder une information confidentielle et comment tu l’as gérée.\n\n## Ta prochaine étape\nPrépare une courte histoire (5-7 phrases) où tu utilises l’analogie de l’horlogerie pour expliquer comment tu as gardé ton calme lors d’une situation stressante.\n\n## Encouragement\nTu as bien utilisé des analogies pour montrer ta capacité à gérer le stress, et tu as posé des questions concrètes sur l’organisation du travail. Continue à transformer les défis en apprentissages et à préparer tes réponses avec des exemples précis.\n\n### Vue d'ensemble par critère\n\n| | |\n|---|---|\n| Clarté | No evidence in the conversation |\n| Pertinence | Bien |\n| Motivation | Bien |\n| Réflexion sur soi | Bien |\n| Communication | Très bien |\n| Exemples concrets | Bien |\n| Attitude & impression | Bien |\n| Préparation / connaissance de l'entreprise | Bien |\n| Orientation vers les objectifs | Bien |\n| Gestion des questions difficiles | Très bien |\n| Initiative | Bien |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-12",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-13",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-14",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-14",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-06-09",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF21-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF21-03",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF21-03",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-05",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-08",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-08",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-08",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-08",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-03",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    }
+  ],
+  "llm_calls": 36,
+  "answers": 17,
+  "calls_per_answer": 2.12,
+  "followups": 2,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 90.0
+}

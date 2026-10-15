@@ -1,0 +1,304 @@
+{
+  "scenario_id": "S-01",
+  "lang": "de",
+  "dialect": "gr",
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach folgt dem Ablauf Begrüssung → Vorstellung → Motivation → Kenntnisse → Stärken/Schwächen → Zukunft → Fragen → Abschluss.",
+    "Der Coach fragt mindestens einmal nach einem konkreten Beispiel, wenn eine Stärke nur behauptet wird.",
+    "Das Schlussfeedback nennt auch beim starken Kandidaten mindestens einen konkreten Entwicklungspunkt mit nächstem Schritt.",
+    "Das Feedback verzichtet auf Übertreibungen wie «perfekt» oder «genial» (T3).",
+    "Jede Rückmeldung verweist auf eine konkrete Aussage aus dem Gespräch (K1)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Luca."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Luca, ich bin Reto Casutt, Berufsbildner und Leiter der Konstruktionsabteilung bei der Plessur Maschinenbau AG. Im Rahmen dieses Gesprächs lernen wir uns kennen, besprechen deine Motivation und deine Vorstellungen zur Lehre, und ich stelle dir ein paar Fragen dazu. Hast du den Weg zu uns gut gefunden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich bin gut angekommen, danke. Ich han drü Täg bei euch gschnupperet und es isch wirklich faszinierend gsii, wie ausere Zeichnung im CAD e richtigs Bauteil wird. Die technische Arbeit macht mir sehr Spass, und ich glaube, dass ich in de Konstruktionslehre genau dings tun wärd."
+    },
+    {
+      "role": "coach",
+      "text": "Danke, Luca, dass du so offen von de Schnuppertage berichtet hast. Erzähl uns etwas über dich."
+    },
+    {
+      "role": "candidate",
+      "text": "Also, ich bin 15 Jahr alt und in Chur ufgwagse, geh grad in de 3. Sekundarschule. Meine starke Sachen sin Mathematik, Geometrie und technisches Gestalten, und im CAD han ich e ganz einfache Halterung zeichne dürfed. Handball spil ich seit sechs Jahr im lokalen Verein, und ich repariier au gern Velo und baue Lego Technic-Modelle mit Motoren."
+    },
+    {
+      "role": "coach",
+      "text": "Ich freue mich, dich kennenzulernen, Luca. Worauf bist du besonders stolz?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich bin besonders stolz drauf, dass ich in de Schnupperlehre e richtigs CAD-Modell gzeichnet und gseh han, wie der Fräsautomat's verarbeitet han. Die genaue Planung und Logik in de Technik finde ich am faszinierendsten. Ich glaube, dass mir des gut liegt, und ich will lerne, wie mer komplexi Bauteile entwickled."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach echtem Interesse an Konstruktion! Warum hast du dich für diesen Beruf entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich han's mit Lego Technic immer spass gha, eigene Modelle mit Motoren und Getriebe z'bauen, und in de Schnupperlehre als Konstrukteur han ich's gseh, wie ausere Zeichnung e echtes Bauteil wird. Die Kombination aus Kreativität und Präzision, die in de Konstruktion steckt, fasziniert mich total, und ich glaube, dass ich dings langfristig gern mache. In de Polymechanik-Schnupperlehre han ich gemerkt, dass ich lieber am Planen und Zeichne als am stundenlange Fräse oder Feilen lieg, drum passt die Lehre genau zu mir."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Begeisterung für Konstruktion und die Kombination aus Kreativität und Präzision ist wirklich beeindruckend.  \nWeshalb möchtest du deine Lehre gerade bei unserem Betrieb absolvieren?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich han drü Täg bei euch gschnupperet und gseh, dass e e gute Ausbildung für Konstrukteure bieted. Die Möglichkeit, echte CAD-Zeichnunge z' mache und se direkt in de Werkstatt z' seh, passt perfekt zu mir. Ich glaube, dass ich bei euch viel lerne und meine Stärken in de Technik wirklich ausbauen kann."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine offenen Worte! Was erwartest du von deiner Ausbildung?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich erwarte, dass ich täglich an Projekten mitwirke, wo mer Ideen wirklich umsetzed, und dass ich viel mit dem CAD und dem Fräseautomat übe, damit ich immer genauer arbeite. Ich will lerne, wie mer komplexe Teile plant und baut, und hoffe, dass ich dabei helfen darf, echte Bauteile für eure Maschinen z' entwickle. Es würde mir viel bedeute, wenn ich regelmässig Feedback kriag, wie ich meine Pläne verbessere kann."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Motivation ist wirklich gut zu hören, Luca. Was hältst du davon, welche Aufgaben ein Konstrukteur/in EFZ typischerweise übernimmt?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich glaube, e Konstrukteur/in macht am Anfang hauptsächlich Pläne und Zeichnige im CAD, und erst dann wirds praktisch in de Werkstatt gebaut. Ich find’s wichtig, dass mer die Theorie und Praxis immer wechselnd übt, damit mer am Schluss alles versteht. In de Schnupperlehre han ich gseh, wie ausere Zeichnung e echtes Metallteil wird, und das will ich lerne. Ich hoffe, dass mer als Lehrling oft mit echten Projekten arbeitet, wo mer Ideen wirklich zum Leben erweckt."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, das klingt nach einer klaren Vorstellung. Was glaubst du, wird in der Lehre die grösste Herausforderung sein?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich glaub, dass’s am schwierigste isch, wenn mer sich für e Idee entscheide muss und die dann perfekt planen muss, damit’s in de Werkstatt funktioniert. Die Kombination aus Kreativität und Genauigkeit isch a ständige Balance, wo man ganz genau lerne muss. Ich hoffe, dass’s immer genug Feedback gibt, damit mer merkt, wo’s Verbesserungspotenzial gibt."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Gedanke zur Balance zwischen Kreativität und Genauigkeit ist sehr treffend. Was hältst du für deine grössten Stärken?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich glaub, meine grösste Stärke isch, dass ich schnell im Kopf räumliche Vorstellungen mache kann, besonders beim Zeichne und Planen. Im Schnupperlehre-Projekt han ich gseh, wie ich Ideen konkret umsetze, und das macht mir Spass. Ich bin konzentriert und bringe Disziplin mit, was für de Beruf wichtig isch. Auch im Handball trainiere ich Teamarbeit und Durchhaltevermögen, was beim Projektarbeit helfen wird."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Ehrlichkeit ist sehr wertvoll. Welche Schwäche möchtest du gezielt verbessern?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich find Französisch immer no a bisserli schwierig, des will ich in de Lehre besser lerne. Aber im Moment machts für mich ned so viel aus, hauptsächlech konzentriere ich mich ganz uf de Technik. Ich versuche, mehr z’ luege und z’ übe, dasss no besser wird."
+    },
+    {
+      "role": "coach",
+      "text": "Wie hast du in letzter Zeit Französisch geübt, zum Beispiel beim Lesen einer Anleitung oder beim Schreiben einer E-Mail?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich hab die letzte Zeit eigentlich so gärn kei Anleitung glesa, weil ich mich mehra uf meine Technik-Projekte konzentra. Aber ich versuche jetzt, halbi spontan Französisch z’schreiwe, wenn ich E-Mails schribe, und das macht mir ä bissi Mühe – aber das mach ich gern, damit’s besser wird."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das verstehe ich. Kannst du beschreiben, wie du dir zum Beispiel eine neue Maschinenkomponente räumlich vorstellst?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich stell mir die neue Komponente im Kopf wie ein Lego-Modell vor, zieh sie auseinander, schaue mir jedes Einzelteil und wie die beweglichen Teile ineinander greifen. So kann ich gleich erkennen, wo die Toleranzen sitze und wie die Teile später zusammenpassen sölle. Des hilft mir, Fehler scho vorher z’ vermeide, statt sie erst in de Werkstatt z’ lerne."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du dir die Komponente vorstellst! Erzähl mir doch, welche Erfahrungen du bereits mit technischem Zeichnen oder Planungsprogrammen gesammelt hast."
+    },
+    {
+      "role": "candidate",
+      "text": "Ich han im Schnupperlehre-Projekt im CAD e einfache Halterung zeichne und gseh, wie die dann auf dr Fräse bearbeitet worde isch. Das het mir gzeigt, wie Theorie und Praxis zämmegehöre, und ich fühle mich do drin wohl. Für mich isch s Zeichne a wichtiche Schritt, bevor mer am Werkstück arbeitet. Ich luege gern, wie so e Idee Schritt für Schritt realisiert wird."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das ist eine gute Frage. Was würdest du tun, wenn du den Auftrag nicht ganz verstanden hast und deine Berufsbildnerin gerade beschäftigt ist?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würd am Schtart e paar Sachen no mol nachfroge, zum sicher z'gschtand, was genau verlangt isch. Wenn d Berufsbildnerin z' beschäftigt isch, würd ich derno e Kolleg oder e Lehrling frage, bis ichs versteh. Des isch für mich wichtig, dasss am End alles korrekt läuft und nüt falsch wird."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine Offenheit! Wie stellst du dir deine berufliche Zukunft nach der Lehre vor?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich stell mir vor, dass ich nach de Lehre als Konstrukteur EFZ arbeite, wo ich Designs entwickle und ne Projekts planen kann. Ich will gern mit fortschrittliche CAD-Tools arbeiten und neue Ideen für robuste Bauteile finden. Am liebsten würd ich in de Schweiz bliewe, zum in de Berge z'wohne und im Team mit andern Techniker z'schaffe."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne! Hast du Fragen zu unserem Betrieb?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würd gern wissen, wie viele Lernende im Team si aktuell befinde, damits mer besser aagschtellt wird. Au interessiert mich, ob mer uns im CAD-Projekt direkt an reale Kundenaufträge beteilige."
+    },
+    {
+      "role": "coach",
+      "text": "Im Team werden aktuell sechs Lernende ausgebildet – zwei Konstrukteure, drei Polymechaniker und eine Kauffrau. Ja, die Lernenden werden in der CAD‑Einführungsphase mit realen Kundenaufträgen vertraut gemacht. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würd gern wissen, ob mer uns im CAD-Projekt direkt an reale Kundenaufträge beteilige, oder ob mer nur Übungsstücke fertige. Und wie isch de Zeitplan für so e Projekt – wie viel Zit gebt mer uns, damits fertig wird?"
+    },
+    {
+      "role": "coach",
+      "text": "Im CAD-Projekt werden Lernende ab dem zweiten Lehrjahr schrittweise an echte Kundenprojekte eingebunden, nicht nur an Übungsstücke. Die Zeitplanung hängt vom Projektumfang ab, aber wir geben euch die notwendige Zeit, damit das Projekt fertig wird. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würd gern wissen, wie oft mer im Team intern Besprechige macht, damit mer immer weiss, was no kommt und wo mer steht. Und wie isch die Zusammenarbeit zwüsche de Konstrukteure und de Polymechaniker praktisch, wenn mer e Projekts gemeinsam bearbeite?"
+    },
+    {
+      "role": "coach",
+      "text": "Wir treffen uns regelmäßig im Team, um den aktuellen Stand zu besprechen und die nächsten Schritte zu planen. Konstrukteure und Polymechaniker arbeiten eng zusammen, da Projekte oft beide Disziplinen erfordern, und tauschen sich direkt bei der Umsetzung aus. Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würd gern wissen, was für Materialien und Werkzeuge mer am häufigsten im CAD-Projekt benutze, damits für mich leichter isch, d Werkstatt z'besuche und d passende Sachen vorzubereite. Außerdem, wie schaut d Zusammenarbeit aus, wenn mer e Projekts gemeinsam bearbeite – wer macht was und wer gibt wann Feedback?"
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine Fragen, Luca. Im CAD-Projekt kommen hauptsächlich CAD-Software, technische Zeichnungen und Normen zum Einsatz, und in der Werkstatt werden die entsprechenden Werkzeuge und Materialien für die Umsetzung verwendet. Die Zusammenarbeit im Team ist eng: Konstrukteure planen und entwerfen, die Werkstatt übernimmt die Umsetzung, und Feedback wird kontinuierlich und strukturiert ausgetauscht, um gemeinsam zum Ziel zu kommen.  \nHaben wir alles besprochen?\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Ich bin besonders stolz darauf, dass ich in der Schnupperlehre ein richtiges CAD-Modell gezeichnet und gesehen habe, wie der Fräsautomat es verarbeitet hat.» – Dein konkretes Erlebnis zeigt echtes Interesse an der technischen Umsetzung.\n- «Ich stelle mir die neue Komponente im Kopf wie ein Lego-Modell vor, ziehe sie auseinander, schaue mir jedes Einzelteil und wie die beweglichen Teile ineinander greifen.» – Dein räumliches Vorstellungsvermögen ist klar und praktisch anwendbar.\n\n## Daran kannst du arbeiten\n- «Ich finde Französisch immer noch ein bisschen schwierig, das möchte ich in der Lehre besser lernen.» – Übe gezielt mit kurzen, technischen Texten, um den Kontext zu verbessern.\n- «Ich glaube, dass es am schwierigsten ist, wenn man sich für eine Idee entscheiden muss und diese dann perfekt planen muss, damit sie in der Werkstatt funktioniert.» – Probiere beim nächsten Projekt eine einfache Entscheidung und Planung, um die Balance zu üben.\n\n## Dein nächster Schritt\nÜbe eine kurze technische Erklärung auf Französisch über ein CAD-Projekt, das du in der Schnupperlehre gemacht hast.\n\nDu hast heute viel Mut und Klarheit gezeigt – das war Übung, nicht Leistung.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Sehr gut |\n| Selbstreflexion | Ausbaufähig |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Sehr gut |\n| Umgang mit schwierigen Fragen | Gut |\n| Eigeninitiative | Sehr gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-08",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-05",
+      "level": 4,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-04-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-04-10",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF15-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF15-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 41,
+  "answers": 19,
+  "calls_per_answer": 2.16,
+  "followups": 1,
+  "feedback_violations_first": [
+    "T3: exaggerated praise or dramatising word 'perfekt' — use neutral wording"
+  ],
+  "feedback_violations_final": [
+    "T3: exaggerated praise or dramatising word 'perfekt' — use neutral wording"
+  ],
+  "finished": true,
+  "seconds": 101.2
+}

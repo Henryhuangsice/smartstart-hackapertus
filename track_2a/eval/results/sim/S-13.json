@@ -1,0 +1,286 @@
+{
+  "scenario_id": "S-13",
+  "lang": "it",
+  "dialect": null,
+  "difficulty": "hard",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Il coach conduce colloquio e feedback in italiano con il tu.",
+    "Il coach tratta l'interruzione della scuola e il periodo di pausa come un'occasione di apprendimento, senza giudicare (E1, L2).",
+    "Il feedback propone una struttura per spiegare il percorso: cosa è successo – cosa ho imparato – cosa è diverso ora (K2).",
+    "Il coach chiede un esempio concreto di stress in cucina e lo valorizza nel feedback (K1).",
+    "Il coach non valuta la famiglia né le aspettative dei genitori (L1)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Buongiorno, sono Alessandro."
+    },
+    {
+      "role": "coach",
+      "text": "Buongiorno Alessandro, sono Luca Bernasconi, Chef di cucina e formatore all'Hotel Ristorante Lago Verbano SA di Locarno. Ti presenterò il percorso di selezione, parleremo della tua motivazione, delle tue competenze e di alcune situazioni pratiche, e alla fine ti porrò qualche domanda. Come è andato il viaggio fin qui?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, il viaggio è andato bene, grazie. Ho preso il treno alle otto e mezzo, ho guardato un po' fuori dal finestrino perché mi piace il paesaggio del Lago Maggiore, e sono arrivato un quarto d'ora prima, così ho avuto il tempo di sistemarmi. Diciamo che sono un po' stanco, ma emozionato per questa opportunità."
+    },
+    {
+      "role": "coach",
+      "text": "Sto bene, grazie. Raccontami qualcosa di te."
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, sono Alessandro, 17 anni, di Locarno, e dopo aver lasciato la scuola di commercio ho lavorato nel grotto degli zii, cucinando risotto e polenta nei weekend con 120 coperti al giorno, e ho fatto uno stage da cuoco in un albergo dove lo chef mi ha lodato per il ritmo."
+    },
+    {
+      "role": "coach",
+      "text": "Ho capito, Alessandro. Raccontami come è stato il tuo percorso scolastico."
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, ho fatto la scuola media con buone medie, poi ho iniziato la scuola di commercio per quello che pensavano i miei genitori fosse una scelta sicura, ma dopo un semestre ho capito che non era per me e ho interrotto, così ho iniziato a lavorare in cucina e ho scoperto che lì mi sento a mio agio e riesco a gestire anche il ritmo dei weekend."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, grazie per la chiarezza. C'è qualcosa nella tua pagella che vorresti spiegare?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, la mia pagella della scuola media era regolare, tra 4 e 4,5, e alla scuola di commercio ho interrotto dopo un semestre perché le materie come contabilità e francese erano troppo noiose, mentre in economia familiare e educazione fisica mi andava meglio, così ho preferito concentrarmi su quello che mi piaceva davvero."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, grazie per la sincerità. Qual è stato l'insuccesso più grande che hai vissuto finora?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, l'insuccesso più grande è stato quello di aver iniziato la scuola di commercio senza essere sicurissimo, poi ho capito che non mi andava e ho interrotto, ma ne ho tratto la forza di concentrarmi su quello che mi piace davvero, la cucina."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, grazie per la chiarezza. Perché hai scelto la professione di cuoco/a AFC?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, dopo aver interrotto la scuola di commercio ho capito che la cucina mi piace davvero, e con i miei stage ho visto che riesco a lavorare bene anche sotto stress, così ho deciso di fare il cuoco AFC per diventare professionista e non perdere più tempo in cose che non mi piacciono."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, grazie per la chiarezza. Quali esperienze hanno risvegliato il tuo interesse per questa professione?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, è stato lavorare nel grotto degli zii nei weekend con 120 coperti al giorno che mi ha fatto capire che in cucina riesco a dare il massimo anche quando c'è pressione, e lo stage da cuoco all'albergo mi ha fatto vedere che ho un buon ritmo e che mi piace davvero gestire la brigata, così ho capito che questa è la mia strada."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco perfettamente, hai dimostrato di saper gestire pressioni importanti. Come ti organizzi quando il ritmo della cucina accelera e devi mantenere la calma e la precisione?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, quando il ritmo in cucina va veloce, mi concentro sul mettere in ordine il piano di lavoro prima di tutto, controllo le priorità e mi tengo sempre un passo indietro per non perdere la calma, così riesco a mantenere la precisione anche sotto pressione."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, grazie. Riesci a restare calmo o calma e gentile anche sotto pressione?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, sì, quando c'è fretta mi metto subito in ordine, controllo cosa devo fare per primo e mi mantengo sempre un po' distaccato, così riesco a restare calmo e preciso anche se il ritmo è alto."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, grazie. Come ti trovi con gli orari irregolari e il lavoro nel fine settimana?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, i weekend con 120 coperti al giorno mi hanno insegnato a organizzare tutto la sera prima, così il giorno dopo è più facile gestire anche se il ritmo è alto. Mi piace la cucina ticinese e far stare contenti i clienti, quindi il lavoro nel fine settimana non è un problema per me."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, hai già affrontato situazioni impegnative. Che cosa significano per te igiene e pulizia sul posto di lavoro?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, per me igiene e pulizia sono fondamentali: devo controllare che tutto sia pulito prima di iniziare a cucinare, mi piace tenere tutto in ordine anche sotto pressione perché così lavoro meglio e non rischio di contaminare i piatti, e mi sento più sicuro quando il piano di lavoro è ordinato."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, è normale avere dubbi in cucina. Come gestiresti la situazione se la tua collega ti dice di aver sbagliato un lavoro ma tu sei sicuro/a di averlo fatto bene?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, se mi dicesse che ho sbagliato ma so che l'ho fatto giusto, prima mi concentro sul capire bene il problema, poi parlo con calma per chiarire e insieme troviamo la soluzione, perché l'importante è che il piatto sia buono e non litigare."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, grazie. Come ti comporti quando fai un errore?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, se sbaglio, prima mi fermo, capisco cosa è successo e poi lo correggo subito, perché l'importante è che il cliente non ne venga a conoscenza, e poi imparo per la prossima volta."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, grazie. Dove ti vedi dopo l'apprendistato?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, mi vedi come cuoco in un albergo svizzero, magari a Lugano o Locarno, dove posso cucinare piatti ticinesi e lavorare con calma in cucina. Poi faccio stagioni in altri posti per imparare nuove ricette e fare esperienze diverse, perché alla fine voglio diventare un cuoco completo."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco perfettamente, mi piacerebbe spiegarti meglio come funziona il tirocinio. C'è qualcosa sull'apprendistato che vorresti sapere più nel dettaglio?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, mi piacerebbe sapere meglio come si combinano le ore di pratica in cucina con quelle di teoria, perché mi interessa capire se ho anche tempo per imparare i nuovi piatti e le tecniche senza troppa pressione."
+    },
+    {
+      "role": "coach",
+      "text": "Durante il tirocinio le ore di pratica in cucina si alternano a lezioni teoriche in aula con lo chef formatore dedicato, e il vitto è garantito durante il servizio; in più hai giorni liberi compensativi dopo i periodi di punta. Hai ancora un'altra domanda?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, mi piacerebbe sapere anche quanti giorni a settimana devo lavorare e se c'è un budget per i miei vestiti da cuoco, perché vorrei avere tutto pronto senza stressare troppo."
+    },
+    {
+      "role": "coach",
+      "text": "No, non ho altre domande per ora. Hai ancora un'altra domanda?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, mi piacerebbe sapere se nel tirocinio c'è anche la possibilità di fare qualche uscita in campagna o in montagna, perché mi piace cucinare con prodotti locali e mi piace anche un po' di aria fresca tra un turno e l'altro."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco perfettamente, è un aspetto importante per te. C'è ancora qualcosa che vorresti dirci?"
+    },
+    {
+      "role": "candidate",
+      "text": "Guardii, mi piacerebbe sapere se nel tirocinio c'è anche la possibilità di fare qualche uscita in campagna o in montagna, perché mi piace cucinare con prodotti locali e mi piace anche un po' di aria fresca tra un turno e l'altro."
+    },
+    {
+      "role": "coach",
+      "text": "Grazie mille per la tua domanda e per il tempo dedicato al colloquio. Ti informo che non organizziamo uscite in campagna o in montagna, ma la nostra cucina valorizza i prodotti locali del Ticino e del Lago Maggiore, e durante i periodi di punta potrai lavorare con la brigata in un ambiente dinamico e stimolante. Buona giornata!\n\n---\n**Per concludere: ricevi ora il tuo feedback personale.**\n\n## I tuoi punti di forza\n«Ho lavorato nel grotto degli zii con 120 coperti al giorno» dimostra capacità sotto pressione.\n«Ho capito che la cucina mi piace davvero» mostra interesse concreto per la professione.\n\n## Su cosa puoi ancora lavorare\n«Non ho un esempio specifico di piatto preparato» non ancora collegato alle competenze richieste.\nProva a descrivere un piatto che hai preparato e le tecniche usate.\n\n## Il tuo prossimo passo\nChiedi al responsabile come si organizzano le ore di pratica e teoria durante l'apprendistato.\n\n## Ti sei esercitato bene e questo è un ottimo esercizio per prepararti al vero colloquio.\n\n### Panoramica per criterio\n\n| | |\n|---|---|\n| Chiarezza | Buono |\n| Pertinenza | Buono |\n| Motivazione | Buono |\n| Autoriflessione | Buono |\n| Comunicazione | Buono |\n| Esempi concreti | Buono |\n| Atteggiamento & impressione | Buono |\n| Preparazione / conoscenza dell'azienda | Buono |\n| Orientamento agli obiettivi | Buono |\n| Gestione delle domande difficili | Buono |\n| Iniziativa | Buono |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-06-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-DIF-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF03-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF03-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF03-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF02-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-08",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 38,
+  "answers": 18,
+  "calls_per_answer": 2.11,
+  "followups": 0,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 84.9
+}

@@ -1,0 +1,244 @@
+{
+  "scenario_id": "S-25",
+  "lang": "de",
+  "dialect": "sg",
+  "difficulty": "easy",
+  "situation": "phone_call_trial",
+  "success_criteria": [
+    "Der Coach benennt die fehlenden Elemente (Begrüssung, Name, Wunschwoche, Notizen) konkret und ohne Abwertung (K1, T1).",
+    "Der Coach nennt zuerst mindestens eine Stärke des Anrufs, z. B. Freundlichkeit oder klares Anliegen (R1).",
+    "Der Coach schlägt vor, den Anruf mit einem Stichwortzettel noch einmal zu üben (R3, K2).",
+    "Der Coach erzeugt keine Angst («So bekommst du nie eine Schnupperlehre») (L2).",
+    "Das Feedback ist kurz und nennt höchstens zwei Verbesserungspunkte (R2)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Jana."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Jana, ich bin Nadine Rüegg, Geschäftsführerin und Berufsbildnerin bei Gipfelstürmer Sport GmbH. Ich freue mich, dich kennenzulernen. Im Rahmen des Vorstellungsgesprächs für die Lehre als Detailhandelsfachmann/-frau EFZ werden wir uns zuerst kennenlernen, deine Motivation und Stärken besprechen, danach ein paar typische Situationen durchgehen und abschliessen mit deinen Fragen an uns. Was kann ich für dich tun?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich ha drü Täg gschnupperet im Sportgeschäft, das isch wirklich mega geil gsii. Sport isch für mich einfach alles, drum freu ich mich mega uf d Lehre. Eher stärke Punkt isch, dass ich als Stürmerin in dr Uni weiss, was Sportler brauchen. Was genau macht dr Alltag als Detailhandelsfachfrau im Sportgeschäft aus?"
+    },
+    {
+      "role": "coach",
+      "text": "Cool, dass du so begeistert bist! Wie bist du eigentlich auf diesen Beruf aufmerksam geworden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich ha’s in dr Schule ghörig, dass’s die Lehre als Detailhandelsfachfrau gibt, und beim Schnuppertag im Spital isch mir schnell klar gsii, dass ich lieber mit Sportartikeln arbeit. Die Uni-Zeit und s’Unihockey händ mir genau die Sachen vorglert, wo Kunden jetzt brauchen, drum passt’s total zu mir. Eifach, weil ich’s kann und’s macht Spass, ha’s mich gfiehlt."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, dass du dich für die Lehre entschieden hast! Hast du schon in anderen Berufen geschnuppert? Welche?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, e paar Schnupperstätt händ beliebt, aber am sportlichen Laden und am Badi-Kiosk isch es am meischtens Spass gsi. Im Spital isch mir am Schluss klar gsii, dass Pflege nöd für mich isch, drum bin ich froh, dass ich im Sport bleib."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach einer tollen Erfahrung! Welche Woche hättest du dir für die Schnupperlehre vorgestellt?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich wär e Woche im Sommer am liebsten gsi, denn dann isch alli Welt uf dr Badi und meh Laid chönne im Sportgeschäft eis und raus. So händ mer gärn gschafft, aber au gärn gsproche, was für die Sachen passt, was mir mega Spass gmacht häd."
+    },
+    {
+      "role": "coach",
+      "text": "Also interessant, wie genau würdest du die Woche planen – hast du bestimmte Daten im Kopf oder eine alternative Woche im Hinterkopf?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich hätt am liebsten die erste Woche im August gschafft, denn dann isch’s einfach mega viel Betrieb uf dr Badi und alli Laid wärde mit Sport beschäftigt, drum wäre es für mich ideal gsii, wenn mer die Woche vereinbart hätt."
+    },
+    {
+      "role": "coach",
+      "text": "Klingt super, dass du dich für die erste Woche im August interessierst! Was möchtest du während der Schnupperlehre bei uns herausfinden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich wüll gern guet merke, wie mer neui Sportartikel sortiert und Jugendliche richtig berät, denn ich weiss, wie’s isch, wenn ma in dr Mannschaft e passendes Schuhwerk braucht. Au wüll ich lerne, wie mer am besten mit Laid umgeht, wenn’s uf dr Badi mega heiss isch und alli nebedane stehn."
+    },
+    {
+      "role": "coach",
+      "text": "Klingt super, dass du dich für uns interessierst! Hast du bereits eine Bewerbung geschickt oder soll ich dir sagen, was wir brauchen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich ha scho e Bewerbung gschickt, aber ich wär gern genau weiss, was ihr für Dokumänt bracht. Immer wenns um Französisch goht, muss ich ehrlich gsait, dass das nöd so mis Ding isch, aber ich versuch das z verbessere, wenns nötig isch. Über de Alltag in dr Filiale und wie mer Teamarbeit macht wär ich meg gärn meh wisse."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, Jana, das ist eine gute Frage – ich freue mich, dass du dich für die Schnupperwoche interessierst. Wie kommst du denn während der Schnupperwoche jeweils zu uns?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich fahre mit dem Zug ab St. Gallen in d Stadt oder nehme s Velo, wenns net regnet. Morgens um acht fahr ich normalerwiis frisch gschtärkt zum erste Tag. Wenn mer e andere Woch cha, passt das für mich au, Hauptsächli dass d Badi viel Betrieb het."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne! Hast du weitere Fragen an uns?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich wüll gern weisse, ob mer die Schnupperwoche am Montag beginned oder ob es flexibler isch. Au interessiert mich, wie oft mer neui Sortimente bekomm, denn ich weiss genau, wie sich neui Laufschuhe fiele chönned."
+    },
+    {
+      "role": "coach",
+      "text": "Die Schnupperwoche kann flexibel vereinbart werden, idealerweise am Anfang deiner Lehre. Wir erhalten neue Sortimente in der Regel zweimal jährlich, im Frühjahr und im Herbst. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich cha am Montag oder Dienstag mitmache, Hauptsächli dass’s uf dr Badi stressig isch. Kann ich in dr Filiale au mit der Kundschaft im Team übe, wie mer neui Schuhe präsentiert? Und wärde d Lehrlinge gschützt, wenn’s voll isch?"
+    },
+    {
+      "role": "coach",
+      "text": "Ja, du kannst im Team mit der Kundschaft üben, wie neue Schuhe präsentiert werden – wir bieten dir dafür gezielte Schulungen und praktische Einarbeitungszeiten. Bei vollem Laden werden die Lehrlinge nicht überfordert; sie arbeiten unter Aufsicht und erhalten Unterstützung. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich wüll gern wisse, ob mer am Schluss e paar Zeid zum Testen hett, ob neui Schuhe wirklich passen, und ob mer d Lehrlinge för d Teamarbeit au gemeinsam übt. Au interessiert mich, ob mer a de Samschtig neui Sortimente bringt, denn d Badi isch an den Täg oft ganz voll."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne! Bei uns gibt’s am Ende immer Zeit zum Anprobieren – die neuen Schuhe passen perfekt, wenn sie bequem sitzen. Und ja, wir üben Teamarbeit gemeinsam, zum Beispiel beim Schaufenster gestalten oder beim Test-Wochenende im Alpstein. An Samstagen bringen wir oft neue Sortimente, besonders im Laufsport und Bergsport. Möchtest du mehr über die nächsten Schritte erfahren?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich wär meg gärn wisse, wie lang die Schnupperwoche dauert und ob mer am Schluss e Zertifikat oder e Ausweis über d Erlebnis bekomm. Und wann fange d Lehrlinge normalerwiis aa, denn ich wüll meg früh e Teil vo dr Mannschaft sei."
+    },
+    {
+      "role": "coach",
+      "text": "Die Schnupperwoche dauert zwei Tage im Verkauf, inklusive Samstag. Ein Zertifikat oder Ausweis über die Teilnahme erhalten die Lernenden nicht. Die Lehrlingsausbildung startet im August 2027, also ab dem 1. August. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich wüll meg wisse, ob mer am Samschtig, wenn d Badi voll isch, extra Personal zur Hilf hot, oder ob mer d Lehrlinge zerscht übe muess, bevor der Druck gschtige cha. Ich find, es isch wichtig, dass mer sich s Team erst traut, wenn s am Stress isch. Und ich wär meg gärn wissen, ob mer zerscht im Verkauf übt oder au im Lager, denn ich weiss, wie das mit Lagerarbeit isch, wenn d Sache schnell rotiered."
+    },
+    {
+      "role": "coach",
+      "text": "Am Samstag, wenn die Badi voll ist, haben wir zusätzliches Personal, damit die Lehrlinge sich erst in ruhigeren Situationen einleben können. Wir üben zunächst im Verkauf, bevor Lagerarbeiten kommen. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich wär meg gärn wisse, ob mer am Montag oder Dienstag am Schluss e paar Minute Pause hot, dass mer uns erst richtig einlebe cha, denn d Badi isch d Mitti witer voll. Des wär meg wichtig für d Frische, au wenn ich weiss, dass mer am Samschtig extra Personal hot. Und ich wär meg au meg gärn wisse, ob mer zwüsche de Sortimente immer e kurze Pause hot, denn ich weiss, dass ich es sonst überforderet fiele cha."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne! Dürfen wir dich kontaktieren, falls wir weitere Fragen haben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich wär meg gärn wisse, ob mer am Schluss e paar Minute Pause hot, dass mer uns erst richtig einlebe cha – denn d Badi isch d Mitti witer voll. Und ob mer zwüsche de Sortimente immer e kurze Pause hot, denn ich weiss, dass ich es sonst überforderet fiele cha. Danke, dass mer mir so offen über alles gschribe hot!"
+    },
+    {
+      "role": "coach",
+      "text": "Vielen Dank für dein offenes und ehrliches Gespräch! Es war eine Freude, dich kennenzulernen. Du hast gezeigt, dass du dich für Sport begeisterst und gerne im Team arbeitest – genau das, was wir bei Gipfelstürmer Sport schätzen. Wir freuen uns sehr, dich näher kennenzulernen und hoffen, dass wir dich als zukünftige Detailhandelsfachfrau bei uns begrüßen dürfen. Ja, du kannst uns gerne kontaktieren, falls du noch Fragen hast – wir freuen uns auf deine Rückmeldung.\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Sportgeschäft Schnupper» zeigt echtes Interesse an der Branche.\n- «Passendes Schuhwerk braucht» verknüpft eigene Erfahrung mit Kundenbedürfnissen.\n- «Badi voll Betrieb» nennt konkrete Situation, die für die Lehre relevant ist.\n\n## Daran kannst du arbeiten\n- «Pflege nöd für mich» könnte mit einer kurzen Erklärung ergänzt werden, warum Sportartikel besser passen.\n- «Zeid zum Testen Schuhe» könnte mit einem Beispiel aus der eigenen Sportpraxis veranschaulicht werden.\n- «Pause am Schluss» könnte mit einer konkreten Frage nach Zeitfenstern präziser formuliert werden.\n\n## Dein nächster Schritt\nSchreibe eine kurze Notiz, in der du deine Lieblingswoche im August mit konkreten Daten (z.B. 1.–7. August) und einer kurzen Begründung für diesen Zeitraum festhältst.\n\n## Du hast heute viel Übung gemacht – das war wertvoll für deine Zukunft.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Dazu gab es im Gespräch keine Aussage |\n| Eigeninitiative | Sehr gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-OTH-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-02",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-03",
+      "level": 2,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-09",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-09",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-09",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-08",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-08",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-08",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 32,
+  "answers": 15,
+  "calls_per_answer": 2.13,
+  "followups": 1,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 78.6
+}

@@ -1,0 +1,328 @@
+{
+  "scenario_id": "S-16",
+  "lang": "fr",
+  "dialect": null,
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Le coach mène l'entretien et le feedback en français et tutoie la candidate.",
+    "Le coach questionne les exagérations de façon respectueuse, sans humilier ni accuser de mensonge.",
+    "Le feedback reconnaît d'abord le talent et la pratique réelle (tresses, tutoriels) puis nomme le point d'autoréflexion avec une citation (R1, K1).",
+    "Le coach évalue le comportement (formulations, réaction à la critique) et non la personnalité (B1, B3).",
+    "Le feedback propose un exercice concret pour parler d'une faiblesse avec un pas d'apprentissage (K2, R3)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Bonjour, je suis Elif."
+    },
+    {
+      "role": "coach",
+      "text": "Bonjour Elif, je suis Valérie Clerc, patronne du salon Mèche & Miroir à Fribourg, et je vais t’accompagner tout au long de cette rencontre pour mieux te connaître et voir si nous sommes faites l’une pour l’autre. On va commencer par échanger sur toi, ta motivation, tes forces et quelques situations vécues, avant de passer aux questions, et on a environ une demi-heure devant nous. Comment ça va aujourd’hui ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, ça va super bien, merci ! J'adore coiffer mes amies et publier des tutoriels, c'est trop bien. J'ai vraiment envie d'apprendre le métier de coiffeuse CFC ici au salon, parce que j'ai déjà plein d'idées et j'ai adoré mon stage."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as l'air motivée, c'est encourageant. Parle-moi un peu de toi."
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, j'ai 15 ans et j'étudie au Cycle d'orientation, en classe générale 11H, mes matières préférées c'est les arts visuels, l'allemand et le français, et je poste des tutoriels de coiffure sur Instagram avec mes amies, et j'ai fait un stage de coiffeuse où on m'a dit que ma tresse était trop belle."
+    },
+    {
+      "role": "coach",
+      "text": "Joli profil Instagram, ça montre que tu as déjà du talent ! Pourquoi as-tu choisi ce métier ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, depuis douze ans je coiffe mes amies pour leur soirée, et quand j'ai fait mon stage au salon, la cliente elle m'a dit que ma tresse était trop belle, donc j'adore ça et j'ai envie d'apprendre toutes les techniques pour vraiment aider les gens et me sentir utile."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as déjà une belle expérience en coiffant tes amies pour leurs soirées, c'est bien. Quelles expériences as-tu déjà faites dans ce domaine ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, j'ai fait un stage de coiffeuse au salon où j'ai lavé des cheveux, fait des tresses et une coloration, et une autre fois j'étais esthéticienne pour une journée au institut de beauté, et mes amies m'appellent la coiffeuse officielle de l'école pour les fêtes et la soirée de fin d'année."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as vraiment montré de la polyvalence avec ces différents rôles, c'est appréciable. De quoi es-tu particulièrement fier ou fière ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, j'suis super fière de mes 3000 abonnés sur Instagram et des tresses que j'ai faites aux fêtes de l'école, parce que c'est des gens qui m'apprécient vraiment et me suivent. J'adore le contact avec les clientes et que mes amies me disent que j'peux coiffer n'importe qui."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as une belle confiance en toi et tu sais créer du lien avec les clientes, c'est un vrai atout. Quelles sont tes plus grandes forces ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, j'ai une bonne tête artistique surtout pour les tresses et le maquillage, j'aime bien parler avec les gens et c'est trop bien d'avoir les deux langues, français et allemand, alors que c'est utile ici à Fribourg."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as déjà parlé de tes tresses et de ton côté client, peux-tu me décrire comment tu as combiné ces deux aspects lors d'une coiffure particulière ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, j'ai fait une tresse française pour la soirée de fin d'année, j'ai pris du temps à bien faire les nœuds et j'ai discuté avec les filles pendant que je coiffais, elles étaient trop contents et m'ont pris plein de photos, donc j'ai vraiment montré mon côté client et mon talent en même temps."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as vraiment su créer une ambiance positive et montrer ton talent, c'est appréciable. Comment réagis-tu à la critique ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, j'avoue que ça me pique un peu quand on me dit que j'ai exagéré ou que j'ai mal fait quelque chose, mais je sais que c'est pour m'aider à mieux faire, donc je m'efforce de prendre les conseils et d'apprendre de mes erreurs, surtout en ce qui concerne l'hygiène et les bases que je sais encore pas faire trop bien."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as une belle ouverture à l’écoute et à l’amélioration. Un bon contact avec la clientèle, c’est écouter ses besoins, comprendre son style et son quotidien, et lui proposer des solutions qui correspondent vraiment à ce qu’elle recherche. Un conseil personnalisé, c’est prendre le temps d’analyser ses cheveux, son visage, son mode de vie, et lui suggérer des soins, des coupes ou des colorations qui vont non seulement lui plaire, mais aussi prendre soin de sa chevelure sur le long terme."
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, franchement j'ai adoré le stage de coiffeuse, j'avais l'impression de bien m'entendre avec les clientes et de faire des trucs que j'adore, même si j'avoue que j'oublie parfois les règles d'hygiène comme on m'a dit."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as mentionné que tu oublies parfois les règles d'hygiène, peux-tu me donner un exemple précis où tu as appliqué une règle d'hygiène ou amélioré ton contact avec une cliente ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, euh... pendant le stage au salon, j'ai appris à désinfecter les outils après chaque cliente et à ranger ma station de travail, et quand une cliente avait des cheveux très gras, j'ai pris le temps de lui expliquer comment bien les laver et lui ai donné des produits pour qu'elle garde ses cheveux en bonne santé, ce qui l'a trop touchée et elle est revenue pour d'autres services."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as bien compris les gestes d'hygiène et la relation client, c'est appréciable. Quelle importance a pour toi une apparence soignée ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, j'adore une apparence soignée, ça me donne confiance et ça montre que j'ai du respect pour moi et pour les autres, surtout quand je coiffe des amies ou des clientes, c'est trop important pour moi d'avoir l'air professionnelle et propre, même si parfois je dis que j'ai déjà tout compris mais que j'ai encore des trucs à apprendre comme l'hygiène."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as bien compris l'importance de l'apparence professionnelle, c'est appréciable. Comment est-ce que tu vis le fait de travailler debout et le samedi ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, j'adore être debout, ça me fait bouger et ça ne me fait pas mal trop la tête, et le samedi c'est trop cool pour coiffer mes amies et leurs cheveux pour la soirée de fin d'année, ça me fait super plaisir et ça me motive encore plus."
+    },
+    {
+      "role": "coach",
+      "text": "Tu sais que l'avis d'une collègue est important, surtout dans un salon où on travaille en équipe. Tu écoutes ce qu'elle te dit, tu demandes des précisions sur ce qui ne va pas selon elle, et tu proposes de refaire le travail ou de trouver une solution ensemble. Qu'est-ce que tu ferais dans ce cas ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, si une collègue me dit que j'ai mal positionné les mèches ou que le brushing est trop lourd, je lui demanderais comment corriger ça, je prendrais le temps de refaire le geste et on vérifierait ensemble que la cliente soit trop contente. J'essaie vraiment de ne pas me mettre en colère quand on me corrige, même si c'est un peu grave quand ça me pique un peu, mais c'est pour mieux apprendre."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as bien compris comment gérer les critiques, c’est appréciable. Qu’est-ce que ton enseignant ou ton enseignante de classe dirait de toi qui ne te plairait peut-être pas trop ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, mon prof de maths dirait que j'exagère un peu mes compétences quand je fais les tutoriels, et il dirait que j'ai besoin de mieux accepter quand on me corrige, même si j'ai vraiment du talent pour les tresses et le maquillage."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as l'air de bien te connaître, c'est rassurant. Quelles qualités une personne en formation devrait-elle avoir dans ce métier ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, je pense qu'il faut être créatif et bien comprendre les gens, surtout pour les coiffer et leur faire plaisir, et être honnête sur ses faiblesses même si on est sûr d'avoir du talent comme moi."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as déjà mentionné que tu es honnête sur tes faiblesses, mais peux-tu me donner un exemple précis où tu as dû être créatif pour satisfaire une cliente ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, j'ai une fois dû inventer une coiffure quand une cliente voulait quelque chose de spécial pour une fête, j'ai mélangé des tresses et des boucles pour lui faire une coiffure unique qui lui a fait trop plaisir, et elle est revenue juste après pour me remercier; c'était trop bien et ça m'a montré que quand on pense un peu plus, on peut vraiment rendre les gens fous de joie, même si c'est un peu nerveux au début."
+    },
+    {
+      "role": "coach",
+      "text": "C'est une belle initiative, ça montre de l'initiative et de la créativité. Quels sont tes objectifs professionnels ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, j'aimerais devenir coiffeuse CFC, ouvrir un petit salon un jour ou faire les coiffures pour les défilés, parce que j'adore vraiment créer des looks et que j'ai envie de devenir encore meilleure; j'ai déjà commencé et ça me motive trop, même si j'ai encore besoin d'apprendre les bases pour être parfaite."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as l'air motivée, c'est un bon point. Est-ce que tu as des questions sur ce qu'on attend des personnes en formation ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, j'aimerais savoir s'il y a beaucoup de cours de théorie ou si c'est surtout pratique comme au salon quand j'ai fait mon stage, parce que j'ai vraiment hâte de mettre la main à la pâte et de faire des coiffures réelles."
+    },
+    {
+      "role": "coach",
+      "text": "La formation comprend à la fois des cours théoriques sur les produits, les techniques et la clientèle, ainsi que beaucoup de pratique au salon avec les clients réels. Tu as encore une autre question ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, j'aimerais savoir si on apprend aussi à gérer un salon, comme les rendez-vous et les prix, ou si c'est juste la technique qui compte; ça m'intéresse vraiment d'apprendre tout le métier, pas seulement couper des cheveux."
+    },
+    {
+      "role": "coach",
+      "text": "On apprend tout le métier : la technique, la gestion des rendez-vous, les tarifs et le service client, car nous formons une apprentie tous les trois ans dans une petite équipe où chacun participe à la vie du salon. Tu as encore une autre question ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, ben franchement, j'aimerais savoir si y'a des cours pour apprendre à gérer les réseaux sociaux et promouvoir le salon, parce que j'ai déjà pas mal de gens qui suivent mes tutoriels et j'pensais que ça pouvait aider à attirer plus de clients; c'est un truc où j'ai déjà un petit peu d'expérience et j'aimerais le développer."
+    },
+    {
+      "role": "coach",
+      "text": "Bien sûr, on ne propose pas de cours spécifiques pour les réseaux sociaux, mais l'apprentissage se fait sur le tas avec la clientèle et les projets du salon. Est-ce qu'il y a encore quelque chose que tu aimerais nous dire ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Valérie, j'aimerais juste dire que j'ai déjà commencé à faire des tutoriels sur Instagram et que j'pensais que ça pouvait aider le salon à attirer plus de clientes, alors si y a moyen de l'intégrer dans la formation, c'rait trop bien; j'suis prête à apprendre à gérer tout ça, même si mon stage m'a appris qu'la base reste la technique."
+    },
+    {
+      "role": "coach",
+      "text": "Merci beaucoup pour ta réflexion et ton initiative, c'est très appréciable. Nous allons étudier comment intégrer tes idées dans la formation, et ton stage t’a bien préparée à la technique. À bientôt pour le contrat d’apprentissage.\n\n---\n**Pour terminer : tu reçois maintenant ton feedback personnel.**\n\n## Tes points forts\n« J'adore coiffer mes amies et publier des tutoriels » – montre une passion pour la coiffure et une initiative numérique.\n« j'ai fait un stage de coiffeuse où on m'a dit que ma tresse était trop belle » – expérience concrète valorisée par un feedback positif.\n\n## Ce que tu peux encore améliorer\n« j'oublie parfois les règles d'hygiène comme on m'a dit » – besoin de renforcer la conscience des règles d'hygiène.\n« j'aimerais savoir s'il y a beaucoup de cours de théorie » – préparer des questions plus spécifiques sur le contenu de la formation.\n\n## Ta prochaine étape\nRévise les règles d'hygiène avec des exemples concrets de ton stage et note les questions précises sur les cours théoriques avant ton prochain entretien.\n\n## Tu es prêt-e à continuer à te préparer avec confiance et à développer tes compétences.\n\n### Vue d'ensemble par critère\n\n| | |\n|---|---|\n| Clarté | Bien |\n| Pertinence | Bien |\n| Motivation | Bien |\n| Réflexion sur soi | Bien |\n| Communication | Bien |\n| Exemples concrets | Bien |\n| Attitude & impression | Très bien |\n| Préparation / connaissance de l'entreprise | Bien |\n| Orientation vers les objectifs | Très bien |\n| Gestion des questions difficiles | Bien |\n| Initiative | Bien |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF05-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-08",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-01",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF05-01",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF05-01",
+      "level": 4,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF05-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF05-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-08",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-DIF-09",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-04-09",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-04-09",
+      "level": 3,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 44,
+  "answers": 21,
+  "calls_per_answer": 2.1,
+  "followups": 3,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 110.2
+}

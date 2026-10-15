@@ -1,0 +1,300 @@
+{
+  "scenario_id": "S-08",
+  "lang": "de",
+  "dialect": "bs",
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach reagiert auf emotionale Momente ruhig und bietet eine Pause an, ohne sie zu bewerten (M1).",
+    "Der Coach fragt nicht nach Gesundheitsdetails der Grossmutter und bewertet den Familienhintergrund nicht (L1).",
+    "Das Feedback würdigt die Motivation mit einem konkreten Beispiel aus der Schnupperlehre (K1).",
+    "Der Coach spricht Abgrenzung/Unterstützung nach belastenden Situationen als Lernfeld an, ohne Diagnosen (B3).",
+    "Das Feedback schliesst mit einem konkreten nächsten Schritt und einem ermutigenden Satz (R3, A1)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Mia."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Mia, ich bin Ursula Meier, Berufsbildnerin Pflege im Alters- und Pflegezentrum Rheinblick. Wir lernen uns heute kennen, reden über deine Motivation und Stärken, und ich stelle dir ein paar Situationen vor, in denen du jemandem geholfen hast. Erzähl mir doch, was dich an einer Schnupperlehre in unserer Pflege begeistert. Wie geht es dir heute?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich finde’s mega spannend, weil ich’s mit de ältere Persona wirklich am liebsten mache, und d Situation, als d Dame mit Demenz verwirrt war, hat’s mir nooch wirklich am Herz gange, das isch mir echt nooch gange."
+    },
+    {
+      "role": "coach",
+      "text": "Das ist wirklich schön von dir, dass dich solche Momente so sehr berühren. Erzähl uns etwas über dich."
+    },
+    {
+      "role": "candidate",
+      "text": "Ich heisse Mia, bin 15 und geh in d dritte Klasse Sekundarschule E-Zug. Mathe isch für mich immer so e bissel schwierig, aber im Pflegezentrum beim Frühstück helfen und mit de Bewohner spazieren geh, das macht mir Spass. Mit meiner Grossmutter helf ich ihr nach de Schule beim Einkaufen und Kochen, des ärch mir wichtig."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt toll, Mia! Ich freue mich, dass du dich für diesen Beruf interessiert. Welche Erfahrungen haben dein Interesse an diesem Beruf geweckt?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich ha durch d Schnupperlehre im Alters- und Pflegezentrum gsehn, wie wichtig es isch, einfach bei de Leuten z sein, und d Situation mit dr verwirrte Dame isch mir nooch wirklich nooch gange. Durch d Hilf für d Grossmutter z hause fühle ich mich stark, wenn ich für andere schaffe, und des isch genau das, was im Pflegebereich wichtig isch. Meine Mathe-Sorgen mächde mich zwar nervös, aber ich will lerne, was nötig isch, zum sicher z wirke."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt nach einem starken Motiv, danke für deine Offenheit. Warum hast du dich für diesen Beruf entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich will genau so für andere da sein, wie ich es für meine Grossmutter tue, und im Pflegeheim erinnere ich mich jedes Mal an die verwirrte Dame – des macht mir klar, dass Geduld und Ruhe das All hier Wichtigs sind. In Mathe hab ich zwar immer e bissel Stress, aber wenn ich lerne, wie me die Medikamente rechnu müess, will ich das sicher mach, dafür brauch ich e klari Unterstützung. Meine Hobbys mit Tanz, Backen und Zeit mit der Grossmutter zeig, dass ich ruhig bleib und mich auf andere konzentriere kann, genau wos im Alltag wichtig isch."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Motivation ist wirklich beeindruckend, Mia. Warum möchtest du mit Menschen arbeiten, die Unterstützung oder Pflege brauchen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, ich mag's einfach, für d Grossmutter z helfen und se glücklich z sehe, und im Pflegeheim will ich genau so für d Bewohnerinnen und Bewohner da si, wenn se verwirrt oder traurig si – einfach ein bisschen Ruhe und Zuneigung gebbe, das isch für mich alles."
+    },
+    {
+      "role": "coach",
+      "text": "Das ist ein sehr schöner Gedanke, Mia. Wie gehst du mit belastenden oder emotionalen Situationen um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich versuch einfach ruh z blei, wie mit dr Grossmutter, wenn es was gibt, und sag dann e Kollegin Bescheid, dass ich e Moment brauche – das hilft mir, mich z'finde. In Mathe mache ich mir e Plan, wie ich die Rechnung Schritt für Schritt schriebe, dass ich's sicher mache. Wenn d Situation zu viel wird, versuch ich, das nach der Arbeit abzuschütteln, damit's mir nach hause net nachläuft."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt nach einer guten Strategie, danke, dass du das teilst. Wie gehst du mit körperlicher Nähe im Berufsalltag um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich mache mir kei grossi Sache dra, wenns dämol en Händedruck oder e Schulterklatsche braucht, das isch im Pflegebereich normal. Bei dr verwirrte Dame im Zentrum isch es ganz wichtig gsi, ruhig z blei, drum versuch ich, das einfach als Teil vo dr Arbeit z akzeptiere – und das mach ich gern, wenns nötig isch. In Mathe mache ich mir e Plan, wie ich Schritt für Schritt vorgehe, dass ich sicher bin."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt gut, dass du Ruhe bewahrst, das ist im Pflegebereich wichtig. Was bedeutet für dich Diskretion im Umgang mit Patientendaten?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich versteh, dass Patientendaten privat s sein muesse, drum sags ich nix unn lass alles bei de Profis. Wenn ich mal e Sache vergess, versuch ich, das sofort z'kläre, das mach ich gern, sonst isch mir das e grosses Problem. Für mich isch es einfach e Selbstverständlichkeit, dass das respektiert wird."
+    },
+    {
+      "role": "coach",
+      "text": "Wie hast du in einer konkreten Situation jemanden diskret unterstützt oder Informationen geschützt?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich ha im Alterszentrum dr verwirrte Dame e Ohr gschtellt, ohne dass anderi es mitbekumme, und ha ihre Unsicherheit schliesslich ruhig gewartet, bis d Pflegefachfrau zuegschtosse isch – das isch für mich e ganz natürliche, diskrete Art, da z sein. In Mathe versuch ich, es Heft z führe, wo alli Berechnige dokumentiert si, damit ich im Zweifel alles klär cha, und wenn ich mal unsiicher bin, frag ich d Kollegin höflich noch, dass ichs sicher mache."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt nach einer sehr einfühlsamen und verantwortungsvollen Herangehensweise. Wie gehst du konkret mit unregelmässigen Arbeitszeiten und Schichtarbeit um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich versuch einfach, morgens früh z schlafe, dass ich frisch ins Zentrum komme, und wenn d' Schicht lang isch, mach ich zwüsche derno e Pause zum essen und zum Atem holen – das hilft mir, fit z blei. Bei unregelmässige Zeite versuch ich, e ruhigs Rhythmus z hätt, z. B. am Samstag immer e fixi Abendschicht, dass ich weiss, was uf mich zukummt. Wenn d' Schicht unerwartet kürzer oder länger wird, richd ichs einfach am nächste Tag ganz kurz im Kopf ab."
+    },
+    {
+      "role": "coach",
+      "text": "Ich verstehe, dass du mit klaren Abläufen und Routinen gut arbeitest. Wie gehst du konkret mit Kritik um, wenn dir jemand etwas vorwirft oder du selbst Fehler bemerkst?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich sage e Kollegin ruhig, dass ich gern versteh will, was genau kritisiert wird, und versuch e Plan z mache, wie ichs besser mache – das hilft mir, dasss net wie a Blamage klingt. Wenns e Fehler isch, sage ich eifach, dasss passiert isch und was ich zum nächschte mache will, und frag, obs e Lektion für uns beide isch. Ehrlich gsait, ich machs zwar gern, aber wenns zu hart wird, versuch ich kurz Pause z nehme, damit ich wieder klar denk."
+    },
+    {
+      "role": "coach",
+      "text": "Ich verstehe, dass du offen und konstruktiv mit Herausforderungen umgehst. Stell dir vor, deine Berufsbildnerin gibt dir einen Auftrag, den du nicht ganz verstanden hast. Sie ist gerade sehr beschäftigt. Wie gehst du vor?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich frag d' Berufsbildnerin ruhig, ob ichs e paar Mol wiederholen darf, das hilft mir, dasss ned falsch geht. Wenns e paar Zeite benötigt wird, sage ich eifach, dasss noch e paar Minute braucht, dasss nit wie e Störig wird. Ich machs gern langsam, wenns nötig isch, das bringt besser Ergebnis."
+    },
+    {
+      "role": "coach",
+      "text": "Das ist ein sehr verantwortungsvoller und einfühlsamer Ansatz, den du beschreibst. Wie gehst du konkret vor, um Konflikte mit Kolleginnen, Bewohnerinnen oder anderen Personen zu lösen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich versuch e ruhige Stimme z behalte und erst z hör, was d' ander Person meint, bevor ich antwort. Wenn d' Bewohnerin unruhig wird, bleib ich geduldig, helf ihr mit einer ruhige Stimme zum Beispiel beim Wasser holen oder beim Sitzen. Bei Streit mit Kollegin red ich vor allem über d Situation, ohne anklagend zu werre, und suche gemeinsam e Lösung. Ehrlich gsait, ich versuch es immer, denn es isch wichtig, dass alli froh sind."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Ehrgeiz, Geduld und deine lösungsorientierte Art sind wirklich beeindruckend. Was möchtest du in den nächsten Jahren noch besonders weiterentwickeln?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würd gern mehr Selbstvertrauen in Mathe kriegen, damit ich Medikamente genau rechnen kann, ohne Angst davor z ha. Außerdem will ich lerne, besser Abgrenzung z mache, damit die Arbeit net nach Hause z ziehe, wenn d' Situationen schwer sin. Für Konflikte will ich noch mehr ruhige Strategie übe, damits im Team immer gut läuft."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt nach tollen Zielen für deine Zukunft! Welche Weiterbildung könntest du dir nach deiner Lehre als Fachmann/Frau Gesundheit vorstellen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würd gern e Spezialisierung in Geriatrie mache, weil d' Grossmutter zeigt, wie wichtig es isch, ältere Mensche mit Herzlichkeit z behandel. Noch will ich e Zertifikat zum Umgang mit Demenzpatienten kriegen, damits mir mehr Sicherheit gibt. Wenns gange isch, schau ich mir eventuell e Pflegefachfrau HF an, aber erst wenns Lehrdiplom isch."
+    },
+    {
+      "role": "coach",
+      "text": "Ich finde deine Motivation wirklich beeindruckend, das zeigt echtes Engagement. Hast du Fragen zu unseren Erwartungen an Lernende?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich frage, wie viel Zeit für Hausaufgaben und Prüfungen reserviert isch, denn es isch wichtig für mich, dasss net zu viel wird, und ich will alles schaffä. Außerdem will ich wisse, ob's regelmässigi Feedback gäge wird, damit ich mich verbessere kann."
+    },
+    {
+      "role": "coach",
+      "text": "Wir erwarten, dass du deine Lernzeit gut organisierst, regelmäßig an den Lernstudio-Stationen arbeitest und dich aktiv an der Betreuung der Bewohner beteiligst. Feedback wird dir durch deine Berufsbildnerin und die Pflegedienstleitung gegeben. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich frage, ob's im Team regelmässig Übige oder Workshops gäge wird, wie's mit schwierige Bewohnerinne oder belastende Situationen umgehe, denn das hilft mir, mich besser z vorbereite. Ich würd gern wisse, ob's e ruhigs Plätzchen gäge wird, wo ich kurz atme kann, wenn's zu viel wird – das hilft mir, dass ich den Überblick behalte."
+    },
+    {
+      "role": "coach",
+      "text": "Im Team führen wir regelmässig Workshops zu schwierigen Bewohnerinnen und belastenden Situationen durch, und wir haben ein ruhiges Reflektionszimmer für kurze Atemübungen. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würd gern wissen, wie oft die Ausbildung in die Praxis geht, denn ich lieg gern aktiv in der Betreuung vo de Bewohnerinne, und das hilft mir, mich besser z vorbereite. Außerdem interessiert mich, ob’s e klari Struktur für die Wochenplan gäge wird, damit ich weiss, was erwartet wird. Ich würd das gern wissen, dass ich mich mental gut vorbereite kann."
+    },
+    {
+      "role": "coach",
+      "text": "Weil wir jährlich vier FaGe-Lernende ausbilden und die Schnupperlehre drei Tage auf einer Wohngruppe umfasst, geht die Ausbildung sehr praxisnah. Den genauen Wochenplan erstellen wir gemeinsam mit den Lernenden und dem Team, sodass du immer weisst, was erwartet wird. Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würd gern wissen, wie oft’s im Team durchgängigi Ruhepausen gäge wird, denn ich brauch zwische de Einsätze immer e Moment zum Atem holen, sonst verspannt sich alles. Außerdem interessiert mich, ob’s e klari Abgrenzungsübige gäge wird, wo ich lerne, Persönliches net mit de Arbeit z vermische, denn sonst zieh ich d’ Probleme zuhause immer noch mit. Ich muss eim Stress vermeide, dass ich am Abend nimmer schlafe kann."
+    },
+    {
+      "role": "coach",
+      "text": "Vielen Dank für dein offenes Gespräch und deine ehrlichen Wünsche. Wir legen großen Wert auf regelmäßige Ruhepausen und klare Abgrenzungen zwischen Beruf und Privatleben – das ist Teil unserer Ausbildungsphilosophie. Die genauen Pausenzeiten und die Struktur der Abgrenzungstrainings besprechen wir gerne im persönlichen Gespräch oder in deinem Lehrvertrag. Wir freuen uns auf die Möglichkeit, dich kennenzulernen.\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Ich finde’s mega spannend, weil ich’s mit de ältere Persona wirklich am liebsten mache» – zeigt echte Begeisterung für die Arbeit mit älteren Menschen.\n- «Ich heisse Mia, bin 15 und geh in d dritte Klasse Sekundarschule E-Zug» – klare, strukturierte Vorstellung mit persönlichen Alltagserfahrungen.\n- «Ich will genau so für andere da sein, wie ich es für meine Grossmutter tue» – starke persönliche Verbindung zwischen häuslicher Pflege und Berufswunsch.\n\n## Daran kannst du arbeiten\n- «Ich ha durch d Schnupperlehre im Alters- und Pflegezentrum gsehn, wie wichtig es isch, einfach bei de Leuten z sein» – Formulierung noch präziser, z. B. «Ich habe während der Schnupperlehre erkannt, wie wichtig es ist, bei den Menschen zu sein.»\n- «Ich würd gern mehr Selbstvertrauen in Mathe kriegen, damit ich Medikamente genau rechnen kann, ohne Angst davor z ha» – Ziel konkretisieren, z. B. «Ich möchte meine Rechenfähigkeiten in der Medikamentenabgabe verbessern, um sicherer zu wirken.»\n\n## Dein nächster Schritt\nÜbe eine präzise Zusammenfassung deiner Motivation mit zwei konkreten Alltagssituationen (z. B. Schnupperlehre und häusliche Pflege).\n\n## Du hast heute sehr gut geübt, wie man Begeisterung und konkrete Beispiele klar verknüpft. Weiter so!\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Gut |\n| Eigeninitiative | Sehr gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF21-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF21-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF21-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF21-03",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF21-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF21-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-10",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-03",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 40,
+  "answers": 19,
+  "calls_per_answer": 2.11,
+  "followups": 1,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 110.4
+}

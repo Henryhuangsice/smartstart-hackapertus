@@ -1,0 +1,300 @@
+{
+  "scenario_id": "S-20",
+  "lang": "de",
+  "dialect": null,
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach bewertet das Deutschniveau nicht (Grammatik, Wortschatz, Aussprache) und zieht dafür keine Punkte ab (L1).",
+    "Der Coach verwendet einfache, kurze Sätze und erklärt Begriffe, wenn nachgefragt wird (S1, S3).",
+    "Der Coach fragt nicht nach Fluchtgeschichte oder Familie.",
+    "Das Feedback nennt das Lieferschein-Beispiel oder ein anderes konkretes Beispiel als Stärke (K1).",
+    "Das Feedback ist in einfacher Sprache verfasst und endet ermutigend (A1)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Amina."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Amina, ich bin Daniela Hofer, deine Berufsbildnerin Logistik bei Hauenstein Logistik AG in Olten. Ich werde dich heute in drei Schritten kennenlernen, deine Motivation und Stärken hören, ein paar Situationen besprechen und dann deine Fragen beantworten. Hast du den Weg zu uns gut gefunden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich bin pünktlich hier, danke. Ich habe mit dem Zug und dem Bus gut navigiert, kein Problem. Ich bin ein bisschen nervös, aber ich freue mich schon, hier zu sein."
+    },
+    {
+      "role": "coach",
+      "text": "Keine Sorge, das ist völlig normal, dass du nervös bist. Erzähl gerne, ob das hier dein erstes Bewerbungsgespräch für eine Lehrstelle ist."
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, das ist mein erstes richtiges Bewerbungsgespräch für eine Lehrstelle. Ich bin ein bisschen aufgeregt, aber ich habe mich gut vorbereitet. Ich habe schon ein paar Schnupperlehren gemacht, deshalb habe ich eine Vorstellung davon, wie das hier ist. Ich hoffe, ich kann zeigen, was ich kann."
+    },
+    {
+      "role": "coach",
+      "text": "Ich freue mich, dich kennenzulernen und deine Motivation zu hören. Erzähle mir bitte, wie würdest du dich in wenigen Sätzen beschreiben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich komme aus Olten, habe drei Jahre in der Schweiz gelebt und lerne gerade Deutsch als Zweitsprache, obwohl ich schon viel Fortschritte mache. In den Schnupperlehren habe ich gesehen, dass ich gerne Ordnung mache und genau arbeiten kann, vor allem im Verteilzentrum mit dem Scanner. Ich bin motiviert, eine Lehre zu machen, entweder EFZ oder EBA, und helfe auch zu Hause meinen jüngeren Geschwistern bei den Hausaufgaben."
+    },
+    {
+      "role": "coach",
+      "text": "Ich finde es spannend, wie alles im Lager geordnet und schnell zu den Kunden gebracht wird. Das gefällt mir. Warum hast du dich für diesen Beruf entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich finde Logistik spannend, weil ich Ordnung mag und gerne mit Zahlen arbeite, das habe ich in der Schnupperlehre im Verteilzentrum gemerkt. Meine Geschwister brauchen Hilfe und ich helfe gerne, deshalb suche ich auch eine Arbeit, in der ich Verantwortung übernehmen kann. Ich habe schon Fehler gefunden, die niemand sonst gesehen hat, das hat mir viel Selbstvertrauen gegeben. Ich möchte lernen, wie man Waren effizient sortiert und die Kunden zufrieden stellt."
+    },
+    {
+      "role": "coach",
+      "text": "Ich finde das spannend, dass Waren effizient von A nach B gelangen. Was interessiert dich daran?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich finde es spannend, dass alles systematisch läuft und die Zahlen immer stimmen müssen, sonst gibt’s Probleme. Im Verteilzentrum habe ich gemerkt, dass ich genau arbeiten kann, und das gefällt mir. Außerdem möchte ich wissen, wie man die Kunden zufrieden stellt, damit sie immer wieder kommen. Ich bin bereit, jeden Tag ein bisschen besser zu werden."
+    },
+    {
+      "role": "coach",
+      "text": "Ich finde das toll, dass du genau arbeitest und dich weiterentwickeln möchtest. Erzähl mir doch, welche Erfahrungen du bisher im Umgang mit Lager- oder Transportprozessen gesammelt hast."
+    },
+    {
+      "role": "candidate",
+      "text": "Ich habe im Verteilzentrum drei Tage mit dem Scanner Waren kommissioniert und Paletten beschriftet, dabei einen Fehler auf einem Lieferschein entdeckt, und im Detailhandelsgeschäft Regale eingeräumt, obwohl der Kundenkontakt noch schwierig war. Im Altersheim habe ich Wäsche und Küche unterstützt, und im Brockenhaus wöchentlich Spenden sortiert und das Lager aufgeräumt. Das zeigt mir, dass ich Ordnung mag und gerne Aufgaben genau erledige, auch wenn ich noch ein bisschen lerne."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt sehr gut, was du bisher gemacht hast. Wie wichtig ist dir eine sorgfältige und exakte Arbeitsweise?"
+    },
+    {
+      "role": "candidate",
+      "text": "Für mich ist es sehr wichtig, genau zu arbeiten, weil ich Fehler vermeiden möchte, wie den Lieferschein-Fehler, und weil ich Ordnung mag. Es hilft mir, die Aufgaben gut zu erledigen und Vertrauen von den Vorgesetzten zu bekommen. Wenn ich genau arbeite, fühle ich mich sicherer und kann mich besser entwickeln. Das ist mir wichtiger als die Arbeit selbst."
+    },
+    {
+      "role": "coach",
+      "text": "Ich verstehe, dass dir die genaue Arbeit wichtig ist. Wie gehst du mit körperlicher Arbeit, zum Beispiel beim Heben und Bewegen von Waren, um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich finde körperliche Arbeit okay, ich mach das gerne, wenn es nötig ist, aber ich halte mich an die Sicherheitsregeln und frage, wenn es zu schwer wird. Im Verteilzentrum hab ich Paletten bewegt, aber ich bin nicht zu schwach dafür, also wenn die Arbeit das erfordert, mach ich das ohne Probleme."
+    },
+    {
+      "role": "coach",
+      "text": "Ich verstehe, dass du körperliche Arbeit magst und dich an die Sicherheitsregeln hältst. Wie gehst du mit unregelmässigen Arbeitszeiten oder Schichtarbeit um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich bin offen für unregelmässige Zeiten, solange ich weiss, wie der Plan ausschaut, und ich kann mich gut organisieren, zum Beispiel mit dem Bus oder zu Fuss. Wenn es Schichtarbeit ist, mach ich das gerne, solang ich nicht zu müde bin und genug Schlaf krieg. Ich stell mir vor, dass ich mich gut einfügen kann, wenn ich weiss, was ich erwarten darf."
+    },
+    {
+      "role": "coach",
+      "text": "Ich finde das gut, dass du flexibel bist und dich gut organisieren kannst. Was sind deine grössten Stärken?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich bin sehr motiviert, lerne schnell, besonders im Deutsch, und ich mache genau, was ich machen soll – genau wie beim Lieferschein-Fehler. Ich helfe auch gerne meinen jüngeren Geschwistern mit den Hausaufgaben, das zeigt mir, dass ich geduldig bin. Logik und Zahlen gefallen mir, und ich mag Ordnung, das ist wichtig für eine Lehre im Verteilzentrum. Ich möchte jeden Tag besser werden und das Team unterstützen."
+    },
+    {
+      "role": "coach",
+      "text": "Ich finde das gut, dass du lernst und nachhilfst. Was tust du, wenn du etwas nicht verstehst?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich frage einfach nach, wenn ich etwas nicht verstehe, zum Beispiel beim Logistikbegriff oder beim Scanner. Meine Geschwister zeigen mir auch, dass ich nicht alleine bin, wenn ich was nicht kapier. Wenn ich dann langsam erklährt bekomme, mache ich es sofort richtig. Das hilft mir, jeden Tag ein bisschen besser zu werden."
+    },
+    {
+      "role": "coach",
+      "text": "Du hast gesagt, dass du die Erklärung Schritt für Schritt umsetzt. Kannst du ein konkretes Beispiel nennen, wie das bei einer Kommissionierung oder einem Scanvorgang abläuft?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich schaue genau auf die Nummer vom Lieferschein, prüfe die Palette, scan die Ware mit dem Scanner und kontrolliere jedes Feld nochmal, wenn ich was nicht verstehe. Wenn ich einen Fehler finde, meld ich den sofort und korrigiere den Lieferschein direkt, genau wie ich es beim letzten Schnupperstag gemacht habe. Schritt für Schritt arbeite ich dann die Ware ein und packe sie richtig ein, damit nix verloren geht. So bin ich sicher, dass alles genau stimmt und das Team vertrauen kann."
+    },
+    {
+      "role": "coach",
+      "text": "Ich verstehe, dass ein Zugausfall zu einer Verspätung führen kann. Was würdest du in diesem Fall tun, um trotzdem pünktlich und gut vorbereitet zur Arbeit zu kommen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würde die Busfahrplan-App überprüfen und eventuell eine alternative Route suchen, falls der Zug ausfällt. Wenn ich keine Lösung finde, würde ich frühmorgens aufstehen und zu Fuss gehen, auch wenns etwas länger dauert. Ich würde dann trotzdem pünktlich sein und mir genug Zeit lassen, um die Arbeit gut zu beginnen. Und wenn’s zu stressig wird, würde ich gleich beim ersten Arbeitsplatz anrufen und Bescheid geben."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine Antwort, das zeigt deine Problemlösungsfähigkeit und Zuverlässigkeit. Wie unterstützt du andere Personen im Alltag oder in der Arbeit?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich helfe meinen Geschwistern oft mit Hausaufgaben, wenn sie nicht weiterkommen, und zeig ihnen genau, wie sie das lösen können. Im Verteilzentrum würde ich Kollegen fragen, wenn ich unsicher bin, und ihnen zeigen, wenn ich den Fehler beim Lieferschein gefunden habe, so lernen wir alle zusammen. Wenn jemand beim Sortieren von Waren Probleme hat, würde ich ihm helfen, die Waren richtig einzuordnen, damit alles schnell geht. Ich denke, gute Zusammenarbeit macht alles einfacher und das Team wird besser."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt sehr motivierend, dass du gerne anderen hilfst und gemeinsam lernst. Welche beruflichen Ziele hast du?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich möchte eine Lehre als Logistikerin EFZ machen, weil ich gerne mit Zahlen und Ordnung arbeite und das Team unterstützen will. Wenn das nicht klappt, nehme ich gern eine EBA-Lehre, um später trotzdem eine EFZ fortzusetzen. Ich will jeden Tag lernen und mich verbessern, damit ich im Team vertrauen verdiene. Meine Geschwister helfen mir, und ich helfe ihnen, das ist für mich wichtig im Beruf."
+    },
+    {
+      "role": "coach",
+      "text": "Ich finde das interessant, wie die Lehre aufgebaut ist. Interessierst du dich für den Ablauf der Ausbildung?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich interessiere mich total für, wie die Lehre aufgebaut ist, wann die Prüfungen sind und ob wir in Teams arbeiten, weil das für mich super motivierend ist. Ich möchte wissen, ob es Praktika gibt und wie lange die Ausbildung dauert, damit ich planen kann. Wenn ich am Anfang Schwierigkeiten habe, muss ich dann allein lernen oder gibt’s Hilfe?"
+    },
+    {
+      "role": "coach",
+      "text": "Ja, ich kann dir gerne den Ablauf erklären. Die Lehre als Logistiker/in EFZ dauert 3 Jahre, die EBA 2 Jahre. Praktika sind möglich, und wir bieten Stützunterricht in Deutsch und Mathematik an. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würde gerne wissen, ob es im Betrieb schon andere Schnupperlehrlinge gibt, mit denen ich später im Team arbeiten könnte, das motiviert mich sehr. Und ich würde gern erfahren, wie oft man im Logistikbereich Zahlen und Formeln anwenden muss, das klingt genau nach meinen Stärken in Mathematik."
+    },
+    {
+      "role": "coach",
+      "text": "Im Betrieb arbeiten aktuell 14 Lernende, darunter auch Schnupperlehrlinge, sodass du im Team mit anderen Lernenden zusammenarbeiten kannst. Im Logistikbereich werden Zahlen und Formeln täglich bei Kommissionierung, Lagerbewirtschaftung und Retourenmanagement angewendet. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würde gerne wissen, wie oft man im Logistikbetrieb Zahlen und Formeln benutzen muss, das passt genau zu meiner Mathematik – und ich würde mich freuen, mit anderen Schnupperlehrlingen im Team zu arbeiten, das motiviert mich sehr."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das ist eine gute Frage. Zahlen und Formeln werden täglich genutzt, zum Beispiel beim Kommissionieren, beim Ein- und Auslagern sowie beim Retourenmanagement. Es ist also ein wichtiger Teil des Alltags. Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich hab schon viel gelernt, zum Beispiel beim Sortieren von Spenden im Brockenhaus, wo ich gemerkt hab, dass Ordnung für mich wichtig is. Meine Geschwister helfen mir mit Mathe, und ich helf ihnen, deswegen bin ich sehr motiviert. Im Verteilzentrum hab ich einen Fehler im Lieferschein gefunden, und der Teamleiter war stolz auf mich. Ich würde gern ganz genau wissen, wann die Prüfungen sind, damit ich mich gut vorbereiten kann."
+    },
+    {
+      "role": "coach",
+      "text": "Danke, Amina, für deine offenen Worte. Wir freuen uns auf deine Bewerbung und werden dich gerne weiter begleiten. Hast du noch Fragen zum Lehrbeginn oder zum Ablauf?\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n«Ich helfe meinen Geschwistern mit den Hausaufgaben» – zeigt Geduld und Unterstützung.\n«Ich habe einen Fehler im Lieferschein gefunden» – zeigt Genauigkeit und Verantwortung.\n\n## Daran kannst du arbeiten\n«Im Verteilzentrum habe ich Regale eingeräumt, obwohl der Kundenkontakt noch schwierig war» – noch stärker auf logistische Prozesse fokussieren.\n«Ich bin ein bisschen aufgeregt, aber ich habe mich gut vorbereitet» – konkrete Beispiele aus den Schnupperlehren nennen.\n\n## Dein nächster Schritt\nNotiere drei konkrete Beispiele aus deinen Schnupperlehren, die deine Genauigkeit im Verteilzentrum zeigen.\n\nDu hast heute viel Mut und Klarheit gezeigt – das war Übung.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Sehr gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Dazu gab es im Gespräch keine Aussage |\n| Eigeninitiative | Sehr gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-01-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF18-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF18-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF18-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF18-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF18-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-08",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-08",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-05",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-07",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-04",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-04",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 40,
+  "answers": 19,
+  "calls_per_answer": 2.11,
+  "followups": 1,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 102.3
+}

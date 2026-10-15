@@ -1,0 +1,328 @@
+{
+  "scenario_id": "S-07",
+  "lang": "de",
+  "dialect": "lu",
+  "difficulty": "easy",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach bewertet weder die Deutschnote noch die Legasthenie; nur die mündliche Gesprächsleistung zählt (L1).",
+    "Der Coach öffnet sehr kurze Antworten mit einfachen, konkreten Anschlussfragen, statt die Kürze zu kritisieren.",
+    "Der Coach setzt realistische, EBA-gerechte Erwartungen und vergleicht nicht mit anderen (E3, L4).",
+    "Das Feedback nennt mindestens eine konkrete Stärke aus dem Gespräch (z. B. Pünktlichkeit bei der Obsternte).",
+    "Das Feedback ist in kurzen, einfachen Sätzen formuliert (S1, S3) und endet ermutigend (A1)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Dario."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Dario, ich bin Beat Portmann, Filialleiter und Berufsbildner hier bei Frischmarkt Zentralschweiz AG, Filiale Tribschen. Ich freue mich, dich kennenzulernen. Im Gespräch erzählst du mir ein bisschen über dich, warum du dich für diese Lehre interessierst und was du gut kannst. Hast du den Weg zu uns gut gefunden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, scho. Ich bin drei Sekunde her gelaufen. Mir gefällt, dass ma praktisch schaffe und Leute helfe."
+    },
+    {
+      "role": "coach",
+      "text": "Du hast gesagt, dass dir die praktische Arbeit gefällt. Kannst du mir ein konkretes Beispiel nennen, wann du das beim Helfen von Kunden erlebt hast?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, im Supermarktregal uffülle und Frischprodukt checke, die Kundinne isch gschaut, was neust isch."
+    },
+    {
+      "role": "coach",
+      "text": "Hm, das klingt nach deiner ersten Erfahrung. Ist das dein erstes Bewerbungsgespräch für eine Lehrstelle?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, es isch des erschte. Vorher numme Schnupperlehre gemacht."
+    },
+    {
+      "role": "coach",
+      "text": "Hallo Dario, das freut mich zu hören! Was machst du gerne in deiner Freizeit?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, im Ferienjob Äppler gepflückt und gschtapellet. Mit dem Cousin Töffli gschraubt, das macht Spass. Am Vierwaldstättersee fische geh ich gern. Das alles macht mich praktisch."
+    },
+    {
+      "role": "coach",
+      "text": "Schön, dass du das erzählst! Was hat dich an einer Schnupperlehre besonders beeindruckt oder hat dir besonders gut gefallen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, im Supermarkt am Schluss vom Tag gseh, was alles gschafft isch. Das hat mich motiviert, und ich weiss, dass ich mit Zahlen gut klarkomme, obwohl Rechtschreibung schwach isch."
+    },
+    {
+      "role": "coach",
+      "text": "Schön, dass du das so siehscht! Warum hast du dich für den Beruf als Detailhandelsassistent/in entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, weil ma mit de Händ gschaffe kann und die Kundinne mich fragen, was neu isch. Mir gschtand, dass ich praktisch lerne, und zwar mit Zahlen und Ordnung, was für die Lehre passt. Vorher war ich unsicher vor der Kasse, aber jetzt sehe ich, dass ich das gut mache."
+    },
+    {
+      "role": "coach",
+      "text": "Schön, dass du das so siehscht! Was denkscht, wos alles zum Detailhandelsassistent/in EBA dazugehört?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, Regal uffülle, Frischprodukt prüfe, Kasse helfe, das alles mache ich gern."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für die Auskunft! Was bedeutet für dich guter Kundenkontakt?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, wenn d Kundinne lächeln, wenn se was finde, des macht d Arbeit no spassiger. Und ich versuche, immer korrekt z sein, obwohl d Rechtschreibung für mich schwieriger isch."
+    },
+    {
+      "role": "coach",
+      "text": "Du hast gesagt, dass du immer korrekt sein willst – wie würdest du in diesem Moment mit einer Kundin sprechen, wenn das gesuchte Produkt gerade ausverkauft ist?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich sag: „Das tut mir leid, das isch ausverkauft, aber ich zeig dir gleich, wo du es sonst findsch."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine Antwort, Dario. Wie bleibst du motiviert, wenn du länger stehend arbeiten musst?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, wenn d Arbeit fertig isch und kein Stress meh do isch, dann fühl ich mich gut. Und manchmal helfe ich am Schluss andere, des macht d Zeit schneller."
+    },
+    {
+      "role": "coach",
+      "text": "Das hört sich nach einer Situation an, die jeder kennt. Wie bleibst du motiviert, wenn dir eine Aufgabe langweilig erscheint?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, wenn's langweilig isch, mach ich lieber was amand, zum Beispiel Helfa beim Uffräije. Das mach ich gern und dann isch d Arbeit schneller fertig."
+    },
+    {
+      "role": "coach",
+      "text": "Was genau kannst du beim Aufräumen lernen, das dir später im Beruf nützt?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich lerne genau, wie Dinge geordnet werre müesse, damit Kundinne schnell finde, was se brauche. Des hilft mir später, Regale schneller uffzfülle und Lager zu überblick. Wenn alles am Platz isch, spür ich, dass d Arbeit kein Stress meh isch."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Beispiel zeigt, dass du Ordnung und Struktur gut verstehst – das ist eine starke Stärke im Detailhandel. Was sind deine grössten Stärken?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich bin praktisch, mach alles pünktlich und helf gern. Legasthenie macht d Schrift schwierig, aber Zahlen versteh ich gut. Im Supermarkt lief alles ordentlich und der Vorgesetzte hat mich gelobt."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das verstehe ich. Was machst du, wenn du etwas nicht verstehst?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, wenn ich was ned versteh, frag ich einfach an, dass einer erklären darf. So isch alles schneller klar und ich mach d Arbeit richtig. Keine Ahnung, wie ichs anders machen soll."
+    },
+    {
+      "role": "coach",
+      "text": "Du könntest zuerst die Anleitung oder das Handbuch nochmal genau lesen, dann das Problem anhand der Schritte Schritt für Schritt durchgehen, und erst wenn du wirklich feststeckst, jemanden fragen. Wie würdest du das konkret machen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, wenn ich was nid versteh, lesch ich s Handbuch noomol, mach s paar Mol mit, und wenns no nid geit, frag ich den Chef. Das mach ich so, dass ich alles richtig mache und nit danzern."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine ehrliche Antwort! Wie unterstützt du andere Personen, wenn sie Schwierigkeiten haben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, wenn einer was hät, helf ich ihm einfach mit, dass er es versteht, und zeig ihm, wie ma s richtig macht. Im Supermarkt hei Kundinne mich gfrägt, und ich hei gschaut, dass alles schnell und richtig isch. So isch alle froh und d Arbeit läuft glatt."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt super, dass du gerne hilfst und dich für eine gute Zusammenarbeit einsetzt. Kannst du dir vorstellen, nach der Lehre im Betrieb zu bleiben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, das wär nett, wenn ich länger blibe, aber erst muss ich was lerne. Im Supermarkt isch mir gfällt, dass ma am End sehn, was ma gschafft hät, und das will ich lieber weiter mache."
+    },
+    {
+      "role": "coach",
+      "text": "Schön, dass du Interesse zeigst! Was möchtest du noch über die Lehre wissen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich will wissen, wie oft ma Pause macht und wie d Schichtzeiten ausschauen. Im Supermarkt hei ich gern, dass ma am Tag sieht, was ma alles macht."
+    },
+    {
+      "role": "coach",
+      "text": "Wir haben reguläre Pausen, die Schichtzeiten sind meist von 6.30 bis 14.00 Uhr mit einer Pause, und die Lernunterstützung findet einmal pro Woche statt. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, das hört sich für mich ganz guet aa. Im Supermarkt hei ich gern gschafft, des isch für mich ganz praktisch gsii. Kanns au wenn ich lerne, so Pause mache?"
+    },
+    {
+      "role": "coach",
+      "text": "Ja, das kannst du. Während de Lernzeit bekommst du jede Mittwochnachmittag eine Stunde Lernzeit mit einer Bezugsperson. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, das isch guet, und im Supermarkt hei ich gschafft, dass es für mich ganz praktisch isch. Ich will wissen, ob ich mit meiner Legasthenie im Betrieb Unterstützung bekomm."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das ist eine wichtige Frage. Wir unterstützen Lernende mit Legasthenie durch eine wöchentliche Lernunterstützung. Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, es isch guet, dass ich Unterstützung bekomme. Im Supermarkt hei ich gschafft, dass es für mich praktisch isch. Ich bin zuverlässig und helf immer mit."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine offenen Worte, Dario. Es war ein Vergnügen, dich kennenzulernen. Wir schauen uns deine Bewerbung an und melden uns bei dir, wenn wir etwas von dir hören möchten. Alles Gute für deine Zukunft!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Ich bin praktisch, mach alles pünktlich und helf gern.» – Zeigt Zuverlässigkeit und Hilfsbereitschaft.\n- «Im Supermarkt lief alles ordentlich und der Vorgesetzte hat mich gelobt.» – Bestätigt positive Rückmeldung durch Vorgesetzte.\n- «Jo, ich lerne genau, wie Dinge geordnet werre müesse, damit Kundinne schnell finde, was se brauche.» – Verknüpft Ordnung mit Kundenorientierung.\n\n## Daran kannst du arbeiten\n- «Regal uffülle, Frischprodukt prüfe, Kasse helfe, das alles mache ich gern.» – Fehlt Bezug zu spezifischen Aufgaben aus der Schnupperlehre.\n- «Wenn ich was nid versteh, frag ich einfach an, dass einer erklären darf.» – Noch keine eigenständige Strategie zur Problemlösung entwickelt.\n- «Im Supermarkt hei ich gern gschafft, des isch für mich ganz praktisch gsii.» – Fehlen konkrete Beispiele aus der Schnupperlehre zur Motivation.\n\n## Dein nächster Schritt\nÜbe, wie du aus deiner Schnupperlehre ein konkretes Beispiel nennst, das zeigt, wie Ordnung dir später hilft, schneller zu arbeiten.\n\n## Du hast heute viel geübt und kannst mit deinem nächsten Gespräch noch sicherer werden.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Ausbaufähig |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Ausbaufähig |\n| Auftreten & Wirkung | Ausbaufähig |\n| Vorbereitung / Betriebskenntnis | Ausbaufähig |\n| Zielorientierung | Ausbaufähig |\n| Umgang mit schwierigen Fragen | Dazu gab es im Gespräch keine Aussage |\n| Eigeninitiative | Gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-01",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-01-01",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-01-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-06-08",
+      "level": 3,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-04-04",
+      "level": 3,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF16-01",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF16-01",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF16-05",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-07",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-07",
+      "level": 4,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-01",
+      "level": 2,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-08",
+      "level": 1,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-08",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-07",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-07",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 2,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 44,
+  "answers": 21,
+  "calls_per_answer": 2.1,
+  "followups": 4,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 112.6
+}

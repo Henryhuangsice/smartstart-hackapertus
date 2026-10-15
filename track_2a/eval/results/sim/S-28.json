@@ -1,0 +1,300 @@
+{
+  "scenario_id": "S-28",
+  "lang": "de",
+  "dialect": "zh",
+  "difficulty": "medium",
+  "situation": "online_interview",
+  "success_criteria": [
+    "Der Coach prüft zu Beginn Technik und Verbindung (Q-OTH-07) und fragt nach der Vorbereitung (Q-OTH-08).",
+    "Das Feedback enthält mindestens einen konkreten Tipp zum Online-Format (Kamera auf Augenhöhe, Blick in die Kamera, ruhiger Hintergrund) (K2).",
+    "Der Coach deutet einsilbige Antworten nicht als Charakterzug, sondern beschreibt das beobachtete Verhalten (B2, B3).",
+    "Das Feedback würdigt die technischen Projekte mit einem konkreten Verweis (K1, R1).",
+    "Das Feedback nennt höchstens zwei Entwicklungspunkte (R2)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Jonas."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Jonas, ich bin Stefan Keller, Berufsbildner bei Limmatcode. Ich freue mich, dich kennenzulernen, erzähle dir gerne über unser Unternehmen und unseren Ausbildungsweg, und wir sprechen uns dann in Ruhe über deine Motivation, Stärken und Erfahrungen. Erzähl mir ein wenig, warum du dich für eine Lehre als Informatiker/in EFZ interessierst und was du bisher über Limmatcode erfahren hast."
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich mache das seit der 5. Klasse, vor allem Python und Bots; Limmatcode klingt geil, weil ihr Plattformen baut und nicht nur Software für KMUs. Ich hab drei Schnupperlehren gmacht – am liebsten die Informatiker-Applikationsentwicklung, sonst nur Löten und Server-Racks. Was genau macht ihr hier in der Lehre, und wie sieht so ein typischer Tag im Team aus?"
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne! In der Lehre lernst du Applikationsentwicklung, arbeitest in kleinen Squads, machst Code-Reviews, Pair-Programming und hast jede Woche Lernzeit. Ein typischer Tag im Team besteht aus agilen Sprints, täglichen Stand-ups, gemeinsamen Code-Reviews und abends oft noch einem kurzen Wrap-up. Wie hast du dich auf dieses Online-Gespräch vorbereitet?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich hab einfach kurz gschaut, wie eure Plattformen ausschauen, und bin über eure Website blättert, sonst nüt. Fürs Gespräch schribe ich gern kurz alles auf, was ich weiss, dass ichs im Kopf habe."
+    },
+    {
+      "role": "coach",
+      "text": "Du hast die Website besucht – welche konkreten Seiten oder Abschnitte haben dich am meisten interessiert? Was genau hast du über Limmatcode GmbH und die Inhalte der Lehre herausgefunden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich habs vor allem über eure Plattform-Entwicklung gelesen, und dass ihr agile Sprints macht und jeden Tag Stand-ups hattet – das passt genau zu dem, was ich in der Schnupperlehre gmacht und gemocht haw. Au den Abschnitt, dass es BM1 und BM2 gibt, wär für mich wichtig, dass die Lehre langsam voranschreitet."
+    },
+    {
+      "role": "coach",
+      "text": "Ich freue mich, dass dir unsere Arbeitsweise gefällt. Erzähl uns etwas über dich."
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich mach seit der 5. Klasse Python und hab ne paar kleine Projekte, wie a Discord-Bot, den meine Freunde und die Lehrpersonen benutze. In den Schnupperlehren isch mir am besten, wenns um Applikationsentwicklung geht, sonst meh Löten oder Server-Racks anzuschauen, die Sache isch halt so. Ich hei nüt viel über mich erzählt, de Code soll für sich sprechen."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, deine bisherigen Projekte klingen spannend! Hast du bereits eigene Projekte programmiert oder ausprobiert?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich hab a Discord-Bot in Python gschribe, den die Klasse für de Stundenplan nutzt, und Minecraft-Mods in Java, die ich auf a Raspberry Pi lauffähig gmacht hei. Ich löse am liebsten Bugs und teste ständig neue Funktionen, das macht Spass. Für die Lehre würd ich gern mehr Code-Reviews und Pair-Programming übe, am besten mit den anderen Lernenden im Team."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach einem guten Projekt! Wie gehst du vor, wenn ein Programm nicht wie erwartet funktioniert?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, zerscht versuech ich, den Fehler mit Debugger z'suche und s'Log schaue, denn versuech ich, s'Problem mit paar Testfällen z'isolier. Wenn das nüt hilft, frag ich online oder im Team um Hilfe, denn langsam aber sicher isch der Bug raus."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du strukturiert vorgehst. Wie sorgst du dafür, dass du nicht abgelenkt wirst, wenn du stundenlang am Bildschirm arbeitest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich mach lieber Pausen, wenns langweilig wird, und hör a bisschen Musik oder spiele a paar Runden Online-Schach, sonst würde ich zu lange starrn. Beim Debuggen konzentriere ich mich ganz, dann mach ich Pause. Das isch halt so."
+    },
+    {
+      "role": "coach",
+      "text": "Wie hesch die Pausen bisher in deiner Freizeit oder in de Schule genutzt, um die Konzentration zu erhalten?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, in de Schule mach ich kurz Pause, wenn de Unterricht langweilig wird, und online Schach, das hilft mir, klarer z'bleibe. In de Freizeit versuech ich, regelmässig Pause z'mache, sonst schlafe ich am Schirm ein, das isch halt so."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass Schach dir hilft, klar zu bleiben. Was hat dich an unserem Betrieb besonders angesprochen, der dich dazu bewogen hat, dich für diese Lehre zu entscheiden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, euer Betrieb macht Applikationsentwicklung, genau meh wie in de Schnupperlehre, und das klingt für mich viel spannender als Löten oder Server-Racks anzuschauen; die Lernenden übe regelmässig Code-Reviews, was mir gefällt, und das isch halt so."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass dich die Applikationsentwicklung besonders anspricht. Wie hast du dich über unseren Betrieb informiert?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, i hab eure Homepage gschtudiert, paar Beiträge in de Fachzeitschrift glesse und a paar Lernende vom Betrieb gschtellt, die mir erzählt hei, dasss regelmässig Code-Reviews gits und mer Applikatione baut, des isch halt so."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du das erlebt hast. Arbeitest du lieber alleine oder im Team? Warum?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, lieber im Team, denn so lerne ich am meischte und kann Fehler schneller finden; alleine würd ich mich leicht verlieren. Wenns um Applikatione geht, git's immer nüt, wärend es alleine eher langweilig cha wärde, des isch halt so."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Offenheit, im Team zu arbeiten, ist wirklich stark – das passt gut zu uns. Welche Rolle übernimmst du häufig in einer Gruppe?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, meistens helf ich beim Debuggen, denn das versteh ich am best. Manchmol erkläre ich auch, wie es API funktioniert, wenns passend isch. Wenns um Planung geht, rede ich zwar meist mit, aber am liebsten schreib ich einfach Code, das isch halt so."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Stärke im Debuggen und Erklären zeigst du klar. Wie gehst du mit konstruktiver Kritik um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich hör mir die Kritik erst richtig an, bevor ich denke, dass es falsch isch; dann versuch ich, das Problem systematisch zu finden und zeig dann, wie ich den Fehler behoben händ. Wenn ich merke, dass ich was überseh händ, sag ich es direkt, und versuech, im Team gemeinsam was besser z'mache; das isch halt so."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das verstehe ich. Was würdest du tun, wenn du den Auftrag nicht ganz verstanden hättest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich frag sofort nach, was genau verlangt wird, damit ich’s richtig mache; dann versuch ich, das Problem in kleine Teile z'zerlegen und zeig dem Team, wie ich’s löst, sonst würd ich einfach dumm herumprobieren – das isch halt so."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Offenheit, systematisch vorzugehen und das Team einzubeziehen, gefällt mir. Welche beruflichen Ziele hast du?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich will als Informatiker EFZ Applikatione bauen, die in der Praxis wirklich nutzbar sin, am liefere und lerne ständig neus Sachen dazu; das isch halt so."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne! Was interessiert dich besonders an unserem Betrieb?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, eure Spezialisierung auf mobile und Web-Entwicklung passt perfekt zu meinen Projekte mit JavaScript und Python; ich find’s spannend, reali Applikatione z’bauen. Ich würd gern am neus Technologien wärde, wie eure CI/CD-Systeme, und lerne, wie mehere Teams zusammenarbeit, sonst würd ich mich schnell verlieren – das isch halt so."
+    },
+    {
+      "role": "coach",
+      "text": "Wir haben gerade ein eigenes CI/CD-System aufgebaut, das unsere Web- und Mobile-Apps automatisch testet und bereitstellt – das spart viel Zeit und sorgt für sauberen Code.  \nHast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, wie läuft’s in der Praxis mit dem Team und wer übernimmt was, sonst würd ich doch grad dumm rumstehen; das isch halt so."
+    },
+    {
+      "role": "coach",
+      "text": "Im Team arbeiten wir in kleinen Squads agil, jeder übernimmt Aufgaben je nach Fachgebiet – Entwickler kümmern sich um Frontend/Backend, Tester um Qualitätssicherung und wir bilden die Lernenden im Squad ein. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, isch mir klar, wie de Lernende integriert wärde, aber würd e Squad immer meh als vier Persone händ? sonst würd ich grad überfordert si – das isch halt so."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, bei uns arbeiten die Squads meist in kleinen Gruppen – typischerweise drei bis vier Personen. Das sorgt für eine gute Zusammenarbeit ohne Überforderung. Dürfen wir dich kontaktieren, falls wir weitere Fragen haben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, drei bis vier isch guet; ich würd mich sonst schnell überfordert fühle – das isch halt so. Noch kurz, wie der Code-Review genau abläuft, sonst würd ich grad dumm rumliege?"
+    },
+    {
+      "role": "coach",
+      "text": "Vielen Dank für dein offenes Gespräch und deine Fragen. Wir freuen uns auf deine Rückmeldung und wünschen dir alles Gute für deine weitere Lernzeit. Bis bald! Dürfen wir dich kontaktieren, falls wir weitere Fragen haben?\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Limmatcode klingt geil, weil ihr Plattformen baut und nicht nur Software für KMUs.» – Zeigt echtes Interesse an der Firma.\n- «Ich mach seit der 5. Klasse Python und hab ne paar kleine Projekte, wie a Discord-Bot, den meine Freunde und die Lehrpersonen benutze.» – Konkrete Programmiererfahrung wird klar gezeigt.\n- «Ich will als Informatiker EFZ Applikatione bauen, die in der Praxis wirklich nutzbar sin, am liefere und lerne ständig neus Sachen dazu.» – Klarer Berufszielbezug.\n\n## Daran kannst du arbeiten\n- «Ich hab einfach kurz gschaut, wie eure Plattformen ausschauen, und bin über eure Website blättert, sonst nüt.» – Noch gründlichere Recherche über spezifische Projekte und Inhalte der Lehre.\n- «Jo, ich mach lieber Pausen, wenns langweilig wird, und hör a bisschen Musik oder spiele a paar Runden Online-Schach, sonst würde ich zu lange starrn.» – Erläutern, wie diese Strategien konkret im Berufsalltag als Informatiker/in EFZ angewendet werden.\n- «Jo, ich frag sofort nach, was genau verlangt wird, damit ich’s richtig mache; dann versuch ich, das Problem in kleine Teile z’zerlegen und zeig dem Team, wie ich’s löst, sonst würd ich einfach dumm herumprobieren – das isch halt so.» – Ein konkretes Beispiel aus einer realen Situation nennen.\n\n## Dein nächster Schritt\nSchau dir die aktuelle Homepage von Limmatcode GmbH genau an und notiere drei spezifische Projekte oder Inhalte, die dich besonders interessieren.\n\n## Abschliessende Ermutigung\nDu hast heute viele konkrete Beispiele und ein klares Interesse gezeigt – das macht dich zu einem starken Kandidaten.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Gut |\n| Eigeninitiative | Gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-OTH-07",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-08",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-08",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF19-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF19-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF19-06",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF19-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-04-02",
+      "level": 4,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 40,
+  "answers": 19,
+  "calls_per_answer": 2.11,
+  "followups": 2,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 96.7
+}

@@ -1,0 +1,8 @@
+# CSCS Container Engine environment (EDF) for Apertus 1.5 with the official vLLM image.
+# Copy to ~/.edf/apertus-vllm.toml on Clariden.
+image = "ghcr.io#swiss-ai/vllm_apertus_1.5_release:latest-arm64"
+mounts = ["/capstor/scratch/cscs/${USER}:/capstor/scratch/cscs/${USER}"]
+workdir = "/capstor/scratch/cscs/${USER}"
+
+[env]
+HF_HOME = "/capstor/scratch/cscs/${USER}/hf"

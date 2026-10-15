@@ -1,0 +1,244 @@
+{
+  "scenario_id": "S-27",
+  "lang": "fr",
+  "dialect": null,
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Le coach mène l'entretien et le feedback en français et tutoie la candidate.",
+    "Le coach ne pénalise pas l'hésitation entre deux métiers, mais aide à formuler une motivation honnête et spécifique.",
+    "Le coach demande un exemple concret de travail minutieux et le cite dans le feedback (K1).",
+    "Le feedback aide à répondre à la question sur les autres candidatures de manière honnête et positive (Q-DIF-02) (K2).",
+    "Le feedback se termine par un prochain pas concret et une phrase encourageante (R3, A1)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Bonjour, je suis Inès."
+    },
+    {
+      "role": "coach",
+      "text": "Bonjour Inès, je suis Nathalie Vuilleumier, formatrice horlogère à la Manufacture Horlogère Doubs & Jura. Nous allons commencer par nous connaître, comprendre ta motivation et tes compétences, puis je te poserai quelques questions pour mieux évaluer ton profil. Raconte-moi pourquoi tu souhaites devenir horloger/ère CFC et quel est ton parcours jusqu’à présent. Tu as bien trouvé le chemin jusqu’à chez nous ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j'ai commencé avec les samaritains parce que j’aime aider et garder mon calme quand y a besoin d’aide, puis le stage d’ASSC m’a montré que c’est un métier avec de l’organisation et de l’empathie, et le stage d’horlogerie m’a plu pour la précision, alors peut-être que je peux combiner les deux, et oui, j’étais heureuse de venir chez vous."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as bien résumé ton parcours, merci pour ces précisions. Parle-moi de toi, de tes centres d'intérêt et de ce qui te motive dans un métier qui demande patience et minutie."
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j'aime bien les travaux de précision comme les bijoux en perles, c'est comme mon stage d'horlogerie, et ça me donne de la concentration. J'aime aider les gens chez les samaritains, mais le métier d'horloger demande aussi beaucoup de patience, je peux gérer ça. J'ai l'impression que le calme que j'ai appris à garder avec les patients peut aussi aider pour les petites pièces précises. Et puis, j'adore voir ma création fonctionner et savoir que quelqu'un pourra porter mon bijou."
+    },
+    {
+      "role": "coach",
+      "text": "C'est très intéressant que tu aies commencé par les bijoux en perles, cela montre déjà un souci du détail. Comment as-tu découvert le métier d'horloger ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j'ai vu le métier d'horloger au stage chez la manufacture, où j'ai démonté un mouvement sous la loupe et j'ai été frappée par la précision et le calme qu'il fallait. Ça m'a fait penser à mon travail de perles, où chaque perle compte, et ça a renforcé mon envie d'apprendre ce métier."
+    },
+    {
+      "role": "coach",
+      "text": "C'est une excellente motivation, merci d'avoir partagé ça.  \nPourquoi as-tu choisi ce métier ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j’ai toujours aimé les choses qui demandent du temps et de l’attention, comme les perles ou les pièces qui s’emboîtent, et le métier d’horloger me semble le prolongement de ça, avec de vrais défis à relever chaque jour. J’ai aussi vu, pendant mon stage d’ASSC, que l’on doit rester calme quand les choses se corsent, et c’est exactement ce qu’il faut pour travailler avec des mécanismes si fins. J’aime l’idée de créer quelque chose qui fonctionnera pendant longtemps et qui fera plaisir à celui ou celle qui le portera. Enfin, le calme que j’ai appris chez les samaritains, c’est justement ce qui me permet de ne pas me laisser déstabiliser quand"
+    },
+    {
+      "role": "coach",
+      "text": "C'est très intéressant d'entendre que tu apprécies la précision et la patience, des qualités essentielles chez nous. Si tu ne pouvais pas exercer ce métier, que ferais-tu d'autre ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j’aurais peut-être fait quelque chose avec les mains tout de même, comme des bijoux ou des réparations, parce que j’aime les petits gestes précis et que je me sens mieux quand je peux aider les gens ou créer quelque chose de concret."
+    },
+    {
+      "role": "coach",
+      "text": "C'est très important pour moi, surtout quand on travaille avec des pièces minuscules comme les mouvements mécaniques. Quelle importance a pour toi la précision ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, la précision c'est comme le cœur de mon travail, si une perle est mal placée ou une pièce mal ajustée, ça casse tout le mécanisme ou le bijou, et ça me fait culpabiliser, surtout quand j'aide les gens, donc je me force à ne pas me précipiter et à vérifier deux fois."
+    },
+    {
+      "role": "coach",
+      "text": "C'est très appréciable de voir à quel point tu tiens à la perfection, c'est un atout majeur pour notre métier. Comment est-ce que tu gères les gestes minutieux qui se répètent ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, quand je fais des gestes répétitifs comme remonter les mouvements, je m'efforce de garder une respiration régulière et de me concentrer comme si c'était la première fois, parce que la fatigue peut vite faire perdre la précision. J'utilise les pauses que j'ai avec les samaritains pour vérifier ma posture et me rediriger si je sens que je commence à me précipiter. J’aime aussi faire des petits défis comme placer cinq perles en une minute, juste pour garder la main fine et l'esprit alerte."
+    },
+    {
+      "role": "coach",
+      "text": "Je comprends, c'est une bonne approche pour maintenir la concentration.  \nEst-ce que tu es à l'aise avec des tâches qui demandent un travail précis et soigné ? Est-ce que tu peux donner un exemple ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, oui, j'ai fait plein de petits travaux avec les perles où chaque détail compte, et c'était très gratifiant de voir le résultat final. Pendant mon stage à l'hôpital, même quand j'ai dû faire un lit ou donner un repas, j'ai pris mon temps pour que tout soit bien fait et propre. Ça me fait plaisir de savoir que j'ai bien aidé les patients ou que les lits étaient correctement faits. Alors oui, j'essaie toujours de faire les choses avec soin, même quand c'est rapide."
+    },
+    {
+      "role": "coach",
+      "text": "C'est très intéressant de voir que tu as déjà développé cette attention aux détails dans d'autres contextes. Quelles expériences as-tu faites pendant tes stages ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, mes deux stages m’ont beaucoup appris : au service de médecine, j’ai aidé aux repas et fait les lits en prenant mon temps pour que tout soit propre et agréable pour les patients, et en horlogerie, j’ai démonté et remonté un mouvement simple sous la loupe, ce qui m’a montré comment la précision demande concentration et patience."
+    },
+    {
+      "role": "coach",
+      "text": "C'est très intéressant de voir comment tes expériences ont renforcé tes compétences en précision et en patience. Comment est-ce que tu apprends le mieux ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j’apprends le mieux en faisant, comme mes stages, en essayant immédiatement ce qu’on m’apprend et en demandant des conseils quand je bloque, surtout quand c’est un geste précis comme remonter un mouvement ou tresser des perles."
+    },
+    {
+      "role": "coach",
+      "text": "C'est tout à fait compréhensible, on peut tous faire des erreurs sans que personne ne s'en aperçoive. Comment réagirais-tu dans ce cas pour t'assurer que c'est corrigé avant la livraison ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, si je vois que j’ai mal ajusté une pièce ou mal placé une perle, je m’arrête tout de suite, je vérifie étape par étape avec mon petit carnet de notes, et je demande à ma formatrice ou à mon collègue de confirmer que c’est correct avant de continuer."
+    },
+    {
+      "role": "coach",
+      "text": "C'est une excellente méthode pour garantir la qualité de ton travail. Dans combien d'autres entreprises as-tu aussi postulé ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j’ai postulé à trois autres entreprises pour des apprentissages différents, deux en santé et une en horlogerie, parce que j’aime bien les métiers où le travail précis et le contact humain comptent beaucoup. J’ai été un peu hésitante au début, mais après mes stages j’ai compris que l’ASSC me convient plus que l’horlogerie, tout en gardant un peu cet amour pour la précision."
+    },
+    {
+      "role": "coach",
+      "text": "C'est tout à fait compréhensible de passer par plusieurs options avant de trouver celle qui correspond vraiment à tes intérêts. Comment aimerais-tu que ton avenir professionnel évolue dans le domaine de l'horlogerie ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j'aimerais peut-être un jour faire un perfectionnement en horlogerie, juste pour voir si je peux combiner un peu ma précision avec l'aide aux gens, même si l'ASSC semble vraiment ma voie. J'ai aimé le calme et la concentration, mais je ne peux pas totalement abandonner ce côté « faire des choses avec mes mains » que j'ai découvert en travaillant les bijoux."
+    },
+    {
+      "role": "coach",
+      "text": "C'est tout à fait compréhensible que tu veuilles explorer plusieurs voies. Le déroulement de la formation t'intéresse-t-il ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, le déroulement de la formation m'intéresse beaucoup, surtout comment on apprend vraiment sur le terrain, comme au service de médecine où j’ai appris pas seulement la théorie mais surtout comment se comporter quand il y a des urgences. J’aimerais bien comprendre les différentes étapes de l'ASSC, les cours pratiques et comment on peut évoluer vers des responsabilités plus grandes."
+    },
+    {
+      "role": "coach",
+      "text": "C'est tout à fait compréhensible, tu as bien saisi l'intérêt de la formation pratique. Est-ce qu'il y a encore quelque chose que tu aimerais nous dire ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Honnêtement, j’aimerais bien savoir si le métier d’ASSC demande trop d’endurance physique quand on doit porter des charges ou rester debout longtemps. J’ai vu que le stage à l’hôpital m’a un peu épuisée, alors je veux m’assurer que ce n’est pas un problème tous les jours."
+    },
+    {
+      "role": "coach",
+      "text": "Merci beaucoup pour votre question et pour votre intérêt. Nous comprenons que l’endurance physique puisse être un point sensible, mais à la Manufacture Horlogère Doubs & Jura, les postes d’apprenti·e sont conçus pour limiter les charges lourdes et les positions debout prolongées, avec des pauses régulières et un aménagement adapté. Nous espérons que ces précisions vous rassurent. Bonne continuation dans votre réflexion.\n\n---\n**Pour terminer : tu reçois maintenant ton feedback personnel.**\n\n## Tes points forts\n- « j’ai commencé avec les samaritains » montre une motivation claire par des expériences antérieures.\n- « j’aime bien les travaux de précision comme les bijoux en perles » lie ses intérêts à l’horlogerie.\n- « si je vois que j’ai mal ajusté une pièce ou mal placé une perle » démontre une approche proactive pour corriger les erreurs.\n\n## Ce que tu peux encore améliorer\n- « j’ai postulé à trois autres entreprises » manque un exemple concret pour l’horlogerie.\n- « le déroulement de la formation m’intéresse surtout comment on apprend sur le terrain » ne précise pas une étape spécifique de l’ASSC.\n- « j’aimerais bien savoir si le métier d’ASSC demande trop d’endurance physique » ne décrit pas une mesure d’adaptation envisagée.\n\n## Ta prochaine étape\nPrépare un exemple précis d’une tâche horlogère réalisée lors de ton stage, avec une compétence acquise.\n\n## Encourageant\nCette simulation t’a permis de structurer tes réponses et de montrer ta motivation.\n\n### Vue d'ensemble par critère\n\n| | |\n|---|---|\n| Clarté | Très bien |\n| Pertinence | Très bien |\n| Motivation | Bien |\n| Réflexion sur soi | Bien |\n| Communication | Bien |\n| Exemples concrets | Bien |\n| Attitude & impression | Bien |\n| Préparation / connaissance de l'entreprise | Bien |\n| Orientation vers les objectifs | Très bien |\n| Gestion des questions difficiles | Bien |\n| Initiative | Bien |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 4,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-DIF-08",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF13-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF04-04",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF12-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-06-07",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-07",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-DIF-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    }
+  ],
+  "llm_calls": 32,
+  "answers": 15,
+  "calls_per_answer": 2.13,
+  "followups": 0,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 74.3
+}

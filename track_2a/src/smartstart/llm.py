@@ -63,6 +63,15 @@ def chat(
                 data = json.loads(resp.read().decode("utf-8"))
             text = data["choices"][0]["message"]["content"] or ""
             return _THINK.sub("", text).strip()
+        except urllib.error.HTTPError as e:  # keep the server's error message
+            body = ""
+            try:
+                body = e.read().decode("utf-8", "replace")[:800]
+            except Exception:
+                pass
+            last = f"{e} {body}"
+            if 400 <= e.code < 500:
+                break  # client errors will not succeed on retry
         except Exception as e:  # network hiccups, 5xx, ...
             last = e
             time.sleep(1.5 * (attempt + 1))

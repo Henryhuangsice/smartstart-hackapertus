@@ -1,0 +1,314 @@
+{
+  "scenario_id": "S-15",
+  "lang": "de",
+  "dialect": "tg",
+  "difficulty": "hard",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach stellt die schwierigen Fragen (Absenzen, Mathematik) sachlich und ohne Moralpredigt.",
+    "Bei ausweichenden oder Schuld abschiebenden Antworten fragt der Coach ruhig nach dem eigenen Anteil.",
+    "Das Feedback gibt ein Antwortmuster für schwierige Fragen (ehrlich benennen – Verantwortung – Veränderung mit Beleg) (K2).",
+    "Der Coach erzeugt keine Angst wegen der Noten (L2) und würdigt die Verbesserung als Beleg (E1).",
+    "Das Feedback nennt eine praktische Stärke mit Beispiel aus der Schnupperlehre (R1, K1)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Timo."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Timo, ich bin Roman Stäheli, Geschäftsinhaber und Berufsbildner bei Thurgrün Gartenbau AG. Wir lernen uns gleich kennen, reden über deine Motivation und Stärken, schauen ein paar konkrete Situationen an, und dann kannst du Fragen stellen – das Gespräch dauert rund eine halbe Stunde. Erzähl mir doch, was dich an Gärtnerei interessiert und warum gerade hier. Hast du den Weg zu uns gut gefunden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, megli gfunde. Mir interessiert d'Draussenarbeit und das mit de Händen wasche. Der Grossvater het's immer so gmacht und ich mag's, wenn am End was steht, was ma gschafft het."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Interesse an Draussenarbeit und handwerklicher Arbeit ist super, das passt gut zu uns. Erzähl uns etwas über dich."
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich bin Timo, 16 us Frauenfeld. In dr Schule het's mich mit de Mathe und Französisch am härschte gha, aber Sport, technisches Gestalten und Natur und Technik schwätze. Seit em Gespräch mit de Lehrera und de Eltern in dr 2 Sek hei ich weniger gfehlt und mich konzentrierter."
+    },
+    {
+      "role": "coach",
+      "text": "Du siehst echtes Grün jeden Tag entstehen zu lassen – das finde ich spannend! Warum hast du dich für diesen Beruf entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, eigentli isch's dr Grossvater gsi, wo's am liebste gha het, im Garten z'wärke. Und jetzt, wo ich in dr Schnupperlehre als Gärtner gha hei, het's mir gzeigt, dass es Spass macht, was ma am End mit de Hände schafft. Des isch für mich viel wärtiger als d'Note."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Ehrlichkeit über de Grossvater und die Schnupperlehre finde ich wirklich beeindruckend. Wie gehst du mit Arbeit im Freien bei jedem Wetter um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich bin nöd d'groossä Angst vor Regen, im Gegteil, ich mag's, wenn es die Hände wasche kann. Bei Hitze versuche ich, frie z'wärke, und werde zwar schwitze, aber das isch dr Preis für frisches Grün."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das zeigt echtes Engagement. Wie gehst du mit körperlich anstrengender Arbeit um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, das isch für mich ganz normal, ich mag's, wenn's mal schpätze, am End isch's ja körperlich und schafft was. Wenn's zu schwer wird, helfe ich einfach dem Vorarbeiter, das isch für mich kein Problem."
+    },
+    {
+      "role": "coach",
+      "text": "Ich verstehe, dass du körperliche Arbeit magst und im Team helfen kannst. Wie zufrieden bist du mit deinen bisherigen schulischen Leistungen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, die Note isch ned so wichtig für mich, Hauptsächlech isch's, was am End greifbar isch. In dr Schule isch's zwar mit Mathe und Französisch am härschte gsi, aber das heisst net, dass ich nöd lerne kann. Seit em Gespräch mit de Lehrera und de Eltern in dr 2 Sek hei ich mich richtig aufgefangen und konzentrierter gschafft."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, ich verstehe, dass du das ansprichst. Erzähl mir ehrlich, was hinter den unentschuldigten Absenzen steckt."
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, das isch eigentli so gsi: ich händ nächtlich viel gschpielte, des het mich morgens müede gmacht und es isch z'lang zum Aufschtande gsi. Aber mit de Lehrera und de Eltern händ wir gredt, und seitdem hei ich mich wirklich gändert – jetzt fehled ich ned und mach, was ich söll. Das istch besser."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Ehrlichkeit ist gut zu hören, das zeigt Verantwortung. Wie denkst du, kannst du die Rechenaufgaben im Gartenbau trotzdem gut lösen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich denke, wenn ich's am End mit de Hände mach und's greifbar isch, klappt's schon. Für Planen helfe ich dem Vorarbeiter, und Rechnen ma schaffe wir gemeinsam. Die ganze Theorie kann ich dann später noch lerne, aber am End isch's wichtig, dass was entsteht."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Praxisnähe ist gut zu sehen. Wie war deine durchschnittliche Anwesenheit in den letzten zwei Jahren?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, im letschte halbs Johr hei ich nöd meh unentschuldigt fehlte, s'wär scho besser. In dr 2. Sek händ's zwar 12 Lektionä gsi, aber drzue hei wir gschafft, dass das im Herbst besser isch gsi, und seitdem fehlt mir nüt."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Ehrlichkeit ist gut zu sehen, Timo. Welche Schwäche möchtest du verbessern?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich denke, dass ich Mathe und Französisch noch besser lerne soll, das isch für mich im Moment die Schwäche. Aber wenns ums Praktische geht, mach ich das gut. Ich versuche jedes Semester besser z'werde, und das nehme ich mir für d'Zukunft vor."
+    },
+    {
+      "role": "coach",
+      "text": "Was machst du konkret, um Mathe und Französisch zu verbessern?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich mach jetzt abends extra Übige für Mathe und Französisch, und der Grossvater hilft mir im Garten, dass ich danach noch übe kann. Ich versuche jeden Tag 30 Minute fürs Lernen zu nehmen, und wenn ich was ned versteh, frag ich direkt in dr Schule. Das isch wie beim Mähen, wenn ich gleich anfange, wird's am End schon fertig."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das passiert mal. Was machst du, wenn du merkst, dass du wegen eines Zugausfalls zu spät zur Arbeit kommst?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, dann rufe ich sofort ebbes, dass ich zu spät komme, und mach, was d'Arbeita bräuch, dass der Tag no gschafft wird – das isch wichtig, dass alles fertig isch."
+    },
+    {
+      "role": "coach",
+      "text": "Wie würdest du konkret vorgehen, wenn du merkst, dass du zu spät bist, zum Beispiel eine Alternative zum Bus finden oder Aufgaben vorbereiten, um den Tag trotzdem effizient zu gestalten?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich ruffe sofort ebbes, dass ich zu spät komme, und frag' beim Chef noch, was d'Arbeita am dringendschte braucht, dass d'restlichi Zeite effizient genutzt wärde cha. Wenn d'Arbeita nüt meh da isch, versuche ich, im Zug oder Auto ebbes z'holen, dass ich zum Schluss no zuegschaffa chönne."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, ich verstehe. Was machst du, wenn du diese Lehrstelle nicht bekommst?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, das wär schlimm, aber ich versuche ebbes Neues z'finde, vielleicht als Gärtner oder Tierpfleger, und der Grossvater hälft mir weiter mitm Garten. Wenn's nöd geht, lerne ich nach wie vor Mathe und Französisch abends, und so werd ich no bessere Chancen händ."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Wille ist klar, danke für die Offenheit. Welche Fähigkeiten möchtest du während der Lehre erwerben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich wöle lerne, wie ma mit Werkzeug sicher umgah, wie maa Pläne erstell und wie maa Pflanzen richtig pfleg. Im Team z'schaffa und verantwortungsvoll z'wärde isch au wichtig für mich."
+    },
+    {
+      "role": "coach",
+      "text": "Was genau am sicheren Umgang mit Werkzeugen, am Erstellen von Plänen oder an der Pflanzenpflege begeistert dich am meisten?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, genau beim Erstelle vo Plänen begeistert mich, dass ma alles genau planen cha, so wie maa beim Mähen vom Rasen am End gschafft händ. Beim sichere Umgang mit Werkzeug isch es gueti Gefühl, wenn maa sa wei isch, was maa tued, und bei de Pflanzenpass isch es gueti Freude, wenn alles wachscht."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne! Hast du Fragen zu unseren Erwartungen an Lernende?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ebbes wär ich gerne no wisse – was genau erwartet maa vo de Lehrlinge am End vom Tag, wie maa die Zeite effizient gliicht?"
+    },
+    {
+      "role": "coach",
+      "text": "Am Ende des Tages helfen wir beim Aufräumen der Baustelle, kontrollieren die Geräte und dokumentieren den Tagesstand. Wir teilen die Zeit so ein, dass zuerst die dringendsten Aufgaben erledigt werden, dann die Pflegearbeiten und zuletzt die Abschlusskontrolle. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, es wäre guet z'wisse, wie oft maa denn uff d'Zeitplan hält, ob's mal Stress gäh, wenn alles nöd so läuft wie gplant, und wie maa denn Feedback gäh, wenn ma was guet oder schlecht mache?"
+    },
+    {
+      "role": "coach",
+      "text": "Auf Baustellen halten wir uns in der Regel an den Zeitplan, aber im Gartenbau gibt es manchmal unvorhergesehene Ereignisse wie schlechtes Wetter oder technische Probleme, die den Zeitplan beeinflussen können. Stress entsteht, wenn mehrere Aufgaben gleichzeitig dringend sind oder Termine nicht eingehalten werden können. Feedback geben wir direkt und konstruktiv, wenn etwas gut oder schlecht läuft, um gemeinsam Verbesserungen zu erreichen. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ebbes wärch ich no wisse – wie schaut's mit de Urlaubstage und de Zeiteinteilung während de Praktika aus? Gibt's fescht Pausenzeite oder hängt's vom Projekt ab?"
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne! Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, für d'Praktika hängt's eher vom Projekt ab, also kann's mal länger hei, mal kürzer, und Pause mache mer, je nachdem wie d'Arbeit läuft. Urlaubstage kriege mer normalerwiis wie im Lehrvertrag gschribe, und wenn mer s'Zeitpensum schafft, geht's schneller vorwärts, sonst wird's einfach ruhiger."
+    },
+    {
+      "role": "coach",
+      "text": "Danke, Timo, für deine Offenheit. Das Gespräch war sehr aufschlussreich. Wir freuen uns auf deine Entscheidung. Alles Gute für die Zukunft!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Mir interessiert d'Draussenarbeit und das mit de Händen wasche.» – Zeigt ehrliche Motivation für praktische Gartenarbeit.\n- «Seit dem Gespräch mit de Lehrera und de Eltern in dr 2 Sek hei ich mich konzentrierter.» – Nimmt konstruktives Feedback ernst und verbessert sich.\n- «Jo, genau beim Erstelle vo Plänen begeistert mich, dass ma alles genau planen cha, so wie maa beim Mähen vom Rasen am End gschafft händ.» – Begeisterung für strukturierte Planung zeigt.\n\n## Daran kannst du arbeiten\n- «Im letschte halbs Johr hei ich nöd meh unentschuldigt fehlte, s'wär scho besser.» – Beschreibe konkrete Maßnahmen zur Verbesserung der Schulbesuche.\n- «Jo, ich denke, wenn ich's am End mit de Hände mach und's greifbar isch, klappt's schon.» – Erläutere, wie du mathematische Theorie praktisch anwendest.\n- «Aber mit de Lehrera und de Eltern händ wir gredt, und seitdem hei ich mich wirklich gändert – jetzt fehled ich ned und mach, was ich söll.» – Formuliere Verbesserungen präziser, z. B. Anzahl von Absenzen oder konkrete Lernstrategien.\n\n## Dein nächster Schritt\nÜbe eine kurze Zusammenfassung deiner Lernziele für die Lehre, in der du zwei konkrete Fähigkeiten nennst, die du erwerben möchtest, und eine persönliche Motivation, die du mitbringst.\n\n## Du hast heute viel Mut und Ehrlichkeit gezeigt – jetzt übe deine Lernziele für die Lehre!\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Gut |\n| Eigeninitiative | Sehr gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF01-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-06-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-DIF-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-DIF-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-06-03",
+      "level": 2,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-05",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-DIF-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-04",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 42,
+  "answers": 20,
+  "calls_per_answer": 2.1,
+  "followups": 3,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 102.3
+}

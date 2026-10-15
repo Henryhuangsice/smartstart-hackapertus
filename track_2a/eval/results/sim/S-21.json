@@ -1,0 +1,314 @@
+{
+  "scenario_id": "S-21",
+  "lang": "de",
+  "dialect": "bs",
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach würdigt das Fachwissen konkret, ohne es zu übertreiben (T3).",
+    "Der Coach spiegelt den Tonfall mit einem wörtlichen Zitat und beschreibt die Wirkung, statt ihn «arrogant» zu nennen (B1, B2).",
+    "Der Coach fragt nach einem konkreten Fehler oder Teambeispiel, um Selbstreflexion zu fördern.",
+    "Der Coach übernimmt keine abwertenden Aussagen über Mitschüler und vergleicht nicht mit anderen (L4).",
+    "Das Feedback enthält einen konkreten Tipp, wie er Teamarbeit mit einem Beispiel positiv darstellen kann (K2)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Samuel."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Samuel, ich bin Dr. Karin Vogt, Berufsbildnerin bei Rheinlab Analytik AG. Ich werde dich heute in deinem Bewerbungsgespräch für die Ausbildung zum Laborant/in EFZ begleiten und gemeinsam herausfinden, ob du zu unserem Team passt. Erzähl mir kurz, was dich motiviert, genau diesen Beruf zu erlernen."
+    },
+    {
+      "role": "candidate",
+      "text": "Well, ich find Chemie und Physik einfach so spannend, und in der Schnupperlehre beim Chemie-Labor hab ich gemerkt, dass Theorie allein nix bringt – Titrationen brauchen Geduld und genaue Messung, was mir gefällt. Ich will lieber praktisch arbeiten als stundenlang in der Schule zu sitzen, und mit BM1 kann ich später trotzdem studieren. Des isch eigentli logisch, oder?"
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du die Praxis so sehr schätzt. Erzähl uns etwas über dich."
+    },
+    {
+      "role": "candidate",
+      "text": "Well, ich bin in de 3. Klasse Sekundarschule im P-Zug und hab Chemie, Mathematik und Physik am liebsten, obwohl ich im Bildnerischen Gestalten und Sport eher weniger drauf bin. In meim Naturwissenschafts-Club mache ich gern Experimente, und in de Schnupperlehre beim Chemie-Labor isch ma gseh, wie wichtig sorgfältige Messung isch. Zudem ruder ich im Verein und spiele Schach, was zeigt, dass ich diszipliniert und analytisch arbeiten kann."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du dich für Chemie entschieden hast. Warum hast du dich für diesen Beruf entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, eigentlich isch Chemie einfach meine Leidenschaft, und in der Schnupperlehre hods mich voll begeistert, dass Theorie durch genaues Messen lebendig wird – die ungenaue Titration am Anfang isch zwar peinlich, aber genau des zeigt, dass ich lerne will. Ich will das BM1 machen, damit ich trotzdem studieren kann, und im Labor arbeite ich lieber als im Gym, wo ich mich nur stumm drüber drückte."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du die Chemie mit deinem persönlichen Lernprozess verbindest. Was fasziniert dich an naturwissenschaftlichen Fragestellungen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, mich fasziniert, wie Chemie und Physik die Welt erklären, und im Labor zeig ich genau, wie Theorie funktioniert – jedes Mal wenn ich messe, lerne ich neue Details über pH-Wert oder Äquivalenzpunkt, was einfach logisch isch, wenn ma versteht, was passiert."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du Theorie mit praktischen Beobachtungen verbindest. Erzähl mir von konkreten Erfahrungen in Naturwissenschaften oder im Labor."
+    },
+    {
+      "role": "candidate",
+      "text": "Well, in de Schnupperlehre beim Chemie-Labor hods mich begeistert, wie genau ich pH-Wert messen und Lösungen ansetze muss – obwohl ma am Anfang die Titration ungenau gmacht hod, weil ma zu schnell gschafft isch, isch ma durch Feedback vo da Laborantin wirklich glernt, wie wichtig saubere Arbeit isch. Beim Naturwissenschafts-Club am Fluss händ wir Wasserqualität untersucht und a Jugendwettbewerb präsentiert, was zeigt, dass ma gern systematisch forscht und Resultate erklärt. Zudem fänd s mich spannend, im Labor ständig neue Probleme zu löse, genau wie beim Schach, wo jedes falsche Zug nachdenken zwingt."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du aus Fehlern lernst. Wie gehst du systematisch vor, wenn ein Experiment nicht das erwartete Ergebnis liefert?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, wenn a Experiment net wie erwartet läuft, mache ich zerscht genau auf, was genau anders isch – ob Temperatur, Menge oder Zeit – und versuche systematisch z’verstehe, wo dr Fehler her isch. Dann probiere ich’s nochmol mit korrigierte Parameter und dokumentiere jede Änderung, damit ma am Schluss genau seh, was funktioniert hot. Im Chemie-Labor isch’s genau so gschafft: d’Laborantin isch mir gsogt, dass d’Titration langsam geht muesst, und danach isch alles viel sauberer gschafft. Das zeigt, dass ma systematisch fehle korrigiere kann, selbst wenn ma am Anfang überhastet isch."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du systematisch vorgehst. Wie stellst du sicher, dass du alle Sicherheitsvorschriften einhältst, wenn du mit Chemikalien arbeitest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, in de Schnupperlehre im Chemie-Labor isch d'Laborantin uns streng auf Sicherheitsregeln gschtellt – Handschuhe, Schutzbrille und saubere Arbeitsfläche – und genau des isch wichtig gsi, damit ma nix versehentlich verschüttet oder versehrt hod. Ich acht's dra, dass jedes Mal alles korrekt vorbereitet isch, bevor ma a Chemikalie berührt, und versichere mir, dass d'Geräte sauber und funktionstüchtig sind, bevor ma was mess oder titriere."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt sehr verantwortungsbewusst. Wie sicherst du ab, dass deine Protokolle immer vollständig und korrekt sind?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, ich schreib alles sofort ins Protokoll, sobald ich fertig bin, damit nix vergessen geht – und wenn ich unsicher bin, frag ich die Laborantin nochmal, ob ich was korrigieren soll, dass alles genau stimmt."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du deine Arbeitsweise organisierst. Arbeitest du lieber alleine oder im Team? Warum?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, ich arbeite am liebsten im Team, weil im Labor gudd Diskussiione helfen, schnell Probleme z'finden, wie bei da Titration, wo d'Laborantin erst korrigiert hot. Alleine wäre’s vielleicht z'langweilig, und im Naturwissenschafts-Club zeigt’s, dass gemeinsame Forschung viel mehr bringt als einzeln rumstöckere."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Offenheit, Verantwortung für den Prozess zu übernehmen und konstruktiv auf Anmerkungen zu reagieren, zeigt bereits Teamfähigkeit. Was bedeutet für dich, dass ein Team erfolgreich zusammenarbeitet?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, wenns Team gut zämearbeitet, dann redet ihr offen über Fehler, wie beim Chemie-Experiment, und klärt sofort, wer was macht – so wird nix übersehen und jedes Problem wird schnell gelöst, und am Schluss händ ihr alle genau gsagt, was funktioniert hot und was nicht."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du das im Team handhabst. Wie gehst du mit unterschiedlichen Meinungen um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, ich hör einfach zue, was andere vorschlage, und versuche dann, logisch z’erkläre, warum so oder so besser passt – wie bei de Parameter, wu d’Laborantin gändert hot – und wenn nötig, gib ich dann selber Idee, wia’s am effizienteste macht."
+    },
+    {
+      "role": "coach",
+      "text": "Wie hast du in dieser konkreten Situation den Kompromiss zwischen den verschiedenen Meinungen gefunden und welche Lösung am Ende umgesetzt wurde?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, die Laborantin hot erst gseh, dass ich zu schnell titriert hot, drum hot si’s Routine erklärt, langsamere Schritte verlangt und gemeinsam a neue Vorgehensweise probiert – ich hot’s akzeptiert, weil’s logisch gsi isch, dass weniger Eile genauere Resultate bringt, und so isch d’Messung am Schluss korrekt gsi."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, ich verstehe. Wie würdest du in dieser Situation vorgehen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, ich würd zerscht d'Laborantin frage, ob’s a bessere Methode gibt, denn Theorie isch zwar wichtig, aber im Labor isch d'Praxis oft logischer – und wenns dann a Kompromiss braucht, würd ich langsamere Schritte vorschlage und gemeinsam probiere, bis’s genau stimmt."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du die Zusammenarbeit im Team betonst. Wie gehst du mit Fehlern um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, Fehler seh ich als Lernchance, wie die ungenaue Titration – ich analysiere, was genau schiefgelaufen isch, und versuche danach systematischer vorzagehn; im Team rede ich offen drüber, damit alle wisse, was besser funktioniert."
+    },
+    {
+      "role": "coach",
+      "text": "Ich finde, du bist manchmal etwas zu direkt, wenn du eigene Ideen ohne Rücksprache durchsetzt. Was würde deine Klassenlehrperson über dich sagen, das dir vielleicht nicht so gefällt?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, meine Klassenlehrerin sagt, ich rechn mit zu viel Überzeugungskraft, wenn ich meine Idee ohne Rücksprache schiebe, und dass ich besser zuhören soll, bevor ich vorschlage – eigentlich logisch, aber manchmal übersäh ich die Geduld."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt nach einem wichtigen Lernprozess für die Teamarbeit. Welche Weiterbildung kannst du dir nach der Lehre vorstellen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, nochem EFZ-Laborant würd ich am liebscht die BM1 (Berufsmittelschule) mache, denn am Schluss noch e Bachelor in Chemie oder Life Sciences – die Theorie ergänzts einfach super, wos im Labor praktiziert wird. Und im Sommer versuch ich, mit em Ruder-Verein d'Technik vom Boot besser z'versteh, denn das isch ja eigentlich doch e ganz genaui Wissenschaft."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, das klingt nach einer klaren Motivation. Hast du Fragen zu unseren Erwartungen an Lernende?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, ich würd gern wisse, wie dr Lehrbetrieb d'Praktika und d'Schnupperlehre organisiert, ob’s regelmässig so gegeht wie mit de paar Täg, oder ob’s au längeri Blöcke git, denn ich will mir e realistisches Bild mache vo dr tägliche Routine im Labor."
+    },
+    {
+      "role": "coach",
+      "text": "Unsere Erwartungen an Lernende sind Genauigkeit, Sicherheitsbewusstsein und Teamfähigkeit im täglichen Laboralltag. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, dazu würd ich gern wissen, wie dr Lehrbetrieb mit Prüfungen und Leistungsnachweise umgeht, ob’s speziell für Schnupperlehre oder BM1 irgendwelche Erwartige git, denn ich will, dass ich weiss, wos ich wirklich vor mir habe."
+    },
+    {
+      "role": "coach",
+      "text": "Im Lehrbetrieb gibt es Leistungsnachweise und Prüfungen, die im Lehrvertrag festgehalten sind; für Schnupperlehre oder BM1 gibt es keine speziellen Erwartungen über das übliche Lehrsystem hinaus. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, ich würd gern wissen, wie d'Lehrfirma mit dr Routine umgeht, also ob's täglich immer Titrationen und Protokolle git oder ob's au anderi Aufgaben wie Qualitätskontrolle und Wartig vo dr Apparatur git; und ob's im Team oft gemeinsame Experimente git, wo mer was lerne kann."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, das gibt dir einen guten Einblick in den Alltag. Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Well, im Schnupperlehre habe ich gemerkt, dass saubere Arbeit und Geduld wichtiger isch als schnell ze sein, und im Naturwissenschafts-Club habe ich gelernt, dass Teamarbeit am End e wertvolli Lektion bringt – das isch mir jetzt eigentlich ganz klar."
+    },
+    {
+      "role": "coach",
+      "text": "Vielen Dank für dein offenes und reflektiertes Gespräch. Wir freuen uns auf deine Bewerbung und werden dich in Kürze kontaktieren. Viel Erfolg für deine Zukunft!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Chemie und Physik sind spannend» – zeigt praktisches Interesse an naturwissenschaftlichen Aufgaben.\n- «Theorie durch genaues Messen lebendig wird» – verknüpft theoretisches Verständnis mit Laborerfahrungen.\n\n## Daran kannst du arbeiten\n- «Unsicherheit über Geduld bei Titrationen» – noch konkretere Beispiele aus der Schnupperlehre nennen, um die Argumentation zu stärken.\n- «Fehlende Einordnung der Sicherheitsmaßnahmen im Alltag» – eine spezifische Situation beschreiben, in der die Einhaltung der Sicherheitsvorschriften zu einem positiven Ergebnis führte.\n\n## Dein nächster Schritt\nEin spezifisches Laborergebnis aus der Schnupperlehre auswählen und genau erklären, wie die Sicherheitsmaßnahmen dabei zur Qualität beigetragen haben.\n\n## Du hast heute viel Mut und Offenheit gezeigt – das war eine gute Übung.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Sehr gut |\n| Umgang mit schwierigen Fragen | Gut |\n| Eigeninitiative | Sehr gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF14-01",
+      "level": 3,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF14-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF14-05",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF14-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF14-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-09",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-03",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-08",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-DIF-09",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-03",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 42,
+  "answers": 20,
+  "calls_per_answer": 2.1,
+  "followups": 1,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 106.5
+}

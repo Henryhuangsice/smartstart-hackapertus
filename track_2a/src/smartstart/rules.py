@@ -56,7 +56,8 @@ def check_feedback(text: str, lang: str) -> list[str]:
     for h in heads[:3]:
         if h.lower() not in low:
             v.append(f"R1/R3: missing section heading '## {h}'")
-    sents = [s for s in re.split(r"[.!?]\s", re.sub(r"[#*>\-]", " ", text or "")) if s.strip()]
+    unquoted = _QUOTE.sub(" ", text or "")
+    sents = [s for s in re.split(r"[.!?]\s|\n", re.sub(r"[#*>\-|]", " ", unquoted)) if len(s.split()) >= 3]
     if sents:
         avg = sum(len(s.split()) for s in sents) / len(sents)
         if avg > 22:

@@ -1,0 +1,300 @@
+{
+  "scenario_id": "S-10",
+  "lang": "it",
+  "dialect": null,
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Il coach conduce colloquio e feedback in italiano con il tu.",
+    "Il coach aiuta a strutturare una risposta confusa con una domanda precisa invece di criticarla.",
+    "Il feedback nomina prima il calore e l'esperienza con i bambini, citando un esempio concreto (R1, K1).",
+    "Il feedback suggerisce uno schema semplice (situazione – azione – risultato) come passo successivo (K2, R3).",
+    "Il coach non usa etichette come «disordinata» sulla persona, ma descrive il comportamento nella risposta (B1, B3)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Buongiorno, sono Giulia."
+    },
+    {
+      "role": "coach",
+      "text": "Ciao Giulia, piacere di conoscerti, sono Francesca Rezzonico, Direttrice e formatrice all'Asilo nido Il Girasole. Ti parlerò del tirocinio, delle tue motivazioni, dei tuoi punti di forza e di alcune situazioni concrete, poi ti farò qualche domanda. Come ti sei orientata per arrivare qui? Hai trovato facilmente la strada per venire da noi?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, ho cercato su internet l'Asilo nido Il Girasole e ho visto che fate corsi di educazione visiva, che mi piace molto, e poi ho preso i contatti. Ho camminato un po' per Lugano, ho chiesto indicazioni e alla fine sono arrivata senza problemi, anche se ero un po' nervosa perché era il primo colloquio. Mi piace molto lavorare con i bambini e volevo capire se qui potessi imparare anche cose nuove oltre ai giochi e alle storie."
+    },
+    {
+      "role": "coach",
+      "text": "Ho capito, grazie per essere venuta. Raccontaci qualcosa di te."
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, sono Giulia, ho 15 anni, vivo a Lugano e sto finendo la 4ª media, mi piacciono disegnare e fare lavoretti, e negli ultimi anni ho sempre avuto i bambini intorno perché faccio babysitting e agli scout aiuto i lupetti, e ho fatto anche due stage, uno all'asilo nido dove ho aiutato i bambini a calmarsi e uno in farmacia che mi ha fatto capire che mi piace lavorare con i piccoli."
+    },
+    {
+      "role": "coach",
+      "text": "Giulia, interessante! E perché proprio questa professione ti ha colpita?"
+    },
+    {
+      "role": "candidate",
+      "text": "E poi mi piace molto l'idea di passare una giornata intera con i bambini, aiutandoli a fare tutto, e vedere come si emozionano quando fanno i lavoretti e poi quando finiscono e si divertono, e poi mi ha detto la maestra che sono paziente, e questo mi fa sentire sicura che posso farlo bene."
+    },
+    {
+      "role": "coach",
+      "text": "Mi piace molto l'idea di accompagnare i bambini nella crescita, sostenendoli con pazienza e creatività. E tu, cosa ti attrae di più in questo tipo di lavoro?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, mi piace tantissimo vedere i bambini che si divertono con i lavoretti che preparo, e quando piangono un po' come quello che mi ha consolato con un libro, riesco a farli sentire al sicuro. Ho già tanta esperienza con i piccoli, sia con i lupetti agli scout sia facendo babysitting, quindi mi sento pronta a imparare tutto quello che serve qui all'asilo."
+    },
+    {
+      "role": "coach",
+      "text": "Interessante, grazie per aver condiviso queste esperienze. Quali esperienze hai già fatto nell'accudimento o nell'educazione?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, ho fatto due stage: uno all'asilo nido dove ho aiutato i bambini a calmarsi, e uno in farmacia che mi ha fatto capire che mi piacciono i piccoli, e poi faccio babysitting con bambini di 3 e 6 anni, e agli scout aiuto i lupetti, e questo mi fa sentire già pronta a lavorare con i bambini piccoli."
+    },
+    {
+      "role": "coach",
+      "text": "Giulia, interessante come hai vissuto la pazienza in questi contesti. Che cosa significa per te la pazienza con le altre persone?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, la pazienza per me è restare calma anche quando un bambino piange o non vuole fare un lavoretto, e aspettare che capisca quello che voglio spiegargli, perché so che a volte hanno bisogno di più tempo per capire."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, la pazienza è fondamentale. E se ti trovi di fronte a una situazione particolarmente difficile, come gestisci le tue emozioni e quelle del bambino?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, quando succede qualcosa di difficile mi prendo un attimo per respirare e poi parlo piano con il bambino, come quando gli ho mostrato il libro per farlo calmare, e gli dico che va tutto bene e che lo aiuterò, perché so che a volte basta un po' di calma per capire insieme cosa fare."
+    },
+    {
+      "role": "coach",
+      "text": "Sì, mi piace come hai descritto una situazione concreta. Quali sono i tuoi punti di forza più grandi?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, i miei punti di forza sono che sono molto calorosa e paziente con i bambini, e che ho già tanta pratica con i piccoli sia agli scout sia facendo babysitting, e questo mi fa sentire sicura che posso calmarli e farli divertire."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, grazie per la chiarezza. Quale punto debole vorresti migliorare?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, devo migliorare l'organizzazione perché a volte dimentico cose importanti, e devo imparare a fare i compiti di matematica e tedesco senza saltare tutto, perché so che serve per capire meglio i bambini."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, è una situazione che può capitare. Ti sei proposto un compito, ma non riesci ad andare avanti e il tempo stringe. Che cosa fai?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, allora mi fermo un attimo, faccio un respiro profondo e cerco di capire cosa mi manca, perché so che se non riesco a organizzare le idee, non riesco a fare il compito, e poi ci torno piano piano, magari chiedendo aiuto a qualcun altro se serve, perché non è bello sentirsi in difficoltà."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, grazie per la chiarezza. Che ruolo assumi spesso in un gruppo?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, spesso aiuto il capo al gruppo scout a preparare giochi e attività per i lupetti, e durante il babysitting mi occupo anche del piano quotidiano con le famiglie, cercando di tenere tutto insieme anche se a volte mi confondo un po' e poi devo ricordare cosa ho già fatto."
+    },
+    {
+      "role": "coach",
+      "text": "Mi sembra che la confusione sia emersa quando hai dovuto coordinare più compiti contemporaneamente, come nel babysitting e l'aiuto al capo scout. Raccontami cosa è successo esattamente e come ti sei ripresa."
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, è successo che durante il campo scout ho preparato giochi con i lupetti e poi ho dovuto fare anche il babysitting nello stesso pomeriggio, e mi sono confusa perché non sapevo più cosa fare e poi mi sono ripresa ricordandomi di scrivere su un foglietto tutto quello che avevo già fatto, così non ho più dimenticato nulla."
+    },
+    {
+      "role": "coach",
+      "text": "Hai una storia molto interessante! Secondo te, quale sarà la sfida più grande durante l'apprendistato?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, penso che la sfida più grande sarà mantenere l'organizzazione quando ci saranno tante attività e bambini contemporaneamente, perché a volte mi perdo un po' e poi devo rifare tutto, ma sono disposta a imparare e a scrivere su un foglietto per non dimenticare più nulla."
+    },
+    {
+      "role": "coach",
+      "text": "Hai mai usato un foglietto per organizzare un'attività specifica, per esempio durante un'uscita nel bosco o un momento di gioco strutturato?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, durante il campo scout ho fatto un foglietto con i giochi e le attività che dovevo fare, e poi lo tenevo con me nel mio zaino per non dimenticare nulla, perché mi piace molto tenere tutto scritto e vedere cosa ho già fatto, anche se a volte mi sembra un po' troppo ma mi aiuta a non confondermi."
+    },
+    {
+      "role": "coach",
+      "text": "È interessante come hai organizzato tutto in un foglietto, dimostra una buona pianificazione! Dopo l'apprendistato, mi immagino che tu possa proseguire nel campo socioassistenziale, magari come educatrice in un asilo nido o in un centro per l'infanzia, oppure potresti approfondire le tue competenze in un ruolo più specifico come operatore/trice specializzato/a. Dove ti vedi dopo l'apprendistato?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, mi vedo molto in un asilo nido con i bambini piccoli, perché il mio forte è stare con i più piccoli e aiutarli a calmarsi quando piangono come quello che ho fatto nello stage, e poi mi piacerebbe fare la maturità professionale e diventare educatrice dell'infanzia, magari specializzata per i più piccolini."
+    },
+    {
+      "role": "coach",
+      "text": "Sì, mi sembra interessante! E tu, cosa ti incuriosisce di più dell'apprendistato?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, mi incuriosisce tantissimo imparare a gestire davvero il gruppo, come in un asilo vero, perché mi piace tantissimo quando i bambini si calmano da soli grazie a me, e poi voglio capire meglio come organizzare tutto senza dimenticarmi niente, anche se so che a volte mi perdo ma sto già migliorando."
+    },
+    {
+      "role": "coach",
+      "text": "L'apprendistato dura 2 anni e porta alla Maturità professionale OSA, con formazione pratica quotidiana e supporto di una formatrice di riferimento. Hai ancora un'altra domanda?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, mi incuriosisce molto come si fa a dividere il tempo tra tante attività diverse con i bambini, per esempio quando devono giocare, mangiare e fare il pisolino, perché a volte mi perdo ma ho sentito che qui mi aiutano e mi dicono cosa fare passo passo, e poi mi piacerebbe sapere se ci sono giorni in cui ci sono più bambini piccoli da seguire rispetto ad altri."
+    },
+    {
+      "role": "coach",
+      "text": "No, non ho altre domande. Hai ancora un'altra domanda?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, mi chiedo se durante l'apprendistato ci sono momenti in cui siamo in gruppo più grande e dobbiamo stare attente a tutti i bambini contemporaneamente, perché mi piace molto stare con i piccolini ma a volte mi sento un po' sopraffatta quando ci sono troppi, e poi mi piacerebbe sapere se ci sono delle strategie che mi aiutano a non confondermi."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, è una preoccupazione molto reale. C'è ancora qualcosa che vorresti dirci?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sì, mi sento un po' nervosa quando penso a dover gestire tanti bambini insieme, ma ho visto che agli scout con i lupetti riusciamo a far giocare tutti insieme senza problemi, e poi mi piacerebbe sapere se qui vi insegneranno qualche strategia speciale per ricordarmi cosa fare quando ci sono troppi piccoli da seguire."
+    },
+    {
+      "role": "coach",
+      "text": "Grazie per la tua sincerità e per l'interesse mostrato verso il nostro asilo nido. Apprezzo molto la tua esperienza con gli scout e la tua curiosità sulle strategie di gestione. Il Girasole offre formazione specifica per gli apprendisti, inclusi corsi di primo soccorso pediatrico e attività all'aperto che aiutano a gestire grandi gruppi in modo naturale. Ti auguro un buon proseguimento nella preparazione.\n\n---\n**Per concludere: ricevi ora il tuo feedback personale.**\n\n## I tuoi punti di forza\n«Ho cercato su internet l'Asilo nido Il Girasole» – dimostra proattività nella ricerca di informazioni.\n«Ho fatto due stage: uno all'asilo nido dove ho aiutato i bambini a calmarsi» – evidenzia esperienze concrete con bambini.\n\n## Su cosa puoi ancora lavorare\n«Ho dimenticato cose importanti» – indica bisogno di migliorare l'organizzazione.\n«Non so più cosa fare» – suggerisce necessità di strategie preventive per la confusione.\n\n## Il tuo prossimo passo\nCrea una lista di controllo settimanale per pianificare le attività con i bambini.\n\n## Ti incoraggio a continuare così, la pratica ti renderà sempre più sicura.\n\n### Panoramica per criterio\n\n| | |\n|---|---|\n| Chiarezza | Buono |\n| Pertinenza | Buono |\n| Motivazione | Buono |\n| Autoriflessione | Buono |\n| Comunicazione | Buono |\n| Esempi concreti | Buono |\n| Atteggiamento & impressione | Buono |\n| Preparazione / conoscenza dell'azienda | Buono |\n| Orientamento agli obiettivi | Buono |\n| Gestione delle domande difficili | No evidence in the conversation |\n| Iniziativa | Buono |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF22-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF22-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF22-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF22-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-10",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-02",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-04-10",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-04-10",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    }
+  ],
+  "llm_calls": 40,
+  "answers": 19,
+  "calls_per_answer": 2.11,
+  "followups": 2,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 96.7
+}

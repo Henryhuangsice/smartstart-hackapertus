@@ -3,110 +3,138 @@
 - **Track:** Track 2A — FHGR: AI-Powered Job Interview Coach
 - **Event:** Online (1–16 October 2026)
 - **Team:** SmartStart — Chu Jia (University of Zurich, MA Computational Linguistics)
-- **Demo:** `make run` + Agent Chat UI (http://localhost:2026, graph `agent`); screenshots in `docs/`
+- **Demo:** `make run` → Aegra API on `http://localhost:2026` (graph `agent`) + Agent Chat UI; terminal demo `make cli`
 
 ## 1. Summary
 
-Young people preparing for their first apprenticeship interview rarely get repeated,
-individual practice. SmartStart is an Apertus-1.5-8B interview coach that runs a realistic,
-adaptive interview in German, French or Italian (Swiss-German dialect input understood),
-then gives personal, guideline-compliant feedback. Instead of one large prompt, we combine
-a **deterministic interview state machine**, **retrieval of FHGR expert annotations as
-calibration anchors**, a **two-call-per-answer LLM loop (assess → interview)** and a
-**rule-based checker for the FHGR feedback guidelines** that triggers a single rewrite only
-when needed. The system runs fully on consumer hardware (MacBook Pro M4 Pro, MLX; or one
-< 32 GB GPU with vLLM) and needs **≈ 2.1 LLM calls per candidate answer** (limit < 5).
-Headline results: see §5 (`eval/results/RESULTS.md`).
+Young people preparing for their first apprenticeship interview rarely get repeated, individual
+practice. **SmartStart** is an Apertus-1.5-8B interview coach that runs a realistic, adaptive interview
+in **German, French or Italian** (Swiss-German dialect input understood) and ends with personal,
+guideline-compliant feedback. Instead of one large prompt, SmartStart combines (i) a deterministic
+interview state machine that follows the FHGR interview flow, (ii) **retrieval of FHGR expert-annotated
+answers as calibration anchors**, (iii) a **two-call loop per answer** (assess → interviewer turn) and
+(iv) a **rule checker for the FHGR feedback guidelines** that triggers a single rewrite only when needed.
+
+**Headline results** (Apertus 1.5 8B, vLLM on one GH200 at CSCS):
+expert-exemplar retrieval raises the accuracy of the coach's next-action decision from **0.44 to 0.83**
+(100 expert-annotated answers, de/fr/it/Swiss German) and detects all distress cases (recall 1.0 vs. 0.0);
+quality levels are within ±1 of the expert in **99 %** of cases; all **28 FHGR scenarios** run end-to-end
+with **2.11 LLM calls per candidate answer** (limit < 5) and 27/28 final feedbacks pass all automatic
+guideline checks.
 
 ## 2. Architecture
 
-![Architecture](docs/architecture.png)
+![Figure 1 — SmartStart pipeline per candidate answer (blue = Apertus calls).](docs/architecture.png)
 
 | Component | File | LLM calls |
 |---|---|---|
-| LangGraph graph served by Aegra (`agent`, port 2026), session state persisted per thread | `src/main.py` | – |
+| LangGraph graph served by Aegra (`agent`, port 2026); session state persisted per thread in PostgreSQL, Redis job queue | `src/main.py`, `docker-compose.yml` | – |
 | Language & dialect detection (stop-word / Mundart-marker heuristic) | `smartstart/langdetect.py` | 0 |
-| Interview planner: FHGR flow (introduction → motivation → strengths/weaknesses → situational → candidate questions → closing); occupation-specific questions via `berufsfeld`; conditional questions (Stellwerk, absences) only if the profile justifies them; scenario plans when a `scenario_id` is given; free-text occupation wish matched to a posting | `smartstart/planner.py` | 0 |
-| Exemplar retrieval over 706 expert-annotated answers (char-trigram Jaccard, same question first, diverse quality levels, leave-one-out in evaluation) | `smartstart/retrieval.py` | 0 |
-| **Assess**: JSON with rubric levels (1-4 / null), evidence quote, strength, improvement, coach action (`continue / probe / redirect / support_and_refer`), problem flags, follow-up question, coaching tip | `smartstart/coach.py` | 1 per answer |
-| Deterministic policy: ≤ 1 follow-up per question, ≤ 4 per interview; candidate questions answered from posting facts only; distress ⇒ support mode (L3) | `smartstart/coach.py` | 0 |
-| **Interviewer** turn in the persona of the posting's Berufsbildner/in, du/tu | `smartstart/coach.py` | 1 per answer |
-| **Final feedback** (strengths → improvements with quotes → one next step → encouragement) | `smartstart/coach.py` | 1 per interview |
-| **Guideline checker** T3, B3, L2, L4, K1, R1/R3, S3, S4 (+ length) ⇒ **rewrite once** if violated | `smartstart/rules.py` | 0–1 per interview |
-| Rubric overview table for all 11 criteria; "no evidence" instead of guessing (K3) | `smartstart/coach.py` | 0 |
+| Interview planner: FHGR flow introduction → motivation → strengths/weaknesses → situational → candidate questions → closing; occupation-specific questions via the posting's `berufsfeld`; conditional questions (Stellwerk, absences) only if the profile justifies them; FHGR scenario plans; free-text occupation wish matched to a posting | `smartstart/planner.py` | 0 |
+| **Exemplar retrieval** over 706 expert-annotated answers (char-trigram Jaccard — robust across de/fr/it and dialect spelling; same question first; diverse quality levels; leave-one-out in evaluation) | `smartstart/retrieval.py` | 0 |
+| **Assess**: JSON with rubric levels (1–4 / null), evidence quote, strength, improvement, coach action (`continue / probe / redirect / support_and_refer`), problem flags, follow-up, coaching tip | `smartstart/coach.py` | **1 per answer** |
+| Deterministic policy: ≤ 1 follow-up per question, ≤ 4 per interview; candidate questions answered only from posting facts; explicit distress signal ⇒ supportive mode with referral to a real person (L3) | `smartstart/coach.py` | 0 |
+| **Interviewer** turn in the persona of the posting's Berufsbildner/in, du/tu form | `smartstart/coach.py` | **1 per answer** |
+| **Final feedback** (strengths → max. 3 improvements, each with a short quote → one next step → encouragement) | `smartstart/coach.py` | 1 per interview |
+| **Guideline checker** T3, B3, L2, L4, K1, R1/R3, S3, S4 ⇒ **rewrite once** only if violated | `smartstart/rules.py` | 0–1 per interview |
+| Deterministic rubric table for all 11 FHGR criteria; "no evidence" instead of guessing (K3) | `smartstart/coach.py` | 0 |
 
-Two feedback modes: `end` (realistic interview, feedback at the end; default) and
-`per_answer` (adds the assessment's one-line tip after each answer — no extra call).
+Two feedback modes: `end` (realistic interview, feedback at the end — default) and `per_answer`
+(adds the assessment's one-line tip after each answer, at no extra LLM cost).
+
+**What is new.** (1) The FHGR annotations are used *at inference time* as few-shot calibration anchors
+selected per question and per answer — no fine-tuning, yet the coach inherits the experts' judgement of
+when to probe. (2) Control flow is deterministic and only language generation is delegated to the LLM,
+which keeps the call budget fixed (2 per answer) and behaviour reproducible. (3) The FHGR feedback
+guidelines are enforced twice: in the prompt and by a lexical checker that triggers a targeted rewrite.
 
 ## 3. Use of Apertus
 
-- **Model:** `swiss-ai/Apertus-v1.5-8B` (bf16)
-- **How it is used:** inference — assessment (structured JSON), interviewer role-play,
-  feedback generation and rewrite; also as candidate simulator and (default) judge in the evaluation.
-- **Where it runs:** local weights. Development: MacBook Pro M4 Pro (48 GB unified memory)
-  with `mlx_lm.server` (OpenAI-compatible). Alternative: `docker compose --profile gpu`
-  (vLLM, single consumer GPU, `--max-model-len 8192`). The coach only needs
-  `LLM_BASE_URL / LLM_API_KEY / LLM_NAME` ⇒ on-premise deployment, no data leaves the school.
-- **Prompts:** `src/smartstart/prompts.py`. Instructions are English (most reliable
-  instruction following), all user-facing text in the interview language; temperature 0
-  for assessment, 0.3–0.4 for generation; fixed seed.
+- **Model:** `swiss-ai/Apertus-v1.5-8B` (bf16), the only generative model in the system.
+- **How it is used:** inference — structured assessment (JSON), interviewer role-play, feedback
+  generation and rewrite. In the evaluation Apertus also plays the candidate and acts as judge (§5).
+- **Where it runs:** vLLM, official image `ghcr.io/swiss-ai/vllm_apertus_1.5_release` (arm64),
+  one NVIDIA GH200 node on CSCS Clariden (project g238); OpenAI-compatible API reached through an SSH
+  tunnel. The coach only needs `LLM_BASE_URL / LLM_API_KEY / LLM_NAME`, so it runs unchanged against any
+  on-premise endpoint (`docker compose --profile gpu` starts vLLM on a single consumer GPU, 8B bf16 ≈ 16 GB).
+  Note: in October 2026 Apertus 1.5 is not yet supported by released MLX / transformers versions; on a
+  MacBook (M4 Pro) the swiss-ai transformers branch loaded the model but MPS bf16 produced corrupted text
+  and fp32 exceeded memory, which is why we served it with vLLM.
+- **Prompts:** `src/smartstart/prompts.py`. Instructions in English, all user-facing text in the
+  interview language; temperature 0 for assessment, 0.3–0.4 for generation; fixed seed 42.
+  Every request is a single system + user message (the Apertus 1.5 vLLM chat template rejects replayed
+  multi-turn assistant messages, so dialogue history is passed as text).
 
 ## 4. Data
 
-FHGR/Profolio challenge data (provided for Hack Apertus; see `data/fhgr/README.md`):
-242 questions (+296 Swiss-German variants), 706 answers at 4 quality levels in de/fr/it and
-8 dialects with expert annotations, the 11-criterion rubric, 27 feedback guidelines,
-24 candidate profiles, 30 postings, 28 scenarios with coach success criteria, 15 reference
-transcripts and 30 good-vs-poor feedback pairs. All content is synthetic or didactic; no
-personal data. Occupation data © SDBB / berufsberatung.ch. No other data was used.
+Only the FHGR/Profolio challenge data (provided for Hack Apertus; `data/fhgr/`, 2.6 MB): 242 questions
+(+ Swiss-German variants), 706 answers at 4 quality levels in de/fr/it and 8 dialects with expert
+annotations, the 11-criterion rubric, 27 feedback guidelines, 24 candidate profiles, 30 postings,
+28 scenarios with coach success criteria, 30 good-vs-poor feedback pairs. All records are synthetic or
+didactic; no personal data. No other data was used and no model was trained.
 
 ## 5. Evaluation
 
 The official LLM-as-judge benchmark is hidden, so we built three proxy experiments
-(`make eval`; all numbers reproducible with the fixed seeds):
+(`make eval`; raw results in `eval/results/`).
 
-1. **Assessment accuracy vs. expert annotations** (`eval/eval_assess.py`): stratified sample
-   per language group (de, fr, it, Swiss-German dialects), leave-one-out retrieval.
-   Metrics: quality-level accuracy / ±1 / MAE, coach-action accuracy, follow-up decision
-   accuracy, criterion MAE, distress recall. **Ablation:** without exemplar retrieval.
-2. **Simulated interviews** (`eval/simulate.py`): Apertus plays the 28 FHGR scenario
-   candidates (profile + `simulation_persona`, dialect where expected) against the coach.
-3. **LLM-as-judge** (`eval/judge.py`): per transcript, pass/fail for each scenario
-   `success_criteria_for_coach` and 1–5 ratings for realism, adaptivity, relevance,
-   appropriateness, feedback quality, language consistency. The judge is first
-   **validated** on the 30 FHGR good-vs-poor feedback pairs (pairwise accuracy).
+**E1 — Assessment vs. FHGR experts.** 100 annotated answers (25 each: de, fr, it, Swiss German;
+stratified by quality level). Leave-one-out: an answer's own annotation is never retrieved.
 
-<!-- RESULTS:START — replaced by eval/results/RESULTS.md -->
-| Setup | Metric | Result |
-|---|---|---|
-| Efficiency gate | LLM calls per candidate answer | ≈ 2.1 (mock run; final numbers below) |
-| Assessment, no retrieval (baseline) | level acc / ±1 / follow-up acc | _tbd_ |
-| Assessment, with retrieval (ours) | level acc / ±1 / follow-up acc | _tbd_ |
-| Simulated interviews (28) | success criteria met / judge scores | _tbd_ |
-| Consistency | judge scores per language (de / fr / it) | _tbd_ |
-<!-- RESULTS:END -->
+| Setup | Level acc | ±1 acc | Level MAE | **Action acc** | Follow-up acc | Criteria MAE | Distress recall |
+|---|---|---|---|---|---|---|---|
+| Baseline (rubric only, no retrieval) | 0.59 | 0.97 | 0.45 | 0.44 | 0.79 | 0.54 | 0.00 |
+| **SmartStart (expert-exemplar retrieval)** | **0.65** | **0.99** | **0.36** | **0.83** | **0.87** | **0.46** | **1.00** |
+
+![Figure 2 — Agreement with FHGR experts, with and without expert-exemplar retrieval.](docs/figures/assess_ablation.png)
+
+Retrieval helps in every language group; the largest effect is on *what to do next* (action accuracy
++0.39), which is exactly the decision that makes an interview adaptive. Per language (ours):
+action accuracy de 0.76, Swiss German 0.84, fr 0.84, it 0.88; level MAE 0.28–0.48.
+
+**E2 — 28 simulated interviews.** Apertus plays each FHGR scenario candidate (profile, persona,
+dialect where expected) until the coach's final feedback. All 28 runs completed: 511 candidate answers,
+47 adaptive follow-ups, **2.11 LLM calls per answer** (max. 2.17 in any scenario; FHGR limit < 5).
+The guideline checker flagged 2/28 feedbacks before rewrite and 1/28 after.
+
+![Figure 3 — LLM calls per candidate answer in the 28 FHGR scenarios.](docs/figures/calls_per_answer.png)
+
+**E3 — LLM-as-judge.** The judge (Apertus 1.5 8B, temperature 0) is first validated on the 30 FHGR
+good-vs-poor feedback pairs: it ranks the good feedback higher in **0.90** of 29 valid pairs. On the
+transcripts it marks **100 %** of the scenario success criteria as met and rates realism, adaptivity,
+relevance, appropriateness and feedback quality **4.96/5** on average (easy 5.0, medium 5.0, hard 4.8;
+de 4.95, fr 5.0, it 5.0; language consistency 5.0).
+
+**Consistency.** Results are stable across languages (action accuracy 0.76–0.88; judge 4.95–5.0),
+difficulty levels and situations (apprenticeship, online, trial, phone, follow-up, assessment).
 
 ## 6. Limitations
 
-- Text only; speech (TTS/ASR) is prepared for (short turns, plain text output) but not integrated.
-- Dialect: understood on input; the coach answers in Standard German (S4), dialect questions
-  only from the curated FHGR variants (`dialect` option).
-- Judge = same model family as the coach by default (self-preference bias); judge
-  validation on the FHGR pairs quantifies its reliability. Simulated candidates are less
-  varied than real teenagers. The FHGR data is synthetic and not yet expert-reviewed.
-- The rule checker is lexical; it catches clear violations, not subtle tone problems.
+- **Judge ceiling / self-preference:** E3 uses the same model family as the coach and saturates near
+  5/5; its comments sometimes evaluate the candidate rather than the coach. We therefore treat E1
+  (agreement with human experts) as the primary evidence and E3 as a sanity check.
+- German quality-level accuracy (0.52) is the lowest group; many errors are 3-vs-4 on strong answers.
+- Simulated candidates are more articulate than real 15-year-olds; the FHGR data is synthetic and not
+  yet expert-reviewed. No user study yet.
+- Text only. The rule checker is lexical; it catches clear violations, not subtle tone problems.
+- Dialect is understood on input; output is Standard German (guideline S4).
 
 ## 7. Reproducibility
 
-`make test` (offline), `make smoke` (all 28 scenarios with a mock LLM),
-`make run` (Docker: Aegra + Postgres + Redis, Apertus via `LLM_BASE_URL`),
-`make eval` (needs an Apertus endpoint). Hardware used: MacBook Pro M4 Pro, 48 GB, macOS;
-Apertus 1.5 8B bf16 via mlx-lm. Seeds: `LLM_SEED=42`, sampling seed 13.
+- `make test` — offline unit tests (mock LLM); `make smoke` — all 28 scenarios with the mock LLM.
+- `make run` — Docker: Aegra API + PostgreSQL + Redis; Apertus via `LLM_BASE_URL`
+  (`make run-gpu` adds a vLLM container on an NVIDIA GPU).
+- `make eval` — E1–E3 + `eval/results/RESULTS.md` (needs an Apertus endpoint).
+- CSCS: `scripts/cscs/apertus-vllm.toml` + `serve_apertus.sbatch` reproduce our serving setup.
+- Hardware: 1× GH200 (CSCS Clariden) for the model; client on a MacBook Pro M4 Pro.
+  Seeds: `LLM_SEED=42`, sampling seed 13. Runtime: E1 ≈ 4 min, E2 ≈ 45 min, E3 ≈ 5 min.
 
 ## 8. Next steps
 
-Speech in/out with Swiss-German ASR; fine-tuning a LoRA assessor on the expert annotations;
-teacher dashboard over the stored session rubric levels; user study with real classes.
+- **Speech:** Apertus 1.5 already accepts audio input, so spoken answers can be assessed directly;
+  short plain-text coach turns are ready for a TTS voice (e.g. Piper) and a Swiss-German ASR fallback.
+- A teacher dashboard over the per-session rubric levels stored in PostgreSQL.
+- LoRA-tuning the assessor on the expert annotations; a study with real classes; an independent judge.
 
 ## License
 
@@ -114,10 +142,11 @@ Code Apache-2.0; report CC-BY-4.0. FHGR data under the FHGR / Hack Apertus condi
 
 ## AI assistance
 
-Parts of the code and documentation were drafted with the help of an AI coding assistant
-(Claude) and reviewed, run and evaluated by the author.
+Parts of the code and documentation were drafted with the help of an AI assistant (Claude) and
+reviewed, run and evaluated by the author.
 
 ## References
 
-- FHGR / Profolio: *Feedbackkriterien zum Vorstellungsgespräch*; challenge datasets (github.com/fhgr/Hackapertus).
-- Swiss AI Initiative: Apertus technical report and model cards (huggingface.co/swiss-ai).
+- FHGR / Profolio: *Feedbackkriterien zum Vorstellungsgespräch* and challenge datasets, github.com/fhgr/Hackapertus.
+- Swiss AI Initiative: Apertus 1.5 model card, huggingface.co/swiss-ai/Apertus-v1.5-8B.
+- Kwon et al. (2023): Efficient memory management for LLM serving with PagedAttention (vLLM).

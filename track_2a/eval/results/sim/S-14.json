@@ -1,0 +1,300 @@
+{
+  "scenario_id": "S-14",
+  "lang": "de",
+  "dialect": "be",
+  "difficulty": "easy",
+  "situation": "trial_interview",
+  "success_criteria": [
+    "Der Coach bewertet den zurückhaltenden Einstieg nicht und verwendet keine Etiketten wie «schüchtern» (M1, B3).",
+    "Der Coach nutzt ein vertrautes Thema (Backen zu Hause), um das Gespräch zu öffnen.",
+    "Das Feedback nennt ein konkretes Beispiel zu frühen Arbeitszeiten oder zum Backen als Stärke (K1).",
+    "Der Coach gibt einen konkreten Tipp, bei der nächsten Schnupperlehre oder im Vorstellungsgespräch eigene Fragen zu stellen (R3, K2).",
+    "Das Feedback ist kurz und passt zum lockeren Setting einer Schnupperlehre."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Lena."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Lena, ich bin Hans Aebersold, Bäcker-Konditormeister vo Bäckerei-Konditorei Aebersold z Thun. Wir treffen uns am letschte Schnuppertag, trinken e Kaffee und schaue kurz in d Backstube, bevor's zum Gespräch geht. Erzähl mir kurz, wie's mit em früene Aufschtand und em Schnuppertag läuft."
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, guet, ich steh um 6 Uhr uf, jogge 20 Min mitten in de Nacht, denn esse ich e Müesli und fahr noch in die Schule. Am Schnuppertag isch es zwar chaotisch gsii im Frühling, aber ich het Pralinés gfüllt und Cake verziert, und jetzt freu ich mich, d Brotproduktion z sehn. Äüä, ich weiss nid, ob das alles so isch, wie du es willst, aber ich versuch es best mööglich."
+    },
+    {
+      "role": "coach",
+      "text": "Echt toll, dass du so eifrig beschriibst, wie de Tag verlauft isch. Wie isch d Schnupperlehre für dich verlauft – was het dir am beschte gfalle?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, es isch am beschte gfalle, wenn ich d Pralinés fülle durfte und Cake verziert, aber d Brotproduktion suge ich am liebschte z sehn. Ich weiss nid genau, wie's in de Backstube läuft, aber ich freu mich, das z lerne. Äüä, ich hoffe, dass ich alles richtig mache."
+    },
+    {
+      "role": "coach",
+      "text": "Wie konkrète Aufgaben hast du während deiner Schnupperwoche übernommen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich het Pralinés gefüllt, Cake mit Fondant verziert und manchmal beim Brot schauen gholfä. Es isch immer e bissli Stress gsii, aber ich het's trotzdem ganz gern gmacht. Äüä, ich weiss nid genau, aber das isch für mich das Bescht gsii."
+    },
+    {
+      "role": "coach",
+      "text": "Woa, das hört sich super an! Was isch denn am meischte überrascht, als du in unserer Backstube warst?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, am beschte isch mir überrascht gsi, wie schnell d Backstube am Morgen losgange isch, und d Duft vo frisch gebackem Brot – das hot mich ganz begeischt. Äüä, ich weiss nid genau, aber ich freu mich, das z lerne."
+    },
+    {
+      "role": "coach",
+      "text": "Was genau war an der Geschwindigkeit und dem Ablauf am Morgen für dich überraschend?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, am Morgen isch alles so schnell gsii, dass ich am Aafang gar ned wusste, was ich mache soll, aber es isch nachher ganz Rhythmus gwordä. Äüä, ich weiss nid genau, aber ich glaube, wenn ich regelmäßiger übe, werd das für mich normaler."
+    },
+    {
+      "role": "coach",
+      "text": "Schön, dass du das so gut gemeistert hast! Hast du schon in anderen Berufen geschnuppert? Welche?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, es war nur d Konditorei, sonst koin andere Schnupper. Ich will in de Bäckerei mehr lerne, weil ich den Zopf und s Brot mache kann. Äüä, ich weiss nid genau, aber d Backstube scheint voll für mich z si."
+    },
+    {
+      "role": "coach",
+      "text": "Was genau an de Konditorei-Stationen, zum Beispiel de Torten oder de Züpfe, isch es für dich so faszinierend gsi?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, es isch faszinierend gsi, wie genau d Fondant-Plättli glatt gmacht und d Pralinés ganz fein gfüllt werred, dass alles perfekt aussieht. Äüä, wenns ums Backen vom Brot goht, lueg ich immer noch, wie d Mehltüüre durchschneiden und d Teigruhe passiert, das versteh ich am beschte."
+    },
+    {
+      "role": "coach",
+      "text": "Hä, das klingt super! Was machsch scho zu Hause? Welche Erfahrungen hast du bereits beim Kochen, Backen oder Verarbeiten von Lebensmitteln gesammelt?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, z'Heim backe ich jeden Sonntag e Zopf und mache Torten für Geburtstage, das helfe ich immer gern, und morgens jogge ich vor dr Schuel, bevor alles los isch. Äüä, ich weiss nid genau, aber ich helfe am Samstag im Hofladen mit, Eier und Konfitüre feile, was mir zeigt, dass ich gern mit Lebensmittel arbeite."
+    },
+    {
+      "role": "coach",
+      "text": "Härzli Grüet, Lena! Das isch ja super, dass du scho z'Heim mit Brot und Torten arbeitest. Wie schaffst du's denn, mit früene Arbeitszeiten in einer Bäckerei umzschtelle?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, morgens bin ich zwar äüä schlaff, aber wenn der Zopf fertig isch, geht's leichter. Ich jogge vorher, das hilft mir, schneller ufzschtelle. Äüä, ich weiss nid genau, aber ich traue mich, dass ich das schon schaffe werd."
+    },
+    {
+      "role": "coach",
+      "text": "Was machsch genau, bevor du losgehsch – zum Beispiel, was trinksch oder wie lang du joggsch?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, bevor ich losgeh, trink ich e kleine Kaffee und esse 'nen Apfel, denn jogg ich zehn Minutä. Äüä, ich weiss nid genau, aber ich mach das immer so, dass ich mich fit fühl."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Kaffee und Apfel passen perfekt zur Frühschicht – danke für die Info! Hygiene und Sauberkeit am Arbeitsplatz für dich?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, Sauberheit isch für mich super wichtig, alles muss gschmiert und gläut gsi si, bevor ich anfange. Äüä, wenns um Teig goht, cha ich net guet mit schmierige Händer arbeite, des isch für mich klar."
+    },
+    {
+      "role": "coach",
+      "text": "Dank für die Ehrlichkeit, Lena! Genauigkeit isch im Bäckerhandwerk ganz wichtig, denn jedes Gramm zählt fürs perfekte Ergebnis. Wie wichtig isch dir Genauigkeit beim Einhalten vo Rezepturen und Mengenangaben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, genauigkeit isch für mich ganz wichtig, wenns um Gramm und Zeck ghead, sonst cha alles falsch gschmecke. Äüä, ich weiss nid genau, was passiert, wenns zu viel Zucker isch, aber es muess genau passen."
+    },
+    {
+      "role": "coach",
+      "text": "Ja, genau – das stehe ich täglich. Wie machst du das?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, wenns um Rezepturen goht, misse ich alles mit de Waage ab, denn äüä weiss ich, dass Gramm genau Gramm isch, sonst cha alles schief gehn. Morgens isch das am schwerschte, aber wenns dann läuft, mache ich das ganz genau, dass alles perfekt wird. Äüä, ich weiss nid genau, aber ich denke, dass das im Handwerk super wichtig isch."
+    },
+    {
+      "role": "coach",
+      "text": "De Gedanke, dass jedes Brot und jede Züpfe genau so entsteht, wie du sie geplant hast – das macht für mich das Handwerk so faszinierend. Was fasziniert dich am meisten an Bäcker/in-Konditor/in-Confiseur/in?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, es fasziniert mich, wie alles aus Teig wird, wenns richtig ghandhabt isch. Wenn ich den Zopf knete, fühle ich, wie alles langsam form wird, und ich weiss nid genau, was dann passiert, aber es isch wie Magie. Äüä, ich weiss nid genau, aber das macht für mich de ganze Prozess so speziell."
+    },
+    {
+      "role": "coach",
+      "text": "Schön, dass du das so spannend findscht! Wenns was isch, wo du ned verstehsch, fragsch einfach – das isch im Lehrbetrieb normal. Was machsch, wenn du was ned verstehsch?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, wenns was ned versteh, fragsch einfach – 'nen Kolleg oder de Chef, denn äüä weiss ich nid genau, aber es wird schnell geklärt. Morgens isch ich oft noch däm Thema, wenn was mit den Gramm genau passen muss. Äüä, ich weiss nid genau, aber ich mach das einfach, wenns so isch."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, mach das ruhig! Was möchtest du denn genau über die Lehre wissen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich möchd gern wisse, wärend es genau dauert, bis mer e fertige Brot oder Züpfe abgschickt cha, und wärend was passiert, wenns mal e bissi schief gschtellt wird – das isch für mich no ne klaa Sache, wo ich gern wärend erfahre."
+    },
+    {
+      "role": "coach",
+      "text": "Die Fertigstellung dauert je nach Brot oder Züpfe zwischen 2 und 4 Stunden, und bei kleinen Fehlern wird einfach korrigiert und weitergebacken. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, äüä ich weiss nit genau, wärend e Baguette genau richtig abkühlt, ehe mer s abschickt – isch des au wichtig? Und wärend was machsch, wenns e grosse Fehler gschtellt isch, wie zum Beispiel, wenn der ganze Teig kaputt isch?"
+    },
+    {
+      "role": "coach",
+      "text": "Ja, des Abkühlen vom Baguette isch wichtig, damit’s a guete Kruste bechunnt. Bei grossen Fehlern helfsch d Team, d Fehla z analysiere und versueche, d Ursach z behebe. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich weiss nit genau, ob es im Betrieb so isch, aber wenn mer z viel Teig nimmt, isch der dann zu schwer und kann ned richtig aufstehn, oder? Und wenns mal e ganz grossen Fehler gibt, wie zum Beispiel, wenn mer versuecht hät einen Zopf z formen, aber der isch z lange gschtellt und hat sich flach gmacht – was machsch denn dann?"
+    },
+    {
+      "role": "coach",
+      "text": "Jo, das versteh ich ganz genau – im Backhandwerk isch Geduld und korrektes Arbeiten wichtig. Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, wenn mer z viel Teig nimmt, wird's z schwer und steigt net richtig auf – des isch genau der Grund, warum ma genau abwiegt, sonst äüä weiss mer schliesslich nid, was schief gschtellt isch. Wenn der Zopf aber flach gschtellt isch, mach mer ihn einfach wieder neu und versueche, ihn ruhiger und wärmer zu kneten, denn äüä weiss mer, dass Geduld hilft, das richtige Ergebnis z kriegen."
+    },
+    {
+      "role": "coach",
+      "text": "Vielen Dank für dein offenes und fachkundiges Feedback! Es war ein richtiges Vergnügen, dich kennenzulernen. Wir freuen uns auf deine Rückmeldung bezüglich des Lehrvertrags und wünschen dir einen schönen Tag.\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «ich steh um 6 Uhr uf, jogge 20 Min mitten in de Nacht, denn esse ich e Müesli» zeigt Disziplin.\n- «ich het Pralinés gefüllt, Cake mit Fondant verziert» nennt konkrete Tätigkeiten.\n- «Sauberheit isch für mich super wichtig, alles muss gschmiert und gläut gsi si» zeigt Verantwortungsbewusstsein.\n\n## Daran kannst du arbeiten\n- «ich weiss nid genau, wie's in de Backstube läuft, aber ich freu mich, das z lerne» könnte mit konkreten Beobachtungen ergänzt werden.\n- «ich weiss nid genau, aber ich helfe am Samstag im Hofladen mit, Eier und Konfitüre feile, was mir zeigt, dass ich gern mit Lebensmittel arbeite» könnte spezifische Fähigkeiten nennen.\n- «ich weiss nid genau, aber ich traue mich, dass ich das schon schaffe werd» könnte eine Strategie zur Selbstsicherheit formulieren.\n\n## Dein nächster Schritt\nNotiere drei konkrete Aufgaben, die du in der Bäckerei übernehmen würdest, und wie du sie erfolgreich bewältigen könntest.\n\n## Dein Feedback\nDu zeigst Disziplin und praktische Erfahrungen. Arbeite an präziseren Beobachtungen und spezifischen Fähigkeiten. Übe die Formulierung von Fragen und Antworten.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Dazu gab es im Gespräch keine Aussage |\n| Relevanz | Gut |\n| Motivation | Ausbaufähig |\n| Selbstreflexion | Ausbaufähig |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Ausbaufähig |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Ausbaufähig |\n| Zielorientierung | Dazu gab es im Gespräch keine Aussage |\n| Umgang mit schwierigen Fragen | Dazu gab es im Gespräch keine Aussage |\n| Eigeninitiative | Sehr gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-12",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-12",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-13",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-13",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-05",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-05",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF02-05",
+      "level": 3,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF02-02",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF02-02",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF02-03",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF02-06",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF02-04",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-03",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-08",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 40,
+  "answers": 19,
+  "calls_per_answer": 2.11,
+  "followups": 4,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 101.9
+}

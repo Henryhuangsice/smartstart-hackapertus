@@ -1,0 +1,328 @@
+{
+  "scenario_id": "S-05",
+  "lang": "it",
+  "dialect": null,
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Il coach conduce il colloquio e il feedback in italiano e dà del tu al candidato.",
+    "Il coach non giudica negativamente l'incertezza sulla scelta, ma aiuta a strutturarla con domande.",
+    "Il feedback collega la motivazione a un'esperienza concreta del candidato (stage in fiduciaria o negozio dello zio).",
+    "Il coach segnala al massimo 1–2 punti di miglioramento con un passo concreto (R2, R3).",
+    "Il feedback termina con una frase incoraggiante che sottolinea il carattere di esercizio (A1)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Buongiorno, sono Matteo."
+    },
+    {
+      "role": "coach",
+      "text": "Ciao Matteo, piacere di conoscerti, mi chiamo Davide Pellandini, Formatore e responsabile apprendisti qui alla Banca Popolare del Ceresio-Ticino SA, ti guiderò attraverso il colloquio e ti aiuterò a capire come funziona il nostro percorso di apprendistato. Inizieremo con qualche informazione su di te, la tua scuola e le tue motivazioni, poi parleremo delle tue forze e di alcune situazioni pratiche che potresti incontrare, e alla fine ti farò qualche domanda per capire meglio come ti comporteresti in certi contesti. Come ti sei trovato a trovare la strada per arrivare qui?"
+    },
+    {
+      "role": "candidate",
+      "text": "All'inizio non sapevo proprio cosa volessi fare, ho fatto un po' di stage in banca e in informatica ma mi sono reso conto che programmare tutto il giorno non mi andava, poi ho pensato che qui con tanto di contabilità e sistemi informatici potrebbe andare bene, e il mio orientatore mi ha consigliato proprio l'apprendistato da impiegato commerciale, tipo mi sono trovato grazie a lui."
+    },
+    {
+      "role": "coach",
+      "text": "Hai preso un treno o un autobus per arrivare a Bellinzona? Quanto tempo ci hai messo e com'è stato il tragitto?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo ho preso l'autobus regionale, ci ho messo circa mezz'ora, tra traffico non è stato male, e in realtà è bello perché mi ha dato un po' di tempo per pensare a cosa dirti."
+    },
+    {
+      "role": "coach",
+      "text": "Bella idea per arrivare, grazie per il tempo che hai dedicato al viaggio. Raccontaci qualcosa di te."
+    },
+    {
+      "role": "candidate",
+      "text": "In realtà mi piace molto il calcio, gioco in difesa in una squadra giovanile regionale, poi aiuto il sabato nel negozio dello zio, gestisco cassa e inventario con Excel, e mi piace vedere tutto organizzato e i conti che tornano."
+    },
+    {
+      "role": "coach",
+      "text": "Mi fa piacere sentire che ti piace il calcio e che aiuti già in negozio con la cassa e l'inventario. Come hai scoperto che il lavoro di impiegato/a di commercio nella banca potesse interessarti?"
+    },
+    {
+      "role": "candidate",
+      "text": "In realtà ho visto che qui c'è anche molta informatica, tipo il mio orientatore mi ha detto che l'apprendistato ha un sacco di contabilità e sistemi che mi piacciono, e così ho capito che potrebbe andare bene con i numeri e l'ordine che mi piace nel negozio dello zio."
+    },
+    {
+      "role": "coach",
+      "text": "Sì, capisco perfettamente, sembra che l'informatica e la contabilità ti interessino molto. Perché hai scelto questa professione?"
+    },
+    {
+      "role": "candidate",
+      "text": "In realtà, mi piace quando tutto è organizzato e i conti tornano, tipo come nel negozio dello zio, e qui ho visto che c'è molta informatica e contabilità, quindi mi sembra che si incastri bene con le cose che mi piacciono di più."
+    },
+    {
+      "role": "coach",
+      "text": "Sì, è interessante come hai collegato i tuoi interessi a quello che vedi qui. Quali esperienze hai fatto durante gli stage d'orientamento o i tirocini?"
+    },
+    {
+      "role": "candidate",
+      "text": "In realtà ho fatto un tirocinio in banca dove ho inserito fatture in un programma e archiviato documenti, e un altro in un'azienda informatica dove ho installato computer e visto un po' di programmazione, ma ho capito che non mi andava programmare tutto il giorno e così mi sono orientato verso l'impiegato commerciale con i sistemi che mi piacciono."
+    },
+    {
+      "role": "coach",
+      "text": "Hai fatto esperienze molto diverse che ti hanno aiutato a capire meglio cosa ti piace davvero. Che cosa hai imparato dagli stage che hai fatto finora?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo ho imparato che mi piace lavorare con i numeri e l'informatica, ma che non mi va di programmare tutto il giorno, e così mi sono reso conto che l'impiegato commerciale è quello che si incastra meglio con le cose che mi piacciono di più."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco perfettamente, è utile sapere le tue alternative. Se non potessi lavorare come impiegato/a di commercio, cosa faresti invece?"
+    },
+    {
+      "role": "candidate",
+      "text": "In realtà, se non potessi lavorare come impiegato commerciale, mi piacerebbe molto continuare ad aiutare nel negozio dello zio, perché mi piace la cassa e gestire l'inventario con Excel, e poi magari fare stage in contabilità o sistemi informatici per vedere se mi va ancora bene con i numeri."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco perfettamente, è una scelta interessante che mostra già un interesse pratico per i numeri e il contatto con i clienti. E tu, cosa pensi siano i compiti principali di un impiegato di commercio in una banca?"
+    },
+    {
+      "role": "candidate",
+      "text": "In realtà, penso che l'impiegato di commercio in banca debba gestire i conti dei clienti e inserire i dati nei sistemi, come ho visto durante il tirocinio dove ho archiviato fatture e lavorato con Excel, quindi è un lavoro che combina numeri e informatica, cose che mi piacciono."
+    },
+    {
+      "role": "coach",
+      "text": "Sì, durante il tirocinio ho imparato a gestire fatture e a lavorare con Excel, quindi mi sento abbastanza sicuro/a con i numeri. Come ti comporteresti se un cliente allo sportello si sentisse insoddisfatto/a per un errore nei suoi conti?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, mi metterei nei suoi panni e cercherei subito di capire cosa non va, perché in negozio ho imparato che la cassa va fatta bene e i clienti apprezzano quando ti occupi loro del problema, anche se all'inizio non sono contenti."
+    },
+    {
+      "role": "coach",
+      "text": "Hai mai avuto un cliente particolarmente difficile durante un tirocinio e come l'hai gestito?"
+    },
+    {
+      "role": "candidate",
+      "text": "In realtà, in banca non ho avuto clienti difficili durante i tirocini, ma in negozio a volte c'era gente che voleva sconti o cose che non trovavamo, e io ho sempre cercato di spiegare pazientemente e offrire soluzioni anche se non potevo accontentarli subito."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, è utile sapere il tuo livello pratico. Hai già usato Word o Excel durante la scuola o in altri contesti? Come ti sei sentito quando hai dovuto creare un documento o un foglio di calcolo per un progetto?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, sì, ho usato Excel per l'inventario nel negozio dello zio e Word per scrivere piccoli rapporti, e mi è piaciuto vedere che i dati tornavano e che i documenti erano ben fatti, quindi mi sento abbastanza a mio agio con i programmi anche a scuola."
+    },
+    {
+      "role": "coach",
+      "text": "Sì, mi sembra una base solida. E tu, quale qualità pensi ti contraddistingua di più?"
+    },
+    {
+      "role": "candidate",
+      "text": "In realtà, mi sento abbastanza affidabile perché ci sono sempre quando devo sistemare qualcosa o allenarmi, e mi piace il calcio quindi sono bravo a lavorare in squadra, e ho imparato dal negozio che è importante sistemare le cose in ordine e che la gente apprezza quando i conti tornano."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, è una situazione difficile. Chiederei aiuto al mio collega o responsabile per capire come procedere, oppure cercherei di spiegare al cliente la situazione e proporgli una soluzione alternativa. Che cosa faresti tu?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, cercherei di capire bene il problema e spiegare al cliente cosa è successo, perché in negozio ho sempre visto che la pazienza aiuta a placare anche i più arrabbiati, e poi propongo una soluzione che sia equa per entrambi."
+    },
+    {
+      "role": "coach",
+      "text": "Hai mai avuto un caso del genere a scuola o in un lavoro estivo? Come hai riconosciuto che il cliente aveva bisogno di più tempo per essere ascoltato?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, a scuola non è successo tanto, ma in negozio ho sentito alcuni clienti che si agitavano quando non trovavano subito il prodotto, e allora mi sono avvicinato e ho chiesto cosa cercavano, così ho capito che avevano bisogno di più tempo per essere ascoltati."
+    },
+    {
+      "role": "coach",
+      "text": "Hai descritto una situazione molto interessante, Matteo. E ora dimmi, quali sono i tuoi obiettivi professionali?"
+    },
+    {
+      "role": "candidate",
+      "text": "In realtà, mi piacerebbe fare l'apprendista di impiegato di commercio perché ho visto che c'è molta informatica e mi piace anche il negozio, e spero di imparare a gestire i conti e aiutare la gente in modo ordinato, tipo come nel calcio che lavoriamo tutti insieme."
+    },
+    {
+      "role": "coach",
+      "text": "Mi piace come l'informatica ti aiuta a organizzare i dati in modo chiaro e veloce, e il lavoro di squadra ti permette di collaborare con i colleghi per risolvere i problemi dei clienti. E cosa ti ha spinto a pensare che l'informatica e il lavoro di squadra siano importanti per questo ruolo?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, ho visto che l'informatica aiuta a tenere tutto chiaro, tipo i conti e l'inventario, e nel calcio lavoriamo in squadra per difendere il nostro obiettivo, quindi mi sembra che siano due cose che vanno bene insieme per questo lavoro, boh, mi piace l'idea di poter combinare i due."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco perfettamente, è una scelta importante e piena di entusiasmo. C'è qualche aspetto specifico dell'apprendistato che ti incuriosisce di più?"
+    },
+    {
+      "role": "candidate",
+      "text": "In realtà, mi incuriosisce capire bene come usare i computer per i conti e l'inventario, perché ho trovato difficile la programmazione ma mi piace l'idea di avere tutto chiaro e veloce, tipo nel calcio che dobbiamo saper giocare insieme per avere successo."
+    },
+    {
+      "role": "coach",
+      "text": "Certamente, possiamo approfondire la rotazione tra i quattro settori e la settimana di scambio a Lucerna per migliorare il tedesco. Hai ancora un'altra domanda?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, mi incuriosisce anche come gestire i clienti quando sono arrabbiati, perché ho visto che avere pazienza aiuta a trovare una soluzione che vada bene a tutti, come nel calcio che lavoriamo insieme per raggiungere l'obiettivo, boh, mi piacerebbe imparare meglio quelle tecniche."
+    },
+    {
+      "role": "coach",
+      "text": "Sì, ho ancora qualche domanda. Hai ancora un'altra domanda?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, mi piacerebbe sapere se l'apprendistato prevede anche delle ore di formazione sul tedesco, perché in realtà mi sento un po' indietro su questo fronte, e mi piacerebbe migliorare anche un po' le mie capacità di parlare con i clienti stranieri."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, cercheremo di includere momenti di formazione linguistica per migliorare le tue competenze nel parlare con i clienti stranieri. C'è ancora qualcosa che vorresti dirci?"
+    },
+    {
+      "role": "candidate",
+      "text": "In realtà, mi piacerebbe sapere se posso portare con me i miei videogiochi di calcio e manageriali durante l'apprendistato, perché mi aiutano a capire meglio le strategie di squadra e la gestione dei conti, e tipo, mi sembra che potrebbero essere utili anche per lavorare in negozio."
+    },
+    {
+      "role": "coach",
+      "text": "Grazie mille Matteo per la tua disponibilità e per le domande sincere. È stato un piacere conoscerti e capire meglio le tue motivazioni. Se hai bisogno di ulteriori informazioni sui nostri programmi di formazione o sul processo di selezione, non esitare a contattarci. Buona giornata!\n\n---\n**Per concludere: ricevi ora il tuo feedback personale.**\n\n## I tuoi punti di forza\n«Mi piace l'ordine e i conti che tornano» – mostra interesse concreto per la contabilità e l'organizzazione.\n\n«Ho usato Excel per l'inventario nel negozio dello zio» – dimostra competenze pratiche utili per il ruolo.\n\n## Su cosa puoi ancora lavorare\n«In banca non ho avuto clienti difficili durante i tirocini» – non fornisce esempio concreto di applicazione bancaria.\n\nTip: descrivi un caso specifico in cui hai gestito un cliente in banca, indicando i passaggi che hai intrapreso.\n\n## Il tuo prossimo passo\nPrepara un breve racconto di un'esperienza in banca in cui hai aiutato un cliente, evidenziando le tue azioni e il risultato.\n\n## Il tuo prossimo passo è scrivere una storia breve di un cliente in banca che hai aiutato, con i tuoi passaggi e il risultato.\n\n### Panoramica per criterio\n\n| | |\n|---|---|\n| Chiarezza | Buono |\n| Pertinenza | Buono |\n| Motivazione | Buono |\n| Autoriflessione | Buono |\n| Comunicazione | Buono |\n| Esempi concreti | Buono |\n| Atteggiamento & impressione | Buono |\n| Preparazione / conoscenza dell'azienda | Buono |\n| Orientamento agli obiettivi | Buono |\n| Gestione delle domande difficili | Buono |\n| Iniziativa | Buono |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-01",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-01-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-06-07",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-06-09",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-DIF-08",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-04-04",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF17-01",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF17-01",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF17-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-10",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-10",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-01",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-01",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 44,
+  "answers": 21,
+  "calls_per_answer": 2.1,
+  "followups": 4,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 113.7
+}

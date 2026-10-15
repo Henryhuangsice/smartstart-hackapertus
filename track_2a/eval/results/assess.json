@@ -1,0 +1,1342 @@
+{
+  "summary": {
+    "overall": {
+      "n": 100,
+      "level_acc": 0.65,
+      "level_acc_pm1": 0.99,
+      "level_mae": 0.36,
+      "action_acc": 0.83,
+      "followup_acc": 0.87,
+      "criteria_mae": 0.455,
+      "distress_recall": 1,
+      "json_parse_rate": 1
+    },
+    "de": {
+      "n": 25,
+      "level_acc": 0.52,
+      "level_acc_pm1": 1,
+      "level_mae": 0.48,
+      "action_acc": 0.76,
+      "followup_acc": 0.76,
+      "criteria_mae": 0.567,
+      "distress_recall": null,
+      "json_parse_rate": 1
+    },
+    "fr": {
+      "n": 25,
+      "level_acc": 0.72,
+      "level_acc_pm1": 1,
+      "level_mae": 0.28,
+      "action_acc": 0.84,
+      "followup_acc": 0.84,
+      "criteria_mae": 0.42,
+      "distress_recall": 1,
+      "json_parse_rate": 1
+    },
+    "gsw": {
+      "n": 25,
+      "level_acc": 0.68,
+      "level_acc_pm1": 0.96,
+      "level_mae": 0.36,
+      "action_acc": 0.84,
+      "followup_acc": 0.92,
+      "criteria_mae": 0.486,
+      "distress_recall": null,
+      "json_parse_rate": 1
+    },
+    "it": {
+      "n": 25,
+      "level_acc": 0.68,
+      "level_acc_pm1": 1,
+      "level_mae": 0.32,
+      "action_acc": 0.88,
+      "followup_acc": 0.96,
+      "criteria_mae": 0.347,
+      "distress_recall": 1,
+      "json_parse_rate": 1
+    }
+  },
+  "rows": [
+    {
+      "answer_id": "A-OCC1-0001",
+      "group": "de",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [
+        "inappropriate_tone"
+      ],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-OCC1-0008",
+      "group": "de",
+      "gold_level": 2,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [
+        "inappropriate_tone"
+      ],
+      "crit_mae": 1.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-SIT-0039",
+      "group": "de",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-DIF-0020",
+      "group": "de",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.6666666666666666,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-DIF-0021",
+      "group": "de",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [
+        "badmouthing"
+      ],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-OCC1-0061",
+      "group": "de",
+      "gold_level": 2,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-DE2-0016",
+      "group": "de",
+      "gold_level": 3,
+      "pred_level": 4,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-OCC1-0020",
+      "group": "de",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.75,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-DE3-0045",
+      "group": "de",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-DE1-0060",
+      "group": "de",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-DE1-0039",
+      "group": "de",
+      "gold_level": 3,
+      "pred_level": 2,
+      "gold_action": "continue",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-SRC-KT-21",
+      "group": "de",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.6666666666666666,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-DIF-0005",
+      "group": "de",
+      "gold_level": 1,
+      "pred_level": 2,
+      "gold_action": "continue",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-OCC2-0038",
+      "group": "de",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [
+        "inappropriate_tone"
+      ],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-DE3-0039",
+      "group": "de",
+      "gold_level": 3,
+      "pred_level": 2,
+      "gold_action": "continue",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.3333333333333333,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-DE1-0032",
+      "group": "de",
+      "gold_level": 4,
+      "pred_level": 4,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.25,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-SIT-0037",
+      "group": "de",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "continue",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [
+        "inappropriate_tone"
+      ],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-DE1-0064",
+      "group": "de",
+      "gold_level": 2,
+      "pred_level": 3,
+      "gold_action": "redirect",
+      "pred_action": "support_and_refer",
+      "gold_flags": [
+        "privacy_oversharing"
+      ],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-SRC-KR-15",
+      "group": "de",
+      "gold_level": 3,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-DE1-0016",
+      "group": "de",
+      "gold_level": 4,
+      "pred_level": 4,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-OCC1-0027",
+      "group": "de",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [
+        "extrinsic_only"
+      ],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-SIT-0022",
+      "group": "de",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "continue",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.6666666666666666,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-DE2-0025",
+      "group": "de",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-DE2-0046",
+      "group": "de",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.3333333333333333,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-OCC1-0017",
+      "group": "de",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [
+        "inappropriate_tone"
+      ],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0057",
+      "group": "fr",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "support_and_refer",
+      "pred_action": "probe",
+      "gold_flags": [
+        "distress_signal"
+      ],
+      "pred_flags": [
+        "badmouthing",
+        "distress_signal"
+      ],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0046",
+      "group": "fr",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0027",
+      "group": "fr",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.3333333333333333,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0012",
+      "group": "fr",
+      "gold_level": 4,
+      "pred_level": 4,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0033",
+      "group": "fr",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [
+        "one_word"
+      ],
+      "pred_flags": [
+        "one_word"
+      ],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0022",
+      "group": "fr",
+      "gold_level": 2,
+      "pred_level": 3,
+      "gold_action": "probe",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0015",
+      "group": "fr",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.3333333333333333,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0036",
+      "group": "fr",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0060",
+      "group": "fr",
+      "gold_level": 1,
+      "pred_level": 2,
+      "gold_action": "continue",
+      "pred_action": "probe",
+      "gold_flags": [
+        "inappropriate_tone"
+      ],
+      "pred_flags": [
+        "inappropriate_tone"
+      ],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0059",
+      "group": "fr",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [
+        "badmouthing"
+      ],
+      "pred_flags": [
+        "badmouthing"
+      ],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0043",
+      "group": "fr",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0048",
+      "group": "fr",
+      "gold_level": 4,
+      "pred_level": 4,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0025",
+      "group": "fr",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "support_and_refer",
+      "gold_flags": [],
+      "pred_flags": [
+        "distress_signal"
+      ],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0050",
+      "group": "fr",
+      "gold_level": 2,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [
+        "inappropriate_tone"
+      ],
+      "crit_mae": 1.6666666666666667,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0031",
+      "group": "fr",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0032",
+      "group": "fr",
+      "gold_level": 4,
+      "pred_level": 4,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0049",
+      "group": "fr",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.6666666666666666,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0026",
+      "group": "fr",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.6666666666666666,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0007",
+      "group": "fr",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0028",
+      "group": "fr",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.6666666666666666,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0045",
+      "group": "fr",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0018",
+      "group": "fr",
+      "gold_level": 2,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0051",
+      "group": "fr",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0056",
+      "group": "fr",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.6666666666666666,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-FR-0053",
+      "group": "fr",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0043",
+      "group": "gsw",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [
+        "extrinsic_only"
+      ],
+      "pred_flags": [
+        "extrinsic_only"
+      ],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0014",
+      "group": "gsw",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0039",
+      "group": "gsw",
+      "gold_level": 3,
+      "pred_level": 2,
+      "gold_action": "continue",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0040",
+      "group": "gsw",
+      "gold_level": 4,
+      "pred_level": 2,
+      "gold_action": "continue",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0031",
+      "group": "gsw",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0020",
+      "group": "gsw",
+      "gold_level": 2,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "redirect",
+      "gold_flags": [],
+      "pred_flags": [
+        "inappropriate_tone"
+      ],
+      "crit_mae": 1.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0024",
+      "group": "gsw",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0016",
+      "group": "gsw",
+      "gold_level": 4,
+      "pred_level": 4,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0007",
+      "group": "gsw",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0032",
+      "group": "gsw",
+      "gold_level": 2,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0033",
+      "group": "gsw",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0028",
+      "group": "gsw",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.6666666666666666,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0025",
+      "group": "gsw",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [
+        "one_word"
+      ],
+      "pred_flags": [
+        "one_word"
+      ],
+      "crit_mae": null,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0029",
+      "group": "gsw",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0015",
+      "group": "gsw",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0034",
+      "group": "gsw",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.6666666666666666,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0019",
+      "group": "gsw",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [
+        "inappropriate_tone"
+      ],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0026",
+      "group": "gsw",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [
+        "extrinsic_only"
+      ],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0009",
+      "group": "gsw",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0042",
+      "group": "gsw",
+      "gold_level": 4,
+      "pred_level": 4,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0048",
+      "group": "gsw",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "redirect",
+      "pred_action": "probe",
+      "gold_flags": [
+        "manipulation_attempt"
+      ],
+      "pred_flags": [
+        "inappropriate_tone"
+      ],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0041",
+      "group": "gsw",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0021",
+      "group": "gsw",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.3333333333333333,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0046",
+      "group": "gsw",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-GSW-0006",
+      "group": "gsw",
+      "gold_level": 1,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [
+        "inappropriate_tone"
+      ],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0019",
+      "group": "it",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0045",
+      "group": "it",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0025",
+      "group": "it",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0013",
+      "group": "it",
+      "gold_level": 4,
+      "pred_level": 4,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0009",
+      "group": "it",
+      "gold_level": 1,
+      "pred_level": 2,
+      "gold_action": "redirect",
+      "pred_action": "probe",
+      "gold_flags": [
+        "off_topic"
+      ],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0028",
+      "group": "it",
+      "gold_level": 2,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0050",
+      "group": "it",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.5,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0051",
+      "group": "it",
+      "gold_level": 4,
+      "pred_level": 4,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0031",
+      "group": "it",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [
+        "one_word"
+      ],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0032",
+      "group": "it",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0003",
+      "group": "it",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0059",
+      "group": "it",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0027",
+      "group": "it",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0002",
+      "group": "it",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0021",
+      "group": "it",
+      "gold_level": 3,
+      "pred_level": 4,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0018",
+      "group": "it",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0.6666666666666666,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0039",
+      "group": "it",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [
+        "inappropriate_tone"
+      ],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0043",
+      "group": "it",
+      "gold_level": 2,
+      "pred_level": 1,
+      "gold_action": "redirect",
+      "pred_action": "probe",
+      "gold_flags": [
+        "discriminatory"
+      ],
+      "pred_flags": [
+        "inappropriate_tone"
+      ],
+      "crit_mae": 0.6666666666666666,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0033",
+      "group": "it",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0022",
+      "group": "it",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0060",
+      "group": "it",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "support_and_refer",
+      "pred_action": "support_and_refer",
+      "gold_flags": [
+        "distress_signal"
+      ],
+      "pred_flags": [
+        "badmouthing"
+      ],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0040",
+      "group": "it",
+      "gold_level": 2,
+      "pred_level": 2,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0037",
+      "group": "it",
+      "gold_level": 3,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 0,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0038",
+      "group": "it",
+      "gold_level": 4,
+      "pred_level": 3,
+      "gold_action": "continue",
+      "pred_action": "continue",
+      "gold_flags": [],
+      "pred_flags": [],
+      "crit_mae": 1,
+      "parsed": true
+    },
+    {
+      "answer_id": "A-IT-0014",
+      "group": "it",
+      "gold_level": 1,
+      "pred_level": 1,
+      "gold_action": "probe",
+      "pred_action": "probe",
+      "gold_flags": [
+        "extrinsic_only"
+      ],
+      "pred_flags": [
+        "extrinsic_only"
+      ],
+      "crit_mae": 0.3333333333333333,
+      "parsed": true
+    }
+  ],
+  "settings": {
+    "per_lang": 25,
+    "no_retrieval": false,
+    "seed": 13,
+    "out": "eval/results"
+  }
+}

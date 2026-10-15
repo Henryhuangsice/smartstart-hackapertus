@@ -1,0 +1,202 @@
+{
+  "scenario_id": "S-24",
+  "lang": "de",
+  "dialect": "so",
+  "difficulty": "easy",
+  "situation": "phone_call_trial",
+  "success_criteria": [
+    "Der Coach prüft die Grundstruktur eines Telefonats: Begrüssung, vollständiger Name, Anliegen, gewünschte Woche, Rückfragen, Dank und Verabschiedung.",
+    "Das Feedback nennt konkret, welche Elemente vorhanden waren und welches fehlte (z. B. Nachname) (K1).",
+    "Der Coach gibt einen einfachen Tipp für das nächste Telefonat (z. B. Stichwortzettel mit Name, Anliegen, Wunschwoche) (K2).",
+    "Der Coach stellt keine geschlechterstereotypen Fragen und bewertet die Berufswahl nicht nach Geschlecht (L1).",
+    "Das Feedback ist kurz und dem Format eines Telefonats angemessen."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Ana."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Ana, ich bin Patrick Nussbaumer, Werkstattchef und Berufsbildner bei Garage Weissenstein AG. Ich freue mich, dich kennenzulernen – erzähl mir kurz, warum du dich für eine Schnupperlehre als Automobil-Mechatroniker/in interessierst und was dich an unserem Betrieb besonders reizt."
+    },
+    {
+      "role": "candidate",
+      "text": "So, ich bin mega in Autos und helfe schon seit drei Jahren meinem Vater, des stoot fest. In der ersten Schnupperlehre als Mechatronikerin in de Garage hää die Fehlerdiagnose mit dem Computer gfunde, des isch voll spannend gsi. Unser Betrieb tragt Garage Weissenstein AG, der isch professionell und macht alles mit moderne Technik, das gefällt mir."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, dass du das alles so gut erklären kannst! Hast du schon in anderen Berufen geschnuppert? Welche?"
+    },
+    {
+      "role": "candidate",
+      "text": "So, ich hää zwei Schnupperlehren gmacht: als Automechatronikerin und als Automobil-Fachmann. In de Carrosserie war’s zu laut, aber in de Garage hää ich die Technik mit dem Diagnosegerät super spannend gfunde. Deswegen bin ich am sichersten, dass ich in de Mechanik-Lehre bleib."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, dass du in der Carrosserie die Technik trotzdem spannend gefunden hast – das zeigt echt Interesse! Wie bist du auf den Beruf als Automobil-Mechatroniker/in aufmerksam geworden?"
+    },
+    {
+      "role": "candidate",
+      "text": "So, der Vater schraubt immer an Autos rum, und ich helfe ihm schon seit ich zehn bin. Im Kartclub hää ich die Motoren besser glernt, und in de erste Schnupperlehre isch die Computer-Diagnose so spannend gsi. Deswegen isch ich voll drauf, in de Mechanik-Lehre zu lerne, wo Technik und Auto wirklich zusammenkommen."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das hört sich nach einem super Plan an! Warum hast du dich für diesen Beruf entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "So, ich bin einfach voll in Autos und Motoren, und im Kartclub und mit dem Vater am Auto schrauben hää ich gelernt, dass Technik so wichtig isch. Die Fehlersuche mit dem Computer in de Schnupperlehre hää mich voll begeistert, und weil die Mechatronikerin in de Garage genau des macht, isch das für mich voll perfekt. Deswegen will ich lerne, wie Autos wirklich funktionieren und die Fehler selber repariere."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt super motiviert! Für welche Woche hättest du dir eine Schnupperlehre vorgestellt?"
+    },
+    {
+      "role": "candidate",
+      "text": "So, ich wär bereit für die nächste Woche, am liebsten ab Montag, denn ich will gleich reinbekomme, wie so was mit den Autos genau funktioniert. Ich will jetzt schon die Diagnosegeräte in de Hand nehmen und nicht warten, bis die Woche zu Ende isch."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das passt perfekt! Wie kommst du während der Schnupperwoche jeweils zu uns?"
+    },
+    {
+      "role": "candidate",
+      "text": "So, ich fahre mit dem Velo oder dem Auto zu Eure Garage, weil ich da genau bin. Wenn’s nicht klappt, helfe mir der Vater oder der Bus aus Solothurn. Ich bin pünktlich, und wenn’s mal länger dauert, schreib ich vorher. Das ist für mich kein Problem, voll einfach."
+    },
+    {
+      "role": "coach",
+      "text": "Kein Problem, danke für die Info. Hast du bereits eine Bewerbung geschickt oder soll ich dir sagen, was wir brauchen?"
+    },
+    {
+      "role": "candidate",
+      "text": "So, ich hab scho e paar Bewerbunge geschickt, aber wenn Eure Garage was braucht, sende ich sofort e kompletti Bewerbig mit allne Zeugniss und Zeugnistexte – das mach ich einfach fertig. Ich fange gleich a, wenns noch fehlt, denn ich will, dass alles schnell fertig isch."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, ich freu mich drauf, dass du bereit bist! Was möchtest du während der Schnupperlehre bei uns herausfinden?"
+    },
+    {
+      "role": "candidate",
+      "text": "So, ich will am liebsten die Fehlerdiagnose mit dem Computer direkt selber machen und lerne, wie die Motoren wirklich ticken – voll spannend! Ich frag mal, ob ich auf die Diagnosegeräte schauen darf und was genau bei der Reparatur von Personwagen wichtig isch."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne! Was genau möchtest du über die nächsten Schritte wissen?"
+    },
+    {
+      "role": "candidate",
+      "text": "So, ich will am liebsten wissen, wie die Mechatronikerin arbeitet, wenn ne Motor defekt isch, und was genau die Diagnosegeräte alles zeigen – ich will nix versäume. Und ich frag, ob ich am Schluss noch e paar Tipps für die Praxis mitnehme, denn ich will wirklich alles richtig mache."
+    },
+    {
+      "role": "coach",
+      "text": "Bei einem Motorschaden prüft die Mechatronikerin zuerst die Fehlermeldungen mit dem Diagnosegerät, das Systemparameter, Sensorwerte und elektrische Ströme anzeigt. Anschliessend wird der Motor getestet, Teile ausgetauscht oder die Ursache mit Spezialwerkzeugen gefunden. Praktische Tipps für die Arbeit bekommst du direkt während deiner Schnupperlehre vom Werkstattteam.\n\nHast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "So, ich will am liebsten alles über die Diagnosegeräte lerne, wie ma Fehler am Auto findet, und was genau ma da genau macht. Und ob ma am Schluss e Zertifikat oder e Bestätigung kriegt, wenn ma alles richtig mache. Das isch für mich mega wichtig, dass ich alles versteh."
+    },
+    {
+      "role": "coach",
+      "text": "Ja, wir stellen dir am Ende de Lehrvertrags eine Bestätigung aus, dass du d notwendige Kompetenze erworben hesch. Hast du sonst no e Frag?"
+    },
+    {
+      "role": "candidate",
+      "text": "So, ich will genau wissen, wie de Computer die Fehler im Auto findet, und ob ma am Schluss e Zertifikat kriegt, wenn ma alles richtig mache – das isch für mich mega wichtig! Und ich frag, ob ma in de Schnupperlehre direkt mit de Diagnosegeräte arbeiten darf, denn ich will nix verpasse."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das ist möglich – du kannst mit den Diagnosegeräten arbeiten. Dürfen wir dich kontaktieren, falls wir weitere Fragen haben?"
+    },
+    {
+      "role": "candidate",
+      "text": "So, ich will ganz genau wissen, wie der Computer die Fehler im Auto findet, und ob ma am Schluss e offizielle Bestätigung kriegt, wenn ma alles richtig mache – das isch für mich mega wichtig! Und ich frag, ob ma in de Schnupperlehre direkt mit den Diagnosegeräte arbeiten darf, denn ich will nix versäume und alles genau versteh."
+    },
+    {
+      "role": "coach",
+      "text": "Vielen Dank für dein Interesse und deine Fragen! Gerne kannst du uns jederzeit kontaktieren, falls du noch Fragen hast. Wir freuen uns darauf, dich in der Schnupperlehre kennenzulernen. Bis bald!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «In de erste Schnupperlehre hää die Fehlerdiagnose mit dem Computer gfunde, des isch voll spannend gsi.» Zeigt praktische Erfahrung und Interesse an der technischen Arbeit.\n- «Ich will am liebsten alles über die Diagnosegeräte lerne, wie ma Fehler am Auto findet.» Formuliert klare, fachspezifische Lernziele.\n- «Ich will gleich reinbekomme, wie so was mit den Autos genau funktioniert.» Zeigt konkreten Wunsch nach sofortiger praktischer Erfahrung.\n\n## Daran kannst du arbeiten\n- «In de Carrosserie war’s zu laut, aber in de Garage hää ich die Technik mit dem Diagnosegerät super spannend gfunde.» Beschreibe genauer, was du in der Carrosserie genau erlebt hast, um die Entscheidung für die Mechanik-Lehre noch stärker zu untermauern.\n- «Deswegen isch ich voll drauf, in de Mechanik-Lehre zu lerne, wo Technik und Auto wirklich zusammenkommen.» Formuliere ein konkretes zukünftiges Ziel, z.B. eine Spezialisierung auf Elektroautos.\n- «So, ich will ganz genau wissen, wie der Computer die Fehler im Auto findet, und ob ma am Schluss e offizielle Bestätigung kriegt, wenn ma alles richtig mache – das isch für mich mega wichtig!» Präzisiere die Frage nach dem Ablauf der Zertifizierung und den spezifischen Lernzielen.\n\n## Dein nächster Schritt\nSchreibe eine kurze Zusammenfassung deiner bisherigen Erfahrungen als Antwort auf die Frage: «Was motiviert dich am meisten an der Mechatroniker-Lehre?» Verwende dabei mindestens drei konkrete Beispiele aus deiner Schnupperlehre.\n\n## Abschließender Satz\nDu hast heute sehr gut deine Motivation und deine konkreten Fragen gezeigt – das war eine gute Übung für die echte Bewerbung.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Sehr gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Sehr gut |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Dazu gab es im Gespräch keine Aussage |\n| Eigeninitiative | Sehr gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-OTH-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-08",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-08",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-08",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 26,
+  "answers": 12,
+  "calls_per_answer": 2.17,
+  "followups": 0,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 64.2
+}

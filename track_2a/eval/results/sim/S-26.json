@@ -1,0 +1,258 @@
+{
+  "scenario_id": "S-26",
+  "lang": "de",
+  "dialect": "tg",
+  "difficulty": "medium",
+  "situation": "trial_interview",
+  "success_criteria": [
+    "Der Coach bewertet es nicht negativ, dass Tierpfleger eine Alternative ist, sondern hilft, eine ehrliche und überzeugende Motivation zu formulieren.",
+    "Der Coach fragt nach der Bereitschaft für unangenehme Arbeiten und Wochenenddienste mit einem Beleg.",
+    "Das Feedback nennt eine konkrete Stärke aus dem Gespräch (z. B. Erfahrung draussen oder Zuverlässigkeit) (K1).",
+    "Der Coach gibt einen konkreten Tipp, wie er die Schnupperwoche nutzen kann, um seine Wahl zu prüfen (R3).",
+    "Der Coach verzichtet auf Moralpredigten zu früheren Absenzen (T1, L2)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Timo."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Timo, ich bin Monika Graf, Heimleiterin und Berufsbildnerin am Tierheim Pfötli-Hof in Zürich. Ich werde dich heute kennenlernen, deine Motivation und Stärken hören und dir ein paar Situationen aus deiner Schnupperlehre vorstellen, bevor wir mit deinen Fragen beginnen. Erzähl mir kurz, was dich zum Tierpflege EFZ motiviert."
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, es git nüt schöneres, als Tiere z'hälfe und z'pflege, drum isch Tierpfleger EFZ genau des Richtige für mich. In da Schnupperlehre am Tierheim het's mir Spass gmacht, Zwinger z'putze und Katzen z'füttere, und jetzt moch ich's im Garten vom Grossvater nach. Ich helfe ihm mit Gärtnereiarbeit, und das zeigt, dass mir körperliche Arbeit liegt, was zum Beruf passt."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du in der Schnupperlehre genau diese Aufgaben besonders spannend fandest. Was möchtest du während deiner Ausbildung bei uns konkret noch erfahren oder üben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, ich möchli gern lerne, wie mer Kätzli und Hunde richtig pflegt und wie mer Krankheiten am Auge bekommt. Ich will au übe, wie mer Zwinger sauber macht und Tiere sicher füttert, damit alles passend läuft."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, was hast du bisher geschnuppert? Hast du schon in anderen Berufen geschnuppert? Welche?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, ich händ als Schnupperlehre im Gartenbau Platten verlegt und Kies geführt, und im Forstbetrieb Holz abgeräumt. Au im Tierheim het's nur e Tag gsi, wo mer Kätzli gfüttert und Zwinger gsauber gmacht händ. Das zeigt, dass ich körperlich zuegschtimmig bin und gern draussen arbeite, was zum Tierpflege passt."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt nach einer guten Basis, besonders die körperliche Bereitschaft. Warum interessierst du dich für die Arbeit mit Tieren, Pflanzen oder in der Natur?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, d'Natur und Tiere fasziniered mich immer, und im Garten vom Grossvater zeiged sich, dass ich gern mit de Hand z'do händ. Des passt zum Tierpflege, wo mer täglich im Freie isch und für d'Schaff sorged. Ich will au was lerne, wie mer Tiere am beschte betreut, drum isch d'Lehrstelle genau des Richtige für mich."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du bereits im Garten deines Grossvaters mit der Hand gearbeitet hast. Erzähl mir von konkreten Erfahrungen mit Tieren oder Pflanzen, die du dort gemacht hast."
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, im Garten vom Grossvater händ mir Vögel beobachtet, wu im Frühling zuegschtimmt händ, und d'Kirschblüte sorged für schöni Momente, was s'Leben mit Tieren und Pflanzen so schöni macht."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt nach einer schönen Erfahrung mit Vögeln und Pflanzen. Wie gehst du mit Aufgaben wie Reinigen oder Misten um, wenn sie nicht gerade romantisch klingen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, d'Reinigung isch zwar nüt die lustigschte, aber wenn mer sauber schafft, sitzed am End alles schöner und mer kann besser ufgmerksam uf d'Tiere si. Ich händ im Tierheim gsehn, wie d'Zwinger gsauber gmacht werded, und do händ mir glernt, dass sauberheite für d'Gesundheit vo d'Tiere lebenswichtig isch. Wenn's misst oder gschtöpselt muess, machd mer's schlicht und zuesamme mit de Kollegen."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du die Sauberkeit mit dem Wohlergehen der Tiere verknüpfst. Was bedeutet für dich ein sorgfamer Umgang mit Lebewesen und Umwelt?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, ich find, dass s'wichtig isch, dass d'Tiere und d'Umwelt respektiert werded, sonst wird mer nüt lange froh drau. Wenn mer sauber gschafft und gfüttert wird, fühle d'Tiere sich sicher und gschätzt, das motiviert mich, immer d'Bestes z' mache."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Engagement für das Wohl der Tiere ist beeindruckend. Wie gehst du mit frühen Arbeitszeiten oder unregelmässigen Einsätzen um, z. B. bei der Tierpflege?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, früeh Aufschtah isch für mich nüt so schlimm, wenn mer am End im Freie isch und Tiere versorgd. Unregelmässige Einsätze muess mer gut organisieren, aber d'Nahe vom Grossvader gärt händ mir glernt, dass Planung hilft. Wenn d’Arbeit mal länger dauert, bringd mer einfach d'Stimmung und machd sie zum Erlebnis."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das ist gut zu hören, dass du Planung und Flexibilität schätzt. Wie kommst du während der Schnupperwoche jeweils zu uns?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, mit em Velo bin ich in 20 Minute bi de Firma, und am erste Tag händ mir d'Kollegen gzeigt, wie ich mich einfinde. Wenn’s e ganz andere Schicht isch, händ mer am Vorabend gschriebä oder telefoniert, und ich bringe immer e Wasserflasche und e Stift mit, dass alles bereit isch."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, danke für die Info. Wenn du nicht Tierpfleger/in werden könntest, was würdest du stattdessen machen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, wenns Tierpfleger nöd wärd, wärd ich am liebschte Gärtner/in, denn im Garten vom Grossvader fähl ich mich am sicherschte und machd Freid drau. Mit de Hände z'arbeite und z'schaffa, was sichtbar isch, passt am beschte zu mir. Des isch au d'Lehrstelle gsi, wo mir am meischte Freid gha het."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Wunsch, dich im Garten zu entfalten, zeigt deine praktische Ader – das ist ein Pluspunkt. Welche Schwäche möchtest du aktiv verbessern?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, in Mathematik und Französisch isch es no nit so guet wie in d'andere Fächer, aber das muess sich ändere. In dr 2. Sek händ mir scho besser gschafft und jetzt versueche mir, d'Lektionen ne gschtudiert z'mache. Wenn mer mir helfet, mit mehr Übige z' übe, glaubd mer wirklich, dass sich's verbessere cha."
+    },
+    {
+      "role": "coach",
+      "text": "Wie hast du zum Beispiel beim letzten Französischtest durch gezieltes Üben eine höhere Punktzahl erzielt?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, s' isch mit mehr Vokabelkärtli und Hörübige gschafft, dass ich im letschte Test 4 statt 3.5 kriegt händ. Des zeigt, dass Übe wirklich hilft, wenn mer d'Ziil vor Augen händ."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du den Zusammenhang zwischen Übung und besseren Ergebnissen erkennst – das ist ein gutes Zeichen. Gibt es etwas, das du über die Lehre genauer wissen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, ich wüsste gern, wia d'Lehrjahre strukturiert si, ob s'viel Praxis im Freie gits und wann d'Lehrlinge neue Sachen lerne, z. B. wie ma mit Holz oder Pflanze umgaht."
+    },
+    {
+      "role": "coach",
+      "text": "Die Lehre umfasst drei Jahre mit viel Praxis im Freien, wöchentlichen Pflegearbeiten und monatlichen neuen Themen wie Umgang mit Holz und Pflanzen. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, wenn d'Praktikumsphase im Freie so viel isch, wärd ich froh, wenns d'Lehrlings derf gärn in d'Woche oder am Wochäänd mache, dass s' Kei Stress mit dem Velo wird."
+    },
+    {
+      "role": "coach",
+      "text": "Im Praktikum werden die Aufgaben in die Woche und das Wochenende verteilt, sodass kein zusätzlicher Stress mit dem Velo entsteht. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, wenn d'Praktikumsphase so viel dra dra isch, wie lange dauert d'Theorie im Klassenzimmer? Und händ d'Lehrlinge do zue au so a Pause wie im Freie?"
+    },
+    {
+      "role": "coach",
+      "text": "Kurz gesagt: Die Theorie findet parallel zur Praxis statt, und die Pausen folgen den regulären Schulzeiten. Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Eigentli, ich würd gern wisse, ob's am Schluss e Prüfig git, wo mer d'ganz Theorie mit dr Praxis verbinde muess. Und wie d'Teamarbeit unter de Lehrlinge ausschaut, wenn mer am Samschtig amol zäme starte muess."
+    },
+    {
+      "role": "coach",
+      "text": "Vielen Dank für die offenen Fragen, Timo. Wir freuen uns auf deine Schnupperlehre und werden dich gerne in allen Bereichen unterstützen. Viel Erfolg bei deiner Entscheidung!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Eigentli, es git nüt schöneres, als Tiere z'hälfe und z'pflege, drum isch Tierpfleger EFZ genau des Richtige für mich.» – Zeigt starke Berufsbegeisterung.\n- «Eigentli, ich händ als Schnupperlehre im Gartenbau Platten verlegt und Kies geführt, und im Forstbetrieb Holz abgeräumt.» – Nennenswerte praktische Erfahrungen aus verschiedenen Bereichen.\n\n## Daran kannst du arbeiten\n- «Eigentli, ich möchli gern lerne, wie mer Kätzli und Hunde richtig pflegt und wie mer Krankheiten am Auge bekommt.» – Erweiterung der Antwort mit konkreten Aufgaben aus der Schnupperlehre.\n- «Eigentli, ich find, dass s'wichtig isch, dass d'Tiere und d'Umwelt respektiert werded, sonst wird mer nüt lange froh drau.» – Ein konkretes Beispiel aus der Tierheimpraxis einfügen.\n\n## Dein nächster Schritt\nÜbe eine kurze Antwort mit einem konkreten Beispiel aus der Schnupperlehre, wie du eine Tierkrankheit erkannt oder einen Zwinger gereinigt hast.\n\n## Abschliessende Ermutigung\nDu hast heute viele konkrete Beispiele gezeigt – übe einfach, diese noch deutlicher zu machen.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Dazu gab es im Gespräch keine Aussage |\n| Eigeninitiative | Gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF01-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF01-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF01-07",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF01-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF01-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-OTH-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-DIF-08",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 34,
+  "answers": 16,
+  "calls_per_answer": 2.12,
+  "followups": 1,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 91.3
+}

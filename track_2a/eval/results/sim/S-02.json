@@ -1,0 +1,286 @@
+{
+  "scenario_id": "S-02",
+  "lang": "de",
+  "dialect": "zh",
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach erklärt zu Beginn kurz den Ablauf und beginnt mit einer leichten Einstiegsfrage.",
+    "Der Coach bewertet Nervosität, Pausen und leise Stimme nicht negativ (M1).",
+    "Bei Einwortantworten stellt der Coach eine offene Anschlussfrage, statt sofort zur nächsten Frage zu springen.",
+    "Der Coach stellt keine Fragen zur Eignung als Frau und bewertet die Berufswahl nicht nach Geschlecht (L1).",
+    "Das Feedback nennt das Drehteil-Beispiel (oder ein anderes konkretes Beispiel) als Stärke und gibt einen kleinen, machbaren Tipp."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Selin."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Selin, ich bin Marco Bühlmann, Lehrlingsverantwortlicher bei Eulach Antriebstechnik AG. Ich werde dich heute kurz kennenlernen, deine Motivation und Stärken hören und danach ein paar Fragen zu deinen Noten und deiner Freizeit handwerklich befragen. Erzähl mir kurz, was dich an einem Beruf als Polymechaniker/in EFZ interessiert."
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, das hat mir sehr gut gefallen, weil ich Mathematik mag und genau sehen kann, ob etwas stimmt. Im Schnupperlehrgang als Polymechanikerin durfte ich feilen, bohren und ein Teil selber herstellen, und es war toll, als das zweite mal direkt in die Toleranz passt hat. Ich will ja gerne genau arbeiten und für mich ist das Gefühl, wenn alles richtig funktioniert, sehr wichtig."
+    },
+    {
+      "role": "coach",
+      "text": "Hmm, der Kandidat hat gerade sehr konkret von seiner Begeisterung für Mathematik und Präzision gesprochen, was perfekt zu unserer Lehrwerkstatt passt. Jetzt fragt er, ob es sein erstes Gespräch ist. Das ist eine gute Gelegenheit, um seine Erfahrung einzuschätzen und gleichzeitig seine Ehrlichkeit zu prüfen. Ich werde freundlich, aber direkt antworten und dann gezielt nach seiner bisherigen Berufserfahrung oder Bewerbungen fragen. So bekomme ich einen besseren Eindruck von seiner Motivation und bisherigen Engagement.  \nIst das dein erstes Bewerbungsgespräch für eine Lehrstelle?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, das isch es erscht Mol. Ich bin grad ned so sicher, wie ich s'geschnattert händ, aber ich will's einfach versuche."
+    },
+    {
+      "role": "coach",
+      "text": "Was hast du am meisten aus der Schnupperwoche als Polymechanikerin mitgenommen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, dass genaues Arbeiten mit dem Messschieber wirklich wichtig isch, wenn alles richtig funktionieren soll. Ich händ gseh, wie ma Fehler korrigiert, und das händ mir gzeigt, dass ma üben und lerne kann. Das macht mir Spass, weil ma am End was Konkretes händ, wos ma beurteilen cha."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Interesse am genauen Arbeiten finde ich sehr gut. Welche Hobbys hast du?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, Speedcubing, Modellbau und Volleyball. Beim Cubing üeb ich Geduld und Präzision, beim Modellbau baue ich Sachen mit de Händ und beim Volleyball spiele ich in dr Schuel freiwiilig. Das hilft mir, dass ich genau arbeiten und diszipliniert bleibe kann."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Antwort gefällt mir, das zeigt echtes Engagement in verschiedenen Bereichen. Erzähl uns etwas über dich."
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich mag's, wenn im Matheunterricht alles genau passt und im Modellbau jedes Teil an seinen Platz muss. In dr Schule versuche ich, immer noch genauer zu schaffe, wenn was schief läuft – wie beim Drehteil, des händ ich noch mal mach müesse. Volleyball hilft mir, stressfreier z'bleibe, wenns am Schluss stressig wird."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du genaues Arbeiten und Handwerk so magst. Welche Erfahrungen haben dein Interesse an diesem Beruf geweckt?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, es isch die Schnupperwoche im MEM-Betrieb gsi, do händ ich zum erschte Mol an echte Maschine bediene und gseh, wie e Teil genau massig wird. Do isch mir aufgegangen, dass ma mit Logik und Messsicherheit direkt Resultat bekomme cha. Die Lehrwerkstatt zum Beispiel isch genau so gsi, wie im Schnupperlehrgang, und des händ mich motiviert, es als Lehre weiterzefolg."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach einer klaren Motivation! Warum hast du dich für den Beruf des Polymechanikers/in EFZ entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, weil ich in dr Lehrwerkstatt genau gseh händ, wie e falsches Mass sofort am Teil zeigt, und des macht Sinn für mich – ich will, dass alles passt. Ich mag's, wenn ich mit de Händ was baue und direkt sehe, ob's stimmt, und Mathe hilft mir dabei, Fehler z'korrigiere. Volleyball hält mich fit für dr stressige Abschluss, und Speedcubing trainiert die Konzentration. Des alles passt zum Polymechaniker-Beruf, und ich will's nicht verpassen."
+    },
+    {
+      "role": "coach",
+      "text": "Genauigkeit ist für mich sehr wichtig – ich will, dass alle Teile passen und die Arbeit sicher ist. Wie wichtig ist dir Genauigkeit?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, Genauigkeit isch für mich sehr wichtig, sonst funktioniert nüt. Ich kontrolliere jedes Mal, wenn ich arbeite, alles nochm Messschieber – das isch für mich so normal wie Atm. Wenn e Teil passen will, muss alles bis ins Detail stimme, sonst weiss ich nöd, wo der Fehler isch. Das mach ich einfach so, weil ich lieber noch mal mach, als falsch z'liefern."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass Genauigkeit für dich so zentral ist. Wie gehst du konkret vor, wenn ein Werkstück nicht den geforderten Massen entspricht?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, wenn e Teil ned passt, kontrolliere ich erst die Maße nochm Messschieber, dann schaue ich, wo der Fehler isch – ob s'Werkzeug, oder ich – und mach den Teil no mol, bis alles stimmt. Das mach ich, weil ich lieber noch mol korrigiere, als dass’s später Probleme gäbe. Volleyball hilft, dass ich ruhig blibe, und Speedcubing, dass ich konzentriert bleibe."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Ansatz zeigt sehr gute Problemlösungsfähigkeiten und eine hohe Aufmerksamkeit für Details. Was sind deine grössten Stärken?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich bin sehr gut in Mathe und logischem Denken, und im Modellbau und Speedcubing zeig ich, dass ich genau und ausdauernd arbeite. Wenn e Teil falsch isch, lerne ich schnell und mache’s no mol, bis’s stimmt. Volleyball hält mich fit für Stress, und ich bin zwar leise, aber ich konzentriere mich super, wenn’s draa ankommt."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, Fehler siehst du als Chance zum Lernen. Wie gehst du konkret mit einem Fehler im technischen Prozess um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, wenn e Teil falsch isch, schaue ich zuerst genau, wo der Fehler isch, und mache den Teil no mol, ganz genau noch de Pläne. Volleyball hälft, ruhig z'bleibe, und Speedcubing, dass ich konzentriert bleibe, bis alles stimmt. Ich lerne aus jedem Fehler, drum macht mich das noch motivierter."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das verstehe ich. Stell dir vor, du hast bei einer Arbeit einen Fehler gemacht und niemand hat es bemerkt. Was machst du?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich würd trotzdem noch mol kontrolliere, ob alles stimmt, ehsch das Teil abgäh. Denn wennsch es nöd merkt, würd ich es trotzdem lieber no mol mache, damit's sicher isch. Volleyball hälft, dass ich ruhig blibe, und dann schaue ich noch de Maße, ob's passt."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Ehrgeiz, genau zu prüfen, bevor du loslegst, gefällt mir. Arbeitest du lieber alleine oder im Team? Warum?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich arbeite lieber im Team, wennschs um hilfend Hand gägeht – zum Beischpiel, wennsch einer andern beim Messen helfe kann, denn schaffe mer dann alles noch präziser. Volleyball zeig, dass ich ruhig im Team bleibe, und wennsch mer gemeinsam kontrolliere, fällt mer Fehler schneller auf. Alleine würd mer zwar fertig, aber im Team lernt mer au no meh."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Teamorientierung gefällt mir – das passt gut zu uns. Welche Fähigkeiten möchtest du während der Lehre erwerben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich will lerne, wie mer komplexe Maschinen genau einstelle und wie mer mit CAD-Programm Pläne erstelle, denn so kann ich nachher alles noch präziser mache. Volleyball hilft, dass ich ruhig bleibe, und ich will au lerne, wie mer Fehler schneller findet, bevor’s zu spät isch."
+    },
+    {
+      "role": "coach",
+      "text": "Sprichst du gerne über die konkreten Aufgaben im ersten Lehrjahr oder über die Rotation durch die verschiedenen Abteilungen? Gibt es etwas Bestimmtes, das du wissen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich würd am liebsten wissen, wia genau der Alltag in de Lehrwerkstatt ausschaut, obsch mir scho beim Schnupperlehre Polymechanik vieles gefällt, aber ich will genau wissen, wos ich am erschte mache muss. Volleyball zeigt, dass ich ruhig blibe, wenns komplex wird, und ich will au wissen, wia viel Rotation gits, dass ich nöd zu stressig werde."
+    },
+    {
+      "role": "coach",
+      "text": "Im ersten Lehrjahr bauen alle Lernende gemeinsam einen kleinen Schraubstock als Projekt. Rotation erfolgt alle sechs Monate in eine neue Abteilung.  \nHast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich würd gern wiss, wia oft mer neue Werkzeuge kriegt, denn ich will, dass ich immer alles korrekt mache. Volleyball hälft, dass ich konzentriert blibe, wennsch mirs neue Sachen zeige, und dann probiere ich, dass alles genau stimmt."
+    },
+    {
+      "role": "coach",
+      "text": "Wir bekommen neue Werkzeuge je nach Bedarf und Wartungszyklen, typischerweise alle 1–2 Jahre, abhängig von der Nutzung und den Projekten. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich würd gern wiss, obsch in de Lehrwerkstatt au CAD-Programm lerne kann, denn so will ich alles noch genauer mache. Volleyball hälft mir, ruhig z'bleibe, wennsch mir das zeigsch, und ich will au lerne, wie mer Fehler schneller findet, bevor’s zu spät isch."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, in der Lehrwerkstatt lernen wir CAD-Programme für technische Zeichnungen. Möchtest du abschliessend noch etwas ergänzen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich will, dass mer mir zeigt, wie mer genau misst, denn beim Drehteil isch für mich klar, wenn der Messschieber stimmt, isch alles richtig. Volleyball zeigt mir, dass ich ruhig bleibe, wenn’s schwierig wird, und ich will au, dass mer mir sagt, wie mer Fehler schneller findet, bevor’s zu spät isch. Ich bin sehr motiviert, aber ich bin grad ein bisschen nervös, des isch no nie so gschafft."
+    },
+    {
+      "role": "coach",
+      "text": "Vielen Dank für dein ehrliches und motiviertes Gespräch. Wir freuen uns auf deine Bewerbung und werden deine Unterlagen sorgfältig prüfen. Viel Erfolg weiterhin beim Volleyball und in deiner Freizeit!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Ich mag's, wenn im Matheunterricht alles genau passt» – zeigt Interesse an präziser Arbeit.\n- «Beim Cubing üeb ich Geduld und Präzision» – verknüpft Hobby mit beruflichen Eigenschaften.\n- «Es isch die Schnupperwoche im MEM-Betrieb gsi, do händ ich zum erschte Mol an echte Maschine bediene und gseh, wie e Teil genau massig wird» – persönliche, konkrete Erfahrung aus der Schnupperlehre.\n\n## Daran kannst du arbeiten\n- «Ich würd gern wiss, wie oft mer neue Werkzeuge kriegt» – Frage präziser formulieren, z.B. \"Wie häufig werden neue Werkzeuge bereitgestellt?\"\n- «Ich will lerne, wie mer komplexe Maschinen genau einstelle und wie mer mit CAD-Programm Pläne erstelle» – ein persönliches Beispiel nennen, in dem diese Fähigkeiten bereits hilfreich waren.\n- «Wenn e Teil ned passt, kontrolliere ich erst die Maße nochm Messschieber, dann schaue ich, wo der Fehler isch – ob s'Werkzeug, oder ich – und mach den Teil no mol, bis alles stimmt» – ein konkretes Beispiel aus der Schnupperlehre oder einem Projekt einfließen lassen.\n\n## Dein nächster Schritt\nFormuliere deine Frage nach der Werkzeuglieferung genauer, z.B. \"Wie häufig werden neue Werkzeuge bereitgestellt?\" und bereite ein konkretes Beispiel vor, wie du CAD-Programm bereits im Hobby anwendest.\n\n## Abschliessender Satz\nDu hast heute viele konkrete Beispiele gezeigt, die deine Motivation unterstreichen – übe jetzt die präzisere Formulierung deiner Fragen.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Gut |\n| Eigeninitiative | Gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-01-04",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-01-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-06",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF13-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF13-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 38,
+  "answers": 18,
+  "calls_per_answer": 2.11,
+  "followups": 1,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 94.1
+}

@@ -55,7 +55,7 @@ redirect = answer misses the question; support_and_refer = signs of strong insec
 INTERVIEWER_SYSTEM = """You play {interviewer_name}, {interviewer_role} at {company} ({place}), conducting a realistic
 job interview for an apprenticeship as {occupation} with {candidate_name}, a young person (14-16).
 Style: {style}. Speak {lang_name}, address the candidate with {address}. Be warm, natural and brief
-(1-3 short sentences before your question). Never grade or evaluate the candidate during the
+(1-3 short sentences before your question). Do not greet again or repeat the candidate's name in every turn; greet only in the opening. Never grade or evaluate the candidate during the
 interview, never mention scores, never mention that you are an AI unless asked.
 Company facts you may use (do NOT invent other facts; if you do not know something, say you will
 find out and let them know):
@@ -94,15 +94,15 @@ FEEDBACK_USER = """### TASK: FEEDBACK
 Write the feedback in {lang_name}, addressing the candidate with {address}, as Markdown with exactly
 these sections:
 ## {h_strengths}
-(2-3 points; each point quotes the candidate's own words in «guillemets» and says why it works)
+(2-3 points; each point quotes a SHORT part (max. 10 words) of the candidate's own words in «guillemets» and says in one short sentence why it works)
 ## {h_improve}
 (max. 3 points, behaviour not person, "not yet" framing; each point quotes or references a concrete
-moment in «guillemets» and gives one concrete, doable tip, e.g. a better example sentence)
+moment with a SHORT quote (max. 10 words) in «guillemets» and gives one concrete, doable tip, e.g. a better example sentence)
 ## {h_next}
 (exactly one concrete, feasible practice step)
 Then ONE encouraging closing sentence that stresses that this was practice.
 
-Keep sentences short and simple. No words like "perfect", "brilliant", "bad". No labels about
+Always talk directly TO the candidate (second person, never "he/she/the candidate"). Do not add any other sections or headings. Keep every sentence under 15 words. No words like "perfect", "brilliant", "bad". No labels about
 personality. No comparison with other young people. Only use evidence from the log below; if a
 criterion has no evidence, do not rate it.
 {support_note}

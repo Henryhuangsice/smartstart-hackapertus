@@ -1,0 +1,258 @@
+{
+  "scenario_id": "S-18",
+  "lang": "de",
+  "dialect": "gr",
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach stellt keine geschlechterstereotypen Fragen (z. B. «Schaffst du das als Frau körperlich?») (L1).",
+    "Der Coach behandelt Fragen zu körperlicher Arbeit gleich wie bei anderen Bewerbenden.",
+    "Der Coach ermutigt die Kandidatin, Stärken mit dem Maiensäss- oder Schnupperbeispiel selbst zu benennen.",
+    "Das Feedback verweist auf ein Zitat, in dem sie ihre Leistung herunterspielt, und gibt einen konkreten Tipp dazu (K1, K2).",
+    "Die Muttersprache Romanisch wird nicht bewertet."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Seraina."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Seraina, ich bin Gian-Reto Hartmann, Berufsbildner und Chefmonteur bei Elektro Sertig AG. Im Gespräch werden wir uns kennenlernen, deine Motivation und Stärken besprechen sowie ein paar praktische Situationen durchgehen – das dauert etwa 35 Minuten. Erzähl mir kurz, warum du dich für die Lehre als Elektroinstallateur/in interessierst. Hast du den Weg zu uns gut gefunden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, i han mich für d Lehre als Elektroinstallateurin interessiert, well ich genaues Arbeiten und Schaltpläne versteh. Den Weg zum Büro isch ich gut gsii, und im Maiensäss-Projekt han i gsehn, wie praktisch d Theorie isch. Eigentlich isch's eifach, wenn ma Schritt für Schritt vorgeht und sicher arbeitet."
+    },
+    {
+      "role": "coach",
+      "text": "Ich danke dir für deine offenen Worte und dein Interesse an der Lehre bei Elektro Sertig. Erzähl uns etwas über dich."
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, i bin 15 Jahr alt, geh zur 3. Sekundarschule und han in Mathe, Natur und Technik e Starke. Im Maiensäss-Projekt mit dem Vater isch mir klar gsii, dass ich gern genau und sicher arbeite, und in de Schnupperlehren han i e paar Fähigkeiten für d Lehre glernt. Eigentlich isch es eifach, wenn ma Schritt für Schritt vorgeht und versteht, was ma macht."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Begeisterung für Technik und Sicherheit ist gut zu sehen. Warum hast du dich für den Beruf Elektroinstallateur/in entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, ich han gschafft, dass Elektrizität funktioniert, und das gefällt mir. In de Schnupperlehren isch mir klar gsii, dass ich gern mit Leitungen und Steckdosen schaffe, und im Maiensäss-Projekt han i glernt, wie wichtig Sicherheit isch. Eigentlich isch's eifach, wenn ma Schritt für Schritt vorgeht und versteht, was ma macht."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Begeisterung für die Elektrizität und die Systeme finde ich sehr gut. Was fasziniert dich an Elektrotechnik und elektronischen Systemen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, d' Art, wie ma mit Schaltpläne und Leitungen arbeitet und alles sicher macht, fasziniert mich. In de Schnupperlehren han i glernt, wie genau alles hängt zäme, und mit 'm Vater am Maiensäss zu schaffe, isch eifach super gsii. Eigentlich isch's nüt Bsunders, aber wenn ma versteht, was ma macht, läuft alles gut."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du das so erlebst. Erzähl mir doch, welche Erfahrungen du bereits mit elektronischen Bauteilen oder Schaltungen gesammelt hast."
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, i han mit Arduino-Bausätzen gschafft und einfach Schaltungen versucht z'bauen – eigentlich isch's eifach Logik, aber es macht Spass, wenn alles zämehängt. Im Maiensäss-Projekt han i Leerrohre verlegt und Lampen montiert, der Vater isch da d' Kontroll gmacht, und das isch mir sehr gsii. Eigentlich isch es eifach, wenn ma Schritt für Schritt vorgeht und sicher arbeitet."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine offenen Worte, das freut mich zu hören. Sicherheit ist für uns im Elektrohandwerk absolut zentral – wir arbeiten mit Spannungen und Strömen, die nicht zu unterschätzen sind. Wie wichtig ist dir Sicherheit im Umgang mit Strom?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, Sicherheit isch für mich absolut wichtig – ich denk immer zuerst dran, bevor ich was mache. Im Maiensäss-Projekt isch mir gsii, wie wichtig es isch, alles korrekt z'montiere, und in de Schnupperlehren han i glernt, wie ma sicher arbeitet. Eigentlich isch's eifach, wenn ma Schritt für Schritt vorgeht und d' Regeln kennt."
+    },
+    {
+      "role": "coach",
+      "text": "Ich verstehe, dass Sicherheit für dich oberste Priorität hat. Wie gehst du mit der Arbeit in engen Räumen, auf Leitern oder Gerüsten um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, i han im Maiensäss-Projekt mit 'm Vater öppe auf Leitern gschafft und das isch mir ganz normal gsii. In de Schnupperlehren han i glernt, wie ma sicher uf Leitern arbeitet, und des mache, dass i nüt Angst davor han. Eigentlich isch's einfach, wenn ma gut vorbereitet isch und Schritt für Schritt vorgeht."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Eltern unterstützen dich in de Wahl zum Elektroinstallateur/in EFZ, das freut mich zu hören. Was sagen deine Eltern zu deiner Berufswahl?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, mi Vater meint, dass das Elektrohandwerk e gute Wahl isch, und er zeigt sich froh, dass ich mit ihm am Maiensäss gschafft han. Eigentlich isch er stolz uf mi, dass ich systematisch arbeite. Er sagt immer, dass Sicherheit am allerwichtigschte isch, und das han i wirklich gsii."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Väter Meinung und deine Arbeit am Maiensäss sind sehr beeindruckend. Was hältst du für deine grössten Stärken?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, mi grösste Stärken sin, dass i ruhig und präzise arbeite, dass i praktisch mit 'm Vater am Maiensäss gschafft han und dass ich Schritt für Schritt vorgehe. Eigentlich isch's nüt Bsunders, aber wenn ma versteht, was ma macht, läuft alles gut."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Stärken klingen sehr überzeugend. Kannst du ein Beispiel nennen, bei dem du eine Herausforderung erfolgreich gemeistert hast?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, als ich in de Schnupperlehre d' Steckdosen unter Aufsicht montiert han, isch es am erste schwierig gsii, genau d' richtige Tiefe z' boore. Aber ich han ganz genau gschafft und nüt vergess, dass d' Drähte korrekt z' isoliere. Des zeigt, dass ich Schritt für Schritt vorgehe, wenns mal knifflig wird – eigentlich isch es eifach, wenn ma nüt überstürzt."
+    },
+    {
+      "role": "coach",
+      "text": "Ich verstehe, dass du im Schnupperlehrbetrieb die Steckdosenmontage unter Aufsicht gemeint hast – das zeigt deine sorgfältige Vorgehensweise. Wie würdest du reagieren, wenn du im Betrieb beobachtest, dass jemand eine Sicherheitsregel nicht einhält?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, ich würd sofort den Vorgesetzten informiere und versuchen, mit dem Betroffenen ruhig z'diskutieren, dass die Regel wichtig isch für uns alle. Eigentlich isch's eifach, wenn ma sofort handelt, aber klar und sachlich bleibd."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine klare Antwort. Arbeitest du lieber alleine oder im Team? Warum?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, eigentli arbeite ich am liebsten im Team, weil ma so besser ufmerksam isch und sich gegenseitig helfe kann. Wenn's um komplexere Leitungspläne geht, gibd's einfach eifach mehr Augen, wenn ma zusammen arbeitet. Trotzdem han i bei de Renovationsarbeiten am Maiensäss durchaus alleine d' Arbeitsschritte durchgfüert, wenn's d' Planung erlaubt het."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine Offenheit, das ist sehr wertvoll. Was erwartest du von deinem Lehrbetrieb?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, ich erwarte, dass ma mir zeigt, wie ma systematisch vorgeht und wie ma sicher arbeitet – genau so wia bei de Montage am Maiensäss. Eigentlich isch's wichtig, dass ma regelmässig Feedback kriegt, damit ma weiss, wo ma noch bessere cha. Und natürlich, dass ma e gute Grundlage kriegt, damit ma später allne Prüfige schaffd."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine offenen Worte, das ist sehr motivierend. Welche Weiterbildung kannst du dir nach der Lehre vorstellen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, ich würd gern a de Berufsprüfung Elektro-Projektleiterin mach, denn so cha mer Leitige grössere Projäkt planen und kontrolliere. Eigentlich sieht's so aus, dass d' Firma solche Projäkt oft macht, und das passt perfekt zue mir. Trotzdem isch's im Moment wichtig, d' Lehre als Elektroinstallateurin z' absolvieren, dann werd ganz klar, was no fehlt."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne. Hast du Fragen zum Team?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, im Team isch es eigentli eifach, weil mer sich ständig kontrolliert und helft. Mer kann sichs ja au gut vorstellen, z'schpätä für so grössere Projäkt z'schaffä. Was d' konkrete Aufgaben vom Team betrifft, han im Schnupperbetrieb praktisch immer d' gleichen Aufgaben gmacht, wia d' Montage oder Planung."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine offenen Worte, das freut mich zu hören. Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Grüezi Herr Hartmann, es freud me, dass d' Firma so gute Projäkt macht – das passt genau zue meinem Wunsch, Elektro-Projektleiterin z'werde. Eigentlich han i in de Schnupperlehre gschafft, wie ma komplexere Aufgaben meistert, und das söll ich gern weidermache. Trotzdem isch es wichtig für me, dass me regelmässig Feedback kriegt, damit ich weiss, wo no Verbesserungsmöglichkeite gäge gäge sin."
+    },
+    {
+      "role": "coach",
+      "text": "Vielen Dank für dein offenes und ehrliches Gespräch. Es war eine Freude, dich kennenzulernen. Wir freuen uns sehr auf deine Bewerbung und werden uns deiner Nachricht nach dem Bewerbungsprozess weiter annehmen. Alles Gute für deine Zukunft!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «ruhig und präzise arbeite» – zeigt Zuverlässigkeit im Handwerk.\n- «Schritt für Schritt vorgehe» – klare Arbeitsweise in Projekten.\n\n## Daran kannst du arbeiten\n- «Sicherheitsregeln konkret anwenden» – Beispiel aus Maiensäss-Projekt nennen.\n- «Teamarbeit genauer beschreiben» – spezifische Aufgaben im Schnupperbetrieb nennen.\n\n## Dein nächster Schritt\nÜbe eine Situation, in der du eine Sicherheitsregel im Team anwendest, und schreibe sie als kurzen Satz auf.\n\n## Du hast heute viel geübt – das ist der beste Weg, um sicherer im echten Gespräch zu werden.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Sehr gut |\n| Umgang mit schwierigen Fragen | Gut |\n| Eigeninitiative | Gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF12-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF12-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF12-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-DIF-07",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-09",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-04-07",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-03",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 34,
+  "answers": 16,
+  "calls_per_answer": 2.12,
+  "followups": 0,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 83.1
+}

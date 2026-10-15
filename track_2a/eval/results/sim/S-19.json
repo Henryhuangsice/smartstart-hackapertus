@@ -1,0 +1,314 @@
+{
+  "scenario_id": "S-19",
+  "lang": "de",
+  "dialect": "vs",
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach versteht Walliser Dialekt oder fragt bei Unklarheit nach, statt Inhalte zu erfinden (K3).",
+    "Der Coach bewertet den Dialekt nicht negativ.",
+    "Das Feedback gibt einen konkreten Strukturtipp (zuerst Kernaussage in einem Satz, dann Beispiel) (K2).",
+    "Das Feedback würdigt Teamfähigkeit mit einem konkreten Beispiel aus dem Gespräch (R1, K1).",
+    "Der Coach beschränkt sich auf 1–2 Entwicklungspunkte (R2)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Nils."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Nils, ich bin Stefan Zenhäusern, Berufsbildner und Polier bei der Imboden Bau AG. Ich freu mich, dich kennenzulernen. Im nächsten Gespräch erzählst du mir kurz über dich, warum du Maurer/in EFZ lernen möchtest, was du kannst und in welchen Situationen du dich gut zeigst. Hast du Fragen, stell die gerne. Wie war deine Anreise?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin mitm Velo gfahre, ungefähr 30 Min. Es isch gschmeckt, alles läuft. Maurer lerne ich gern, weil ich gern arbeite, im Team und am End seh, was ma baut. Was erwartet mich genau in de Lehre?"
+    },
+    {
+      "role": "coach",
+      "text": "Alles klar, ich bin im Werkhof Visp, das dauert normaler paar Min. Erzähl uns etwas über dich."
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, mir isch 16, geh noch OS III und mags gern draussen. Im Schnupper als Maurer isch mir gfällt, dass ma mitdenkt und abends seh, wie d' Mauer gewachse isch. Im Eishockey lerne mir, dass jede Position wichtig isch, und im Maiensäss helfe ich ständig, wenn was repariert wärd."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach viel Praxis und Teamgeist! Warum hast du dich für den Beruf Maurer/in EFZ entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, Maurer isch es Beruf, wo ma körperlich aktiv isch und am End was Bleibendes baust. Im Team mitdenken und schauen, wie d' Mauer wachst, das gibt einem direktes Erfolgserlebnis, genau wie im Eishockey, wo jede Position wichtig isch. Ich helfe gern, wenn irgendwas repariert werden muass, und es gefällt mir draussen zu sein. Mir hätt gern, dass ma mir zeigt, wie ma langsam raufkommt und was ma genau macht."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach viel Teamgeist! Was bedeutet für dich Teamarbeit auf einer Baustelle?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, Teamarbeit heisst, dass ma gemeinsam isch und jedes Teil wichtig isch, genau wie im Eishockey. Wenn einer müede isch, hilft der andere, und am End steht dann des ganze Haus. Mir tu lieber mitpacke, bevor ma fragt, und ma will, dass ma mir zeigt, was genau passiere muass, damit alles passt."
+    },
+    {
+      "role": "coach",
+      "text": "Ja, das versteh ich. Erzähl mir, wie du mit körperlich fordernder Arbeit umgehst."
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, die körperliche Arbeit isch für mich kein Problem, im Gegenteil, ich mag Sport und bin gern draussen. Maurerarbeit isch hart, aber wenn ma als Team dranarbeitet, isch das am End weniger stressig. Ich packe mit an, wenn nötig, und versuche, so effizient wie möglich zu sein."
+    },
+    {
+      "role": "coach",
+      "text": "Was für eine körperlich fordernde Situation war das konkret? Wie hast du dich dabei organisiert und was hat dir am meisten geholfen, das effizient zu bewältigen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, bei de Schnupper als Maurer isch es d' Backstein-Mauere gsi, Mörtel mische und Schale mache, das isch körperlich ganz schön gsi, aber ma isch in Team gschafft, des isch am End am einfachschte gsi. Ich hab' immer gschaut, dass ma Material bereit gha hot, bevor ma es braucht hot, das heisst ma isch vorausgedacht, genau wie im Eishockey. Mir mag, wenn ma mitpackt, bevor ma fragt, des macht alles effizienter und passt besser."
+    },
+    {
+      "role": "coach",
+      "text": "Schön, dass du das so gut erlebt und organisiert hast! Wie gehst du konkret mit Regen, Schnee oder Hitze auf der Baustelle um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, Regen, Schnee oder heisse Sonn isch für mich kein Problem, ma muss halt mit packe und sich vorbereite, genau wie im Eishockey, wenn ma im Eis spiele muss. Ma hält sich warm, trinkt genug Wasser und macht Pause, wenn nötig, das isch am End alles, was es braucht. Mir mag, wenn ma einander hilft und sich gegenseitig sagt, wie’s weitergeht, das macht die Arbeit einfacher."
+    },
+    {
+      "role": "coach",
+      "text": "Schön, dass du das so pragmatisch siehsch! Wie gehst du mit strikten Sicherheitsvorschriften auf der Baustelle um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, ich versteh d'Sicherheitsregeln, das isch wichtig, und mach die genauso, genau wie auf de Baustelle beim Eishockey, wo ma guet zueinander isch. Wenn ma sagt, was ma mache muass, mach ich das, ohne Fragen, und helfe, dass alles sicher läuft, wie im Team auf dem Eis, wo jeder Pass wichtig isch."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das hört sich gut an! Wie schätzt du deine handwerklichen Fähigkeiten ein?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, ich bin net so guet im Schreiben, aber beim Mauere und Holzhauen hab ich schon was gmacht, und im Schnupper als Maurer isch d'Polier gschpiegelt, dass ich was kann, wenn ma mir zeigt, wie’s geht. Mir mach das, was ma braucht, und lern schnell, genau wie im Eishockey, wo ma jeder Position vertraut."
+    },
+    {
+      "role": "coach",
+      "text": "Was hast genau gemacht, wie hast du vorgegangen und was ist dabei gut gelaufen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, beim Maurer habe ich Backsteine gesetzt, Mörtel gschtürt und Schale gmacht, und die Polier isch gschpiegelt, dass ich mitdenke und Material bereitstelle, genau wie im Eishockey, wo jeder Pass wichtig isch. Das hat gut gelaufen, weil ich vorausgedacht habe und im Team gschafft habe, ohne immer fragen z'müssen. Ich mag's, wenn ma mir zeigt wie's geht, dann lern ich schnell und mach es richtig."
+    },
+    {
+      "role": "coach",
+      "text": "Schön, dass du das so gut erklären kannst! Was sind deine grössten Stärken?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, ich bin körperlich belastbar, denke mit und packe an, wie im Team beim Eishockey, und ich helfe, wenn’s nötig isch, genau wie auf de Alp, wo wir immer guet zueinander gsi sind. Meine größte Stärke isch, dass ich ohne viel reden mithelfe und Material bereitstelle, bevor ma fragt, und das macht die Arbeit effizienter. Ich bin auch zuverlässig bei jedem Wetter, genau wie wenn ma im Eis spiele muss."
+    },
+    {
+      "role": "coach",
+      "text": "Woa, das zeigt echt Teamgeist und Verantwortungsbewusstsein! Erzähl mal der Reihe nach: Was würdest du in so einer Situation tun?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, wenn’s um Mauere geht, mache ich zerscht d’Grundmauer, dann d’Wände, und gucke immer, dass de Mörtel gleichmäßig isch, wie beim Eishockey, wo der Puck im Team laufen muss. Ich helfe dem Maurer, wenn’s Material braucht, und sage ihm direkt, was ich mache, so dass es effizient läuft. Wenn’s regnet oder die Sonne brennt, packe ich schneller oder schaffe länger, weil ich körperlich belastbar bin wie auf de Alp. Und wenn’s was kaputt geht, halte ich d’Baucht und sage dem Polier direkt, wie’s wieder repariert werden kann."
+    },
+    {
+      "role": "coach",
+      "text": "Klingt gut, dass du dich so strukturiert und verantwortungsbewusst an die Arbeit machst. Welche Rolle übernimmst du häufig in einer Gruppe?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, ich nehme gern die Rolle vom Helfer, wo Material bereitstellt und mitdenkt, genau wie im Team beim Eishockey, wo jeder Pass wichtig isch. Wenn’s um Mauere geht, hilf ich mit der Mischung vom Mörtel und zeig, was richtig läuft, damit alles effizient geht. Ich sag direkt, was ich mache, und packe an, wenn’s braucht, ohne viel z’fragen, wie auf de Alp, wo ma immer guet zueinander gsi isch."
+    },
+    {
+      "role": "coach",
+      "text": "Schön, dass du das Teamgedanke so gut verstehsch! Was würds machsch, wann a Lernender d' Arbeit regelmässig nit fertigbringt und du die übernehmen musst?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, ich helf dem direkt und nehme die Arbeit selber über, genau wie im Eishockey, wo jeder für den Erfolg draufgsetzt isch, sonst wirds nix. Ich sag ihm, wie’s richtig geht, und mach’s, bis das Teil steht, ohne lange mit ihm z’diskutieren, denn Zeit isch Geld auf de Bau."
+    },
+    {
+      "role": "coach",
+      "text": "Was würds genau für ein Gespräch mit em Lernende gsi, bevor du die Arbeit übernimmst?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, i würde dem direkt sage, dass’s jetzt so isch, wie’s gschafft werr, und ihm zeig, wie ma’s richtig macht, ohne lange zu reden, wie beim Eishockey, wo’s quick goht. Ich zeig ihm, wie’s Mörtel gschtürt werr und de Stein richtich plaziert, damit er am nächste Mal besser draufgehört hät. Denn wenns um Teamgoht, helf ich ihm, und wenn nix hilft, nehm ich’s selber i Hand, bevor’s zu spät isch."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach einem guten Ansatz! Wo siehst du dich nach der Lehre?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, ich sehe mich nach de Lehre als Maurer EFZ, am liebschte als Vorarbeiter, wo ich helf, Plan gschtell und andere mitnehme, genau wie im Team beim Eishockey, wo jeder Pass zählt. Und wenn’s um guets Klima auf de Baustell geht, bring ich lieber d’ Wärme, wie d’Sonne auf de Alp, statt d’Kälte vom Hochplateau."
+    },
+    {
+      "role": "coach",
+      "text": "Schön, dass du Interesse an uns zeigsch! Hast du Fragen zu unserem Betrieb?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, isch e schöni Lehrstelle für Maurer do? Wie lang isch die Lehre und wie sieht’s mit de Aufstiegschancen für Vorarbeiter us?"
+    },
+    {
+      "role": "coach",
+      "text": "Die Lehre dauert 3 Jahre, und für Vorarbeiter gibt’s hier gute Aufstiegschancen – drei Poliere haben ihre Lehre bei uns gemacht. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, ich würd gern wisse, wie’s mit de Sicherheit auf de Baustell isch, denn ich hab Angst vor de Höhen, genau wie wenn ich uf de Dachsplank schteh müess, und wenns d’Polier guet erklären und mir zeig, wie ma sicher arbeitet, fühl ich mich sicherer, genau wie beim Eishockey, wenn der Kapitän die Plays erklärt."
+    },
+    {
+      "role": "coach",
+      "text": "Sicherheit isch uns sehr wichtig – alle Lernende kriege in de erschte Woch e Sicherheitsschulig mit Helm, Absturzsicherung und Gehörschutz. Bei Arbet in de Höchi werre d'Polier immer persönlich begleit und zeig, wie ma sicher vorgeht. Hast du sonst noch e Fragg?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, d'Sicherheit isch mir wichtig, genau wie beim Eishockey, wo’s um Trupp geht, und wenn’s dann die Ausbildung so guet macht wie am Maiensäss, bin ich bereit für d'Lehre."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für dein offenes und sicheres Statement! Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Weisch, ich stönd gern draussen und helf helfe, wenns was z'bauen isch, wie uf de Alp, und in de Lehre wär ich froh, wenns guet Teamgeist gibt, genau wie im Eishockey, denn wenns gut goht, lernsch schnell und sicher."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine offenen Worte, Nils. Wir freuen uns auf dich in der Schnupperlehre und hoffen, dass du dich bei uns wohlfühlst. Alles Gute für deine Zukunft!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Maurer lerne ich gern, weil ich gern arbeite, im Team und am End seh, was ma baut.» zeigt positive Motivation für den Beruf.\n- «Ich helfe gern, wenn irgendwas repariert werden muass, und es gefällt mir draussen zu sein.» zeigt Teamfähigkeit und Freude an der Arbeit im Freien.\n- «Ich bin körperlich belastbar, denke mit und packe an, wie im Team beim Eishockey.» zeigt Engagement und Bereitschaft zur aktiven Mitarbeit.\n\n## Daran kannst du arbeiten\n- «Ich bin net so guet im Schreiben, aber beim Mauere und Holzhauen hab ich schon was gmacht.» könnte mit konkreten Beispielen aus der Schnupperlehre gestützt werden.\n- «Weisch, bei de Schnupper als Maurer isch es d' Backstein-Mauere gsi, Mörtel mische und Schale mache, das isch körperlich ganz schön gsi, aber ma isch in Team gschafft, des isch am End am einfachschte gsi.» könnte durch spezifische Situationen aus der Schnupperzeit erweitert werden.\n- «Weisch, ich würde dem direkt sage, dass’s jetzt so isch, wie’s gschafft werr, und ihm zeig, wie ma’s richtig macht, ohne lange zu reden, wie beim Eishockey, wo’s quick goht.» könnte durch eine konkrete Eskalationsstufe ergänzt werden.\n\n## Dein nächster Schritt\nNenne drei konkrete Tätigkeiten aus der Schnupperlehre, die du selbstständig ausgeführt hast, und erkläre, wie diese deine Teamfähigkeit unterstreichen.\n\n## Ermutigendes Abschlusswort\nDu hast heute viele konkrete Beispiele und deine Motivation gezeigt – übe einfach, wie du diese in der Zukunft noch deutlicher verbindest.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Dazu gab es im Gespräch keine Aussage |\n| Eigeninitiative | Gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF08-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF08-03",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF08-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF08-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF08-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF08-04",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF08-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-09",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-04",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-04",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-02",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-01",
+      "level": 3,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 42,
+  "answers": 20,
+  "calls_per_answer": 2.1,
+  "followups": 3,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 102.7
+}

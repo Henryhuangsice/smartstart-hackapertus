@@ -1,0 +1,302 @@
+{
+  "scenario_id": "S-06",
+  "lang": "de",
+  "dialect": "sg",
+  "difficulty": "easy",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach stellt mindestens eine Kundensituation (Q-BF16-02 oder Q-SIT-06) und fragt bei allgemeiner Antwort nach, was sie konkret sagen würde.",
+    "Der Coach würdigt die ehrliche Nennung der Französisch-Schwäche und fragt nach einem Lernschritt.",
+    "Der Coach bewertet die Französischnote nicht als Ausschlusskriterium und erzeugt keine Angst (L2).",
+    "Das Feedback belegt Stärken mit einem Zitat oder Beispiel aus dem Gespräch (K1).",
+    "Der Coach gibt einen konkreten nächsten Schritt für Kundengespräche (R3)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Jana."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Jana, ich bin Nadine Rüegg, Geschäftsführerin und Berufsbildnerin bei Gipfelstürmer Sport GmbH. Ich freue mich, dich kennenzulernen – erzähl mir kurz, warum du dich für eine Lehre als Detailhandelsfachmann/-frau interessierst und was dich an unserem Geschäft besonders reizt. Wir werden uns gegenseitig kennenlernen, deine Motivation und Stärken besprechen und dir ein paar typische Situationen vorstellen, bevor wir deine Fragen beantworten. Wie geht es dir heute?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich ha's sehr spannend gfunde, im Sportgeschäft z'wärken, weil ich Unihockey und Joggen liebe und gern Leut berate, wia ich's scho in der Schnupperlehre gmacht ha. Eure Spezialisierung auf Outdoor und Laufsport isch genau meins Ding, und ich find's cool, dass Ihr ne eigene Marke tragt. Eher gsait, dass Französisch nöd so mis Ding isch, aber ich versuche, es trotzdem z'lerne."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, dass du dich für Outdoor und Laufsport begeisterst! Was machst du gerne in deiner Freizeit?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich spiele Unihockey im Verein, laufe am Samstig gern zwei bis drei Stunden und nähe mir selber Kleider um oder gehe zu Secondhandläden, um coole Sachen z'finde."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, Jana, das klingt nach viel Bewegung und Kreativität! Was fasziniert dich an diesem Beruf besonders?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich finde's mega, dass ich mit Sportlern direkt reden kann und ihnen Tipps gebbe, wie ihr Training verbessere. In de Schnupperlehre ha ich gseh, wie wichtig es isch, dass die Kundin zefriede geht, wenn so ne Situation mit dem Umtausch war. Jedes Mal wenn ich neue Laufschuhe berate, fühl ich, dass das genau meins isch. Und wenns am Badi-Kiosk voll isch, bleib ich trotzdem cool und hilfreich."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, dass du so begeistert bist! Was spricht dich besonders an unserem Betrieb und unserem Team?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich ha gschnupperet im Sportgeschäft und im Spital, aber das Verkaufsteam gefällt mir besser, weil ich lieber direkt mit de Leut rede. Eure eigene Marke und der Outdoorbereich sind genau meins, und ich freu mich, Teil vom Team z'werde. Sportlich bin ich aktiv, und ich weiss, wie die Sachen im Alltag wirklich funktionieren, was die Kunden mögen. Eher gsait, dass ich Französisch verbessere will, aber jetzt geht's um die Praxis im Verkauf."
+    },
+    {
+      "role": "coach",
+      "text": "Klingt super, dass du dich für unseren Betrieb entschieden hast! Was weisst du über uns?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich weiss, dass Ihr eigni Marke tragt und stark im Laufsport und Outdoor seids, was perfekt zu mir passt, weil ich selber viel laufe und im Unihockey spile. Die Schnupperlehre im Sportgeschäft hat mir gzeigt, wie direkt der Kontakt zur Kundin isch und wie wichtig's isch, dass so ne Situation mit em Umtausch fair gelöst wird. Eure Spezialisierung und das freundliche Team finde ich wirklich interessant, und ich freu mich, däm Verein z'gehöre."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt super, dass du den direkten Kontakt zur Kundin so wertschätzt! Was bedeutet für dich guter Kundenkontakt?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich finde guter Kundenkontakt heisst, dass mer de Leut ruhig und geduldig zuhört, ihnen hilft, genau das z'finde, was die braucht, und auch mal lacht, wenn's stressig wird. So wie ich in de Schnupperlehre mit de Kundin ruhig gsi bin, wenn ne Situation war, so möchte ich das immer mache. Wenns im Kiosk voll isch, bleib ich trotzdem freundlich und hilfreich – das isch für mich das A und O."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Art, ruhig und geduldig zu bleiben, finde ich wirklich beeindruckend – das ist genau das, was wir hier schätzen. Wie würdest du auf einen schwierigen oder unzufriedenen Kunden reagieren?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würd ruhig gsi, entschuldige mich und versuche rauszefinde, was genau fehlt. Denn wenn mer versteht, was die braucht, isch die Situation schnell erledigt. Ich sag ehrlich, dass ich halte, wenn Französisch zu wichtig isch, aber sonst versuche alles, bis der Kunde zefriede isch."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das passiert schon mal. Ich bleib ruhig, höre ihr zu und versuche, den Grund für ihre Unfreundlichkeit zu verstehen, ohne mich zu verteidigen. Danach versuche ich, die Situation mit einem freundlichen Lächeln und einer kurzen Entschuldigung zu entschärfen, ohne mich zu entschuldigen, wenn ich nichts falsch gemacht habe. Wie würdest du in so einer Situation reagieren?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würd ruhig gsi, de Kunde frage, was genau fehlt, und versuche freundlich, aber bestimmt, was macha hilft. Eher gsait, dass wenn Französisch nöd so mis Ding isch, das offen sage, aber jetzt geht's drum, dass der Kunde zefriede geht. Im Kiosk ha ich gelernt, dass Selbstsicherheit und Hilfsbereitschaft am Andrang wichtig sind. Und wenns mal zu schwierig wird, hilft mir mein Unihockey-Training – da lerne ich, Stress abzubauen und trotzdem fair z'bleibe."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach einer guten Basis! Wie gehst du mit stressigen Stosszeiten um, z. B. vor Feiertagen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich werd dann erst recht ruhig bleibe, schnell Prioritäten setze und mit meinem Team kommuniziere, zum dass alles reibungslos läuft. Weil ich beim Badi-Kiosk immer im Andrang gschafft ha, weiss ich, wie wichtig's isch, dass de Service weiterhin freundlich bleibt, egal wie voll es isch. Wenns zu stressig wird, zähle ich auf die Hilf vom Team und bleibe dabei immer höflich – das hab ich dort gelernt."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das ist machbar! Kannst du dir vorstellen, auch am Samstag oder abends zu arbeiten?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, das kann ich mir gut vorstelle, zumal ich am Badi-Kiosk öppe zehn Tage im Andrang gschafft ha und abends immer noch freundlich bleibe. Ich wär bereit, Samstags oder abends z'helfa, solang ich weiss, dass's im Team gut läuft und mir's gschaffa geht."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, Jana, ich freu mich auf deine Stärken! Was hältst du für deine grössten Stärken im Verkauf und im Umgang mit Kundinnen und Kunden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich find, dass ich ruhig bleib und gern helfa, wenn mer was braucht – des isch bei mir im Sportgeschäft in de Schnupperlehre aufgefallen. Außerdem weiss ich viel iwwer Sportartikel, weil ich selber Unihockey und jogge, und des helfa mir, Kundinnen richtig z'berate. Eher schwach isch Französisch, aber des sag ich offen gsa, und konzentrier mich lieber uf s, was mer braucht. Am Andrang bleib ich trotzdem freundlich, das ha im Kiosk gelernt, und das will ich hier aa bringa."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Offenheit gefällt mir, das ist super. Welche Schwäche möchtest du gezielt verbessern?"
+    },
+    {
+      "role": "candidate",
+      "text": "Französisch isch für mich definitiv die grössti Schwäche, und den würd ich gezielt übe, weil ich weiss, dass’s im Verkauf hilfreich wär. Ich würd extra am Französisch mache, zum dass ich künftig mit allen Kundinnen und Kunden besser z'komme. Eher wär ich aber froh, wenns im Team ne Kundin mit Französischkenntnisse gits, dann helfa ich dort besser. Und wenns zu schwierig wird, sag ich es offen, so wie ich’s sonst gschwätzt ha."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt ehrlich – danke für die Offenheit! Welche Fächer fallen dir schwerer?"
+    },
+    {
+      "role": "candidate",
+      "text": "Sport und Mathematik falle mir am schwerste, Französisch isch zwar nöd so mis Ding, aber des zeiged d'Notiz, dass's d'Schwäche isch. Trotzdem macha ich im Unihockeyverein immer Teamübige, wo d'Zahl und Taktik übe, und im Kiosk ha ich gelernt, dass wenns stressig isch, am Schluss alles klar wird. Des hilft mir, mich besser z'konzentriere, und ich sag's offen gsa, wenns mal nöd so läuft."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt nach einer guten Einstellung, Jana! Im Team arbeiten wir viel, besonders im Verkauf und bei Events wie dem Ski-Opening-Abend. Arbeitest du lieber alleine oder im Team? Warum?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich arbeite lieber im Team, weil im Sportgeschäft oder am Kiosk alles flüssiger läuft, wenn mer sich abstützt und sich gegenseitig hilft – das ha ich beim U10-Training und beim Badi-Kiosk immer gseha. Als Stürmerin im Unihockey weis ich, dass Teamplay wichtig isch, und im Verkauf helfts mir, schneller und ruhiger z'bleibe. Alleine z'arbeite fühlt sich zwar manchmal sicherer aa, aber im Team bringa mir d'Erfahrung, dass sich jeder uf jetz andere verlassen kann, wenns mal stressig wird."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt super, dass du Teamplay so wertest – das passt perfekt zu unserem Teamgeist! Was möchtest du nach deiner Ausbildung erreichen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich wär gern als Detailhandelsfachfrau EFZ d'Leitung vo de Abteilig oder im Einkauf tätig, zum dass ich mitmache, was im Sportgeschäft passiert. Immer wenns um Events wie de Ski-Opening geht, wär ich dabei, weil ich das geil finde und dann viel vorzeige kann. Französisch will ich trotzdem noch verbessere, aber das isch am Schluss nöd so wichtig, wenns ums Team und d'Kundinnen geht, des weiß ich."
+    },
+    {
+      "role": "coach",
+      "text": "Klingt super, dass du dich für Events wie den Ski-Opening-Abend begeisterst! Hast du Fragen zum Team?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich frag, wie oft macht ihr so Events wie de Ski-Opening-Abend? Und wie wär's mit Französisch-Unterstützig im Team, falls's nötig isch?"
+    },
+    {
+      "role": "coach",
+      "text": "Wir organisieren den Ski-Opening-Abend einmal im Herbst. Französisch-Unterstützung im Team gibt es nicht, aber wir helfen gerne, wenn Kunden Französisch sprechen. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich ha gern im Team gschafft, drum frag ich: Macht ihr im Verkauf au regelmässig gemeinsame Trainings oder Teamspiele, wie beim Unihockey? Und wie gschieht’s mit de Fortbildig für Französisch, falls’s im Kundendienst mal dran isch?"
+    },
+    {
+      "role": "coach",
+      "text": "Ja, wir organisieren jedes Jahr ein Test-Wochenende im Alpstein als Team, und im Verkauf gibt’s keine festen gemeinsamen Trainings oder Teamspiele wie Unihockey. Für Französisch gibt’s keine spezielle Fortbildung im Kundendienst – das hängt vom individuellen Bedarf ab. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich ha gern, dass ihr regelmässig Teamevent wie s'Test-Wochenende macht, denn so kanns mer besser zämegschafft. Französisch-Unterstützig brauche ich nöd so dringend, aber wenns im Verkauf mal vorkommt, freue ich mich über Hilf. In de Kiosk-Position am Badi isch mirs doch schon gelunge, mit viele Kundinnen z'arbeite, obwohl's stressig isch."
+    },
+    {
+      "role": "coach",
+      "text": "Das klingt super, Jana! Ich freue mich, dich kennengelernt zu haben. Möchtest du abschliessend noch etwas ergänzen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich freue mich wirklich, Teil eures Teams z'werde – das ganze Jahr über, und ned nur beim Ski-Opening. Französisch isch zwar nöd meh so wichtig für mich, aber ich versuche, nachz'kommen, wenn's hilft. Und wenns stressig wird, wie am Badi-Kiosk, bleib ich ruhig und helf – das isch für mich das A und O."
+    },
+    {
+      "role": "coach",
+      "text": "Danke, Jana, dass du dir die Zeit genommen hast! Wir freuen uns sehr auf dich im Team. Es gibt zwar keine festen gemeinsamen Trainings oder Teamspiele wie Unihockey, aber wir legen Wert auf Teamgeist und unterstützen uns gegenseitig. Für Französisch gibt es keine spezielle Fortbildung im Kundendienst – das hängt von der individuellen Situation ab. Wir wünschen dir alles Gute und freuen uns auf deine Rückmeldung zum Lehrvertrag!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Ich spiele Unihockey im Verein, laufe am Samstag gern zwei bis drei Stunden und nähe mir selber Kleider oder gehe zu Secondhandläden, um coole Sachen zu finden.» – Zeigt breite sportliche Interessen und praktische Erfahrungen.\n- «Ich finde, dass ich ruhig bleibe und gern helfe, wenn jemand etwas braucht – das ist bei mir im Sportgeschäft in der Schnupperlehre aufgefallen.» – Demonstriert Ruhe und Hilfsbereitschaft in der Kundenbetreuung.\n- «Ich wäre gern als Detailhandelsfachfrau EFZ in der Leitung der Abteilung oder im Einkauf tätig, um mitzuwirken, was im Sportgeschäft passiert.» – Formuliert konkrete berufliche Ziele.\n\n## Daran kannst du arbeiten\n- Nenne ein konkretes Beispiel aus der Schnupperlehre, wie du eine schwierige Situation gelöst hast.\n- Erweitere die Aussage um spezifische Informationen aus der Unternehmenswebsite oder aktuellen Projekten.\n- Präzisiere, warum die eigene Marke und der Outdoorbereich persönlich wichtig sind.\n\n## Dein nächster Schritt\nÜbe ein konkretes Szenario, in dem du eine unzufriedene Kundin ruhig berät und die Ursache der Unzufriedenheit ermittelt.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Sehr gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Sehr gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Sehr gut |\n| Eigeninitiative | Gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-04-01",
+      "level": 4,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF16-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF16-02",
+      "level": 3,
+      "action": "support_and_refer",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-06",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF16-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF16-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-06-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-03",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-03",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 41,
+  "answers": 19,
+  "calls_per_answer": 2.16,
+  "followups": 0,
+  "feedback_violations_first": [
+    "T3: exaggerated praise or dramatising word 'perfekt' — use neutral wording"
+  ],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 109.6
+}

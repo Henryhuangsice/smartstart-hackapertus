@@ -1,0 +1,300 @@
+{
+  "scenario_id": "S-17",
+  "lang": "fr",
+  "dialect": null,
+  "difficulty": "hard",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Le coach mène l'entretien et le feedback en français et tutoie le candidat.",
+    "Le coach n'approuve pas les propos négatifs sur l'ancienne entreprise et propose une formulation neutre.",
+    "Le feedback présente une structure pour expliquer la rupture: faits – ma part – ce que j'ai appris – ce qui a changé (K2).",
+    "Le coach présente l'interruption comme une étape d'apprentissage et ne crée pas de peur (E1, L2).",
+    "Le feedback cite une preuve concrète de changement mentionnée par le candidat (ponctualité au SeMo, stage) (K1)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Bonjour, je suis Kevin."
+    },
+    {
+      "role": "coach",
+      "text": "Bonjour Kevin, je suis Olivier Jaquet, Directeur et formateur chez Jaquet & Robert Sanitaire SA. Je vais d'abord bien te connaître, comprendre ce qui te motive pour un apprentissage chez nous, puis on parlera de tes forces et de quelques situations de vie ou d'apprentissage. La procédure dure environ 35 minutes, et je suis là pour écouter et comprendre. Comment ça va aujourd'hui ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, ça va bien, juste un peu stressé pour l'entretien. J'ai commencé un apprentissage de logisticien, mais ça m'a pas plu du tout, trop répétitif et je me réveillais toujours trop tard. Grâce au SeMo, j'ai appris à être plus ponctuel et je suis motivé pour faire quelque chose de mes mains."
+    },
+    {
+      "role": "coach",
+      "text": "Bien, Kevin, c'est tout à fait normal d'être stressé avant un entretien. Dis-moi, quel est ton parcours scolaire jusqu'à présent et qu'est-ce qui t'attire dans le métier d'installateur/trice sanitaire ?"
+    },
+    {
+      "role": "candidate",
+      "text": "J'ai fini l'école obligatoire, j'ai fait mon SeMo 2026, mes matières fortes c'est les activités manuelles et le sport, et ce qui m'attire chez vous c'est le travail avec les mains, poser des salles de bain et monter des installations."
+    },
+    {
+      "role": "coach",
+      "text": "Bien vu, Kevin, c'est un bon point de départ. Comment décrirais-tu ton parcours scolaire jusqu'à présent ?"
+    },
+    {
+      "role": "candidate",
+      "text": "J'ai terminé l'école obligatoire avec 11H, des notes moyennes en maths et sciences, mais des points forts en activités manuelles et sport. J'ai fait mon SeMo 2026 et les retours sont positifs sur la ponctualité depuis mars. Pendant mon apprentissage de logisticien arrêté en décembre 2025, j'avais plusieurs retards le matin. Et grâce au SeMo et à un stage d'installateur sanitaire, j'ai compris que j'aime travailler avec mes mains."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as déjà fait des progrès, c'est bien. Quel a été le plus grand échec que tu as vécu jusqu'à maintenant ?"
+    },
+    {
+      "role": "candidate",
+      "text": "J’ai commencé un apprentissage de logisticien en août 2025 et l’ai arrêté en décembre parce que le travail était trop répétitif, les retards m’ont fait sortir du rythme et j’ai eu des conflits avec un collègue. C’était clairement un échec, mais j’ai compris que je ne suis pas fait pour ce genre de poste. Depuis le SeMo et le stage d’installateur sanitaire, j’ai changé, j’arrive plus tôt et je suis vraiment motivé pour ce métier."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as bien fait d’en parler. Est-ce qu'il y a quelque chose dans ton bulletin scolaire que tu aimerais expliquer ?"
+    },
+    {
+      "role": "candidate",
+      "text": "J'ai eu des notes moyennes en allemand et en français écrit, surtout en allemand où j'étais à 3.5 sur 6, mais je sais que c'est pourri depuis longtemps et que je peux m'améliorer si j'en ai besoin dans le métier."
+    },
+    {
+      "role": "coach",
+      "text": "Tu travailles souvent avec des fournisseurs, des clients et parfois des collègues de différentes régions. Comment ces échanges se passent-ils concrètement sur un chantier ?"
+    },
+    {
+      "role": "candidate",
+      "text": "J’ai eu des retards au premier apprentissage, surtout le matin, et ça m’a vraiment empêché de me mettre dans le rythme. Depuis le SeMo, j’arrive toujours en avance, et j’ai déjà pris l’habitude de prendre le bus plus tôt. J’aime bien parler avec les gens sur le chantier, poser les questions quand j’ai besoin, et j’essaie de rester concentré pour ne pas me tromper."
+    },
+    {
+      "role": "coach",
+      "text": "C'est bien, on apprend tous de nos erreurs. Pourquoi as-tu choisi ce métier ?"
+    },
+    {
+      "role": "candidate",
+      "text": "J’ai commencé ce métier parce que j’aime bouger, voir un travail fini et que le stage d’installateur sanitaire m’a plu, surtout quand mon monteur m’a félicité. J’ai appris que je suis mieux avec les outils qu’avec des étiquettes toute la journée, et je veux maintenant prouver que je peux être fiable et ponctuel."
+    },
+    {
+      "role": "coach",
+      "text": "C'est bien clair, on comprend. Quelles expériences t'ont donné envie de faire ce métier ?"
+    },
+    {
+      "role": "candidate",
+      "text": "J'ai aidé mon oncle à refaire une salle de bain et j'ai adoré poser les carrelages, puis j'ai fait un stage d'installateur sanitaire où le monteur m'a dit que j'étais motivé, donc ces deux expériences m'ont vraiment donné envie de ce métier."
+    },
+    {
+      "role": "coach",
+      "text": "C'est super que tu aies déjà commencé avec de l'aide familiale et un stage, ça montre une belle motivation. Pourquoi est-ce que les installations techniques dans les bâtiments t'intéressent ?"
+    },
+    {
+      "role": "candidate",
+      "text": "J’aime voir comment un chantier se transforme, surtout quand il s’agit de salles de bain ou de salles techniques, et ça me motive parce que je peux vraiment toucher du doigt le travail que je fais. J’ai compris que les installations sanitaires et de chauffage sont partout dans les bâtiments, donc c’est utile et ça fait du sens. En plus, j’ai déjà aidé mon oncle et j’ai travaillé avec un monteur qui m’a dit que j’étais prêt, ça me donne confiance. J’aimerais apprendre à poser des conduites, à installer des robinets et à faire du bon travail sans jamais laisser le client attendre."
+    },
+    {
+      "role": "coach",
+      "text": "C'est bien, on va en parler. Comment te sens-tu dans des espaces étroits, sur des échelles ou des échafaudages ?"
+    },
+    {
+      "role": "candidate",
+      "text": "J'ai pas de vertige comme sur les toits, mais j'aime bien les escaliers et les échafaudages quand ils sont bien sécurisés. Les salles de bain serrées, c'est pas trop mon truc, mais je sais me glisser entre des tuyaux et tourner mes outils sans m'embêter. J'ai déjà travaillé sur des chantiers où il fallait ramper sous des planchers, et j'ai toujours fini le travail sans faire tomber quoi que ce soit."
+    },
+    {
+      "role": "coach",
+      "text": "C'est clair, tu sais gérer les espaces serrés et les échafaudages. La sécurité est primordiale quand on travaille avec l'électricité, l'eau ou le gaz : comment la mets-tu en pratique sur un chantier ?"
+    },
+    {
+      "role": "candidate",
+      "text": "J'ai toujours bien fait attention aux consignes de sécurité, surtout quand on touche à l'eau ou à l'électricité, et j’écoute bien les moniteurs qui m’expliquent comment faire sans rien casser. J’ai déjà reçu des formations basiques sur le chantier, et si quelque chose ne va pas, j'arrête tout et le dis à mon chef. J'essaie d'avoir mon casque et mes bottes prêtes avant de monter sur des échafaudages, et je ne pousse jamais les limites quand c’est risqué."
+    },
+    {
+      "role": "coach",
+      "text": "Tu arrives en retard, c’est normal que tu réagisses vite. Que fais-tu concrètement pour rattraper le retard ou prévenir l’équipe ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bref, depuis le SeMo j’ai réglé mon réveil à 6h30, je prends le bus tôt et j’arrive 15 minutes avant le chantier, si j’arrive en retard je dis tout de suite et je propose de rattraper les heures perdues en fin de journée."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as bien compris comment organiser ton arrivée sur le chantier. Comment réagis-tu à la critique ?"
+    },
+    {
+      "role": "candidate",
+      "text": "J'accepte la critique si elle est constructive, surtout quand c'est pour faire mieux le travail, j'écoute sans me mettre sur la défensive, et j'essaie d'appliquer les conseils directement. Si c'est pour des choses simples comme la propreté ou la ponctualité, je m'efforce de les corriger tout de suite pour ne pas recommencer."
+    },
+    {
+      "role": "coach",
+      "text": "C'est bien, on peut en parler. Comment est-ce que tu règles les conflits avec les autres ?"
+    },
+    {
+      "role": "candidate",
+      "text": "J'essaie de parler calmement et d'écouter l'autre avant de réagir, parce que c'est pas agréable quand on se dispute sur un chantier. Si on ne peut pas se mettre d'accord, je dirais au chef ou au contremaître pour qu'ils aident à trouver une solution, parce que le travail doit toujours avancer. J'ai déjà eu un conflit avec un collègue avant, et j'ai compris que dire les choses clairement, sans colère, c'est la meilleure façon. Bref, je préfère prévenir les tensions plutôt que de les laisser s'installer."
+    },
+    {
+      "role": "coach",
+      "text": "C'est une excellente attitude pour un chantier. Est-ce que tu pourrais t'imaginer rester dans l'entreprise après ton apprentissage ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ouais, ça me dirait bien, surtout si je vois que je peux vraiment apprendre et progresser, pas juste rester à faire toujours les mêmes choses sans rien de nouveau. L'idée de pouvoir grandir avec l'entreprise et peut-être même devenir contremaître un jour, ça me motive vraiment."
+    },
+    {
+      "role": "coach",
+      "text": "Bien sûr, c’est normal d’avoir des questions. Est-ce que tu as des questions sur ce qu’on attend des personnes en formation ?"
+    },
+    {
+      "role": "candidate",
+      "text": "J’aurais aimé savoir comment se passe la progression réelle pendant l’apprentissage, si on reçoit vraiment des défis et des responsabilités qui évoluent, ou si on reste toujours sur les mêmes tâches répétitives."
+    },
+    {
+      "role": "coach",
+      "text": "Oui, la progression est bien structurée : chaque année apporte de nouveaux défis et responsabilités, avec des tâches variées selon le niveau, et les apprenti·e·s accompagnent parfois les équipes sur les chantiers. Tu as encore une autre question ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bref, j'aimerais savoir si on nous donne des cours ou du temps pour apprendre les nouvelles technologies, comme les systèmes informatisés pour gérer les livraisons ou les plans, parce que ça m'intéresse et que ça pourrait m'aider plus tard."
+    },
+    {
+      "role": "coach",
+      "text": "Nous proposons une formation continue sur les chantiers, y compris l'utilisation des outils informatisés pour la gestion des livraisons et des plans.  \nTu as encore une autre question ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ouais, ça m'intéresse vraiment d'apprendre les outils informatisés, parce que ça compléterait bien le travail manuel et que je pourrais voir comment ça fonctionne sur le chantier. J'aimerais aussi savoir si on a un peu de temps pour faire ça ou si c'est juste pendant les pauses."
+    },
+    {
+      "role": "coach",
+      "text": "Bien sûr, on intègre des formations aux outils informatisés sur les chantiers, et les apprentis peuvent suivre ces cours pendant leur temps de travail. Est-ce qu'il y a encore quelque chose que tu aimerais nous dire ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ouai, j’ai compris que les cours se font sur le chantier pendant le travail, donc pas juste pendant les pauses, et ça me va bien. J’aime bien les deux, le travail de mes mains et l’informatique, donc je pense que ça va marcher."
+    },
+    {
+      "role": "coach",
+      "text": "Kevin, merci beaucoup pour cette discussion. On se voit en août 2027 pour le début de ton apprentissage. Bonne journée !\n\n---\n**Pour terminer : tu reçois maintenant ton feedback personnel.**\n\n## Tes points forts\n- «J’ai aidé mon oncle à refaire une salle de bain» montre une expérience concrète et une motivation pour le travail manuel.\n- «J’arrive toujours en avance depuis le SeMo» démontre une prise de conscience et une capacité à planifier son temps.\n\n## Ce que tu peux encore améliorer\n- «J’ai eu des retards au premier apprentissage» manque d'exemple précis sur comment éviter ces retards à l'avenir.\n- «J‘ai aimé savoir comment se passe la progression réelle pendant l‘apprentissage» n'est pas encore précisé par une expérience concrète.\n- «Ouais, ça m‘intéresse vraiment d’apprendre les outils informatisés» pourrait être illustré par un outil spécifique.\n\n## Ta prochaine étape\nPrépare un exemple concret d'une situation où tu as évité un retard grâce à une planification précise.\n\n## Encouragement\nTu as bien pratiqué pour cet entretien, et cette expérience te rendra plus confiant pour le vrai.\n\n### Vue d'ensemble par critère\n\n| | |\n|---|---|\n| Clarté | Bien |\n| Pertinence | Bien |\n| Motivation | Bien |\n| Réflexion sur soi | Bien |\n| Communication | Bien |\n| Exemples concrets | Bien |\n| Attitude & impression | Bien |\n| Préparation / connaissance de l'entreprise | Bien |\n| Orientation vers les objectifs | Bien |\n| Gestion des questions difficiles | Bien |\n| Initiative | Bien |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-DIF-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-06-05",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-06-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF09-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF09-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-05",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-07",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 3,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 40,
+  "answers": 19,
+  "calls_per_answer": 2.11,
+  "followups": 1,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 99.8
+}

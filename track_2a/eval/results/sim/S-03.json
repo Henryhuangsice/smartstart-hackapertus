@@ -1,0 +1,286 @@
+{
+  "scenario_id": "S-03",
+  "lang": "de",
+  "dialect": "be",
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach lenkt abschweifende Antworten freundlich auf die Frage zurück, ohne abwertend zu werden.",
+    "Das Feedback belegt das Abschweifen mit einer konkreten Stelle aus dem Gespräch (K1).",
+    "Der Coach gibt einen umsetzbaren Tipp zur Struktur (z. B. Kernaussage zuerst, dann Beispiel, dann Schluss) (K2).",
+    "Der Coach würdigt die Kommunikationsfreude als Stärke und verwendet keine Etiketten wie «geschwätzig» (B3).",
+    "Das Feedback beschränkt sich auf 1–2 zentrale Entwicklungspunkte (R2)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Noah."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Noah, ich bin Sandra Wyss, HR-Fachfrau für Berufsbildung bei den Aare Versicherungen. Wir werden uns heute etwa 40 Minuten kennenlernen, deine Motivation, Stärken und ein paar konkrete Situationen besprechen, und dann kannst du Fragen stellen. Erzähl mir doch kurz, wie war deine Anreise heute?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin mit dem Zug hierher gefahrt, ungefähr zwanzig Minütli unterwegs gsi. Habe's ziemlich geil gfunde, dass ich in die Stadt komme, und bin froh, dass ich pünktlich bin. Die Bahnfahrt is mega ruhig gsi, und ich bin nüni müede."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, dass du pünktlich hier bist und dich wohlfühlst! Erzähl uns etwas über dich."
+    },
+    {
+      "role": "candidate",
+      "text": "Bin Noah, 16 Jahr, us Bern, mache die 9. Klasse speziell Sek in Deutsch und Französisch, und bin mega aufgeregt für die KV-Lehre. Meine starke Sachen sin Deutsch, Gschicht und Französisch, und zwar ärbi, und zwar mega, aber Mathematik is schon immer so e bischen schwächer gsii. Ich habe scho Schnupperlehren in Versicherung und Gemeindeverwaltung gmacht, und habs mega gfeindt, und zwar – und ja, apropos, ich bin au im Pfadi und spiele Gitarre, und das macht so viel Spass."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, Noah, ich freue mich, dich kennenzulernen! Erzähl mir doch einfach, wie du deine Schule bisher erlebt hast. Wie würdest du deinen schulischen Werdegang beschreiben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin in der 9. Klasse speziell Sek, also die Sekundarschule mit Deutsch und Französisch, und das isch für mich mega wichtig, weil ich später eventuell an de FH möchte. Die Fächer Deutsch, Gschicht und Französisch mag ich am äusse, aber Mathematik isch schon immer e bischen schwierig gsii. Die Noten sin alles in de Mitte, äbe mit Französisch etwas besser, und ich versuch immer, mich z konzentriere, obwohl’s manchmal schwer isch."
+    },
+    {
+      "role": "coach",
+      "text": "Hört sich gut an, dass du Wert auf deine schulischen Grundlagen legst, vor allem für die Zukunft. Warum hast du dich für den Beruf Kaufmann/Kauffrau EFZ entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin total neugierig gsi, als ich in de Versicherung gschnupperd hätt, dass so viele Abteilungen zämearbeit, und in de Gemeindeverwaltung am Schalter z seh, wie Formulare ghandhabt werded, isch mega fasziniert gsii – und ja, apropos, ich wärd die KV-Lehre meg, weil ich danach eventuell an de FH studiere wärd, und wenn dä Job d Möglichkeit gäbt, d praktische und d theoretische Sachen z verbinde, isch dä für mich mega attraktiv."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, deine Begeisterung für die Zusammenarbeit verschiedener Abteilungen und die praktische Arbeit im Kundendienst hat mich beeindruckt. Weshalb möchtest du deine Lehre gerade bei unserem Betrieb absolvieren?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin froh, dass ihr bei Aare Versicherunge sucht, weil s ihr im Schnuppern super organisiert gsi isch und d Zusammenarbeit zwüsched de Abteilungen direkt fasziniert händ. Ich wärd d KV-Lehre meg, und wenn Aare Versicherunge d Möglichkeit biete, praktisch z handz’ händ und d Theorie z lerne, passt das perfekt zu mir. Zudem händ d Schnupperlehre meg gfeindt, und d Möglichkeit, öppe mit de Leuten z kontakt schaffe und d Kunden z berate, isch genau s, was ich will."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine Begeisterung, das freut mich sehr! Was weisst du über unseren Betrieb?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin meg interessiert, dass ihr e Versicherungsschäftet bedribt, und zwar, weil im Schnuppern klar war, dass alles super organisiert isch und d Abteilungen gut zämearbeit. E KV-Lehre hätt meg Spass gmacht, und wenn ihr dort praktische und theoretische Übige meg verbinde kännt, passt dä für mich mega. Meine Schwester hot die Lehre gmacht und mir gschribe, dass s mega geil isch."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du das so siehst! Welche Aufgaben gehören deiner Meinung nach zu diesem Beruf?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin meg sicher, dass im Versicherungsschäft täglich Kund:inne berate werd, Daten eintrage werd, Post öffne werd und im Empfang gschafft werd – genau das, was ich im Schnuppern gseh und gfeindt händ. Die Arbeit mit Formulare, Excel und Telefon klingt mega praktisch, und ich mag das, dass alles gut zusammenhängt wie im Pfadi-Lager, nur besser organisiert."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt super, dass du das alles schon im Schnuppern erlebt hast! Wie sicher fühlst du dich im Umgang mit Zahlen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin meg unsicher im Mathe, das isch einfach so, aber im Schnuppern bei de Gemeindeverwaltung händ wir mit Formulare und Excel gschafft, was mir helfe händ, mich besser z konzentriere. Die Praxisaufgabe händ mehr Spaß gmacht als die Theorie, und das reicht mir für jetzt, äbe ich versuch, mich immer weiterzubessere."
+    },
+    {
+      "role": "coach",
+      "text": "Wie würdest du zum Beispiel die Berechnung von Schadensummen oder Prämien basierend auf Versicherungsbedingungen angehen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin meg sicher, dass ich d Formulare und Excel benütze, um d Daten korrekt einzutrage, und wenn d Prämie berechnet werd, versuch ich, d Versicherungsbedingungen Schritt für Schritt durchzugehe, genau wie beim Löse e Rätsel. Meine Schwester hot meg gschribe, dass im BM1 d Theorie und Praxis eng verknüpft werd, und das helfe mir, mich zu orientiere – ich versuch, das genauso systematisch wie im Pfadi zu mache, nur mit weniger Schlaflosigkeit!"
+    },
+    {
+      "role": "coach",
+      "text": "Klingt gut, dass du systematisch vorgehst! Wie gehst du mit vertraulichen Informationen um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin meg sicher, dass ich vertrauliche Kund:innendaten immer sorgfältig behandle werd, genau wie im Schnuppern, wo Post und Formulare kontrolliert werd. Alles wird in Excel eintrage, dass niemand was falsches sieht, und ich versuch, nie irgendwas rauszugebe, was ich ned soll – das ist mega wichtig, genau wie im Pfadi, wenns um Lagergeheimnisse geht."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Antwort klingt sehr verantwortungsbewusst – das ist gut. Was bedeutet für dich eine strukturierte und organisierte Arbeitsweise?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin meg sicher, dass e strukturierte Arbeitsweise für mich heisst, dass alles an eim Platz isch und ich weiss, wann was gemacht werd – genau wie im Pfadi, wenns um die Lagerplanig geht. Ich schreib alles in e Notizbuch oder Excel, dass ich alles überblick händ, und das hilft meg, meg Aufgaben besser z erledige. Es heisst für mich, dass ich mich konzentriere kann, ohne immer nachzudenke, was als nächstes gmacht werd."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Struktur ist wirklich ein grosser Vorteil! Welche Schwäche möchtest du aktiv verbessern?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin meg unsicher im Mathe, aber ich versuch, das mit mehr Übung und dem BM1 Kurs zu verbessere – das reicht mir schon, äbe ich hoffe, dass ich später trotzdem flexibel bleibe."
+    },
+    {
+      "role": "coach",
+      "text": "Kannst du mir ein konkretes Beispiel nennen, wo dir die Übung oder der BM1 Kurs bereits geholfen hat?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin meg sicher, dass d BM1 Übige mir helfe händ, komplexe Formulare besser z verstahe, genau wie beim Excel im Schnuppern – d systematischi Vorgehensweis hilft meg, d Schritte ned z vermische. Apropos, d Pfadi-Trainings übe mir au, mich auf e Plan z konzentriere, wenns um mehrere Aufgaben geht, und des trage ich jetzt in d Büroarbeit mit."
+    },
+    {
+      "role": "coach",
+      "text": "Klingt nach einer echten Herausforderung! Wie machst du das konkret?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin meg sicher, dass ich im BM1 Kurs genau lerne, wie d Formulare strukturiert aufzubereite, sodass ich d Post und d Daten systematisch sortiere – genau wie im Schnuppern, nur mit weniger Stress. Apropos, die Pfadi-Trainings übe mir au, mich auf e Plan z konzentriere, wenns um mehrere Aufgaben geht, und des trage ich jetzt in d Büroarbeit mit. Meine Schwester hot meg gschribe, dass es wichtig isch, dass ich d Theorie mit der Praxis verbinde, und genau des versuch ich systematisch z mache."
+    },
+    {
+      "role": "coach",
+      "text": "Klingt gut, dass du systematisch lernst und die Theorie mit der Praxis verbindest. Welche Rolle übernimmst du häufig in einer Gruppe?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin meg im Pfadi oft de, der die Lagerplanig macht und d Gruppe organisiert – genau so wolle ich im Büro helfe, Abläufe strukturiert z machen. Apropos, ich versuch, immer zuzuhöre, wenns um gemeinsame Entscheidunge geht, und meg Ideen z sende, damit alles reibungslos läuft."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Erfahrung im Organisieren und Zuhören klingt sehr passend für unsere kaufmännische Ausbildung. Welche Weiterbildung kannst du dir nach der Lehre vorstellen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin meg sicher, dass ich nach dr KV-Lehre BM1 mach, weil ich speter an dr Fachhochschuel studiere wolle – entweder Betriebsökonomie oder Tourismus, je noch wos sich ergibt. Apropos, d Schwester hot meg gschribe, dass die BM1 Kurs hilft, d Theorie mit dr Praxis zu verbinde, genau des versuch ich jetzt systematisch z mache. Bin meg meg motiviert, dass ich speter flexibel blibe und trotzdem strukturiert arbeite."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du dich für die Struktur der Ausbildung interessierst. Interessierst du dich für den Ablauf der Ausbildung?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin meg meg interessiert, wie d Praktika im Jahr verteilt sin und ob's Projekttage gibts, wo ma die Theorie praktisch umsetze kann – genau so wolle ich d BM1 Kurs sinnvoll ebaue. Apropos, ich versuch, immer zuzuhöre, wenns um gemeinsame Entscheidunge geht, und meg Ideen sende, damit alles reibungslos läuft."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für dein offenes Feedback, das zeigt echtes Engagement! Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Bin meg sicher, dass ich die Schnuppertage in dr Gemeindeverwaltung und dr Versicherung wirklich genutzt händ, um z lerne, wie d Abteilungen zusammenarbeite, und das bringe ich jetzt in d Büroarbeit mit. Apropos, ich versuch systematisch z lerne, d Formulare und Post zu sortiere – genau das mach ich im BM1 Kurs. Bin meg froh, dass die BM1 Kurs hilft, Theorie und Praxis z verbinde, dass ich speter an dr Fachhochschuel studiere kann."
+    },
+    {
+      "role": "coach",
+      "text": "Vielen Dank für deine offenen und überlegten Antworten, Noah. Es war sehr motivierend zu hören, wie du die Schnuppertage genutzt hast, um die Zusammenarbeit der Abteilungen zu verstehen, und wie du systematisch lernst, Formulare und Post zu sortieren. Wir schätzen deine Initiative und dein Verständnis für die praktische Anwendung von Theorie und Praxis. Es war ein Vergnügen, dich kennenzulernen, und wir freuen uns darauf, dich im nächsten Schritt weiter kennenzulernen. Bis bald!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n«Bin mit dem Zug hierher gefahrt, ungefähr zwanzig Minütli unterwegs gsi.» – Positive Haltung und Pünktlichkeit.\n«Ich habe Schnupperlehren in Versicherung und Gemeindeverwaltung gmacht, und habs mega gfeindt.» – Konkrete Berufserfahrung zeigt echtes Interesse.\n\n## Daran kannst du arbeiten\n«Ich bin Noah, 16 Jahr, mache die 9. Klasse speziell Sek in Deutsch und Französisch, und bin mega aufgeregt für die KV-Lehre.» – Noch klarer Bezug zur gewünschten Lehre als Kaufmann/-frau EFZ formulieren.\n«Bin meg sicher, dass ich im Versicherungsschäft täglich Kund:inne berate werd, Daten eintrage werd, Post öffne werd und im Empfang gschafft werd.» – Erläutern, wie diese Aufgaben konkret im Versicherungsalltag ablaufen und welche fachlichen Kompetenzen dafür benötigt werden.\n\n## Dein nächster Schritt\nNotiere dir drei konkrete Aufgaben aus der Versicherung, die du im Schnuppern gesehen hast, und schreib dazu, welche mathematischen Fähigkeiten du dafür brauchst.\n\n## Du hast heute viel geübt und kannst mit jedem Schritt weiter wachsen.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Sehr gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Sehr gut |\n| Umgang mit schwierigen Fragen | Sehr gut |\n| Eigeninitiative | Gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-02-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-03-04",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-04-01",
+      "level": 2,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-04-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF17-01",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF17-01",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF17-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-BF17-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 2,
+      "action": "probe",
+      "flags": []
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-SIT-03",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-07-02",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-08-03",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-09-04",
+      "level": 3,
+      "action": "continue",
+      "flags": []
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 4,
+      "action": "continue",
+      "flags": []
+    }
+  ],
+  "llm_calls": 38,
+  "answers": 18,
+  "calls_per_answer": 2.11,
+  "followups": 2,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 93.2
+}
