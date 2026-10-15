@@ -102,15 +102,26 @@ class Handler(BaseHTTPRequestHandler):
             s = SESSIONS[sid]
             with LOCKS[sid]:
                 if self.path == "/api/turn":
-                    reply = coach.step(s, (req.get("text") or "").strip(), ds=ds)
+                    tid = req.get("turn_id")
+                    last = s.get("_last_turn") or {}
+                    if tid and last.get("id") == tid:  # retried request: return the same result, do not log twice
+                        return self._send(200, {"reply": last["reply"], "state": _public_state(s), "replayed": True})
+                    reply = coach.step(s, (req.get("text") or "").strip(), ds=ds)  # atomic: restored on failure
+                    s["_last_turn"] = {"id": tid, "reply": reply}
                     return self._send(200, {"reply": reply, "state": _public_state(s)})
                 if self.path == "/api/discover":
                     return self._send(200, {"prompt": coach.discovery_prompt(s)})
                 if self.path == "/api/card":
                     return self._send(200, {"card": coach.make_fact_card(s, req["text"], ds=ds), "state": _public_state(s)})
                 if self.path == "/api/card/confirm":
-                    card = coach.confirm_fact_card(s, req.get("facts") or {}, req.get("answer") or "")
-                    reply = coach.step(s, card["answer"], ds=ds)  # the confirmed answer goes into the interview
+                    import copy
+                    snap = copy.deepcopy(s)
+                    try:
+                        card = coach.confirm_fact_card(s, req.get("facts") or {}, req.get("answer") or "")
+                        reply = coach.step(s, card["answer"], ds=ds)  # the confirmed answer goes into the interview
+                    except Exception:
+                        s.clear(); s.update(snap)  # nothing half-saved; the student can press confirm again
+                        raise
                     return self._send(200, {"card": card, "reply": reply, "state": _public_state(s)})
                 if self.path == "/api/transfer":
                     return self._send(200, {"transfer": coach.transfer_question(s, int(req["index"]), ds=ds)})

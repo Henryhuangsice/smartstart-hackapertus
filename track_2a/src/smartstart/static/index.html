@@ -169,7 +169,7 @@ async function transfer(i){const box=$("#rev"+i);box.innerHTML='<div class="rev 
   box.innerHTML=`<div class="rev"><b>New question</b> · ${esc(r.question)}<div class="crit"><span>${esc(r.criterion)}</span><span class="num">${r.before??"–"} → ${r.after??"–"} · ${TS[r.status]}</span></div>
   <div class="notes"><div><em>+</em>${esc(r.strength)}</div><div><em>→</em>${esc(r.improvement)}</div>${r.missing.length?`<div><em>?</em>${r.missing.map(esc).join(" · ")}</div>`:""}</div></div>`}
  catch(e){box.innerHTML=`<div class="err" style="padding:8px 0">${esc(e.message)}</div>`}}
-let DISC=false;
+let DISC=false,PEND=null;
 $("#noex").onclick=async()=>{busy(true);try{const r=await api("/api/discover",{sid:SID});busy(false);add("coach",r.prompt);DISC=true;$("#inp").placeholder="Your story — what happened, what did you do?"}catch(e){busy(false);$("#err").textContent=e.message}};
 const FL={situation:"Situation",action:"What I did",result:"Result / what I learned"};
 function showCard(c){const d=document.createElement("div");d.className="card";
@@ -179,10 +179,16 @@ function showCard(c){const d=document.createElement("div");d.className="card";
  <label>Answer to use</label><textarea class="ans">${esc(c.answer)}</textarea>
  <div class="acts"><button class="ok">Use as my answer</button><button class="quiet skip">Skip</button></div>`;
  $("#msgs").appendChild(d);$("#msgs").scrollTop=1e9;
+ const DRAFT=c.answer;
+ d.querySelectorAll("input[data-k]").forEach(i=>i.oninput=()=>{const s=i.parentElement.querySelector(".src");if(s)s.remove();
+  i.parentElement.classList.add("edited");const ta=d.querySelector(".ans");
+  if(ta.value.trim()===DRAFT.trim()||ta.dataset.rebuilt){const parts=[...d.querySelectorAll("input[data-k]")].map(x=>x.value.trim()).filter(Boolean);
+   ta.value=parts.map(p=>p.replace(/[.]$/,"")).join(". ")+(parts.length?".":"");ta.dataset.rebuilt="1";
+   let h=d.querySelector(".rebuilt");if(!h){h=document.createElement("div");h.className="hint rebuilt";h.textContent="Answer updated from your changes — read it once more before you use it.";ta.after(h)}}});
  d.querySelector(".skip").onclick=()=>{d.remove();$("#inp").placeholder="Your answer — Enter to send"};
  d.querySelector(".ok").onclick=async()=>{const facts={};d.querySelectorAll("input[data-k]").forEach(i=>facts[i.dataset.k]=i.value);const ans=d.querySelector(".ans").value.trim();if(!ans)return;
   d.querySelectorAll("input,textarea,button").forEach(x=>x.disabled=true);d.querySelector("h4").textContent="Your example — confirmed";add("me",ans);busy(true);
-  try{const r=await api("/api/card/confirm",{sid:SID,facts,answer:ans});busy(false);add("coach",r.reply);render(r.state)}catch(e){busy(false);$("#err").textContent=e.message}}}
+  try{const r=await api("/api/card/confirm",{sid:SID,facts,answer:ans});busy(false);add("coach",r.reply);render(r.state)}catch(e){busy(false);d.querySelectorAll("input,textarea,button").forEach(x=>x.disabled=false);d.querySelector("h4").textContent="Your example — draft";$("#err").textContent=e.message+" — press “Use as my answer” again."}}}
 $("#dl").onclick=async()=>{const r=await api("/api/export",{sid:SID});const b=new Blob([r.markdown],{type:"text/markdown"});const u=URL.createObjectURL(b);const a=document.createElement("a");a.href=u;a.download="smartstart-practice-card.md";a.click();URL.revokeObjectURL(u)};
 async function again(i){const a=STATE.log[i];const t=prompt("Improve your answer\n\n"+a.question,a.answer);if(!t)return;const box=$("#rev"+i);box.innerHTML='<div class="rev typing">Re-assessing</div>';
  try{const r=await api("/api/revise",{sid:SID,index:i,text:t});const v=r.revision;STATE=r.state;
@@ -196,9 +202,10 @@ $("#go").onclick=async()=>{busy(true);try{const r=await api("/api/start",{lang:$
  $("#setup").hidden=true;$("#room").hidden=false;add("me",$("#first").value);busy(false);add("coach",r.reply);render(r.state)}catch(e){busy(false);$("#err0").textContent=e.message}};
 async function send(t){if(!t.trim())return;add("me",t);$("#inp").value="";busy(true);$("#err").textContent="";
  if(DISC){DISC=false;try{const r=await api("/api/card",{sid:SID,text:t});busy(false);$("#inp").placeholder="Your answer — Enter to send";showCard(r.card)}catch(e){busy(false);$("#err").textContent=e.message}return}
- try{const r=await api("/api/turn",{sid:SID,text:t});busy(false);const p=r.reply.split("\n---\n");
+ if(!PEND||PEND.t!==t)PEND={t,id:(crypto.randomUUID?crypto.randomUUID():String(Date.now()+Math.random()))};
+ try{const r=await api("/api/turn",{sid:SID,text:t,turn_id:PEND.id});PEND=null;busy(false);const p=r.reply.split("\n---\n");
   if(r.state.finished){if(p.length>1)add("coach",p[0]);add("coach",p[p.length-1].replace(/^\*\*.*?\*\*\s*/,""),true)}else add("coach",r.reply);render(r.state)}
- catch(e){busy(false);$("#err").textContent=e.message}}
+ catch(e){busy(false);$("#inp").value=t;$("#err").textContent=e.message+" — nothing was lost, press Send to try again."}}
 $("#send").onclick=()=>send($("#inp").value);$("#fbk").onclick=()=>send("/feedback");
 $("#inp").onkeydown=e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();send($("#inp").value)}};
 fetch("/api/postings").then(r=>r.json()).then(p=>{POST=p;fill()});

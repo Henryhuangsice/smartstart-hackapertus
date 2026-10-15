@@ -21,10 +21,11 @@ and uses **≈ 2.1 LLM calls per candidate answer** (limit: < 5).
 | Distress-signal recall | 0.00 | **1.00** |
 | LLM calls per candidate answer (28 scenarios, limit < 5) | – | **2.11** |
 | FHGR scenario success criteria met (LLM judge) | – | **100 %** |
-| v2: evidence quotes verifiably in the answer (100 answers) | – | **100 %** |
-| v2: feedbacks with guideline violations (6 re-run scenarios) | – | **0 / 6** |
+| Final build: coach-action accuracy (same 100 answers) | – | **0.80** |
+| Final build: feedbacks with guideline violations (6 re-run scenarios) | – | **0 / 6** |
+| Final build: LLM calls per answer (6 scenarios) | – | **2.12** |
 
-v1 → v2 trade-off: action accuracy 0.83 → 0.81, level accuracy 0.65 → 0.57 (see report §5).
+v1 → final trade-off: action accuracy 0.83 → 0.80, level accuracy 0.65 → 0.57, in exchange for order-verified quotes, gap-targeted follow-ups, negation-safe experience cards and atomic, retry-safe turns (see report §5).
 
 **Learning loops (v2):** gap-targeted follow-ups (one named missing element, never the same gap twice) ·
 *No example?* → an **experience card** from school, sport or hobby built only from the student's own

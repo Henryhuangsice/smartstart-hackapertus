@@ -1,0 +1,366 @@
+{
+  "scenario_id": "S-01",
+  "lang": "de",
+  "dialect": "gr",
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach folgt dem Ablauf Begrüssung → Vorstellung → Motivation → Kenntnisse → Stärken/Schwächen → Zukunft → Fragen → Abschluss.",
+    "Der Coach fragt mindestens einmal nach einem konkreten Beispiel, wenn eine Stärke nur behauptet wird.",
+    "Das Schlussfeedback nennt auch beim starken Kandidaten mindestens einen konkreten Entwicklungspunkt mit nächstem Schritt.",
+    "Das Feedback verzichtet auf Übertreibungen wie «perfekt» oder «genial» (T3).",
+    "Jede Rückmeldung verweist auf eine konkrete Aussage aus dem Gespräch (K1)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Luca."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Luca, ich bin Reto Casutt, Berufsbildner und Leiter der Konstruktionsabteilung bei der Plessur Maschinenbau AG. Im Rahmen dieses Gesprächs lernen wir uns kennen, besprechen deine Motivation und deine Vorstellungen zur Lehre, und ich stelle dir ein paar Fragen dazu. Hast du den Weg zu uns gut gefunden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ja, ich bin gut angekommen, danke. Ich han drü Täg bei euch gschnupperet und es isch wirklich faszinierend gsii, wie ausere Zeichnung im CAD e richtigs Bauteil wird. Die technische Arbeit macht mir sehr Spass, und ich glaube, dass ich in de Konstruktionslehre genau dings tun wärd."
+    },
+    {
+      "role": "coach",
+      "text": "Danke, Luca, dass du so offen von de Schnuppertage berichtet hast. Erzähl uns etwas über dich."
+    },
+    {
+      "role": "candidate",
+      "text": "Also, ich bin 15 Jahr alt und in Chur ufgwagse, geh grad in de 3. Sekundarschule. Meine starke Sachen sin Mathematik, Geometrie und technisches Gestalten, und zwar han ich die besten Noten. Beim Lego Technic baue ich seit ganz klein eigene Modelle mit Motoren, und im Handball helf ich seit sechs Jahr de jüngere Mannschaft."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Engagement im Handball und die Leidenschaft für Lego Technic zeigen echtes Durchhaltevermögen und Kreativität – worauf bist du besonders stolz?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich bin ganz stolz drauf, dass ich beim Lego Technic eigentlich alles selber geplant und gebaut han, ohne Anleitung, und dass ich im Handball die U11 jedes Wochenend helfe, ob’s nu Material bereit macht oder Übige zeig. Diese Projekte zeig, dass ich kreativ, aber au strukturiert vorne arbeite, genau wie in de Konstruktion."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Begeisterung für Technik und strukturiertes Arbeiten ist wirklich beeindruckend! Warum hast du dich für diesen Beruf entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich glaube, weil ich in de Schnupperlehre gseh han, dass ich am liebsten planen und zeichne kann, und die Konstruktion erlaubt genau das und bringt Technik mit. Die Polymechanik-Schnupperlehre hat mir au gzeigt, dass ich lieber am Anfang vom Prozess stehe und kein stundenlanges Fräsen mag. In de Schule han ich die besten Noten in Mathe und Geometrie, was für de Beruf wichtig isch, und Lego und Handball zeig, dass ich kreativ und diszipliniert gleichzeitig arbeite."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Begeisterung für Konstruktion und Planung ist sehr gut zu hören. Was spricht dich besonders für unseren Betrieb an?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich finde ehr super, dass ihr direkt ausere Zeichnung im CAD e richtigs Bauteil fertigt, und ich mag, dass ihr Lernende mit richtige Projekte beschäftigt, wia beim CAD oder am Werkstück. In de Schnupperlehre han ich gseh, wie genau und logisch ihr arbeitet, was genau zu mir passt, und ehr Betrieb scheint wirklich Praxis zu machen statt nur Theorie. Die Möglichkeit, eigene Modelle zu planen und zu bauen, passt perfekt zu meinem Lego-Hobby, und ich glaube, dass ich so am besten lerne."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach einer sehr klaren Motivation! Was erwartest du von deiner Ausbildung?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich erwarte, dass ich viel Praxis bekomm, dass ich an echte Bauteile mitbauen darf und dass ich in de Schule und im Betrieb immer neue CAD-Übige krieg. Ich will lerne, wie genau und logisch Planungen funktionieren, und hoffe, dass ich am Schluss so e Projekt hab, wo ich stolz drauf bin, wie beim Lego, nur dann in Metall."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Motivation passt gut zu uns – Praxis, echte Bauteile und CAD sind genau das, was wir bieten. Welche Aufgaben gehören deiner Meinung nach zu diesem Beruf?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich glaube, dass im Beruf am meisten planen, zeichne im CAD und nachher am Werkstück kontrolliere gehört, genau wie in de Schnupperlehre gseh. Ich mag, dass ihr nicht nur Theorie macht, sondern dass alles real wird, und dass ich dabei mit Motoren und Getrieben spielen darf, wie beim Lego."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, das klingt nach einem guten Einblick. Was glaubst du, wird in der Lehre die grösste Herausforderung sein?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich glaub, die grösste Herausforderung isch, dass alles genau stimmen muss, wia d'Maße und d'Zeichnung, sonst passt des Teil im Endeffekt gar net. Aber ich bin bereit, das genau zu lerne, und ich weiss, dass ich im Handball und beim Lego gelernt han, dass Fehler einfach Teil vom Lernprozess san. Außerdem isch Französisch für mich no a Schwäche, drum hoffe ich, dass ich beim Lernen im Betrieb trotzdem ganz gut vorwärts komme."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Ehrlichkeit über Herausforderungen schätze ich sehr. Was hältst du für deine grössten Stärken?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich glaube, dass ich kreativ und genau arbeiten kann, genau wie beim Zeichne und Konstruiere, und dass ich im Handball gelernt han, wie man sich für e Team einsetzt – das hilft mir, wenn es im Betrieb mal stressig wird. Meine Lego-Modelle zeig, dass ich gerne planen und technische Details durchdenke, was im Beruf genau das isch, wos braucht wird. Ich hab auch gute Noten in Mathe und Geometrie, was zum Zeichne im CAD perfekt passt, und ich bin bereit, meine Französisch-Schwäche mit viel Übung im Betrieb zu verbessern."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Offenheit ist wirklich gut, Luca. Welche Schwäche möchtest du gezielt verbessern?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich glaube, Französisch isch definitiv e Punkt, wo ich gezielt verbessern will, weil's in de Schule immer no knapper war – aber im Betrieb will ich viel übe, denn ich weiss, dass's nüt schlimm isch, wenn ma grad am Anfang langsam isch. Außerdem will ich am Schluss vielleicht ganz genau lerne, wie d'Maße stimmen müssen, denn ich weiss, dass das am wichtigsten isch, wenn des Teil dann wirklich passt."
+    },
+    {
+      "role": "coach",
+      "text": "Ja, das fällt mir ziemlich leicht – ich kann mir Teile gut dreidimensional vorstellen. Kannst du mir ein Beispiel aus deiner Schnupperlehre nennen, wo das besonders wichtig war?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich han im CAD e Halterung für e Fräsmaschine zeichnet, danach direkt gschaut, wie des Teil im Werkstück vo de Maschine rausfräst wird – jedes Millimeter musste stimmen, sonst passt de Halterung am Schluss gar nit. Das hod genau gzeigt, wie wichtig d'genaue Planung und d'Präzision san. In de Schnupperlehre als Polymechaniker han ichs gefeilt und an de Drehbank gschafft, und do isch mir klar gworden, dass mirs lieber isch, wenn ichs am Anfang plan, denn wenn ich stundenlang an de Maschine dra draufarbeite."
+    },
+    {
+      "role": "coach",
+      "text": "Schön, dass du das so genau beschreiben kannst – das zeigt echtes Verständnis für den Prozess. Erzähl mir doch, welche technischen Zeichnungen oder CAD-Modelle du bisher angefertigt hast und welche Programme du dafür genutzt hast."
+    },
+    {
+      "role": "candidate",
+      "text": "Ich han zum Beispiel im CAD a Halterung für e Fräsmaschine entworfen, genau wie in de Schnupperlehre, und dazu Pläne für e Velo-Rahmen gezeichnet. Dazua nutz ichs Programm SolidWorks, wu’s gonz gut zum Zeichne vo technischen Details passt, und ich versuche immer, alles genau nach de Vorgaben z'mache. Im Moment übe ich noch, wie ma d'Maße am besten korrekt in d'Zeichnung bringt, denn des isch für mich am Wichtigschte."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das verstehe ich. Was würdest du tun, wenn du den Auftrag nicht ganz verstanden hast und deine Berufsbildnerin gerade sehr beschäftigt ist?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich würd' zerscht nachfragen, genau wia der Auftrag funktioniert, und wenn mer Zeit hät, am Modell d'Dinge nochmol durchgehen. Wenn d'Bildnerin beschäftigt isch, helfe ich mir selbst mit dem Handbuch vom CAD-Programm oder frage mal a an Kolleg, der vielleicht scho ähnliche Aufträge kennt. Fehler im CAD mache ich am liebsten gleich nochmol, denn’s isch besser, als wenns zum Schluss gar nid passt."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, wie du systematisch vorgehst! Erzähl mir, wie du dir deine berufliche Zukunft nach der Lehre vorstellst."
+    },
+    {
+      "role": "candidate",
+      "text": "Ich stell mir vor, dass ich nach dr Lehre als Konstrukteur im Maschinenbau bleib, denn’s isch genau das, wos ich am liebsten mache – planen und technische Details durchdenke. Vielleicht baue ich dann später e Propeller für e Kleinflugzeug oder so, was total cools wär. Handball und Lego helfen mir sicher, im Team z’arbeiten und kreative Lösige z’finde. Und wenn’s mal schwierig isch, versuch ich einfach, es systematisch heranzugehn, genau wie früher im CAD."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne! Hast du Fragen zu unserem Betrieb?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich hab zwar e paar Schnupperlehren gmacht, aber ich frag mal, wie ma als Lehrling praktisch an neue Aufträgg herangeht – gibt’s do fir de Anfang spezielle Projägg oder Projägg, wo ma komplett allein planen und zeichne darf?"
+    },
+    {
+      "role": "coach",
+      "text": "Danke für diese interessante Frage, Luca. Gerne möchte ich noch hinzufügen, dass wir dir in der Einführungsphase einen eigenen CAD-Arbeitsplatz zur Verfügung stellen und dich früh an realen Kundenprojekten begleiten, damit du dich schnell einfinden kannst. Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ich glaub, eigner CAD-Arbeitsplatz und richtige Kundenprojägg am Anfang wär für mich total motivierend – so lern ich wirklich, wie's in de Praxis ausschaut. Ich versuch zwar immer, genau nach de Vorgaben z'mache, aber ich sehe ja, dass es im Beruf am wichtigschte isch, dass alles passt, egal wie oft ma es nachmachen muss. Vielleicht möcht ich am liebsten sogar an Automatisierigsprojägg mached, wo alles logisch planbar isch."
+    },
+    {
+      "role": "coach",
+      "text": "Vielen Dank für dein offenes und ehrliches Gespräch, Luca. Es war ein Vergnügen, dich kennenzulernen und mehr über deine Motivation und deine Vorstellungen zu erfahren. Wir freuen uns sehr auf deine Schnupperlehre und werden uns in zwei Wochen bei dir melden, um über den Lehrvertrag zu sprechen. Viel Erfolg und bis bald!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Ich bin ganz stolz drauf, dass ich beim Lego Technic …» – zeigt kreative Eigeninitiative.\n- «Ich han im CAD e Halterung für e Fräsmaschine zeichnet …» – beweist Verständnis für präzise Passgenauigkeit.\n\n## Daran kannst du arbeiten\n- «Ich würd' zerscht nachfragen, genau wia der Auftrag funktioniert, und …» – noch klarere Verknüpfung mit konkreten Beispielen aus der Schnupperlehre.\n- «Ich glaub, Französisch isch definitiv e Punkt, wo ich gezielt …» – gezielteres Üben der Sprachkenntnisse im Betrieb.\n\n## Dein nächster Schritt\nÜbe den Auftragsverständnis-Prozess mit deinem Berufsberater, indem du ein fiktives CAD-Projekt beschreibst und dabei immer zuerst die genauen Anforderungen herausfragst.\n\nDu schaffst das! Diese Probe war genau dafür da, dass du dich sicherer fühlst.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Sehr gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Gut |\n| Eigeninitiative | Gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Direkte Freude auf das Gespräch"
+      ],
+      "target": "Direkte Freude auf das Gespräch",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Bezug der genannten Hobbys und Fähigkeiten zur Berufswahl als Konstrukteur/in",
+        "Persönliche Motivation oder langfristige Berufsziele",
+        "Schulische oder ausserschulische Erfahrungen, die die technischen Interessen stützen"
+      ],
+      "target": "Bezug der Hobbys und Fähigkeiten zur Berufswahl als Konstrukteur/in",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-02-08",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Reflexion, was diese Projekte über die persönliche Eignung für die Konstruktion zeigen",
+        "Konkrete Bezugnahme auf mathematische oder technische Fähigkeiten, die für die Konstruktion relevant sind"
+      ],
+      "target": "Reflexion, was die genannten Projekte über die persönliche Eignung für die Konstruktion zeigen",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Langfristige Berufsperspektive",
+        "Direkter Bezug zur Firma Plessur Maschinenbau AG"
+      ],
+      "target": "Langfristige Berufsperspektive",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-03-04",
+      "level": 4,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Konkrete Produkte oder Projekte des Betriebs, die den persönlichen Interessen entsprechen",
+        "Eigene Ziele im Berufsweg nach der Lehre",
+        "Warum die spezifischen Arbeitsweisen des Betriebs wichtig für die persönliche Entwicklung sind"
+      ],
+      "target": "Konkrete Produkte oder Projekte des Betriebs, die den persönlichen Interessen entsprechen",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-03-05",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Erwartung an individuelle Unterstützung und Feedback",
+        "Zusammenhang zwischen persönlichen Stärken und zukünftigen Zielen"
+      ],
+      "target": "Erwartung an individuelle Unterstützung und Feedback",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-04-04",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Detailierte Beschreibung der Aufgaben im Kontext des Unternehmens",
+        "Bezug zu spezifischen Projekten oder Produkten des Betriebs",
+        "Eigene Motivation oder spezifische Interessen an den genannten Aufgaben"
+      ],
+      "target": "Detailierte Beschreibung der Aufgaben im Kontext des Unternehmens",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-04-10",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Konkrete Lern- oder Übungsstrategien für Genauigkeit im Beruf",
+        "Bezug zu spezifischen Tätigkeiten des Konstrukteurs/in EFZ",
+        "Zusammenhang zwischen persönlichen Stärken und Berufserfordernissen"
+      ],
+      "target": "Konkrete Lern- oder Übungsstrategien für Genauigkeit im Beruf",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-05-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Beispiel für konkrete Situation, in der Kreativität und Genauigkeit beim Zeichnen und Konstruieren gezeigt wurden",
+        "Quantifizierbares Ergebnis oder konkrete Leistung in diesem Bereich"
+      ],
+      "target": "Beispiel für konkrete Situation, in der Kreativität und Genauigkeit beim Zeichnen und Konstruieren gezeigt wurden",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Konkreter Lernschritt oder bereits erzielter Fortschritt im Französischlernen",
+        "Bezug zur spezifischen Rolle des Konstrukteurs/in EFZ",
+        "Messbare Ziele oder Zeitplan für die Sprachverbesserung"
+      ],
+      "target": "Konkreter Lernschritt oder bereits erzielter Fortschritt im Französischlernen",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF15-02",
+      "level": 4,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF15-03",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Erläuterung einer konkreten Herausforderung oder eines Fehlers, der aus der Arbeit mit dem Planungsprogramm resultierte",
+        "Reflexion über die Bedeutung von Genauigkeit in der Konstruktion"
+      ],
+      "target": "Erläuterung einer konkreten Herausforderung oder eines Fehlers, der aus der Arbeit mit dem Planungsprogramm resultierte",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-SIT-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Kurzes Beispiel aus der Schnupperlehre oder Schule"
+      ],
+      "target": "Kurzes Beispiel aus der Schnupperlehre oder Schule",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-08-02",
+      "level": 4,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-09-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Bezug zu spezifischen Strukturen oder Abläufen im Betrieb",
+        "Verknüpfung mit bereits genannten Interessen (z.B. CAD, Teamarbeit)"
+      ],
+      "target": "Bezug zu spezifischen Strukturen oder Abläufen im Betrieb",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Frage nach dem weiteren Vorgehen oder Rückmeldungszeitpunkt"
+      ],
+      "target": "Frage nach dem weiteren Vorgehen oder Rückmeldungszeitpunkt",
+      "asked_for": "",
+      "evidence_verified": true
+    }
+  ],
+  "llm_calls": 34,
+  "answers": 16,
+  "calls_per_answer": 2.12,
+  "followups": 0,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 92.0
+}

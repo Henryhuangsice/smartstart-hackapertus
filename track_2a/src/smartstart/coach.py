@@ -148,25 +148,76 @@ def _norm(t: str) -> str:
 
 
 _FORMALITY = __import__("re").compile(
-    r"begr[uü]ss|gruss|dank|einladung|h[oö]flich|politesse|salut|remerci|invitation|saluto|ringrazi|invito|cortesi",
+    r"begr[uü]ss|gruss|dank|h[oö]flich|politesse|salut|remerci|saluto|ringrazi|cortesi|"
+    r"^(?!.*(motiv|beruf|lehre|stelle|firma|betrieb|grund|m[ée]tier|apprentissage|poste|entreprise|raison|"
+    r"apprendistato|azienda|motivo|professione)).*(einladung|invitation|invito)",
     __import__("re").I)
 
 
+_NEG = {"nicht", "kein", "keine", "keinen", "keiner", "keinem", "nie", "niemals", "nichts", "ohne", "nö",
+        "ne", "n", "pas", "jamais", "aucun", "aucune", "sans", "rien",
+        "non", "mai", "nessun", "nessuno", "nessuna", "senza", "niente", "nulla",
+        "not", "no", "never", "without"}
+
+
+def _toks(t: str) -> list[str]:
+    import re as _re
+    return _re.findall(r"[\wÀ-ÿ]+", (t or "").lower())
+
+
 def verify_quote(quote: str, answer: str) -> bool:
-    """True if the quoted evidence really occurs in the candidate's answer (whitespace/punctuation-insensitive)."""
-    q, a = _norm(quote).strip(" ."), _norm(answer)
+    """True only if the quote occurs in the answer *in order*: an exact (normalised) substring, or an
+    ordered match covering >= 90 % of the quote whose skipped answer words contain no negation —
+    so «ich habe das Team geleitet» is NOT verified against «ich habe das Team nicht geleitet»."""
+    import difflib
+    q, a = _toks(quote), _toks(answer)
     if not q:
         return False
-    if q in a:
+    if " ".join(q) in " ".join(a):
         return True
-    qt = q.split()
-    at = set(a.split())
-    return len(qt) >= 3 and sum(t in at for t in qt) / len(qt) >= 0.9
+    if len(q) < 3:
+        return False
+    sm = difflib.SequenceMatcher(None, a, q, autojunk=False)
+    blocks = [b for b in sm.get_matching_blocks() if b.size]
+    if not blocks or sum(b.size for b in blocks) / len(q) < 0.9:
+        return False
+    span = a[blocks[0].a: blocks[-1].a + blocks[-1].size]
+    matched = {blocks[0].a + i for b in blocks for i in range(b.a - blocks[0].a, b.a - blocks[0].a + b.size)}
+    gaps = [w for i, w in enumerate(span) if blocks[0].a + i not in matched]
+    return not any(w in _NEG for w in gaps) and len(gaps) <= 2
+
+
+def _polarity_ok(text: str, source: str) -> bool:
+    """Reject a paraphrase that drops or adds a negation, or changes a number, relative to the
+    closest source sentence (catches 'I did NOT lead the team' → 'I led the team')."""
+    import re as _re
+    tt = _toks(text)
+    nums_t = set(_re.findall(r"\d+", text or ""))
+    if nums_t and not nums_t <= set(_re.findall(r"\d+", source or "")):
+        return False
+    sents = [x for x in _re.split(r"[.!?;,:\n]+|\b(?:aber|und dann|mais|puis|ma|poi|but)\b", source or "", flags=_re.I)
+             if x and x.strip()] or [source or ""]
+    cw = {_fold(w) for w in _content(text)}
+    if not cw:
+        return True
+    best = max(sents, key=lambda x: len(cw & {_fold(w) for w in _content(x)}))
+    return (any(w in _NEG for w in tt)) == (any(w in _NEG for w in _toks(best)))
+
+
+def _schema_ok(a: Any) -> bool:
+    """The assessment JSON must be an object with a level or an action of the expected type."""
+    if not isinstance(a, dict):
+        return False
+    lvl, act = a.get("quality_level"), a.get("coach_action")
+    return (isinstance(lvl, (int, str)) and str(lvl).strip() in {"1", "2", "3", "4"}) or \
+        act in {"continue", "probe", "redirect", "support_and_refer"}
 
 
 def _str_list(x: Any, n: int = 3) -> list[str]:
     if isinstance(x, str):
         x = [x] if x.strip() else []
+    if not isinstance(x, (list, tuple)):
+        return []  # e.g. the model returned a number — ignore instead of crashing
     return [str(i).strip() for i in (x or []) if str(i).strip()][:n]
 
 
@@ -214,7 +265,7 @@ def assess(
     )
     s["llm_calls"] += 1
     a = llm.parse_json(raw)
-    if not a:  # one strict retry instead of silently inventing a default score
+    if not _schema_ok(a):  # one strict retry instead of silently inventing a default score
         raw = llm.chat(
             [{"role": "system", "content": ASSESS_SYSTEM},
              {"role": "user", "content": user + "\n\nReturn ONLY the JSON object."}],
@@ -222,6 +273,9 @@ def assess(
         )
         s["llm_calls"] += 1
         a = llm.parse_json(raw)
+    schema_ok = _schema_ok(a)
+    if not schema_ok:
+        a = {}
     # --- sanitise --------------------------------------------------------
     def _lvl(x: Any) -> int | None:
         try:
@@ -230,7 +284,8 @@ def assess(
         except (TypeError, ValueError):
             return None
 
-    scores = {k: _lvl(v) for k, v in (a.get("scores") or {}).items() if k in ds.criteria_by_key}
+    sc_raw = a.get("scores") if isinstance(a.get("scores"), dict) else {}
+    scores = {k: _lvl(v) for k, v in sc_raw.items() if k in ds.criteria_by_key}
     level = _lvl(a.get("quality_level"))
     if level is None:
         vals = [v for v in scores.values() if v]
@@ -238,6 +293,8 @@ def assess(
     action = a.get("coach_action") if a.get("coach_action") in {"continue", "probe", "redirect", "support_and_refer"} else (
         "probe" if (level or 3) <= 2 else "continue"
     )
+    if not schema_ok:
+        action = "probe"  # unusable model output: stay on this question and ask the candidate to say more
     observed, missing = _str_list(a.get("observed")), _str_list(a.get("missing"))
     # politeness formalities (greeting, thanks, interest in the invitation) are not worth a follow-up
     only_formal = bool(missing) and all(_FORMALITY.search(m) for m in missing)
@@ -252,7 +309,7 @@ def assess(
         action = "continue"  # nothing important missing → do not probe for the sake of probing
     evidence = str(a.get("evidence") or "")[:300].strip().strip('"«»„“”\'').strip()
     evidence_ok = verify_quote(evidence, answer)
-    flags = [f for f in (a.get("problem_flags") or []) if isinstance(f, str)]
+    flags = [f for f in _str_list(a.get("problem_flags"), n=8)]
     if len(answer.split()) <= 2 and "one_word" not in flags:
         flags.append("one_word")
     if s["lang"] == "de":  # Swiss spelling in everything the student reads
@@ -279,7 +336,8 @@ def assess(
         "candidate_question": str(a.get("candidate_question") or "").strip(),
         "tip": str(a.get("tip") or "").strip(),
         "exemplars": [e.answer_id for e in ex],
-        "raw_ok": bool(a),
+        "raw_ok": schema_ok,
+        "schema_ok": schema_ok,
     }
 
 
@@ -449,7 +507,27 @@ def rubric_overview(ds: Dataset, s: dict, levels: dict[str, int | None]) -> str:
 # ======================================================================
 # one conversational step
 # ======================================================================
+CLOSING_FALLBACK = {
+    "de": "Vielen Dank für das Gespräch und deine Zeit!",
+    "fr": "Merci beaucoup pour cet entretien et pour ton temps !",
+    "it": "Grazie mille per il colloquio e per il tuo tempo!",
+}
+
+
 def step(s: dict, user_text: str, ds: Dataset | None = None) -> str:
+    """Process one candidate message atomically: if any model call fails, the session is restored
+    exactly as before (no skipped question, no answer logged twice), so the same answer can be resent."""
+    import copy
+    snapshot = copy.deepcopy(s)
+    try:
+        return _step(s, user_text, ds)
+    except Exception:
+        s.clear()
+        s.update(snapshot)
+        raise
+
+
+def _step(s: dict, user_text: str, ds: Dataset | None = None) -> str:
     """Process one candidate message, mutate the session, return the coach reply."""
     ds = ds or get_dataset()
     text = (user_text or "").strip()
@@ -540,8 +618,11 @@ def step(s: dict, user_text: str, ds: Dataset | None = None) -> str:
         s["finished"] = True
         closing = ""
         if not early_end:
-            closing = interviewer_turn(ds, s, answer=text, move="thank the candidate and close the interview",
-                                       next_question="", stage="closing", candidate_question=cand_q, last=True)
+            try:
+                closing = interviewer_turn(ds, s, answer=text, move="thank the candidate and close the interview",
+                                           next_question="", stage="closing", candidate_question=cand_q, last=True)
+            except Exception:  # a failed closing line must never block the feedback
+                closing = CLOSING_FALLBACK[s["lang"]]
         try:
             fb = final_feedback(ds, s)
         except Exception:  # keep all answers; the next message retries the feedback
@@ -687,16 +768,21 @@ def make_fact_card(s: dict, story: str, ds: Dataset | None = None) -> dict[str, 
         # the fact text itself must be backed: by its verified quote, or almost word-for-word by the story
         # (the result is where models invent most, so it gets the strictest test; the situation is only context)
         q_thr, s_thr = {"situation": (0.3, 0.5), "action": (0.5, 0.75), "result": (0.6, 0.75)}[k]
-        if text and ((ok_quote and _supported(text, quote, thr=q_thr)) or _supported(text, story, thr=s_thr)):
+        if text and ((ok_quote and _supported(text, quote, thr=q_thr)) or _supported(text, story, thr=s_thr)) \
+                and _polarity_ok(text, quote if ok_quote else story):
             text = _restore_spelling(text, story)
-            facts[k] = {"text": text, "quote": quote if ok_quote else _best_span(text, story), "verified": True}
+            # source_match = the wording is traceable to the student's story; it is NOT a confirmed fact
+            # until the student confirms it on the card (user_confirmed)
+            facts[k] = {"text": text, "quote": quote if ok_quote else _best_span(text, story), "verified": True,
+                        "source_match": True, "user_confirmed": False}
         else:
             if text:
                 dropped.append(k)
-            facts[k] = {"text": "", "quote": "", "verified": False}
+            facts[k] = {"text": "", "quote": "", "verified": False, "source_match": False, "user_confirmed": False}
     missing = [k for k, f in facts.items() if not f["text"]]
     answer = str(d.get("answer") or "").strip() if not dropped else ""
-    if answer and not _supported(answer, story, thr=0.85):
+    if answer and (not _supported(answer, story, thr=0.85) or not all(
+            _polarity_ok(x, story) for x in __import__("re").split(r"(?<=[.!?])\s+", answer) if x.strip())):
         answer = ""  # the drafted answer adds content the candidate never said
     if not answer:  # fallback: the candidate's own words are always true
         answer = story.strip()
@@ -711,12 +797,28 @@ def make_fact_card(s: dict, story: str, ds: Dataset | None = None) -> dict[str, 
 
 
 def confirm_fact_card(s: dict, facts: dict[str, str], answer: str) -> dict:
+    """Store what the student confirmed. An edited field loses its source match (it is now the
+    student's own statement), and if facts were edited but the answer is still the old draft,
+    the stale draft is NOT submitted: the answer is rebuilt from the confirmed facts."""
     card = (s.get("discovery") or {}).get("card") or {}
+    draft = card.get("answer", "")
+    edited = False
     for k, v in (facts or {}).items():
         if k in card.get("facts", {}):
-            card["facts"][k]["text"] = (v or "").strip()
-            card["facts"][k]["edited"] = True
-    card["answer"], card["status"] = (answer or "").strip(), "confirmed"
+            f = card["facts"][k]
+            v = (v or "").strip()
+            if v != f.get("text", ""):
+                edited = True
+                f.update({"text": v, "edited": True, "verified": False, "source_match": False,
+                          "quote": ""})
+            f["user_confirmed"] = bool(v)
+    answer = (answer or "").strip()
+    if edited and (not answer or answer == draft):
+        parts = [card["facts"][k]["text"] for k in ("situation", "action", "result")
+                 if card.get("facts", {}).get(k, {}).get("text")]
+        answer = ". ".join(p.rstrip(".") for p in parts) + ("." if parts else "")
+        card["answer_rebuilt"] = True
+    card["answer"], card["status"] = answer, "confirmed"
     card["missing"] = [k for k, f in card.get("facts", {}).items() if not f["text"]]
     s.setdefault("cards", []).append(card)
     return card
@@ -725,7 +827,7 @@ def confirm_fact_card(s: dict, facts: dict[str, str], answer: str) -> dict:
 # ======================================================================
 # C: transfer practice — a NEW question that trains the same criterion (1 call)
 # ======================================================================
-def transfer_question(s: dict, index: int, ds: Dataset | None = None) -> dict[str, Any]:
+def transfer_question(s: dict, index: int, ds: Dataset | None = None, record: bool = True) -> dict[str, Any]:
     ds = ds or get_dataset()
     e = s["log"][index]
     sc = {k: v for k, v in (e["assessment"].get("scores") or {}).items()}
@@ -742,14 +844,19 @@ def transfer_question(s: dict, index: int, ds: Dataset | None = None) -> dict[st
     pool = [qid for qid, q in ds.questions.items()
             if crit in (q.get("criteria") or []) and qid not in used and _field_ok(q)
             and q.get("situation") in (None, "apprenticeship_interview") and not q.get("condition")]
-    if not pool:
+    if not pool:  # relax the situation filter, but keep the SAME criterion
         pool = [qid for qid, q in ds.questions.items()
-                if qid not in used and _field_ok(q) and "concrete_examples" in (q.get("criteria") or [])]
+                if crit in (q.get("criteria") or []) and qid not in used and _field_ok(q) and not q.get("condition")]
+    if not pool:  # last resort: a concrete-example question, and say so (label follows the question)
+        crit = "concrete_examples"
+        pool = [qid for qid, q in ds.questions.items()
+                if qid not in used and _field_ok(q) and crit in (q.get("criteria") or [])]
     qid = sorted(pool)[(index * 7) % len(pool)]
     t = {"qid": qid, "question": ds.question_text(qid, s["lang"]), "criterion": crit,
          "criterion_label": ds.criterion_label(crit, s["lang"]), "source_index": index,
          "source_improvement": e["assessment"].get("improvement", "")}
-    s.setdefault("transfers", []).append(t)
+    if record:
+        s.setdefault("transfers", []).append(t)
     return t
 
 
@@ -807,7 +914,8 @@ def export_card(s: dict, ds: Dataset | None = None) -> str:
         lines += [f"## {h[2]}", "", f"- {ds.criterion_label(best, lang)}" + (f" — «{q}»" if q else ""), ""]
         rest = {k: v for k, v in known.items() if k != best} or known
         worst = min(rest, key=rest.get)
-        gap = next((e["assessment"]["missing"][0] for e in reversed(s["log"]) if e["assessment"].get("missing")), "")
+        gap = next((e["assessment"]["missing"][0] for e in reversed(s["log"])  # a gap from an answer rated on THIS criterion
+                    if e["assessment"].get("missing") and (e["assessment"].get("scores") or {}).get(worst) is not None), "")
         lines += [f"## {h[3]}", "", f"- {ds.criterion_label(worst, lang)}" + (f": {gap}" if gap else ""), ""]
     fb = s.get("feedback") or ""
     step = ""
@@ -822,7 +930,7 @@ def export_card(s: dict, ds: Dataset | None = None) -> str:
         lines += [f"## {h[4]}", "", step.strip(), ""]
     nq = (s.get("transfers") or [{}])[-1].get("question")
     if not nq and s["log"]:
-        nq = transfer_question(s, len(s["log"]) - 1, ds)["question"]
+        nq = transfer_question(s, len(s["log"]) - 1, ds, record=False)["question"]  # export must not change state
     if nq:
         lines += [f"## {h[5]}", "", nq, ""]
     return "\n".join(lines)

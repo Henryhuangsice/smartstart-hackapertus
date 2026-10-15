@@ -1,0 +1,482 @@
+{
+  "scenario_id": "S-17",
+  "lang": "fr",
+  "dialect": null,
+  "difficulty": "hard",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Le coach mène l'entretien et le feedback en français et tutoie le candidat.",
+    "Le coach n'approuve pas les propos négatifs sur l'ancienne entreprise et propose une formulation neutre.",
+    "Le feedback présente une structure pour expliquer la rupture: faits – ma part – ce que j'ai appris – ce qui a changé (K2).",
+    "Le coach présente l'interruption comme une étape d'apprentissage et ne crée pas de peur (E1, L2).",
+    "Le feedback cite une preuve concrète de changement mentionnée par le candidat (ponctualité au SeMo, stage) (K1)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Bonjour, je suis Kevin."
+    },
+    {
+      "role": "coach",
+      "text": "Bonjour Kevin, je suis Olivier Jaquet, Directeur et formateur chez Jaquet & Robert Sanitaire SA. Je vais d'abord bien te connaître, comprendre ta motivation et tes points forts, avant de te poser quelques questions précises sur ton parcours. Dis-moi comment tu te sens aujourd'hui ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, je vais bien, justement ça me motive d'être là aujourd'hui pour parler d'un nouveau départ. J'ai pris conscience que le travail répétitif me lassait et que j'aime plus bouger et créer quelque chose de concret, comme quand j'ai aidé mon oncle à refaire la salle de bain. J'ai appris de mes retards au début et je suis arrivé ce matin avec le bus à l'heure, prêt à me montrer sérieux."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as bien fait de venir aujourd'hui, Kevin. Parle-nous un peu de toi."
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, j'ai commencé un apprentissage de logisticien juste après l'école, mais ça m'ennuyait trop. J'ai arrêté en décembre parce que le travail était répétitif et j'arrivais souvent en retard, mais au SeMo j'ai repris le contrôle, je me réveille plus tôt et j'ai enfin l'impression d'apprendre quelque chose de concret en aidant mon oncle ou pendant les stages."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as déjà aidé ton oncle ou fait des stages dans des installations sanitaires ? Qu'est-ce qui t'intéresse particulièrement dans le métier d'installateur sanitaire ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, j'ai aidé mon oncle à refaire la salle de bain, j'ai posé des carrelages et installé un lavabo, et pendant un stage d'une semaine j'ai posé des conduites avec un monteur – c'est concret et je vois le résultat, ça me motive. J'aime bouger, travailler avec mes mains et créer quelque chose que l'on peut voir et utiliser."
+    },
+    {
+      "role": "coach",
+      "text": "C'est bien concret ce que tu as déjà fait ! Et maintenant, comment décrirais-tu ton parcours scolaire jusqu'à présent ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, j'ai fini l'école obligatoire avec des notes correctes, surtout en activités manuelles et sport, mais moins en allemand et en français écrit. En ce moment je suis au SeMo 2026, ça m'aide à réfléchir et à me motiver pour un nouveau métier. J'ai eu quelques retards au début mais depuis mars je suis plus ponctuel."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as bien avancé depuis mars, c'est encourageant. Quel a été le plus grand échec que tu as vécu jusqu'à maintenant ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, le plus gros échec c'était mon premier apprentissage de logisticien, j'ai été plusieurs fois en retard et le travail répétitif m'a lassé, mais j'ai pris la mesure de mes problèmes et j'ai changé, surtout depuis le début du SeMo où je me lève plus tôt et j'arrive à l'heure."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as été honnête, c'est appréciable. Est-ce qu'il y a quelque chose dans ton bulletin scolaire que tu aimerais expliquer ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, mon bulletin montre que j'avais des notes un peu faibles en allemand et en français écrit, mais mon frère m'a dit que c'est normal après l'école obligatoire et que je peux rattraper tout ça pendant l'apprentissage. J'ai travaillé dur ces derniers mois et je suis prêt à donner le meilleur de moi-même pour ce nouveau métier."
+    },
+    {
+      "role": "coach",
+      "text": "C'est très encourageant de voir ton engagement et ton travail ces derniers mois. Pourquoi as-tu choisi ce métier d'installateur/trice sanitaire CFC ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, j'ai choisi ce métier parce que j'aime travailler avec mes mains, créer quelque chose concret et utile, et bouger sur les chantiers. J'ai adoré le stage où j'ai posé des conduites et j'ai vu le résultat, et ça m'a vraiment motivé. J'apprécie aussi l'idée de pouvoir montrer mon travail fini à la fin de chaque journée."
+    },
+    {
+      "role": "coach",
+      "text": "C'est clair, tu as vraiment apprécié le côté pratique et le résultat visible. Quelles expériences précises t'ont poussé à vouloir devenir installateur/trice sanitaire ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, j'ai adoré le stage d'une semaine où j'ai posé des conduites avec un monteur, il m'a dit que j'étais motivé, et aider mon oncle à refaire la salle de bain m'a fait voir que je peux créer quelque chose utile. J'ai aimé le côté pratique et le fait de voir le résultat, donc installer des sanitaires me motive vraiment."
+    },
+    {
+      "role": "coach",
+      "text": "C'est super que tu aies ressenti cette motivation pendant le stage et en aidant ton oncle.  \nPourquoi est-ce que les installations techniques dans les bâtiments t'intéressent ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, les installations sanitaires dans les bâtiments m'intéressent parce que j'aime voir comment tout se met en place, ça me donne envie de comprendre le système et de le rendre fonctionnel pour les gens qui l'utilisent."
+    },
+    {
+      "role": "coach",
+      "text": "C'est tout à fait normal de se sentir un peu intimidé au début, mais avec l’habitude, ça devient second nature. Ça te dérange-t-il particulièrement de travailler dans des espaces restreints ou en hauteur ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, ça m'a un peu dérangé au début, surtout sur le toit, mais j'ai pris des cours de sécurité, j'ai appris à utiliser les échelles et j'ai compris que c'est normal dans ce métier. J'accepte les espaces étroits et j'aime l'idée de résoudre des problèmes pour que tout fonctionne bien."
+    },
+    {
+      "role": "coach",
+      "text": "C'est clair, tu as pris le temps de comprendre les risques. La sécurité est primordiale quand on travaille avec l'électricité, l'eau ou le gaz : elle évite les accidents, protège les personnes et permet de mener les travaux dans les règles. Quelle importance accorde‑tu à la sécurité dans ces domaines ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, la sécurité c'est top important pour moi, j'ai fait attention sur les chantiers, j'veux pas avoir d'accidents avec l'eau ou l'électricité, et j'suis prêt à suivre toutes les règles pour que ça reste en ordre."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as déjà fait attention à l'électricité ou à l'eau sur un chantier, peux-tu me donner un exemple précis d'une situation où tu as respecté les règles de sécurité?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, pendant le stage d'installateur sanitaire, j'ai toujours vérifié que les outils électriques étaient isolés quand j'étais près de l'eau, et je n'ai jamais touché les conduits électriques sans être sûr que la tension était coupée, ça m'a appris que j'veux pas prendre de risques."
+    },
+    {
+      "role": "coach",
+      "text": "Tu arrives en retard, c’est normal, on peut comprendre. Que fais-tu pour rattraper le temps perdu et assurer que le chantier démarre quand même ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, depuis le SeMo j’me réveille plus tôt, j’prends le bus avant que tout le monde et je fais attention à être ponctuel dès le matin, ça m’a aidé à corriger les retards d’avant."
+    },
+    {
+      "role": "coach",
+      "text": "Si le train est supprimé le matin, comment prévois-tu de te rendre à l'entreprise en respectant ton horaire de début de travail à 7 h ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, si le train est supprimé, je vais prendre un autre bus ou le covoiturage avec des amis du quartier pour arriver à 7 h, j’ai déjà vérifié les horaires des alternatives."
+    },
+    {
+      "role": "coach",
+      "text": "Tu arrives toujours à l'heure, c'est bien. Comment réagis-tu à la critique ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, j’prends les critiques comme une leçon, je me corrige vite surtout quand c’est sur la ponctualité, j’ne me défends pas trop longtemps et j’essaie de faire mieux dès le lendemain."
+    },
+    {
+      "role": "coach",
+      "text": "C'est bien, tu sembles avoir compris comment gérer les critiques. Comment est-ce que tu règles les conflits avec les autres ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, quand y a des conflits, j’essaie d’abord d’écouter l’autre et de comprendre où il est parti, après j’propose une solution simple, genre s’excuser ou changer les tours de travail, j’ne reste pas sur mes positions, c’est juste pour que le chantier avance."
+    },
+    {
+      "role": "coach",
+      "text": "C'est bien, tu as une façon constructive de gérer les conflits. Est-ce que tu pourrais t'imaginer rester dans l'entreprise après ton apprentissage ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, oui, j'aimerais rester après l'apprentissage si ça marche bien, j'vais donner le meilleur de moi et faire grandir l'entreprise."
+    },
+    {
+      "role": "coach",
+      "text": "Tu as déjà montré de l'engagement et de la volonté de contribuer, quels sont les aspects du métier sanitaire qui te passionnent particulièrement et te poussent à vouloir apporter ta pierre à l'édifice ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, c'est le résultat qu'on voit qui me tire, quand j'ai aidé mon oncle à refaire la salle de bain et qu'on a posé le lavabo qui tenait bien, c'est ça qu'j'aime faire avec mes mains. J'préfère le travail qui pousse à réfléchir, pas juste à répéter la même chose toute la journée. J'aimerais bien apprendre à poser des équipements complets, comme la salle de bain chez l'oncle, pour pouvoir aider les gens à bien se sentir dans leur maison."
+    },
+    {
+      "role": "coach",
+      "text": "C'est bien clair que tu es motivé par le résultat concret et l'apprentissage continu. Est-ce que tu as des questions sur ce qu'on attend des personnes en formation ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, j'aimerais savoir comment on m'évalue pendant l'apprentissage et si je peux faire des stages dans différents ateliers pour apprendre plusieurs métiers. J'vais bien travailler et montrer que je peux m'adapter."
+    },
+    {
+      "role": "coach",
+      "text": "On t'évalue sur le travail soigné, la fiabilité, la sécurité et ton esprit d'équipe, avec un formateur attitré sur les chantiers et un service de dépannage 24h/24. Oui, tu peux faire des stages sur différents chantiers pour apprendre plusieurs métiers. Tu as encore une autre question ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, j’vais vraiment m’y mettre pour être à l’heure et ponctuel, j’ne veux plus d’absences. J’aimerais bien savoir si pendant l’apprentissage, on m’aide à changer d’atelier si j’ai besoin de voir d’autres techniques, pour pouvoir vraiment progresser."
+    },
+    {
+      "role": "coach",
+      "text": "Bien sûr, nous encourageons les apprentis à changer d'atelier pour découvrir de nouvelles techniques et progresser. Tu as encore une autre question ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, j’vais arriver toujours plus tôt au chantier, j’prends le bus plus tôt et j’m’assure d’être là pour le premier appel, j’ne veux plus de ces absences. J’aimerais bien savoir quel est le rythme des chantiers, si on travaille tous les jours ou juste sur projet, et ça m’aiderait à planifier mon temps."
+    },
+    {
+      "role": "coach",
+      "text": "Bien, c’est super que tu aies pris cette décision. Est-ce qu'il y a encore quelque chose que tu aimerais nous dire ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Salut Olivier, j’vais vraiment m’y mettre pour être fiable dès le premier jour, j’prends le bus plus tôt et j’arrive toujours avant l’appel, j’ne veux plus d’absences. J’aime bien le fait qu’on puisse changer d’atelier et ça me fait super envie d’apprendre à poser des salles de bain complètes comme chez mon oncle. J’peux compter sur moi pour apporter du sérieux et du résultat."
+    },
+    {
+      "role": "coach",
+      "text": "Merci beaucoup Kevin pour ta détermination et ton engagement. C’est exactement l’attitude qu’on recherche chez nous. Nous allons bien sûr te contacter pour les prochaines étapes. Bonne continuation !\n\n---\n**Pour terminer : tu reçois maintenant ton feedback personnel.**\n\n## Tes points forts\n« J'ai aidé mon oncle à refaire la salle de bain » montre une motivation pratique pour le métier.\n« J'ai posé des carrelages et installé un lavabo » démontre une expérience concrète en montage sanitaire.\n\n## Ce que tu peux encore améliorer\n«J'ai adoré le stage où j'ai posé des conduites avec …» manque un lien direct avec les exigences techniques d'installateur sanitaire.\n« J'aimerais savoir comment on m'évalue pendant l'apprentissage » n'explique pas comment les stages diversifieraient l'apprentissage sanitaire.\n\n## Ta prochaine étape\nPrépare un exemple précis où tu as vérifié l'isolation des outils électriques près de l'eau et le résultat de cette vérification.\n\n### Vue d'ensemble par critère\n\n| | |\n|---|---|\n| Clarté | Bien |\n| Pertinence | Bien |\n| Motivation | Bien |\n| Réflexion sur soi | Bien |\n| Communication | Bien |\n| Exemples concrets | Bien |\n| Attitude & impression | Bien |\n| Préparation / connaissance de l'entreprise | Bien |\n| Orientation vers les objectifs | Bien |\n| Gestion des questions difficiles | Bien |\n| Initiative | Bien |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "Lien explicite avec le métier d'installateur sanitaire",
+        "Compétences techniques ou intérêts spécifiques dans le domaine sanitaire",
+        "Objectifs précis pour l'apprentissage"
+      ],
+      "target": "Lien explicite avec le métier d'installateur sanitaire",
+      "asked_for": "",
+      "evidence_verified": false
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "raison précise de l'intérêt pour le métier d'installateur sanitaire",
+        "compétences techniques spécifiques liées au métier"
+      ],
+      "target": "raison précise de l'intérêt pour le métier d'installateur sanitaire",
+      "asked_for": "Lien explicite avec le métier d'installateur sanitaire",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-02-04",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "contexte précis du SeMo 2026 et son lien avec le métier d'installateur sanitaire",
+        "exemples concrets de projets ou stages liés au sanitaire",
+        "objectifs spécifiques pour le métier visé"
+      ],
+      "target": "contexte précis du SeMo 2026 et son lien avec le métier d'installateur sanitaire",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-DIF-05",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-06-05",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "lien avec le métier d'installateur/trice sanitaire (ex. calculs, communication client, documentation technique)",
+        "exemple concret d'action entreprise pour améliorer les notes"
+      ],
+      "target": "lien avec le métier d'installateur/trice sanitaire",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "objectif de formation élongé",
+        "lien explicite à Jaquet & Robert Sanitaire SA",
+        "exemple de projet futur"
+      ],
+      "target": "objectif de formation élongé",
+      "asked_for": "",
+      "evidence_verified": false
+    },
+    {
+      "qid": "Q-03-06",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "lien explicite avec les compétences spécifiques de l'installateur/trice sanitaire",
+        "vision à long terme du métier"
+      ],
+      "target": "lien explicite avec les compétences spécifiques de l'installateur/trice sanitaire",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF09-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "exemple concret d'expérience personnelle"
+      ],
+      "target": "exemple concret d'expérience personnelle",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF09-03",
+      "level": 3,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "exemple concret d'application de la sécurité",
+        "connaissance de règles spécifiques"
+      ],
+      "target": "exemple concret d'application de la sécurité",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF09-03",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "exemple concret d'application de la sécurité",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-SIT-05",
+      "level": 2,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "Specific action plan for train cancellation",
+        "Alternative transport options considered",
+        "Notification to employer before arrival"
+      ],
+      "target": "Specific action plan for train cancellation",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-SIT-05",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "information sur la communication du retard au chantier",
+        "plan dà rattrapage de temps en cas dà retard"
+      ],
+      "target": "comment tu informeras le chantier de ton retard et comment tu rattraperas le temps perdu",
+      "asked_for": "Specific action plan for train cancellation",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-05-05",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-07-04",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "résultat concret de la résolution du conflit",
+        "lien explicite avec le métier d'installateur sanitaire"
+      ],
+      "target": "résultat concret de la résolution du conflit",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-08-07",
+      "level": 2,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "Raisons personnelles ou compétences spécifiques liées au métier",
+        "Lien concret avec l'occupation d'installateur/trice sanitaire",
+        "Vision à long terme dans le domaine"
+      ],
+      "target": "Raisons personnelles ou compétences spécifiques liées au métier",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-08-07",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Lien explicite avec les objectifs de croissance de l'entreprise",
+        "Vision à long terme du métier"
+      ],
+      "target": "Lien explicite avec les objectifs de croissance de l'entreprise",
+      "asked_for": "Raisons personnelles ou compétences spécifiques liées au métier",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "lien explicite avec les exigences du CFC d'installateur/trice sanitaire",
+        "exemple concret dévolution professionnelle"
+      ],
+      "target": "lien explicite avec les exigences du CFC d'installateur/trice sanitaire",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Exemple concret d'une technique ou d'un projet qu'il souhaite voir",
+        "Référence à des informations spécifiques sur l'entreprise ou l'occupation"
+      ],
+      "target": "Exemple concret d'une technique ou d'un projet qu'il souhaite voir",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 3,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "Lien avec les compétences et exigences du métier d'installateur/trice sanitaire",
+        "Exemple concret d'adaptation aux exigences du métier"
+      ],
+      "target": "Lien avec les compétences et exigences du métier d'installateur/trice sanitaire",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    }
+  ],
+  "llm_calls": 47,
+  "answers": 22,
+  "calls_per_answer": 2.14,
+  "followups": 4,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 122.9
+}

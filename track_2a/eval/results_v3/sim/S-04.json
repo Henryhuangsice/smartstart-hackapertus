@@ -1,0 +1,400 @@
+{
+  "scenario_id": "S-04",
+  "lang": "fr",
+  "dialect": null,
+  "difficulty": "medium",
+  "situation": "online_interview",
+  "success_criteria": [
+    "Le coach mène tout l'entretien et le feedback en français et tutoie la candidate.",
+    "Le coach demande un exemple concret quand la candidate utilise des phrases toutes faites.",
+    "Le feedback mentionne au moins un aspect spécifique à l'entretien en ligne (caméra, notes, technique) avec un conseil concret.",
+    "Le feedback cite une formule générale de la candidate et propose une meilleure formulation avec son exemple réel (K1, K2).",
+    "Le coach ne juge pas les résultats en mathématiques s'ils ne sont pas abordés dans l'entretien (K3)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Bonjour, je suis Chloé."
+    },
+    {
+      "role": "coach",
+      "text": "Bonjour Chloé, je suis Claire Monnier, formatrice en entreprise chez Léman Horizons Voyages SA. On va faire connaissance, parler de ta motivation et de tes points forts, puis je te poserai quelques questions, le tout en une trentaine de minutes. Est-ce que tu m'entends et me vois bien ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Oui, madame Monnier, je vous entends et je vous vois très bien, merci. J'ai bien pris note de votre présentation et je suis prête pour l'entretien. J'ai préparé un petit carnet de voyage avec mes notes et je peux regarder si nécessaire. Merci de m'accueillir aujourd'hui !"
+    },
+    {
+      "role": "coach",
+      "text": "Tout va bien, merci à toi ! Comment ça va aujourd’hui ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, je vais bien, merci madame ! J'ai un peu le trac aujourd'hui, c'est mon premier vrai entretien, mais je suis excitée de pouvoir montrer ce que je sais faire. J'ai bien préparé mes notes sur mon bullet journal, donc si besoin je peux les regarder."
+    },
+    {
+      "role": "coach",
+      "text": "Super, pas de souci du tout, ça arrive à tout le monde au premier entretien ! Comment est-ce que tu t'es préparé ou préparée à cet entretien en ligne ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, je me suis entraînée à parler devant la caméra avec mes amis, j'ai révisé mes stages et mes notes sur mon carnet de voyage, et j'ai aussi essayé de me détendre parce que je sais que c'est normal d'avoir un peu de trac. J'ai vérifié ma connexion et ma lumière, et j'ai tout prêt pour bien me présenter."
+    },
+    {
+      "role": "coach",
+      "text": "Super, ça se voit que tu as bien préparé ton matériel et ton état d'esprit ! Comment te décrirais-tu en quelques phrases ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, je dirais que je suis quelqu'un d'organisée, fiable et qui aime le contact humain, surtout dans le tourisme et les langues. J'aime préparer les choses à l'avance, comme mon bullet journal, et j'essaie toujours de donner mon meilleur. J'ai des points forts en allemand et en anglais, et je suis motivée pour apprendre et m'améliorer, surtout en maths."
+    },
+    {
+      "role": "coach",
+      "text": "C'est super que tu aies des qualités comme l'organisation et le contact humain, ça correspond bien à notre équipe ! Pourquoi as-tu choisi ce métier d'employé/e de commerce dans le tourisme ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, j'adore les langues et organiser des voyages pour ma famille, et pendant mon stage à l'agence de voyages j'ai même pu aider un client en allemand, ce qui m'a montré que c'est un métier où on peut vraiment utiliser l'allemand et l'anglais tous les jours, et ça me motive vraiment."
+    },
+    {
+      "role": "coach",
+      "text": "C'est super que tu aies déjà eu l'occasion d'utiliser l'allemand et l'anglais dans ton stage ! Et maintenant, dis-moi, qu'est-ce qui te pousse à vouloir faire ton apprentissage chez Léman Horizons Voyages SA ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, j'adore l'idée de travailler ici parce que c'est une agence de voyages et que j'ai déjà aidé en allemand et en anglais, et que c'est juste top pour mon futur métier, et j'aimerais vraiment faire partie d'une équipe qui aime les langues et l'organisation comme moi."
+    },
+    {
+      "role": "coach",
+      "text": "J'adore ton enthousiasme pour les langues et l'organisation ! Comment t'es-tu renseigné ou renseignée sur Léman Horizons Voyages SA ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, j'ai vu que vous étiez spécialisée dans les voyages et que vous avez des clients qui parlent allemand et anglais, donc c'est exactement ce que je veux faire, et j'ai aussi regardé vos sites et vos publications sur les voyages, et c'est vraiment motivant pour moi."
+    },
+    {
+      "role": "coach",
+      "text": "C'est super que tu aies remarqué notre clientèle multilingue ! Tu as déjà utilisé Word ou Excel pour des tâches comme la gestion de listes ou la création de tableaux ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, j'ai déjà utilisé Excel pour tenir les réservations pendant mon stage à l'agence de voyages, et j'ai aussi appris Word pour faire des brochures et des documents pour la clientèle, surtout quand je devais préparer des informations en allemand ou en anglais."
+    },
+    {
+      "role": "coach",
+      "text": "J'aime beaucoup ce que tu as partagé sur ton expérience avec Excel et Word, c'est très concret ! Quelles sont tes plus grandes forces ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, mes plus grandes forces, je dirais, c'est d'abord d'être très organisée avec mon bullet journal et de toujours anticiper les tâches, ensuite mon bon niveau en allemand et en anglais que j'adore utiliser, et enfin je suis fiable et ponctuelle comme quand j'aide à la maison ou au stage."
+    },
+    {
+      "role": "coach",
+      "text": "Peux-tu me donner un exemple précis où ton organisation avec le bullet journal t'a aidée dans un contexte professionnel ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, j'ai mon bullet journal où je note toutes les tâches du jour, comme préparer les brochures ou les appels clients, et ça m'aide à ne rien oublier surtout quand il y a des réservations à saisir dans Excel, et ça m'a déjà sauvé le coup quand j'ai dû gérer plein de clients en même temps au stage."
+    },
+    {
+      "role": "coach",
+      "text": "C'est très concret et bien expliqué, merci pour ces détails. Quel point faible aimerais-tu améliorer ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, les maths sont vraiment ma plus grosse faiblesse, je trouve ça un peu plus dur et j'essaie toujours d'apprendre un peu plus, surtout pour les problèmes de logique, et j'aimerais vraiment travailler là-dessus pendant l'apprentissage."
+    },
+    {
+      "role": "coach",
+      "text": "Peux-tu me raconter une situation précise où tu as eu du mal avec les problèmes de logique en maths et quelles actions concrètes tu as mises en place pour t'améliorer ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, en maths, quand j'ai eu un exercice avec des pourcentages pour le stage, j'ai eu du mal à comprendre comment calculer la réduction correctement, et j'ai demandé à ma prof de m'expliquer pas à pas, et depuis j'utilise des exemples simples pour m'entraîner chaque jour avec mon cahier."
+    },
+    {
+      "role": "coach",
+      "text": "C'est tout à fait normal de rencontrer ce genre de situation, surtout quand on est encore en apprentissage. Comment réagirais-tu si une cliente ou un client était désagréable avec toi sans raison apparente ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, je dirais que je resterais calme et professionnelle, en écoutant ce qu'il a à dire sans me laisser affecter, et j'essaierais de comprendre s'il y a un problème pour pouvoir l'aider au mieux, comme quand j'ai aidé un client au téléphone avec l'allemand."
+    },
+    {
+      "role": "coach",
+      "text": "Merci pour cet exemple concret, c'est très parlant ! Pour toi, qu'est-ce qui fait une bonne collaboration ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, je dirais qu'une bonne collaboration, c'est quand on se parle clairement, qu'on se soutient mutuellement et qu'on partage les tâches comme quand j'ai aidé un client en allemand, on s'est bien compris. J'aimerais travailler avec des personnes qui sont sympas et qui aident sans être trop demandeuses. J'apprécie le feedback honnête, même si c'est parfois un peu difficile à entendre. Et je pense que ça fonctionne bien quand on a des objectifs communs, comme préparer des voyages ensemble."
+    },
+    {
+      "role": "coach",
+      "text": "C'est très clair, j'apprécie ton approche collaborative ! Quels sont tes objectifs professionnels dans le domaine du commerce de voyages ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, je veux vraiment faire le CFC d'employée de commerce pour travailler dans le tourisme et utiliser l'allemand et l'anglais tous les jours, comme au stage où j'ai aidé un client en allemand, et à terme j'aimerais peut-être m'installer à l'étranger pour vivre une expérience linguistique."
+    },
+    {
+      "role": "coach",
+      "text": "C'est super que tu aies pensé à un stage dans le tourisme pour pratiquer l'allemand et l'anglais ! Est-ce que tu as des questions sur notre entreprise ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, je me demandais si l'entreprise propose des cours de perfectionnement en allemand ou en anglais pendant l'apprentissage, parce que j'aimerais vraiment continuer à me former pour être plus à l'aise avec les clients germanophones."
+    },
+    {
+      "role": "coach",
+      "text": "Nous ne proposons pas de cours de perfectionnement en allemand ou en anglais pendant l'apprentissage, mais nous encourageons nos apprenti·e·s à pratiquer les langues au quotidien et à développer leurs compétences linguistiques sur le terrain. Tu as encore une autre question ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, je me demandais aussi comment on gère les réservations et les listes de clients pendant le stage, parce que j'aimerais être à l'aise avec tout ça dès le départ. J'apprécie bien que l'on partage les tâches comme au stage où j'ai aidé un client en allemand, et j'aimerais savoir comment s'organise la journée typique d'un apprenti."
+    },
+    {
+      "role": "coach",
+      "text": "Oui, nous utilisons un système de gestion des réservations et des listes clients pour organiser les voyages et les séjours. La journée d'un apprenti alterne entre tâches administratives, appuis aux clients et rotations dans les différents services. Tu as encore une autre question ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, je me demandais si on peut travailler en équipe avec d'autres apprentis sur les mêmes clients, parce que j'aime bien aider les gens et que j'apprécie le contact, comme quand j'ai aidé un client en allemand au téléphone, et j'aimerais savoir comment se répartissent les tâches entre nous."
+    },
+    {
+      "role": "coach",
+      "text": "Bien sûr, c'est possible, nous formons deux apprenti·e·s chaque année et nous travaillons en équipe sur plusieurs projets. Est-ce qu'on peut te contacter si on a encore des questions ?"
+    },
+    {
+      "role": "candidate",
+      "text": "Alors, je me demandais si l'entreprise peut m'envoyer le planning de l'apprentissage et les contacts des formateurs dès que je serais prise, parce que j'aimerais être prête dès le premier jour et avoir une routine claire comme avec mon bullet journal. J'apprécie bien l'idée d'être en équipe et de partager les tâches, comme au stage où j'ai aidé un client en allemand, et j'aimerais savoir si je serais encadrée toute la journée ou si j'ai des moments de travail autonome."
+    },
+    {
+      "role": "coach",
+      "text": "Merci beaucoup pour votre intérêt et votre préparation. Nous serons ravis de vous transmettre le planning de l’apprentissage et les coordonnées des formateurs dès votre engagement, et vous pourrez bien sûr nous contacter si vous avez encore des questions. Bonne journée et à très bientôt !\n\n---\n**Pour terminer : tu reçois maintenant ton feedback personnel.**\n\n## Tes points forts\n- «J'ai préparé un petit carnet de voyage avec mes notes» montre une préparation concrète et disponible.\n- «j'ai déjà aidé un client en allemand» démontre une expérience réelle dans le contact client multilingue.\n- «j'ai mon bullet journal où je note toutes les tâches …» révèle une organisation proactive et anticipatrice.\n\n## Ce que tu peux encore améliorer\n- «j'ai préparé mes notes sur mon bullet journal, donc si …» manque un exemple précis d'utilisation lors d'une tâche professionnelle.\n- «les maths sont vraiment ma plus grosse faiblesse» n'est pas encore illustré par une situation d'amélioration concrète.\n- «je me demandais si l'entreprise propose des cours de perfectionnement …» n'est pas encore appuyé par une expérience passée où cette formation aurait été utile.\n\n## Ta prochaine étape\nPrépare un exemple concret où tu as utilisé tes notes ou ton bullet journal pour résoudre une tâche spécifique lors de ton stage, et note-le dans ton carnet pour le prochain entretien.\n\n### Vue d'ensemble par critère\n\n| | |\n|---|---|\n| Clarté | Bien |\n| Pertinence | Bien |\n| Motivation | Bien |\n| Réflexion sur soi | Bien |\n| Communication | Bien |\n| Exemples concrets | À développer |\n| Attitude & impression | Bien |\n| Préparation / connaissance de l'entreprise | Bien |\n| Orientation vers les objectifs | Bien |\n| Gestion des questions difficiles | Très bien |\n| Initiative | Très bien |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-OTH-07",
+      "level": 4,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Exemple concret d'expérience ou de compétence liée au métier",
+        "Lien explicite entre les intérêts personnels et le futur métier"
+      ],
+      "target": "Exemple concret d'expérience ou de compétence liée au métier",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-OTH-08",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-02-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Exemple concret d'application de ces qualités"
+      ],
+      "target": "exemple concret d'application de ces qualités",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "objectif de carrière à long terme",
+        "lien explicite avec le métier d'employé/e de commerce CFC"
+      ],
+      "target": "objectif de carrière à long terme",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-03-04",
+      "level": 4,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-04-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF17-03",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-05-01",
+      "level": 2,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "exemples concrets liés à l'emploi de commerce CFC",
+        "lien explicite entre ces qualités et les exigences du métier",
+        "résultats obtenus grâce à ces qualités"
+      ],
+      "target": "exemples concrets liés à l'emploi de commerce CFC",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-05-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "explication détaillée de la situation spécifique",
+        "description précise de l'impact concret sur le travail"
+      ],
+      "target": "explication détaillée de la situation spécifique",
+      "asked_for": "exemples concrets liés à l'emploi de commerce CFC",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 2,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "exemple précis d'une situation où la faiblesse a été ressentie et les actions concrètes prises"
+      ],
+      "target": "exemple précis d'une situation où la faiblesse a été ressentie et les actions concrètes prises",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "exemple précis d'une situation où la faiblesse a été ressentie et les actions concrètes prises",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-SIT-06",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-07-09",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-08-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Lien explicite entre les compétences acquises et les objectifs futurs",
+        "Exemples concrets de projets ou de situations liées au tourisme"
+      ],
+      "target": "Lien explicite entre les compétences acquises et les objectifs futurs",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-09-01",
+      "level": 4,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-09-01",
+      "level": 4,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-09-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-10-04",
+      "level": 3,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "Clarification sur la disponibilité immédiate du planning et des contacts des formateurs",
+        "Exemple concret de processus de gestion des réservations et listes de clients",
+        "Détail sur l'encadrement quotidien et le travail autonome"
+      ],
+      "target": "Clarification sur la disponibilité immédiate du planning et des contacts des formateurs",
+      "asked_for": "",
+      "evidence_verified": true
+    }
+  ],
+  "llm_calls": 40,
+  "answers": 19,
+  "calls_per_answer": 2.11,
+  "followups": 2,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 105.2
+}

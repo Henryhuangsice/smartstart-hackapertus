@@ -79,31 +79,22 @@ def chat(
 
 
 def parse_json(text: str) -> dict[str, Any]:
-    """Extract the first JSON object from a model response (robust to prose / code fences)."""
+    """Extract the first JSON *object* from a model response (robust to prose, code fences and
+    braces inside strings: uses the real JSON decoder from every '{' position)."""
     if not text:
         return {}
-    t = text.strip()
-    t = re.sub(r"^```(?:json)?|```$", "", t, flags=re.M).strip()
-    start = t.find("{")
-    if start < 0:
-        return {}
-    depth = 0
-    for i in range(start, len(t)):
-        if t[i] == "{":
-            depth += 1
-        elif t[i] == "}":
-            depth -= 1
-            if depth == 0:
-                chunk = t[start : i + 1]
-                try:
-                    return json.loads(chunk)
-                except json.JSONDecodeError:
-                    # tolerate trailing commas / single quotes
-                    fixed = re.sub(r",\s*([}\]])", r"\1", chunk)
-                    try:
-                        return json.loads(fixed)
-                    except json.JSONDecodeError:
-                        return {}
+    t = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M).strip()
+    dec = json.JSONDecoder()
+    for cand in (t, re.sub(r",\s*([}\]])", r"\1", t)):  # second pass tolerates trailing commas
+        i = cand.find("{")
+        while i >= 0:
+            try:
+                obj, _ = dec.raw_decode(cand, i)
+                if isinstance(obj, dict):
+                    return obj
+            except json.JSONDecodeError:
+                pass
+            i = cand.find("{", i + 1)
     return {}
 
 

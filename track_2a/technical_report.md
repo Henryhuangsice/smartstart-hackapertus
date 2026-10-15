@@ -22,15 +22,18 @@ quality levels are within ±1 of the expert in **99 %** of cases; all **28 FHGR 
 with **2.11 LLM calls per candidate answer** (limit < 5) and 27/28 final feedbacks pass all automatic
 guideline checks.
 
-**Version 2 (final submission)** makes every follow-up *gap-targeted* (the assessor names what is
+**The final version (v3)** makes every follow-up *gap-targeted* (the assessor names what is
 present and what is missing; the coach asks for exactly one missing element and never for the same gap
-twice), keeps an evidence quote only if it is verifiably in the answer (100 % verified), and adds three
+twice), keeps an evidence quote only if it occurs *in order* in the answer, and adds three
 learning loops for students without work experience: an **experience card** built only from the
 student's own words, **transfer practice** on a new question for the weakest criterion, and a
 downloadable **practice card**. Everything the student reads about *their own* answers is grounded by
 construction: quotes, experience-card facts and progress verdicts are checked against the student's words
-or the rubric, never taken from the model on trust. Action accuracy stays at 0.81 and 6 re-run scenarios produce 0/6
-guideline violations at 2.13 calls per answer; the cost is lower level accuracy (see §5).
+or the rubric, never taken from the model on trust, and a negation or number flip («ich habe das Team
+*nicht* geleitet» → "led the team") is rejected. Every turn is atomic, so a model timeout never skips a
+question or logs an answer twice. On the frozen 100-answer set the final build keeps action accuracy at
+**0.80** with JSON/schema validity 0.99; 6 re-run scenarios produce **0/6** guideline violations at **2.12
+calls per answer**; the cost is lower level accuracy than v1 (0.57 vs. 0.65, see §5).
 
 ## 2. Architecture
 
@@ -51,6 +54,7 @@ guideline violations at 2.13 calls per answer; the cost is lower level accuracy 
 | **Experience card** ("No example?"): a guiding prompt about school, sport, hobby or family → situation / own action / result, each field checked separately against the student's words — the fact text must be backed by its own verified quote or almost word-for-word by the story, with the strictest test for the *result*, where models invent most; unstated results shown as "not yet stated"; the drafted answer falls back to the student's own story if it adds anything; editable, confirmed by the student | `smartstart/coach.py` | 1 per card |
 | **Transfer practice**: an unused question from the student's own occupational field for the weakest criterion; the new answer is compared with the earlier level (first evidence / higher / same / lower) | `smartstart/coach.py` | 1 per answer |
 | **Practice card** (Markdown download): confirmed experience card, strongest criterion with a verified quote, weakest criterion with its gap, next step, next practice question | `smartstart/coach.py` | 0 |
+| **Robustness:** each turn is a transaction (snapshot → model calls → commit; restored on any failure) with a client `turn_id` so a retried request returns the same result; assessment JSON decoded with a real JSON decoder and schema-checked (`schema_ok`) — unusable output keeps the student on the same question; a failed closing line falls back to a fixed sentence and never blocks the feedback | `smartstart/coach.py`, `llm.py`, `webui.py` | 0 |
 
 **Web app** (`src/smartstart/webui.py`, standard library only): the candidate picks a language and a
 posting and does the interview; a side panel shows the coach's live analysis of every answer (rubric
@@ -112,6 +116,7 @@ stratified by quality level). Leave-one-out: an answer's own annotation is never
 | Baseline (rubric only, no retrieval) | 0.59 | 0.97 | 0.45 | 0.44 | 0.79 | 0.54 | 0.00 |
 | **SmartStart v1 (expert-exemplar retrieval)** | **0.65** | **0.99** | **0.36** | **0.83** | **0.87** | **0.46** | **1.00** |
 | SmartStart v2 (+ gap-targeted follow-ups, verified quotes) | 0.57 | 0.98 | 0.47 | 0.81 | 0.84 | 0.50 | 0.50 |
+| **SmartStart v3 = final** (+ ordered quotes, schema check, atomic turns) | 0.57 | 0.98 | 0.47 | 0.80 | 0.84 | 0.50 | 0.50 |
 
 ![Figure 2 — Agreement with FHGR experts, with and without expert-exemplar retrieval.](docs/figures/assess_ablation.png)
 
@@ -125,14 +130,22 @@ rate 0.99), but level accuracy drops by 0.08 (German 0.40) and one of the two di
 classified as *redirect* instead of *support_and_refer* (recall 0.50, n = 2). We report this trade-off
 openly; separating level scoring from gap extraction is the obvious fix (§8).
 
+**v2 → v3 (final build, same 100 answers, same model and seeds).** The robustness changes leave the
+scores essentially unchanged (action 0.81 → 0.80; level, ±1, MAE and follow-up accuracy identical) —
+i.e. the safety fixes cost nothing measurable. The stricter, order-sensitive quote check now rejects 3
+paraphrased "quotes" that v2 accepted (quote verified rate 0.97; those quotes are not shown to the
+student). Per language: action accuracy de 0.72, Swiss German 0.80, fr 0.80, it 0.88.
+
 **E2 — 28 simulated interviews.** Apertus plays each FHGR scenario candidate (profile, persona,
 dialect where expected) until the coach's final feedback. All 28 runs completed: 511 candidate answers,
 47 adaptive follow-ups, **2.11 LLM calls per answer** (max. 2.17 in any scenario; FHGR limit < 5).
 The guideline checker flagged 2/28 feedbacks before rewrite and 1/28 after.
-**v2 re-run** (6 scenarios: de/fr/it, all difficulty levels): 110 answers, **2.13 calls per answer**
-(max. 2.20), 11 follow-ups, each aimed at one named gap and **no gap asked twice**; evidence quotes in
-the assessment log verified in 109/110 answers; **0/6** feedbacks violate a guideline (v1 on the same
-scenarios: 1/6, also after rewrite).
+
+**Re-runs on the same 6 scenarios** (de/fr/it, all difficulty levels): v2 — 110 answers, 2.13 calls per
+answer, 11 follow-ups, 0/6 violations; **v3 (final)** — 111 answers, **2.12 calls per answer** (max. 2.14),
+15 follow-ups (cap: 4 per interview), each aimed at one named gap and **no gap asked twice**; evidence
+quotes verified in 106/111 answers under the stricter check; **0/6** feedbacks violate a guideline
+(v1 on the same scenarios: 1/6, also after rewrite).
 
 **Live check of the final build** (web app, real Apertus endpoint, 16 Oct): in a French session the
 model drafted the result «le joueur a compris les exercices» for a story that states no result; the
@@ -157,13 +170,19 @@ difficulty levels and situations (apprenticeship, online, trial, phone, follow-u
 - **Judge ceiling / self-preference:** E3 uses the same model family as the coach and saturates near
   5/5; its comments sometimes evaluate the candidate rather than the coach. We therefore treat E1
   (agreement with human experts) as the primary evidence and E3 as a sanity check.
-- German quality-level accuracy is the lowest group (v1 0.52, v2 0.40); most errors are 3-vs-4 on strong
-  answers. v2 distress recall is 0.50 on only two test cases: the French case is flagged (which switches
+- German quality-level accuracy is the lowest group (v1 0.52, v2/v3 0.40); most errors are 3-vs-4 on strong
+  answers. v2/v3 distress recall is 0.50 on only two test cases: the French case is flagged (which switches
   the app to supportive mode), the Italian one is read as badmouthing — this needs a larger test set.
 - The follow-up target is chosen by the model; formalities are now filtered out, but the choice among
   substantive gaps is not yet validated against the experts' follow-up questions.
 - Transfer practice is assessed by the same model; in a live check an off-topic answer to the new
   question was still rated level 3, so the transfer verdict is indicative, not a grade.
+- Grounding checks are lexical: negations and changed numbers are caught, a role reversal ("Paul
+  helped me" → "I helped Paul") is not. The card therefore stays a *draft* until the student confirms it,
+  and an edited fact loses its source mark.
+- Follow-up targets are sometimes produced in English inside a French or German session (they steer the
+  question, which is always generated in the interview language, but show in the analysis panel), and
+  some politeness gaps in Italian still pass the filter.
 - The feedback occasionally quotes the interviewer's question instead of the student's words; the
   checker does not yet distinguish who said a quote.
 - Simulated candidates are more articulate than real 15-year-olds; the FHGR data is synthetic and not
@@ -173,11 +192,14 @@ difficulty levels and situations (apprenticeship, online, trial, phone, follow-u
 
 ## 7. Reproducibility
 
-- `make test` — 16 offline unit tests (mock LLM), incl. quote verification, no repeated gap, fact-card
-  grounding (an invented result is dropped), formality filter and feedback tidy-up; `make smoke` — all 28 scenarios with the mock LLM.
+- `make test` — 22 offline unit tests (mock LLM), incl. quote verification, negation/number flips, no
+  repeated gap, fact-card grounding (an invented result is dropped), stale draft after editing, a
+  simulated timeout mid-turn (state restored, retry logged once), malformed model JSON, formality filter
+  and feedback tidy-up; `make smoke` — all 28 scenarios with the mock LLM.
 - `make run` — Docker: web app (7860) + Aegra API (2026) + PostgreSQL + Redis; Apertus via `LLM_BASE_URL`
   (`make run-gpu` adds a vLLM container on an NVIDIA GPU).
-- `make eval` — E1–E3 + `eval/results/RESULTS.md` (needs an Apertus endpoint).
+- `make eval` — E1–E3 + `eval/results/RESULTS.md` (needs an Apertus endpoint). Final-build results:
+  `eval/results_v3/` (v2: `eval/results_v2/`).
 - CSCS: `scripts/cscs/apertus-vllm.toml` + `serve_apertus.sbatch` reproduce our serving setup.
 - Hardware: 1× GH200 (CSCS Clariden) for the model; client on a MacBook Pro M4 Pro.
   Seeds: `LLM_SEED=42`, sampling seed 13. Runtime: E1 ≈ 4 min, E2 ≈ 45 min, E3 ≈ 5 min.

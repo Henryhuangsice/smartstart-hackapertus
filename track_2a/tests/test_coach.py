@@ -165,3 +165,101 @@ def test_feedback_tidy_drops_extra_heading_and_shortens_quotes():
           "## Dein Fazit\nDas war die grösste Übung, weiß ich.")
     out = _c._tidy_feedback(fb, "de")
     assert "Fazit" not in out and "elf" not in out and "ß" not in out
+
+
+# ---------------------------------------------------------------- review round 3 (16 Oct)
+def _with_fake_llm(fn_reply, body):
+    from smartstart import llm as _l
+    orig = _l.chat
+    _l.chat = fn_reply
+    try:
+        return body()
+    finally:
+        _l.chat = orig
+
+
+def test_quote_and_paraphrase_reject_negation_and_number_flips():
+    from smartstart.coach import verify_quote, _polarity_ok
+    story = "Im Projekt habe ich das Team nicht geleitet. Ich habe die Folien gemacht und 200 Franken gesammelt."
+    assert not verify_quote("ich habe das Team geleitet", story)
+    assert not _polarity_ok("Ich habe das Team geleitet", story)
+    assert _polarity_ok("Folien gemacht", story)
+    assert not _polarity_ok("300 Franken gesammelt", story)
+    assert not _polarity_ok("J'ai gagné le prix", "Je n'ai pas gagné le prix, mais j'ai appris beaucoup.")
+    assert _polarity_ok("Präsentation gemacht", "Ich war nicht sicher, aber ich habe die Präsentation gemacht.")
+
+
+def test_fact_card_drops_negation_flip():
+    import json as _j
+    from smartstart import coach as _c
+    from smartstart.data import get_dataset as _g
+    story = "Ich habe das Team nicht geleitet. Ich habe die Folien zusammengefügt."
+    fake = {"situation": {"text": "Im Team", "quote": "Ich habe das Team nicht geleitet"},
+            "action": {"text": "Team geleitet", "quote": "Ich habe das Team geleitet"},
+            "result": {"text": "", "quote": ""}, "answer": "Ich habe das Team geleitet."}
+    s = _c.new_session("Grüezi", lang="de", ds=_g())
+    card = _with_fake_llm(lambda *a, **k: _j.dumps(fake), lambda: _c.make_fact_card(s, story, _g()))
+    assert card["facts"]["action"]["text"] == "" and "geleitet." not in card["answer"].replace("nicht geleitet", "")
+
+
+def test_edited_facts_invalidate_stale_draft_answer():
+    from smartstart import coach as _c
+    s = {"discovery": {"card": {"answer": "Ich habe das Team geleitet.", "facts": {
+        "situation": {"text": "Im Schulprojekt", "quote": "x", "verified": True},
+        "action": {"text": "Team geleitet", "quote": "x", "verified": True},
+        "result": {"text": "", "quote": "", "verified": False}}}}}
+    card = _c.confirm_fact_card(s, {"situation": "Im Schulprojekt", "action": "Ich habe nur die Folien geordnet",
+                                    "result": ""}, "Ich habe das Team geleitet.")
+    assert "Team geleitet" not in card["answer"] and "Folien" in card["answer"]
+    assert card["facts"]["action"]["verified"] is False and card["facts"]["action"]["user_confirmed"]
+
+
+def test_failed_turn_restores_state_and_retry_is_clean():
+    import os
+    os.environ.setdefault("LLM_BASE_URL", "mock")
+    from smartstart import coach as _c, llm as _l
+    from smartstart.data import get_dataset as _g
+    ds = _g()
+    s = _c.new_session("Grüezi", lang="de", ds=ds)
+    _c.step(s, "Grüezi, ich bin Lea.", ds=ds)
+    before = (s["idx"], len(s["log"]), s["llm_calls"])
+    orig = _l.chat
+
+    def flaky(msgs, **k):  # assessment works, interviewer turn times out
+        if k.get("tag") == "interviewer":
+            raise TimeoutError("simulated timeout")
+        return orig(msgs, **k)
+    _l.chat = flaky
+    try:
+        try:
+            _c.step(s, "Ich bin mit dem Zug gekommen.", ds=ds)
+            raise AssertionError("expected failure")
+        except TimeoutError:
+            pass
+    finally:
+        _l.chat = orig
+    assert (s["idx"], len(s["log"]), s["llm_calls"]) == before  # nothing advanced, nothing logged
+    _c.step(s, "Ich bin mit dem Zug gekommen.", ds=ds)
+    assert len(s["log"]) == before[1] + 1 and s["log"][-1]["answer"] == "Ich bin mit dem Zug gekommen."
+
+
+def test_malformed_model_output_is_contained():
+    from smartstart import llm as _l, coach as _c
+    from smartstart.data import get_dataset as _g
+    assert _l.parse_json('Sure: {"evidence": "a } b", "quality_level": 3}')["quality_level"] == 3
+    assert _c._str_list(42) == []
+    assert not _c._schema_ok({"foo": "bar"}) and _c._schema_ok({"coach_action": "probe"})
+    ds = _g()
+    s = _c.new_session("Grüezi", lang="de", ds=ds)
+    qid = s["plan"][0]
+    a = _with_fake_llm(lambda *x, **k: '{"observed": 42, "missing": 7, "problem_flags": 3, "quality_level": 3, "scores": 5}',
+                       lambda: _c.assess(ds, s, qid, "Frage?", "Antwort mit Inhalt."))
+    assert a["schema_ok"] and a["observed"] == [] and a["problem_flags"] in ([], ["one_word"])
+    b = _with_fake_llm(lambda *x, **k: '{"unrelated": true}', lambda: _c.assess(ds, s, qid, "Frage?", "Antwort."))
+    assert not b["schema_ok"] and b["coach_action"] == "probe" and b["quality_level"] is None
+
+
+def test_formality_filter_keeps_substantive_invitation_gap():
+    from smartstart.coach import _FORMALITY
+    assert _FORMALITY.search("Expression d'intérêt pour l'invitation")
+    assert not _FORMALITY.search("Motivation für die Lehre trotz Einladung")
