@@ -130,3 +130,38 @@ def test_transfer_is_new_question_from_own_field():
     assert t["qid"] not in {e["qid"] for e in s["log"]}
     assert not bf or bf.get("key") == DS.postings["P-11"]["occupation"]["berufsfeld_key"]
     assert "#" in coach.export_card(s)
+
+
+def test_fact_card_drops_result_backed_only_by_unrelated_quote(monkeypatch=None):
+    import json as _j
+    from smartstart import coach as _c, llm as _l
+    from smartstart.data import get_dataset as _g
+    story = ("Au foot, un nouveau joueur ne parlait pas français. Je lui ai expliqué les exercices "
+             "avec des gestes et je l'ai aidé pendant deux semaines.")
+    fake = {"situation": {"text": "Au foot avec un nouveau joueur", "quote": "Au foot, un nouveau joueur ne parlait pas français."},
+            "action": {"text": "expliqué les exercices avec des gestes", "quote": "expliqué les exercices avec des gestes"},
+            "result": {"text": "le joueur a compris les exercices", "quote": "Au foot, un nouveau joueur ne parlait pas français."},
+            "answer": ""}
+    orig = _l.chat
+    _l.chat = lambda *a, **k: _j.dumps(fake)
+    try:
+        s = _c.new_session("Bonjour", lang="fr", ds=_g())
+        card = _c.make_fact_card(s, story, _g())
+    finally:
+        _l.chat = orig
+    assert card["facts"]["result"]["text"] == "" and card["facts"]["action"]["text"]
+
+
+def test_formality_gap_is_not_probed():
+    from smartstart import coach as _c
+    assert _c._FORMALITY.search("Formule de politesse initiale")
+    assert _c._FORMALITY.search("Dank für die Einladung")
+    assert not _c._FORMALITY.search("Lien avec le métier")
+
+
+def test_feedback_tidy_drops_extra_heading_and_shortens_quotes():
+    from smartstart import coach as _c
+    fb = ("## Deine Stärken\n- «eins zwei drei vier fünf sechs sieben acht neun zehn elf zwölf» – gut.\n"
+          "## Dein Fazit\nDas war die grösste Übung, weiß ich.")
+    out = _c._tidy_feedback(fb, "de")
+    assert "Fazit" not in out and "elf" not in out and "ß" not in out

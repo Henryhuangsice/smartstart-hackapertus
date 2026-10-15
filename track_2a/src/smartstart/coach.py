@@ -147,6 +147,11 @@ def _norm(t: str) -> str:
     return " ".join(_re.findall(r"[\wÀ-ÿ']+", (t or "").lower()))
 
 
+_FORMALITY = __import__("re").compile(
+    r"begr[uü]ss|gruss|dank|einladung|h[oö]flich|politesse|salut|remerci|invitation|saluto|ringrazi|invito|cortesi",
+    __import__("re").I)
+
+
 def verify_quote(quote: str, answer: str) -> bool:
     """True if the quoted evidence really occurs in the candidate's answer (whitespace/punctuation-insensitive)."""
     q, a = _norm(quote).strip(" ."), _norm(answer)
@@ -234,14 +239,29 @@ def assess(
         "probe" if (level or 3) <= 2 else "continue"
     )
     observed, missing = _str_list(a.get("observed")), _str_list(a.get("missing"))
-    target = str(a.get("follow_up_target") or "").strip() or (missing[0] if missing else "")
+    # politeness formalities (greeting, thanks, interest in the invitation) are not worth a follow-up
+    only_formal = bool(missing) and all(_FORMALITY.search(m) for m in missing)
+    missing = [m for m in missing if not _FORMALITY.search(m)]
+    target = str(a.get("follow_up_target") or "").strip()
+    if not target or _FORMALITY.search(target):
+        target = missing[0] if missing else ""
+    if action == "probe" and only_formal:
+        action = "continue"  # the only gap was a formality
+
     if action == "probe" and not missing and level and level >= 3:
         action = "continue"  # nothing important missing → do not probe for the sake of probing
-    evidence = str(a.get("evidence") or "")[:300]
+    evidence = str(a.get("evidence") or "")[:300].strip().strip('"«»„“”\'').strip()
     evidence_ok = verify_quote(evidence, answer)
     flags = [f for f in (a.get("problem_flags") or []) if isinstance(f, str)]
     if len(answer.split()) <= 2 and "one_word" not in flags:
         flags.append("one_word")
+    if s["lang"] == "de":  # Swiss spelling in everything the student reads
+        observed = [x.replace("ß", "ss") for x in observed]
+        missing = [x.replace("ß", "ss") for x in missing]
+        target = target.replace("ß", "ss")
+        for k in ("strength", "improvement", "follow_up", "tip"):
+            if isinstance(a.get(k), str):
+                a[k] = a[k].replace("ß", "ss")
     return {
         "quality_level": level,
         "scores": scores,
@@ -315,7 +335,29 @@ def interviewer_turn(
         tag="interviewer",
     )
     s["llm_calls"] += 1
-    return out.strip().strip('"')
+    out = out.strip().strip('"')
+    return out.replace("ß", "ss") if s["lang"] == "de" else out
+
+
+def _tidy_feedback(fb: str, lang: str) -> str:
+    """Deterministic clean-up: only the three FHGR sections, quotes max. 10 words, Swiss 'ss'."""
+    import re as _re
+    heads = [h.lower() for h in FEEDBACK_HEADINGS[lang][:3]]
+    lines = []
+    for ln in (fb or "").splitlines():
+        m = _re.match(r"\s*#{1,6}\s*(.+?)\s*$", ln)
+        if m and m.group(1).strip("* ").lower() not in heads:
+            continue  # drop extra headings such as 'Fazit' (R1/R3); keep their text
+        lines.append(ln)
+    out = "\n".join(lines)
+
+    def _short(m):
+        w = m.group(1).split()
+        return "«" + (" ".join(w[:10]).rstrip(",.;:") + " …" if len(w) > 10 else m.group(1)) + "»"
+
+    out = _re.sub(r"«([^»]+)»", _short, out)
+    out = _re.sub(r"\n{3,}", "\n\n", out)
+    return out.replace("ß", "ss") if lang == "de" else out
 
 
 def aggregate_levels(s: dict) -> dict[str, int | None]:
@@ -389,6 +431,7 @@ def final_feedback(ds: Dataset, s: dict) -> str:
         v2 = check_feedback(fb2, lang)
         if len(v2) <= len(violations):
             fb, violations = fb2, v2
+    fb = _tidy_feedback(fb, lang)
     s["feedback_violations"] = violations
     s["feedback"] = fb.strip()
     return fb.strip() + "\n\n" + rubric_overview(ds, s, levels)
@@ -582,7 +625,8 @@ def _supported(text: str, story: str, thr: float = 0.6) -> bool:
     tw, sw = [_fold(w) for w in _content(text)], [_fold(w) for w in _content(story)]
     if not tw:
         return False
-    hit = sum(any(w == x or (len(w) > 4 and x.startswith(w[:5])) for x in sw) for w in tw)
+    hit = sum(any(w == x or (len(w) > 4 and x.startswith(w[:5])) or (len(x) > 3 and w.startswith(x)) for x in sw)
+              for w in tw)
     return hit / len(tw) >= thr
 
 
@@ -640,7 +684,10 @@ def make_fact_card(s: dict, story: str, ds: Dataset | None = None) -> dict[str, 
         f = d.get(k) or {}
         text, quote = str(f.get("text") or "").strip(), str(f.get("quote") or "").strip()
         ok_quote = verify_quote(quote, story)
-        if text and (ok_quote or _supported(text, story)):
+        # the fact text itself must be backed: by its verified quote, or almost word-for-word by the story
+        # (the result is where models invent most, so it gets the strictest test; the situation is only context)
+        q_thr, s_thr = {"situation": (0.3, 0.5), "action": (0.5, 0.75), "result": (0.6, 0.75)}[k]
+        if text and ((ok_quote and _supported(text, quote, thr=q_thr)) or _supported(text, story, thr=s_thr)):
             text = _restore_spelling(text, story)
             facts[k] = {"text": text, "quote": quote if ok_quote else _best_span(text, story), "verified": True}
         else:
