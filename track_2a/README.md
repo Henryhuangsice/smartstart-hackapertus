@@ -21,6 +21,15 @@ and uses **≈ 2.1 LLM calls per candidate answer** (limit: < 5).
 | Distress-signal recall | 0.00 | **1.00** |
 | LLM calls per candidate answer (28 scenarios, limit < 5) | – | **2.11** |
 | FHGR scenario success criteria met (LLM judge) | – | **100 %** |
+| v2: evidence quotes verifiably in the answer (100 answers) | – | **100 %** |
+| v2: feedbacks with guideline violations (6 re-run scenarios) | – | **0 / 6** |
+
+v1 → v2 trade-off: action accuracy 0.83 → 0.81, level accuracy 0.65 → 0.57 (see report §5).
+
+**Learning loops (v2):** gap-targeted follow-ups (one named missing element, never the same gap twice) ·
+*No example?* → an **experience card** from school, sport or hobby built only from the student's own
+words · *Practise this answer again* with a deterministic before/after rubric comparison ·
+*Try a new question* (transfer practice for the weakest criterion) · *Download card* (Markdown practice card).
 
 ## How it works (one candidate answer)
 
@@ -29,11 +38,11 @@ and uses **≈ 2.1 LLM calls per candidate answer** (limit: < 5).
 | 1 | Language / dialect detection (de · fr · it · gsw) | no |
 | 2 | Interview state machine: introduction → motivation → strengths/weaknesses → situational → candidate questions → closing → feedback; questions planned for the posting's occupational field and the candidate profile | no |
 | 3 | **Retrieval of expert-annotated answers** (706 FHGR annotations) to the same question as calibration anchors | no |
-| 4 | **Assess** the answer: rubric levels, evidence quote, coach action (continue / probe / redirect / support_and_refer), problem flags | **1 call** |
-| 5 | Deterministic policy: follow-up (max. 1 per question, 4 per interview) or next question; answer the candidate's own questions from the posting facts | no |
+| 4 | **Assess** the answer: rubric levels, verified evidence quote, observed / missing elements, coach action (continue / probe / redirect / support_and_refer), problem flags | **1 call** |
+| 5 | Deterministic policy: gap-targeted follow-up (max. 1 per question, 4 per interview, no repeated gap, no politeness gaps) or next question; answer the candidate's own questions from the posting facts | no |
 | 6 | **Interviewer turn** in persona (Berufsbildner/in from the posting), du/tu form | **1 call** |
 | end | **Final feedback** (strengths → improvements with quotes → next step → encouragement) | 1 call |
-| end | **Guideline checker** (T3, B3, L2, L4, K1, R1/R3, S3, S4) → one rewrite only if violated | 0–1 call |
+| end | **Guideline checker** (T3, B3, L2, L4, K1, R1/R3, S3, S4) → one rewrite only if violated; deterministic tidy-up (3 sections, quotes ≤ 10 words, Swiss ss) | 0–1 call |
 | end | Deterministic rubric overview (11 criteria; "no evidence" instead of guessing, K3) | no |
 
 Details: [technical_report.md](technical_report.md) · [docs/architecture.md](docs/architecture.md)

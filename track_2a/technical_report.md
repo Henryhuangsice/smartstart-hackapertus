@@ -27,7 +27,9 @@ present and what is missing; the coach asks for exactly one missing element and 
 twice), keeps an evidence quote only if it is verifiably in the answer (100 % verified), and adds three
 learning loops for students without work experience: an **experience card** built only from the
 student's own words, **transfer practice** on a new question for the weakest criterion, and a
-downloadable **practice card**. Action accuracy stays at 0.81 and 6 re-run scenarios produce 0/6
+downloadable **practice card**. Everything the student reads about *their own* answers is grounded by
+construction: quotes, experience-card facts and progress verdicts are checked against the student's words
+or the rubric, never taken from the model on trust. Action accuracy stays at 0.81 and 6 re-run scenarios produce 0/6
 guideline violations at 2.13 calls per answer; the cost is lower level accuracy (see §5).
 
 ## 2. Architecture
@@ -41,12 +43,12 @@ guideline violations at 2.13 calls per answer; the cost is lower level accuracy 
 | Interview planner: FHGR flow introduction → motivation → strengths/weaknesses → situational → candidate questions → closing; occupation-specific questions via the posting's `berufsfeld`; conditional questions (Stellwerk, absences) only if the profile justifies them; FHGR scenario plans; free-text occupation wish matched to a posting | `smartstart/planner.py` | 0 |
 | **Exemplar retrieval** over 706 expert-annotated answers (char-trigram Jaccard — robust across de/fr/it and dialect spelling; same question first; diverse quality levels; leave-one-out in evaluation) | `smartstart/retrieval.py` | 0 |
 | **Assess**: JSON with rubric levels (1–4 / null), evidence quote, strength, improvement, coach action (`continue / probe / redirect / support_and_refer`), problem flags, **observed / missing elements and one follow-up target**, follow-up, coaching tip; one JSON retry; the quote is kept only if it is found in the answer (normalised substring or ≥ 90 % token overlap) | `smartstart/coach.py` | **1 per answer** |
-| Deterministic policy: ≤ 1 follow-up per question, ≤ 4 per interview; the same gap is never asked twice; nothing missing and level ≥ 3 ⇒ continue instead of probing; candidate questions answered only from posting facts; explicit distress signal ⇒ supportive mode with referral to a real person (L3) | `smartstart/coach.py` | 0 |
+| Deterministic policy: ≤ 1 follow-up per question, ≤ 4 per interview; the same gap is never asked twice; nothing missing and level ≥ 3 ⇒ continue instead of probing; politeness gaps (greeting, thanks, invitation) are filtered out, so follow-ups always target substance; candidate questions answered only from posting facts; explicit distress signal ⇒ supportive mode with referral to a real person (L3) | `smartstart/coach.py` | 0 |
 | **Interviewer** turn in the persona of the posting's Berufsbildner/in, du/tu form | `smartstart/coach.py` | **1 per answer** |
 | **Final feedback** (strengths → max. 3 improvements, each with a short quote → one next step → encouragement) | `smartstart/coach.py` | 1 per interview |
-| **Guideline checker** T3, B3, L2, L4, K1, R1/R3, S3, S4 ⇒ **rewrite once** only if violated | `smartstart/rules.py` | 0–1 per interview |
+| **Guideline checker** T3, B3, L2, L4, K1, R1/R3, S3, S4 ⇒ **rewrite once** only if violated; then a deterministic tidy-up keeps only the three FHGR sections, cuts quotes to ≤ 10 words and enforces Swiss spelling (ss) in all German output | `smartstart/rules.py`, `coach.py` | 0–1 per interview |
 | Deterministic rubric table for all 11 FHGR criteria; "no evidence" instead of guessing (K3) | `smartstart/coach.py` | 0 |
-| **Experience card** ("No example?"): a guiding prompt about school, sport, hobby or family → situation / own action / result, each fact kept only if it is supported by the student's words (quote check or content-word overlap); unstated results shown as "not yet stated"; editable, confirmed by the student | `smartstart/coach.py` | 1 per card |
+| **Experience card** ("No example?"): a guiding prompt about school, sport, hobby or family → situation / own action / result, each field checked separately against the student's words — the fact text must be backed by its own verified quote or almost word-for-word by the story, with the strictest test for the *result*, where models invent most; unstated results shown as "not yet stated"; the drafted answer falls back to the student's own story if it adds anything; editable, confirmed by the student | `smartstart/coach.py` | 1 per card |
 | **Transfer practice**: an unused question from the student's own occupational field for the weakest criterion; the new answer is compared with the earlier level (first evidence / higher / same / lower) | `smartstart/coach.py` | 1 per answer |
 | **Practice card** (Markdown download): confirmed experience card, strongest criterion with a verified quote, weakest criterion with its gap, next step, next practice question | `smartstart/coach.py` | 0 |
 
@@ -67,6 +69,10 @@ selected per question and per answer — no fine-tuning, yet the coach inherits 
 when to probe. (2) Control flow is deterministic and only language generation is delegated to the LLM,
 which keeps the call budget fixed (2 per answer) and behaviour reproducible. (3) The FHGR feedback
 guidelines are enforced twice: in the prompt and by a lexical checker that triggers a targeted rewrite.
+(4) **Grounding by construction:** the model may phrase, but it may not assert facts about the student.
+Evidence quotes are verified against the answer, experience-card facts against the story, and
+"practise again" progress is a deterministic rubric comparison — so the coach cannot praise words the
+student never said or invent a result for a student without work experience.
 
 ## 3. Use of Apertus
 
@@ -128,6 +134,13 @@ The guideline checker flagged 2/28 feedbacks before rewrite and 1/28 after.
 the assessment log verified in 109/110 answers; **0/6** feedbacks violate a guideline (v1 on the same
 scenarios: 1/6, also after rewrite).
 
+**Live check of the final build** (web app, real Apertus endpoint, 16 Oct): in a French session the
+model drafted the result «le joueur a compris les exercices» for a story that states no result; the
+grounding check removed it and the card showed *pas encore précisé*, while a story that does state a
+result («On a gagné 200 francs») kept it. Politeness answers («danke für die Einladung») no longer
+trigger a follow-up, and the final German feedback contained only the three FHGR sections with quotes
+≤ 10 words and 0 checker violations. Each coach turn took 2–4 s.
+
 ![Figure 3 — LLM calls per candidate answer in the 28 FHGR scenarios.](docs/figures/calls_per_answer.png)
 
 **E3 — LLM-as-judge.** The judge (Apertus 1.5 8B, temperature 0) is first validated on the 30 FHGR
@@ -147,8 +160,12 @@ difficulty levels and situations (apprenticeship, online, trial, phone, follow-u
 - German quality-level accuracy is the lowest group (v1 0.52, v2 0.40); most errors are 3-vs-4 on strong
   answers. v2 distress recall is 0.50 on only two test cases: the French case is flagged (which switches
   the app to supportive mode), the Italian one is read as badmouthing — this needs a larger test set.
-- The follow-up target is chosen by the model and is occasionally a formality (e.g. "greeting and
-  thanks") rather than substance.
+- The follow-up target is chosen by the model; formalities are now filtered out, but the choice among
+  substantive gaps is not yet validated against the experts' follow-up questions.
+- Transfer practice is assessed by the same model; in a live check an off-topic answer to the new
+  question was still rated level 3, so the transfer verdict is indicative, not a grade.
+- The feedback occasionally quotes the interviewer's question instead of the student's words; the
+  checker does not yet distinguish who said a quote.
 - Simulated candidates are more articulate than real 15-year-olds; the FHGR data is synthetic and not
   yet expert-reviewed. No user study yet.
 - Text only. The rule checker is lexical; it catches clear violations, not subtle tone problems.
@@ -156,7 +173,8 @@ difficulty levels and situations (apprenticeship, online, trial, phone, follow-u
 
 ## 7. Reproducibility
 
-- `make test` — offline unit tests (mock LLM); `make smoke` — all 28 scenarios with the mock LLM.
+- `make test` — 16 offline unit tests (mock LLM), incl. quote verification, no repeated gap, fact-card
+  grounding (an invented result is dropped), formality filter and feedback tidy-up; `make smoke` — all 28 scenarios with the mock LLM.
 - `make run` — Docker: web app (7860) + Aegra API (2026) + PostgreSQL + Redis; Apertus via `LLM_BASE_URL`
   (`make run-gpu` adds a vLLM container on an NVIDIA GPU).
 - `make eval` — E1–E3 + `eval/results/RESULTS.md` (needs an Apertus endpoint).
