@@ -22,6 +22,14 @@ quality levels are within ±1 of the expert in **99 %** of cases; all **28 FHGR 
 with **2.11 LLM calls per candidate answer** (limit < 5) and 27/28 final feedbacks pass all automatic
 guideline checks.
 
+**Version 2 (final submission)** makes every follow-up *gap-targeted* (the assessor names what is
+present and what is missing; the coach asks for exactly one missing element and never for the same gap
+twice), keeps an evidence quote only if it is verifiably in the answer (100 % verified), and adds three
+learning loops for students without work experience: an **experience card** built only from the
+student's own words, **transfer practice** on a new question for the weakest criterion, and a
+downloadable **practice card**. Action accuracy stays at 0.81 and 6 re-run scenarios produce 0/6
+guideline violations at 2.13 calls per answer; the cost is lower level accuracy (see §5).
+
 ## 2. Architecture
 
 ![Figure 1 — SmartStart pipeline per candidate answer (blue = Apertus calls).](docs/architecture.png)
@@ -32,18 +40,24 @@ guideline checks.
 | Language & dialect detection (stop-word / Mundart-marker heuristic) | `smartstart/langdetect.py` | 0 |
 | Interview planner: FHGR flow introduction → motivation → strengths/weaknesses → situational → candidate questions → closing; occupation-specific questions via the posting's `berufsfeld`; conditional questions (Stellwerk, absences) only if the profile justifies them; FHGR scenario plans; free-text occupation wish matched to a posting | `smartstart/planner.py` | 0 |
 | **Exemplar retrieval** over 706 expert-annotated answers (char-trigram Jaccard — robust across de/fr/it and dialect spelling; same question first; diverse quality levels; leave-one-out in evaluation) | `smartstart/retrieval.py` | 0 |
-| **Assess**: JSON with rubric levels (1–4 / null), evidence quote, strength, improvement, coach action (`continue / probe / redirect / support_and_refer`), problem flags, follow-up, coaching tip | `smartstart/coach.py` | **1 per answer** |
-| Deterministic policy: ≤ 1 follow-up per question, ≤ 4 per interview; candidate questions answered only from posting facts; explicit distress signal ⇒ supportive mode with referral to a real person (L3) | `smartstart/coach.py` | 0 |
+| **Assess**: JSON with rubric levels (1–4 / null), evidence quote, strength, improvement, coach action (`continue / probe / redirect / support_and_refer`), problem flags, **observed / missing elements and one follow-up target**, follow-up, coaching tip; one JSON retry; the quote is kept only if it is found in the answer (normalised substring or ≥ 90 % token overlap) | `smartstart/coach.py` | **1 per answer** |
+| Deterministic policy: ≤ 1 follow-up per question, ≤ 4 per interview; the same gap is never asked twice; nothing missing and level ≥ 3 ⇒ continue instead of probing; candidate questions answered only from posting facts; explicit distress signal ⇒ supportive mode with referral to a real person (L3) | `smartstart/coach.py` | 0 |
 | **Interviewer** turn in the persona of the posting's Berufsbildner/in, du/tu form | `smartstart/coach.py` | **1 per answer** |
 | **Final feedback** (strengths → max. 3 improvements, each with a short quote → one next step → encouragement) | `smartstart/coach.py` | 1 per interview |
 | **Guideline checker** T3, B3, L2, L4, K1, R1/R3, S3, S4 ⇒ **rewrite once** only if violated | `smartstart/rules.py` | 0–1 per interview |
 | Deterministic rubric table for all 11 FHGR criteria; "no evidence" instead of guessing (K3) | `smartstart/coach.py` | 0 |
+| **Experience card** ("No example?"): a guiding prompt about school, sport, hobby or family → situation / own action / result, each fact kept only if it is supported by the student's words (quote check or content-word overlap); unstated results shown as "not yet stated"; editable, confirmed by the student | `smartstart/coach.py` | 1 per card |
+| **Transfer practice**: an unused question from the student's own occupational field for the weakest criterion; the new answer is compared with the earlier level (first evidence / higher / same / lower) | `smartstart/coach.py` | 1 per answer |
+| **Practice card** (Markdown download): confirmed experience card, strongest criterion with a verified quote, weakest criterion with its gap, next step, next practice question | `smartstart/coach.py` | 0 |
 
 **Web app** (`src/smartstart/webui.py`, standard library only): the candidate picks a language and a
 posting and does the interview; a side panel shows the coach's live analysis of every answer (rubric
 levels, evidence quote, next action, flags). After the feedback, any answer can be **practised again**: the
 improved answer is re-assessed (1 call) and compared criterion by criterion — the comparison is
 deterministic, so the coach cannot claim progress the rubric does not show.
+Every answer card shows what the coach saw (known / missing / what the next question aims at) and marks
+the evidence quote as verified. *No example?* opens the experience card; *Try a new question* starts
+transfer practice; *Download card* exports the practice card.
 
 Two feedback modes: `end` (realistic interview, feedback at the end — default) and `per_answer`
 (adds the assessment's one-line tip after each answer, at no extra LLM cost).
@@ -90,7 +104,8 @@ stratified by quality level). Leave-one-out: an answer's own annotation is never
 | Setup | Level acc | ±1 acc | Level MAE | **Action acc** | Follow-up acc | Criteria MAE | Distress recall |
 |---|---|---|---|---|---|---|---|
 | Baseline (rubric only, no retrieval) | 0.59 | 0.97 | 0.45 | 0.44 | 0.79 | 0.54 | 0.00 |
-| **SmartStart (expert-exemplar retrieval)** | **0.65** | **0.99** | **0.36** | **0.83** | **0.87** | **0.46** | **1.00** |
+| **SmartStart v1 (expert-exemplar retrieval)** | **0.65** | **0.99** | **0.36** | **0.83** | **0.87** | **0.46** | **1.00** |
+| SmartStart v2 (+ gap-targeted follow-ups, verified quotes) | 0.57 | 0.98 | 0.47 | 0.81 | 0.84 | 0.50 | 0.50 |
 
 ![Figure 2 — Agreement with FHGR experts, with and without expert-exemplar retrieval.](docs/figures/assess_ablation.png)
 
@@ -98,10 +113,20 @@ Retrieval helps in every language group; the largest effect is on *what to do ne
 +0.39), which is exactly the decision that makes an interview adaptive. Per language (ours):
 action accuracy de 0.76, Swiss German 0.84, fr 0.84, it 0.88; level MAE 0.28–0.48.
 
+**v1 → v2.** The longer v2 JSON (observed / missing / target) keeps the action decision nearly
+unchanged (0.81) and makes every evidence quote verifiable (quote verified rate **1.00**, JSON parse
+rate 0.99), but level accuracy drops by 0.08 (German 0.40) and one of the two distress cases is
+classified as *redirect* instead of *support_and_refer* (recall 0.50, n = 2). We report this trade-off
+openly; separating level scoring from gap extraction is the obvious fix (§8).
+
 **E2 — 28 simulated interviews.** Apertus plays each FHGR scenario candidate (profile, persona,
 dialect where expected) until the coach's final feedback. All 28 runs completed: 511 candidate answers,
 47 adaptive follow-ups, **2.11 LLM calls per answer** (max. 2.17 in any scenario; FHGR limit < 5).
 The guideline checker flagged 2/28 feedbacks before rewrite and 1/28 after.
+**v2 re-run** (6 scenarios: de/fr/it, all difficulty levels): 110 answers, **2.13 calls per answer**
+(max. 2.20), 11 follow-ups, each aimed at one named gap and **no gap asked twice**; evidence quotes in
+the assessment log verified in 109/110 answers; **0/6** feedbacks violate a guideline (v1 on the same
+scenarios: 1/6, also after rewrite).
 
 ![Figure 3 — LLM calls per candidate answer in the 28 FHGR scenarios.](docs/figures/calls_per_answer.png)
 
@@ -119,7 +144,11 @@ difficulty levels and situations (apprenticeship, online, trial, phone, follow-u
 - **Judge ceiling / self-preference:** E3 uses the same model family as the coach and saturates near
   5/5; its comments sometimes evaluate the candidate rather than the coach. We therefore treat E1
   (agreement with human experts) as the primary evidence and E3 as a sanity check.
-- German quality-level accuracy (0.52) is the lowest group; many errors are 3-vs-4 on strong answers.
+- German quality-level accuracy is the lowest group (v1 0.52, v2 0.40); most errors are 3-vs-4 on strong
+  answers. v2 distress recall is 0.50 on only two test cases: the French case is flagged (which switches
+  the app to supportive mode), the Italian one is read as badmouthing — this needs a larger test set.
+- The follow-up target is chosen by the model and is occasionally a formality (e.g. "greeting and
+  thanks") rather than substance.
 - Simulated candidates are more articulate than real 15-year-olds; the FHGR data is synthetic and not
   yet expert-reviewed. No user study yet.
 - Text only. The rule checker is lexical; it catches clear violations, not subtle tone problems.
@@ -140,6 +169,8 @@ difficulty levels and situations (apprenticeship, online, trial, phone, follow-u
 - **Speech:** Apertus 1.5 already accepts audio input, so spoken answers can be assessed directly;
   short plain-text coach turns are ready for a TTS voice (e.g. Piper) and a Swiss-German ASR fallback.
 - A teacher dashboard over the per-session rubric levels stored in PostgreSQL.
+- Split v2 assessment into a short scoring call and a gap-extraction call to recover v1 level accuracy
+  within the < 5 call budget.
 - LoRA-tuning the assessor on the expert annotations; a study with real classes; an independent judge.
 
 ## License
