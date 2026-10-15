@@ -1,62 +1,92 @@
-# Academia Challenges
+# SmartStart — Apertus Job-Interview Coach
 
-Submissions must use the Apertus model family.
-For Track 2 this means that submitted solutions must be built with Apertus. Other open-weights models can be used to support development, e.g. as automatic judges during evaluation. Their role must be clearly described in the submission report.
+**Hack Apertus 2026 · Track 2A · FHGR challenge "AI-Powered Job Interview Coach"**
 
-💬 In case you have questions, join the conversation on Discord or send an email to “hello@hackapertus.ch”
+SmartStart lets young people in Switzerland (14–16) practise a realistic apprenticeship
+interview in **German, French or Italian** (Swiss-German dialect input understood) and
+get personal, constructive feedback that follows the FHGR/Profolio rubric (11 criteria)
+and the 27 FHGR feedback guidelines. It is built on **Apertus 1.5 · 8B**, runs on
+consumer hardware (tested on a MacBook Pro M4 Pro, 48 GB unified memory; < 32 GB VRAM)
+and uses **≈ 2.1 LLM calls per candidate answer** (limit: < 5).
 
-## How it works
-Pick from 5 academia challenges provided by Swiss academic institutions:
+![Architecture](docs/architecture.png)
 
-- **FHGR:** AI-Powered Job Interview Coach
-- **OpenParlData:** Extracting Parliamentary Affairs from PDFs into One Common Structure
-- **OST:** Multilingual Natural Language Inference over Swiss Official Voting Booklets
-- **UZH:** Detecting Cross-Lingual Semantic Differences in Swiss Government Websites
-- **ZHAW:** See It, Say It, Pick It: Vision-Language Grounding for a Real Robot Arm
+## How it works (one candidate answer)
 
-The challenges incl. submission and judging criteria are described in our **Getting Started guide**:
-https://hackapertus.notion.site/getting-started-guide-onlinehack
+| Step | What | LLM? |
+|---|---|---|
+| 1 | Language / dialect detection (de · fr · it · gsw) | no |
+| 2 | Interview state machine: introduction → motivation → strengths/weaknesses → situational → candidate questions → closing → feedback; questions planned for the posting's occupational field and the candidate profile | no |
+| 3 | **Retrieval of expert-annotated answers** (706 FHGR annotations) to the same question as calibration anchors | no |
+| 4 | **Assess** the answer: rubric levels, evidence quote, coach action (continue / probe / redirect / support_and_refer), problem flags | **1 call** |
+| 5 | Deterministic policy: follow-up (max. 1 per question, 4 per interview) or next question; answer the candidate's own questions from the posting facts | no |
+| 6 | **Interviewer turn** in persona (Berufsbildner/in from the posting), du/tu form | **1 call** |
+| end | **Final feedback** (strengths → improvements with quotes → next step → encouragement) | 1 call |
+| end | **Guideline checker** (T3, B3, L2, L4, K1, R1/R3, S3, S4) → one rewrite only if violated | 0–1 call |
+| end | Deterministic rubric overview (11 criteria; "no evidence" instead of guessing, K3) | no |
+
+Details: [technical_report.md](technical_report.md) · [docs/architecture.md](docs/architecture.md)
 
 ## Run it
 
-Keep `track_2a/` as it is: don't rename it or move its files, just delete the
-other track directories.
+### 1. Start Apertus (OpenAI-compatible endpoint)
 
-From the root of the project:
+Any OpenAI-compatible server works; set `LLM_BASE_URL`, `LLM_API_KEY`, `LLM_NAME`.
+
+* **macOS (Apple Silicon), what we used**
+  ```bash
+  pip install mlx-lm huggingface_hub
+  hf download swiss-ai/Apertus-v1.5-8B
+  mlx_lm.server --model swiss-ai/Apertus-v1.5-8B --port 8080
+  # LLM_BASE_URL=http://host.docker.internal:8080/v1  (default in .env.example)
+  ```
+* **Linux + NVIDIA GPU**: `make run-gpu` (adds a vLLM container serving Apertus 1.5 8B, < 32 GB VRAM)
+* **Hosted endpoint** (CSCS, HF, …): put its URL/key into `.env`.
+* **No GPU, smoke test only**: `LLM_BASE_URL=mock`.
+
+### 2. Start the coach
 
 ```bash
-make run
+make run        # docker compose: Aegra API on http://localhost:2026 (graph id "agent") + Postgres + Redis
 ```
 
-Fill in the [Makefile](Makefile) so that it works on a clean checkout. It is
-expected to run the project in a Docker container, since that is how the judges
-will run it, without relying on anything already installed on your machine.
+Talk to it with the [Agent Chat UI](https://github.com/langchain-ai/agent-chat-ui)
+(deployment URL `http://localhost:2026`, assistant/graph id `agent`), or via the API.
+Optional input fields per thread: `lang`, `posting_id`, `candidate_id`, `scenario_id`,
+`dialect` (e.g. `zh` to ask questions in Züritüütsch), `feedback_mode` (`end` | `per_answer`).
+Type `/feedback` to end early, `/neu` to restart.
 
-Requirements: `runtime, hardware, API keys, model weights`
+Terminal chat without Docker: `make cli ARGS="--lang fr"` (Python ≥ 3.10, standard library only).
 
-## Data
-The `data/` directory must not exceed 100 MB.
+### 3. Tests & evaluation
 
+```bash
+make test         # offline unit tests (mock LLM)
+make smoke        # all 28 FHGR scenarios end-to-end with the mock LLM
+make eval         # assessment accuracy, 28 simulated interviews, LLM-as-judge, report → eval/results/RESULTS.md
+```
 
-## 📦 Submission Requirements & Deliverables
-❗️ Submissions are not handled on Devpost. Submit through our website only:
-http://hackapertus.ch/online-hack/submissions
+## Repository layout
 
-Requirements differ by challenge. See the description of the challenge you are entering for the exact deliverables.
+```
+src/main.py              LangGraph graph served by Aegra (graph id "agent")
+src/smartstart/          coach logic: planner, retrieval, prompts, rules, llm client, cli
+data/fhgr/               FHGR/Profolio challenge datasets (provided for Hack Apertus)
+eval/                    eval_assess.py · simulate.py · judge.py · report.py
+tests/                   offline tests
+docs/                    architecture diagram, figures
+```
 
+Requirements: Docker (for `make run`); an Apertus 1.5 8B endpoint (local weights ≈ 16 GB, < 32 GB VRAM / unified memory); no API keys needed for local serving.
 
-## ⚖️ Judging Criteria
-Judging criteria also differ by challenge. See the respective challenge description.
+## Data & licence
 
+Code: Apache-2.0 (see repository root). FHGR/Profolio material in `data/fhgr/` belongs to
+FHGR and is provided for use in the Hack Apertus challenge (see `data/fhgr/README.md`);
+occupation data © SDBB / berufsberatung.ch.
 
-## Support
+---
 
-**Licensing requirements**
-Please check our Terms & Conditions (6. What you build is open source):
-https://hackapertus.ch/terms-and-conditions
-
-## FAQ
-💡 https://hackapertus.ch/faq
-
-## Contact
-💬 In case you have questions, join the conversation on Discord or send an email to “hello@hackapertus.ch”
+*Challenge info (template):* Submissions must use the Apertus model family. Submit via
+http://hackapertus.ch/online-hack/submissions. Getting Started guide:
+https://hackapertus.notion.site/getting-started-guide-onlinehack

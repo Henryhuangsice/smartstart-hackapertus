@@ -1,0 +1,7 @@
+{
+  "name": "SmartStartCoach",
+  "dependencies": ["./src"],
+  "graphs": {
+    "agent": "./src/main.py:graph"
+  }
+}

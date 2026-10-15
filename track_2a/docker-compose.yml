@@ -1,0 +1,103 @@
+# Docker Compose - PostgreSQL + Redis + API
+# aegra dev  -> docker compose up postgres -d  (database only, in-memory broker)
+# aegra up   -> docker compose up --build      (full stack, Redis broker)
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg18
+    container_name: smartstart-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-hackapertustemplate26}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-hackapertustemplate26_secret}
+      POSTGRES_DB: ${POSTGRES_DB:-hackapertustemplate26}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-hackapertustemplate26}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: smartstart-redis
+    restart: unless-stopped
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  hackapertustemplate26:
+    build: .
+    container_name: smartstart-api
+    restart: unless-stopped
+    ports:
+      - "${PORT:-2026}:${PORT:-2026}"
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-hackapertustemplate26}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-hackapertustemplate26_secret}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=${POSTGRES_DB:-hackapertustemplate26}
+      - AEGRA_CONFIG=aegra.json
+      - AUTH_TYPE=${AUTH_TYPE:-noop}
+      - PORT=${PORT:-2026}
+      - REDIS_BROKER_ENABLED=true
+      - REDIS_URL=redis://redis:6379/0
+      - LLM_NAME=${LLM_NAME:-swiss-ai/Apertus-v1.5-8B}
+      - LLM_BASE_URL=${LLM_BASE_URL:-http://host.docker.internal:8080/v1}
+      - LLM_API_KEY=${LLM_API_KEY:-not-needed}
+      - SMARTSTART_FEEDBACK_MODE=${SMARTSTART_FEEDBACK_MODE:-end}
+      - SMARTSTART_DATA_DIR=/app/data/fhgr
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:${PORT:-2026}/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    volumes:
+      - ./src:/app/src:ro
+      - ./aegra.json:/app/aegra.json:ro
+      - ./data:/app/data:ro
+
+  # Optional: serve Apertus 1.5 8B with vLLM on a Linux NVIDIA GPU (< 32 GB VRAM).
+  #   docker compose --profile gpu up --build   (then LLM_BASE_URL=http://vllm:8000/v1)
+  vllm:
+    profiles: ["gpu"]
+    image: vllm/vllm-openai:latest
+    command: ["--model", "${LLM_NAME:-swiss-ai/Apertus-v1.5-8B}", "--max-model-len", "8192", "--gpu-memory-utilization", "0.85"]
+    environment:
+      - HF_TOKEN=${HF_TOKEN:-}
+    ports:
+      - "8000:8000"
+    volumes:
+      - hf_cache:/root/.cache/huggingface
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  hf_cache:
+  postgres_data:
+  redis_data:

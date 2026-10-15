@@ -1,0 +1,20 @@
+[project]
+name = "HackApertusTemplate26"
+version = "0.1.0"
+description = "SmartStart - Apertus-based AI job interview coach (Hack Apertus 2026, Track 2A FHGR)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aegra-cli>=0.10.7",
+    "grandalf>=0.8",
+    "langchain>=0.3.27",
+    "langgraph>=1.0.3",
+    "pydantic>=2.12.5",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
