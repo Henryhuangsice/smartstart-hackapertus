@@ -45,6 +45,9 @@ COPY aegra.json .
 COPY src/ ./src/
 COPY data/ ./data/
 
+# make sure the non-root user can read code + data regardless of host file permissions
+RUN chmod -R a+rX /app/src /app/data /app/aegra.json
+
 ENV PATH="/app/.venv/bin:$PATH" \
     SMARTSTART_DATA_DIR=/app/data/fhgr
 

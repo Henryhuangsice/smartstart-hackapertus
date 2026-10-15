@@ -455,3 +455,43 @@ def step(s: dict, user_text: str, ds: Dataset | None = None) -> str:
 
 def calls_per_answer(s: dict) -> float:
     return round(s["llm_calls"] / max(1, s["answers"]), 2)
+
+
+# ======================================================================
+# practice loop: revise one answer after the feedback (1 LLM call)
+# ======================================================================
+REVISE_TEXT = {
+    "de": ("Vorher", "Jetzt", "Verbessert", "Gleich geblieben", "Noch nicht besser"),
+    "fr": ("Avant", "Maintenant", "Amélioré", "Inchangé", "Pas encore mieux"),
+    "it": ("Prima", "Adesso", "Migliorato", "Invariato", "Non ancora meglio"),
+}
+
+
+def revise_answer(s: dict, index: int, new_answer: str, ds: Dataset | None = None) -> dict[str, Any]:
+    """Re-assess an improved version of answer `index` and compare it with the first try.
+
+    Uses the same rubric-grounded `assess` step (1 LLM call); the comparison itself is
+    deterministic, so the coach never invents progress that the rubric does not show.
+    """
+    ds = ds or get_dataset()
+    e = s["log"][index]
+    before = e["assessment"]
+    after = assess(ds, s, e["qid"], e["question"], new_answer)
+    lang = s["lang"] if s["lang"] in REVISE_TEXT else "de"
+    t = REVISE_TEXT[lang]
+    rows = []
+    for k in sorted(set(before.get("scores", {})) | set(after.get("scores", {}))):
+        b, a = before.get("scores", {}).get(k), after.get("scores", {}).get(k)
+        if a is None and b is None:
+            continue
+        mark = t[2] if (a or 0) > (b or 0) else (t[3] if a == b else t[4])
+        rows.append({"criterion": ds.criterion_label(k, lang), "before": b, "after": a, "verdict": mark})
+    e.setdefault("revisions", []).append({"answer": new_answer, "assessment": after})
+    return {
+        "question": e["question"],
+        "before": {"answer": e["answer"], "level": before["quality_level"]},
+        "after": {"answer": new_answer, "level": after["quality_level"], "strength": after["strength"],
+                  "improvement": after["improvement"], "evidence": after["evidence"]},
+        "criteria": rows,
+        "labels": {"before": t[0], "after": t[1]},
+    }

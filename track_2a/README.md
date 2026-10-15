@@ -59,7 +59,13 @@ Any OpenAI-compatible server works; set `LLM_BASE_URL`, `LLM_API_KEY`, `LLM_NAME
 
 ```bash
 make run        # docker compose: Aegra API on http://localhost:2026 (graph id "agent") + Postgres + Redis
+                # + SmartStart web app on http://localhost:7860
 ```
+
+**Web app (http://localhost:7860):** choose language (de/fr/it) and an apprenticeship posting, do the
+interview, see the coach's live analysis of every answer (rubric levels, evidence quote, next action),
+get the final feedback and *practise an answer again* — the improved answer is re-assessed and compared
+criterion by criterion. Without Docker: `make ui`.
 
 Talk to it with the [Agent Chat UI](https://github.com/langchain-ai/agent-chat-ui)
 (deployment URL `http://localhost:2026`, assistant/graph id `agent`), or via the API.

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SmartStart — Apertus Interview Coach</title>
+<style>
+:root{
+  --paper:#f6f5f1;--surface:#ffffff;--ink:#141414;--ink-2:#3a3a38;--mute:#77756f;--line:#e4e1d9;--line-2:#efede7;
+  --red:#d52b1e;--amber:#b4741a;--green:#2f6b3f;
+  --r:10px;--f:"Helvetica Neue",Helvetica,Inter,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html,body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 var(--f);-webkit-font-smoothing:antialiased}
+.num{font-variant-numeric:tabular-nums}
+button{font:inherit;cursor:pointer;border-radius:8px;border:1px solid var(--ink);background:var(--ink);color:#fff;padding:11px 18px;font-weight:500;letter-spacing:.01em;transition:opacity .15s;white-space:nowrap}
+button:hover{opacity:.86}button:disabled{opacity:.35;cursor:wait}
+button.quiet{background:transparent;color:var(--ink);border-color:var(--line)}button.quiet:hover{border-color:var(--ink);opacity:1}
+select,input,textarea{width:100%;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:11px 12px;outline:none;transition:border-color .15s}
+select:focus,input:focus,textarea:focus{border-color:var(--ink)}
+label{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin:0 0 7px}
+
+/* top bar */
+.bar{display:flex;align-items:center;gap:14px;padding:16px 32px;border-bottom:1px solid var(--line)}
+.mark{width:22px;height:22px;background:var(--red);border-radius:4px;position:relative;flex:none}
+.mark:before,.mark:after{content:"";position:absolute;background:#fff;left:50%;top:50%;transform:translate(-50%,-50%)}.mark:before{width:12px;height:3.5px}.mark:after{width:3.5px;height:12px}
+.brand{font-weight:600;letter-spacing:-.01em;font-size:16px}
+.bar .ctx{margin-left:auto;font-size:13px;color:var(--mute);text-align:right}
+.bar .ctx b{color:var(--ink);font-weight:500}
+
+/* setup */
+#setup{max-width:1120px;margin:0 auto;padding:72px 32px 56px;display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:start}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:22px}
+h1.hero{font-size:46px;line-height:1.06;letter-spacing:-.025em;font-weight:600;margin:0 0 22px;max-width:12ch}
+.lede{font-size:17px;color:var(--ink-2);max-width:44ch;margin:0 0 40px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
+.facts div{padding:14px 16px 0 0}.facts b{display:block;font-size:26px;font-weight:600;letter-spacing:-.02em}.facts span{font-size:13px;color:var(--mute)}
+.form{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:30px}
+.form .f{margin-bottom:20px}.form .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form .go{display:flex;align-items:center;gap:14px;margin-top:6px}.form .go small{color:var(--mute);font-size:12px}
+
+/* interview */
+#room{max-width:1320px;margin:0 auto;padding:22px 32px 28px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;height:calc(100vh - 120px);min-height:520px}
+.steps{display:flex;gap:16px;padding:16px 20px;border-bottom:1px solid var(--line-2);overflow-x:auto;font-size:12.5px;color:var(--mute);white-space:nowrap}
+.steps span{padding-bottom:4px;border-bottom:2px solid transparent}.steps span.done{color:var(--ink-2)}.steps span.on{color:var(--ink);border-color:var(--red);font-weight:500}
+.steps i{font-style:normal;color:var(--mute);margin-right:6px}
+#msgs{flex:1;overflow:auto;padding:26px 26px 10px;display:flex;flex-direction:column;gap:18px}
+.msg{max-width:78%}.msg .who{font-size:11.5px;letter-spacing:.04em;color:var(--mute);margin-bottom:5px}
+.msg .txt{white-space:pre-wrap;font-size:15.5px;line-height:1.6}
+.msg.coach .txt{color:var(--ink)}
+.msg.me{align-self:flex-end}.msg.me .who{text-align:right}.msg.me .txt{background:var(--ink);color:#fff;padding:11px 15px;border-radius:14px 14px 4px 14px}
+.msg.fb{max-width:100%;align-self:stretch;border:1px solid var(--line);border-radius:12px;padding:6px 22px 18px;background:#fbfaf7}
+.msg.fb h2{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:600;margin:20px 0 8px}
+.msg.fb h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:600;margin:22px 0 8px}
+.msg.fb ul{margin:0;padding-left:18px}.msg.fb li{margin:0 0 8px}.msg.fb p{margin:6px 0}
+.msg.fb table{border-collapse:collapse;width:100%;font-size:13px}.msg.fb td{border-top:1px solid var(--line-2);padding:6px 0}.msg.fb td+td{text-align:right;color:var(--ink-2)}
+.typing{color:var(--mute);font-size:13px}.typing:after{content:"…";animation:d 1.2s infinite}@keyframes d{0%{opacity:.2}50%{opacity:1}100%{opacity:.2}}
+.compose{display:flex;gap:10px;padding:16px 18px;border-top:1px solid var(--line-2);align-items:flex-end}
+.compose textarea{height:54px;resize:none}.compose .btns{display:flex;gap:8px}
+.err{color:var(--red);font-size:13px;padding:0 24px 8px}
+
+/* coach view */
+.side-h{padding:20px 22px 14px;border-bottom:1px solid var(--line-2)}
+.side-h h2{font-size:15px;margin:0 0 3px;font-weight:600}.side-h p{margin:0;font-size:13px;color:var(--mute)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line-2)}
+.kpis div{padding:14px 22px}.kpis div+div{border-left:1px solid var(--line-2)}
+.kpis b{display:block;font-size:22px;font-weight:600;letter-spacing:-.02em}.kpis span{font-size:11.5px;color:var(--mute)}
+#cards{flex:1;overflow:auto;padding:6px 22px 22px}
+.ans{padding:16px 0;border-bottom:1px solid var(--line-2)}
+.ans .q{font-size:12.5px;color:var(--mute);margin-bottom:6px}.ans .a{font-size:14px;margin-bottom:10px}
+.meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--ink-2)}
+.meter{display:inline-flex;gap:3px;vertical-align:middle;margin-right:6px}.meter i{width:14px;height:6px;border-radius:2px;background:var(--line)}.meter i.f{background:var(--ink)}
+.tag{font-size:11.5px;border:1px solid var(--line);border-radius:20px;padding:1px 9px;color:var(--ink-2)}
+.tag.probe,.tag.redirect{border-color:#e9cf9f;color:var(--amber)}.tag.support_and_refer{border-color:#efb7b1;color:var(--red)}
+.quote{margin:10px 0 0;padding-left:12px;border-left:2px solid var(--line);font-size:13px;color:var(--ink-2)}
+.notes{margin-top:8px;font-size:13px;color:var(--ink-2)}.notes div{margin-top:3px}.notes em{font-style:normal;color:var(--mute);display:inline-block;width:18px}
+.crit{display:grid;grid-template-columns:1fr auto;gap:3px 12px;margin-top:10px;font-size:12px;color:var(--mute)}
+.again{margin-top:12px;padding:6px 12px;font-size:12.5px}
+.rev{margin-top:12px;padding:12px 14px;border-radius:10px;background:#f1f5ef;font-size:13px}.rev b{font-weight:600}
+.empty{color:var(--mute);font-size:13px;padding:22px 0}
+
+@media(max-width:980px){#setup,#room{grid-template-columns:1fr;gap:28px;padding:28px 18px}h1.hero{font-size:36px}.panel{height:auto;min-height:0}#msgs,#cards{max-height:65vh}.bar{padding:14px 18px}}
+</style></head><body>
+<div class="bar"><div class="mark"></div><div class="brand">SmartStart</div><div class="ctx" id="ctx">Apertus 1.5 · on-premise</div></div>
+
+<section id="setup">
+  <div>
+    <div class="eyebrow">Hack Apertus · Track 2A · FHGR</div>
+    <h1 class="hero">Practise the interview before the interview.</h1>
+    <p class="lede">An apprenticeship trainer who asks follow-up questions when an answer stays vague — and afterwards tells you, with your own words, what worked and what to try next.</p>
+    <div class="facts">
+      <div><b class="num">3</b><span>languages · de fr it</span></div>
+      <div><b class="num">11</b><span>FHGR rubric criteria</span></div>
+      <div><b class="num">2.1</b><span>model calls per answer</span></div>
+    </div>
+  </div>
+  <div class="form">
+    <div class="two f">
+      <div><label for="lang">Language</label><select id="lang"><option value="de">Deutsch</option><option value="fr">Français</option><option value="it">Italiano</option></select></div>
+      <div><label for="mode">Feedback</label><select id="mode"><option value="end">At the end</option><option value="per_answer">Tip after each answer</option></select></div>
+    </div>
+    <div class="f"><label for="posting">Apprenticeship</label><select id="posting"></select></div>
+    <div class="f"><label for="first">Your first sentence</label><input id="first" value="Grüezi, ich bin Luca."></div>
+    <div class="go"><button id="go">Start interview</button><small>About 15 questions · type <code>/feedback</code> to finish early</small></div>
+    <div class="err" id="err0" style="padding:10px 0 0"></div>
+  </div>
+</section>
+
+<section id="room" hidden>
+  <div class="panel">
+    <div class="steps" id="stages"></div>
+    <div id="msgs"></div><div class="err" id="err"></div>
+    <div class="compose"><textarea id="inp" placeholder="Your answer — Enter to send"></textarea>
+      <div class="btns"><button id="send">Send</button><button class="quiet" id="fbk">Finish</button></div></div>
+  </div>
+  <aside class="panel">
+    <div class="side-h"><h2>Coach's view</h2><p>How Apertus reads each answer, calibrated on FHGR expert examples. A real candidate would not see this.</p></div>
+    <div class="kpis"><div><b class="num" id="k1">–</b><span>question</span></div><div><b class="num" id="k2">–</b><span>calls / answer · limit 5</span></div><div><b class="num" id="k3">0</b><span>follow-ups</span></div></div>
+    <div id="cards"><div class="empty">Answers appear here as you go.</div></div>
+  </aside>
+</section>
+
+<script>
+const $=s=>document.querySelector(s);let SID=null,STATE=null,POST=[],WHO="Trainer";
+const greet={de:"Grüezi, ich bin Luca.",fr:"Bonjour, je suis Léa.",it:"Buongiorno, sono Marco."};
+const STN={introduction:"Intro",motivation:"Motivation",strengths_weaknesses:"Strengths",situational:"Situations",candidate_questions:"Your questions",closing:"Closing",feedback:"Feedback"};
+const LV={1:"insufficient",2:"developing",3:"good",4:"very good"};
+const esc=t=>(t??"").toString().replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const inl=t=>t.replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/(^|\s)_(.+?)_(\s|$)/g,"$1<i>$2</i>$3");
+function md(t){let h="",T=false,U=false;for(const l of esc(t).split("\n")){const c=l.trim();
+ if(c.startsWith("|")){if(/^\|[-\s|:]+\|$/.test(c))continue;if(!T){h+="<table>";T=true}h+="<tr>"+c.slice(1,-1).split("|").map(x=>"<td>"+inl(x.trim())+"</td>").join("")+"</tr>";continue}if(T){h+="</table>";T=false}
+ if(/^[-*] /.test(c)){if(!U){h+="<ul>";U=true}h+="<li>"+inl(c.slice(2))+"</li>";continue}if(U){h+="</ul>";U=false}
+ if(c.startsWith("### "))h+="<h3>"+inl(c.slice(4))+"</h3>";else if(c.startsWith("## "))h+="<h2>"+inl(c.slice(3))+"</h2>";else if(c&&c!=="---")h+="<p>"+inl(c)+"</p>"}
+ return h+(T?"</table>":"")+(U?"</ul>":"")}
+function add(cls,text,fb){const d=document.createElement("div");d.className="msg "+cls+(fb?" fb":"");
+ d.innerHTML=fb?md(text):`<div class="who">${cls==="me"?"You":esc(WHO)}</div><div class="txt">${esc(text)}</div>`;$("#msgs").appendChild(d);$("#msgs").scrollTop=1e9}
+function busy(b){["#send","#fbk","#go"].forEach(s=>$(s).disabled=b);const t=$("#typing");if(b&&!t){const d=document.createElement("div");d.id="typing";d.className="typing";d.textContent=WHO+" is typing";$("#msgs").appendChild(d);$("#msgs").scrollTop=1e9}if(!b&&t)t.remove()}
+async function api(p,b){const r=await fetch(p,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(b)});const j=await r.json();if(!r.ok)throw new Error(j.error||r.status);return j}
+const meter=l=>`<span class="meter">${[1,2,3,4].map(i=>`<i class="${i<=l?"f":""}"></i>`).join("")}</span>`;
+function render(st){STATE=st;const cur=st.stages.indexOf(st.stage);
+ $("#stages").innerHTML=st.stages.map((s,k)=>`<span class="${k<cur?"done":k==cur?"on":""}"><i class="num">${String(k+1).padStart(2,"0")}</i>${STN[s]||s}</span>`).join("");
+ $("#ctx").innerHTML=`<b>${esc(st.posting)}</b> · ${esc(st.company||"")}`;
+ $("#k1").textContent=st.finished?"done":`${st.question_no}/${st.questions}`;$("#k2").textContent=st.answers?st.calls_per_answer.toFixed(2):"–";$("#k3").textContent=st.log.filter(x=>x.followup).length;
+ if(!st.log.length)return;
+ $("#cards").innerHTML=st.log.slice().reverse().map(a=>`<div class="ans">
+  <div class="q">${a.followup?"Follow-up · ":""}${esc(a.question)}</div><div class="a">“${esc(a.answer)}”</div>
+  <div class="meta">${meter(a.level)}<span>${LV[a.level]||""}</span><span class="tag ${a.action}">${a.action.replace(/_/g," ")}</span>${a.flags.map(f=>`<span class="tag">${esc(f.replace(/_/g," "))}</span>`).join("")}</div>
+  ${a.evidence&&a.evidence!=="…"?`<div class="quote">${esc(a.evidence)}</div>`:""}
+  <div class="notes"><div><em>+</em>${esc(a.strength)}</div><div><em>→</em>${esc(a.improvement)}</div></div>
+  ${Object.keys(a.scores).length?`<div class="crit">${Object.entries(a.scores).map(([k,v])=>`<span>${esc(k)}</span><span>${meter(v)}</span>`).join("")}</div>`:""}
+  ${st.finished?`<button class="quiet again" data-i="${a.index}">Practise this answer again</button><div id="rev${a.index}"></div>`:""}</div>`).join("");
+ document.querySelectorAll(".again").forEach(b=>b.onclick=()=>again(+b.dataset.i))}
+async function again(i){const a=STATE.log[i];const t=prompt("Improve your answer\n\n"+a.question,a.answer);if(!t)return;const box=$("#rev"+i);box.innerHTML='<div class="rev typing">Re-assessing</div>';
+ try{const r=await api("/api/revise",{sid:SID,index:i,text:t});const v=r.revision;STATE=r.state;
+  box.innerHTML=`<div class="rev"><b>${esc(v.labels.before)} ${meter(v.before.level)} → ${esc(v.labels.after)} ${meter(v.after.level)}</b>
+  <div class="crit">${v.criteria.map(c=>`<span>${esc(c.criterion)}</span><span class="num">${c.before??"–"} → ${c.after??"–"} · ${esc(c.verdict)}</span>`).join("")}</div>
+  <div class="notes"><div><em>+</em>${esc(v.after.strength)}</div><div><em>→</em>${esc(v.after.improvement)}</div></div></div>`}
+ catch(e){box.innerHTML=`<div class="err" style="padding:8px 0">${esc(e.message)}</div>`}}
+function fill(){const l=$("#lang").value;$("#posting").innerHTML=POST.filter(p=>p.lang==l).map(p=>`<option value="${p.id}">${esc(p.occupation)} — ${esc(p.company)}${p.place?", "+esc(p.place):""}</option>`).join("");$("#first").value=greet[l]}
+$("#lang").onchange=fill;
+$("#go").onclick=async()=>{busy(true);try{const r=await api("/api/start",{lang:$("#lang").value,posting_id:$("#posting").value,feedback_mode:$("#mode").value,text:$("#first").value});SID=r.sid;WHO=r.state.company||"Trainer";
+ $("#setup").hidden=true;$("#room").hidden=false;add("me",$("#first").value);busy(false);add("coach",r.reply);render(r.state)}catch(e){busy(false);$("#err0").textContent=e.message}};
+async function send(t){if(!t.trim())return;add("me",t);$("#inp").value="";busy(true);$("#err").textContent="";
+ try{const r=await api("/api/turn",{sid:SID,text:t});busy(false);const p=r.reply.split("\n---\n");
+  if(r.state.finished){if(p.length>1)add("coach",p[0]);add("coach",p[p.length-1].replace(/^\*\*.*?\*\*\s*/,""),true)}else add("coach",r.reply);render(r.state)}
+ catch(e){busy(false);$("#err").textContent=e.message}}
+$("#send").onclick=()=>send($("#inp").value);$("#fbk").onclick=()=>send("/feedback");
+$("#inp").onkeydown=e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();send($("#inp").value)}};
+fetch("/api/postings").then(r=>r.json()).then(p=>{POST=p;fill()});
+</script></body></html>

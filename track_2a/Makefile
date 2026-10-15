@@ -3,7 +3,7 @@
 #   It builds and starts the LangGraph/Aegra API (port 2026) + Postgres + Redis in Docker.
 #   Apertus is reached via LLM_BASE_URL (OpenAI-compatible). See README.md.
 
-.PHONY: run run-gpu down env cli test smoke eval-assess eval-sim eval-judge eval-report eval
+.PHONY: run run-gpu down env cli ui test smoke eval-assess eval-sim eval-judge eval-report eval
 
 PY ?= python3
 export LLM_BASE_URL ?= http://localhost:8080/v1
@@ -19,6 +19,9 @@ run-gpu: env  ## also serve Apertus with vLLM on an NVIDIA GPU
 
 down:
 	docker compose --profile gpu down
+
+ui:  ## web app without Docker → http://localhost:7860
+	cd src && LLM_BASE_URL=$${LLM_BASE_URL:-http://localhost:8080/v1} $(PY) -m smartstart.webui
 
 cli:  ## chat in the terminal without Docker (needs a running Apertus endpoint)
 	cd src && LLM_BASE_URL=$${LLM_BASE_URL:-http://localhost:8080/v1} $(PY) -m smartstart.cli $(ARGS)

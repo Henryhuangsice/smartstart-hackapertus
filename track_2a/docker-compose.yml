@@ -77,6 +77,23 @@ services:
       - ./aegra.json:/app/aegra.json:ro
       - ./data:/app/data:ro
 
+  # SmartStart web app (practice UI with live coach analysis) → http://localhost:7860
+  smartstart-ui:
+    build: .
+    container_name: smartstart-ui
+    restart: unless-stopped
+    working_dir: /app/src
+    command: ["python", "-m", "smartstart.webui"]
+    ports:
+      - "7860:7860"
+    environment:
+      - LLM_NAME=${LLM_NAME:-swiss-ai/Apertus-v1.5-8B}
+      - LLM_BASE_URL=${LLM_BASE_URL:-http://host.docker.internal:8080/v1}
+      - LLM_API_KEY=${LLM_API_KEY:-not-needed}
+      - SMARTSTART_DATA_DIR=/app/data/fhgr
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
   # Optional: serve Apertus 1.5 8B with vLLM on a Linux NVIDIA GPU (< 32 GB VRAM).
   #   docker compose --profile gpu up --build   (then LLM_BASE_URL=http://vllm:8000/v1)
   vllm:

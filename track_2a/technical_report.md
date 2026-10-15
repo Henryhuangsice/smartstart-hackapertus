@@ -2,8 +2,8 @@
 
 - **Track:** Track 2A — FHGR: AI-Powered Job Interview Coach
 - **Event:** Online (1–16 October 2026)
-- **Team:** SmartStart — Chu Jia (University of Zurich, MA Computational Linguistics)
-- **Demo:** `make run` → Aegra API on `http://localhost:2026` (graph `agent`) + Agent Chat UI; terminal demo `make cli`
+- **Team:** SmartStart — Chu Jia, Sice Huang (University of Zurich)
+- **Demo:** `make run` → web app on `http://localhost:7860` + Aegra API on `http://localhost:2026` (graph `agent`); 2-minute video: see submission
 
 ## 1. Summary
 
@@ -38,6 +38,12 @@ guideline checks.
 | **Final feedback** (strengths → max. 3 improvements, each with a short quote → one next step → encouragement) | `smartstart/coach.py` | 1 per interview |
 | **Guideline checker** T3, B3, L2, L4, K1, R1/R3, S3, S4 ⇒ **rewrite once** only if violated | `smartstart/rules.py` | 0–1 per interview |
 | Deterministic rubric table for all 11 FHGR criteria; "no evidence" instead of guessing (K3) | `smartstart/coach.py` | 0 |
+
+**Web app** (`src/smartstart/webui.py`, standard library only): the candidate picks a language and a
+posting and does the interview; a side panel shows the coach's live analysis of every answer (rubric
+levels, evidence quote, next action, flags). After the feedback, any answer can be **practised again**: the
+improved answer is re-assessed (1 call) and compared criterion by criterion — the comparison is
+deterministic, so the coach cannot claim progress the rubric does not show.
 
 Two feedback modes: `end` (realistic interview, feedback at the end — default) and `per_answer`
 (adds the assessment's one-line tip after each answer, at no extra LLM cost).
@@ -122,7 +128,7 @@ difficulty levels and situations (apprenticeship, online, trial, phone, follow-u
 ## 7. Reproducibility
 
 - `make test` — offline unit tests (mock LLM); `make smoke` — all 28 scenarios with the mock LLM.
-- `make run` — Docker: Aegra API + PostgreSQL + Redis; Apertus via `LLM_BASE_URL`
+- `make run` — Docker: web app (7860) + Aegra API (2026) + PostgreSQL + Redis; Apertus via `LLM_BASE_URL`
   (`make run-gpu` adds a vLLM container on an NVIDIA GPU).
 - `make eval` — E1–E3 + `eval/results/RESULTS.md` (needs an Apertus endpoint).
 - CSCS: `scripts/cscs/apertus-vllm.toml` + `serve_apertus.sbatch` reproduce our serving setup.
@@ -143,7 +149,7 @@ Code Apache-2.0; report CC-BY-4.0. FHGR data under the FHGR / Hack Apertus condi
 ## AI assistance
 
 Parts of the code and documentation were drafted with the help of an AI assistant (Claude) and
-reviewed, run and evaluated by the author.
+reviewed, run and evaluated by the team.
 
 ## References
 
