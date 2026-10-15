@@ -44,11 +44,16 @@ Return JSON with exactly these keys:
  "improvement": "one concrete improvement, in {lang_name}",
  "coach_action": "continue" | "probe" | "redirect" | "support_and_refer",
  "problem_flags": [subset of "one_word","extrinsic_only","badmouthing","distress_signal","inappropriate_tone","dishonesty","privacy_oversharing","off_topic"],
- "follow_up": "if coach_action is probe or redirect: ONE short follow-up question in {lang_name} using {address}, else empty",
+ "observed": ["the answer elements that ARE present, max 3 short items in {lang_name}, e.g. situation, own action, result, reason, link to the occupation"],
+ "missing": ["the elements a good answer to THIS question still lacks, max 3 short items in {lang_name}; [] if nothing important is missing"],
+ "follow_up_target": "if coach_action is probe or redirect: the ONE missing element the follow-up should obtain (copied from missing), else empty",
+ "follow_up": "if coach_action is probe or redirect: ONE short follow-up question in {lang_name} using {address} that asks ONLY for follow_up_target, else empty",
  "candidate_question": "if the candidate asked the interviewer a question, copy it here, else empty",
  "tip": "one short actionable coaching tip for this answer in {lang_name}, using {address}"
 }}
-Rules: probe = answer is vague, too short or only claims something without an example;
+Rules: never ask again for something the candidate already said in the recent conversation;
+if "missing" is empty the answer is sufficient → coach_action "continue" (do not probe for the sake of probing).
+probe = answer is vague, too short or only claims something without an example;
 redirect = answer misses the question; support_and_refer = signs of strong insecurity or distress."""
 
 # ---------------------------------------------------------------- interviewer
@@ -122,3 +127,30 @@ and keeps all correct content. Return only the corrected feedback.
 
 FEEDBACK:
 {feedback}"""
+
+# ------------------------------------------------------- experience discovery
+DISCOVER_PROMPT = {
+    "de": "Kein Problem – viele haben noch keine Arbeitserfahrung. Denk an Schule, Sport, Hobby oder Familie: "
+          "Wann hast du zuletzt etwas organisiert, jemandem geholfen oder ein Problem gelöst? Erzähl kurz, was passiert ist "
+          "und was du selbst gemacht hast.",
+    "fr": "Pas de souci – beaucoup n'ont pas encore d'expérience professionnelle. Pense à l'école, au sport, à un hobby "
+          "ou à la famille : quand as-tu organisé quelque chose, aidé quelqu'un ou résolu un problème ? Raconte brièvement "
+          "ce qui s'est passé et ce que tu as fait toi-même.",
+    "it": "Nessun problema – molti non hanno ancora esperienza di lavoro. Pensa alla scuola, allo sport, a un hobby o "
+          "alla famiglia: quando hai organizzato qualcosa, aiutato qualcuno o risolto un problema? Racconta brevemente "
+          "cosa è successo e cosa hai fatto tu.",
+}
+
+FACT_CARD_USER = """### TASK: EXPERIENCE CARD
+A young candidate told this story to find an example for the interview question below.
+Extract ONLY what the candidate actually said. Never add results, feelings or skills that are not in the story.
+
+QUESTION: "{question}"
+STORY: "{story}"
+
+Return only JSON:
+{{"situation": {{"text": "only WHERE/WHEN it happened, max 6 words, without the action, in {lang_name}", "quote": "the verbatim words from the story that name the situation"}},
+ "action":    {{"text": "what the candidate did personally, in {lang_name}", "quote": "verbatim words"}},
+ "result":    {{"text": "result or what they learned, in {lang_name}, or empty if not stated", "quote": "verbatim words or empty"}},
+ "skill": "one skill this story can show for the question, in {lang_name}, only if the story supports it, else empty",
+ "answer": "a short first-person interview answer in {lang_name} (2-3 sentences) using ONLY the facts above, no repetition"}}"""

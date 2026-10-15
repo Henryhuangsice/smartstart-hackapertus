@@ -1,0 +1,444 @@
+{
+  "scenario_id": "S-15",
+  "lang": "de",
+  "dialect": "tg",
+  "difficulty": "hard",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Der Coach stellt die schwierigen Fragen (Absenzen, Mathematik) sachlich und ohne Moralpredigt.",
+    "Bei ausweichenden oder Schuld abschiebenden Antworten fragt der Coach ruhig nach dem eigenen Anteil.",
+    "Das Feedback gibt ein Antwortmuster für schwierige Fragen (ehrlich benennen – Verantwortung – Veränderung mit Beleg) (K2).",
+    "Der Coach erzeugt keine Angst wegen der Noten (L2) und würdigt die Verbesserung als Beleg (E1).",
+    "Das Feedback nennt eine praktische Stärke mit Beispiel aus der Schnupperlehre (R1, K1)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Timo."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Timo, ich bin Roman Stäheli, Geschäftsinhaber und Berufsbildner bei Thurgrün Gartenbau AG. Wir lernen uns gleich kennen, reden über deine Motivation und Stärken, schauen ein paar konkrete Situationen an, und dann kannst du Fragen stellen – das Gespräch dauert rund eine halbe Stunde. Erzähl mir doch, was dich an Gärtnerei interessiert und warum gerade hier. Hast du den Weg zu uns gut gefunden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, megli gfunde. Mir interessiert d'Draussenarbeit und das mit de Händen wasche. Der Grossvater het's immer so gmacht und ich mag's, wenn am End was steht, was ma gschafft het."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Interesse an Draussenarbeit und handwerklicher Arbeit ist super, das passt gut zu uns. Erzähl uns etwas über dich."
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich bin Timo, 16 us Frauenfeld. In dr Schule het's mich mit de Mathe und Französisch am härschte gha, aber Sport, technisches Gestalten und Natur und Technik schwätze. Seit em Gespräch mit de Lehrera und de Eltern in dr 2 Sek hei ich weniger gfehlt und mich konzentrierter."
+    },
+    {
+      "role": "coach",
+      "text": "Du siehst echtes Grün jeden Tag entstehen zu lassen – das finde ich spannend! Warum hast du dich für diesen Beruf entschieden?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, eigentli isch's dr Grossvater gsi, wo's am liebste gha het, im Garten z'wärke. Und jetzt, wo ich in dr Schnupperlehre als Gärtner gha hei, het's mir gzeigt, dass es Spass macht, was ma am End mit de Hände schafft. Des isch für mich viel wärtiger als d'Note."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Ehrlichkeit über de Grossvater und die Schnupperlehre finde ich wirklich beeindruckend. Wie gehst du mit Arbeit im Freien bei jedem Wetter um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich bin nöd d'groossä Angst vor Regen, im Gegteil, ich mag's, wenn es die Hände wasche kann. Bei Hitze versuche ich, frie z'wärke, und werde zwar schwitze, aber das isch dr Preis für frisches Grün."
+    },
+    {
+      "role": "coach",
+      "text": "Wie hast du dich in deiner Schnupperlehre praktisch verhalten, wenn es regnete oder sehr heiss war?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, in dr Schnupperlehre als Gärtner hei ich gschafft, egal ob's gschneit oder gschpietzlet het – d'Platten gheisse hei, ob's nüüscht oder abschtandig isch. Bei dr Hitze hei ich frie gschafft und kurz Pause gmacht, aber nie chlappt hei, wenn's z'gschtär isch. Der Vorarbeiter het's gschätzt, dass ich immer zruckgschafft hei und nöd müede hei, wenn's um was geht."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Einsatz in der Schnupperlehre zeigt echtes Engagement – das ist gut zu sehen. Wie gehst du mit körperlich anstrengender Arbeit um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, körperlichi Arbeit isch für mich nöd a Problem, eigentli isch's genau so, wie im Garten vom Grossvater: ma schaffe am End was, das isch alles. Ich schaffe lieber frie, wenn's warm isch, und mach Pause, wenn's z'heiss wird – das isch für mich einfach so."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das verstehe ich. Wie zufrieden bist du mit deinen bisherigen schulischen Leistungen?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich bin mit dr Verbesserig zfriede, vor allem mit dr Mathe, die isch jetzt besser. Aber im Alltag gschafft mer e besser Ergebnis, wenn mer was mit de Händ macht. Des isch für mich wärtiger als d'Note."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Ehrlichkeit ist gut zu sehen, Timo. Erzähl mir offen, was hinter den unentschuldigten Absenzen steckt."
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, das isch einfach gsi, dass ich abends zu lange gschpilt hei und morgens z'lang zum Aufschtande gha hei, so d'Lektionen gfehlt hend. Nachher mit de Eltern und dem Klassenlehrer gredet, hend's besser gmacht, und jetzt seit Herbst gar kei Absenzen meh. Das isch nöd so schlimm gsi wie d'Note, aber jetzt gschaff ich's schon."
+    },
+    {
+      "role": "coach",
+      "text": "Deine Note ist zwar niedrig, aber das ist kein Grund zur Panik. Im Gartenbau brauchst du vor allem praktische Fähigkeiten und Teamarbeit, nicht nur Mathe. Was denkst du, wie du das Rechnen im Beruf lernen kannst?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich lehre mich am liebsten praktisch, wie beim Plattenlege, und dann versteh ich d'Zahl besser. Im Beruf lern ich d'Formeln erst, wenn's wirklich nötig isch, sonst isch's für mich nöd so wichtig. Ich versuche d'Rechnung mit Abmessige und Materialkosten z'mache, wenn's im Gartenprojekt vorkimmt."
+    },
+    {
+      "role": "coach",
+      "text": "Interessant, dass du praktisch lernst und erst dann theoretische Formeln anwendest, wenn es wirklich nötig ist. Wie würdest du deine Arbeitshaltung in der Schule beschreiben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich hei nöd immer voll konzentriert gschafft, vor allem wenn d'Note nöd so wichtig gsi isch wie d'Handarbeit. Aber jetzt nehm ich jede Lektion ernscht und mach lieber etwas, wos mir Spass macht. Wenn's im Unterricht um Zahlen geht, versuch ich d'Praktik trotzdem z'bringe, dass das was bringt."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, ich verstehe. Welche Schwäche möchtest du verbessern?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich wärsch d'Mathe noch verbessere, aber im Beruf isch's nöd so wichtig, hauptsächlech d'Handfertigkeit und d'Teamarbeit. Ich versuch jetzt regelmäßiger mitz'mache, dass ich's besser schaffe."
+    },
+    {
+      "role": "coach",
+      "text": "Wie kam es konkret zu einer Situation, in der deine Mathekenntnisse dich beim Berechnen von Materialmengen oder beim Messen von Flächen behindert haben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, eimol hend wir im Unterricht d'Abmassige vo eme Beet gschtudiert, und ich hei die Formel für d'Fläche gscht gha und wosch wie berechne, aber in dr Praxis hend s'Beet nöd rechteckig gsi, drum isch's schwieriger gsi. D'Situation hend's mir bewusst gmacht, dass's im Berufslebn wichtiger isch, d'Formeln z'versteh und z'wende, wann d'Umständ nöd perfekt sin. Jetzt versuch ich, d'Formeln im Kopf z'hab und erst mit de Maße z'fange."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, das passiert mal. Was machst du, wenn du merkst, dass du zu spät zur Arbeit kommst?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich versuch, am Vorabend besser z'planen, wenn mer weiss, dass mer früh aufschtue muss, und mach mir e paar Minuten Puffer, dass ichs nicht vergesse. Wenn's trotzdem e bissi spät wird, rufe ich sofort, dass mer weiss, dass mer e Problem hend."
+    },
+    {
+      "role": "coach",
+      "text": "Klingt gut, dass du so strukturiert planst. Was machst du, wenn du diese Lehrstelle nicht bekommst?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, das wär schade, aber ich versuch, mit anderi Schnupperlehren oder meh Velotouren weiterz'kommen, dass ich was lerne. Im Garten vom Grossvater hilf ich immer no, das isch e guter Start. Wenn's nöd passt, zeig ich e guter Wille, dass ichs witerbring."
+    },
+    {
+      "role": "coach",
+      "text": "Dein Wille, weiterzumachen, ist gut zu sehen. Welche Fähigkeiten möchtest du während der Lehre erwerben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, ich wöle lerne, wie ma Material richtig abmisst und a richtige Flächenberechnung für d'Garten- oder Landschaftsbau macht. Ich wöle au besser mit anderi im Team z'schaffe, dass alles pünktlich und korrekt läuft. Des isch mir wichtig, dass ich am End e gute Arbeit leiste und vom Grossvater stolz gsi wärde."
+    },
+    {
+      "role": "coach",
+      "text": "Klar, gerne! Hast du Fragen zu unseren Erwartungen an Lernende?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, e paar Frage zum Tagesablauf: Wann fängt mer morgens aa und wie lang isch d'Pause? Ich wöle, dass ichs weiss, was mer vom Tag erwartet."
+    },
+    {
+      "role": "coach",
+      "text": "Morgens fangen wir im Sommer um 7 Uhr und im Winter um 7.30 Uhr an. Die Pause beträgt etwa eine Stunde um die Mittagszeit. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, e paar Frage zur Arbeitskleidung: Brauche mer e bestimmte Jacke oder Handschuhe? Und wer hilft mir, wenn mer mit de Werkzeuge ned zurechtkomme?"
+    },
+    {
+      "role": "coach",
+      "text": "Bei Thurgrün gibt's Arbeitskleidung und Sicherheitsschuhe, die du bekommst. Spezielle Jacken oder Handschuhe werden nicht vorgegeben, aber passende Kleidung für die Jahreszeit wird erwartet. Hast du sonst noch eine Frage?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, wenns mal mit de Werkzeuge ned z'mache isch, helft mer im Team, dass alles korrekt wird. Ich versuch, rasch z'lernen, obschon ich in Mathematik immer e bissi Mühe gha."
+    },
+    {
+      "role": "coach",
+      "text": "Ich versteh, dass du im Team helfen willst, wenn es mit den Werkzeugen Probleme gibt, und dass du dich in Mathematik schwerer tust. Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Jo, eigentli isch's e bissi schwierig für me mit de Berechnige, aber ich versuch, durchs Praktiziere besser z'werde, wie me das macht und über de Grossvater lerne. Und wenns nüt klappet, helf ich am End immer im Team, dass alles fertig wird."
+    },
+    {
+      "role": "coach",
+      "text": "Danke, Timo, dass du die Ehrlichkeit über deine Schwierigkeiten mit den Berechnungen eingestanden hast – das zeigt Verantwortungsbewusstsein. Wir schätzen deine Bereitschaft, im Team mitzuhelfen, wenn es mal nicht klappt. Es war ein ehrliches Gespräch, und wir haben dich kennengelernt. Jetzt wünsche ich dir alles Gute für deine weitere Entwicklung und hoffe, dass du bald die Chance bekommst, bei uns zu lernen. Hast du noch Fragen zu unserem Lehrbetrieb oder zum Starttermin im August 2027?\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Mir interessiert d'Draussenarbeit und das mit de Händen wasche.» – Dein ehrliches Interesse an handwerklicher Draussenarbeit wirkt überzeugend.\n- «Ich hei nöd immer voll konzentriert gschafft, aber jetzt nehm ich jede Lektion ernscht.» – Dein klarer Fortschritt zeigt wachsende Verantwortung.\n\n## Daran kannst du arbeiten\n- «Ich wärsch d'Mathe noch verbessere, aber im Beruf isch's nöd so wichtig.» – Nimm konkrete Mathematikübungen im Gartenbau, um die Rechenanwendungen zu verknüpfen.\n- «Jo, wenns mal mit de Werkzeuge ned z'mache isch, helft mer im Team, dass alles korrekt wird.» – Formuliere Fragen zur Arbeitskleidung oder Werkzeuggebrauch höflicher, um Interesse an betrieblichen Details zu zeigen.\n\n## Dein nächster Schritt\nÜbe täglich eine Flächenberechnung für ein Gartenbeet und frage deine Lehrperson nach konkreten Tipps zur Anwendung der Formel.\n\nDu hast ein sehr realistisches Gespräch geübt – das war Übung, nicht Prüfung.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Ausbaufähig |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Ausbaufähig |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Gut |\n| Eigeninitiative | Gut |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Höflicher Begruss mit Namen",
+        "Dank für die Einladung",
+        "Kurze positive Einstiegsformulierung"
+      ],
+      "target": "Höflicher Begruss mit Namen",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Schulische Leistungen oder Interessen außerhalb der genannten Fächer",
+        "Hobbys oder Freizeitaktivitäten",
+        "Bezug zur geplanten Lehre als Gärtner/in EFZ"
+      ],
+      "target": "Bezug zur geplanten Lehre als Gärtner/in EFZ",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Langfristige Karriereperspektive oder zukünftige Ziele im Beruf",
+        "Konkrete Tätigkeiten oder Aspekte der Arbeit als Gärtner/in, die besonders interessant sind"
+      ],
+      "target": "Langfristige Karriereperspektive oder zukünftige Ziele im Beruf",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF01-02",
+      "level": 3,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "Konkrete Erfahrungen aus der Schnupperlehre oder dem Berufsleben",
+        "Erläuterung, wie diese Strategien im Gartenbau praktisch umgesetzt werden",
+        "Zusammenhang zwischen Wetterbedingungen und spezifischen Aufgaben im Gartenbau"
+      ],
+      "target": "Konkrete Erfahrungen aus der Schnupperlehre oder dem Berufsleben",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Eigene Einsichten oder Gründe für die Anpassungen",
+        "Anonymisierte Beschreibung der Situation",
+        "Reflexion über die Bedeutung der Anpassungen für den Beruf"
+      ],
+      "target": "Eigene Einsichten oder Gründe für die Anpassungen",
+      "asked_for": "Konkrete Erfahrungen aus der Schnupperlehre oder dem Berufsleben",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF01-03",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Konkrete Erfahrungen aus der Schnupperlehre",
+        "Strategien bei Regen oder Schnee",
+        "Zusammenhang mit spezifischen Anforderungen des Berufs Gärtner/in EFZ"
+      ],
+      "target": "Konkrete Erfahrungen aus der Schnupperlehre",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-06-04",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Konkrete Massnahmen zur weiteren Verbesserung der schulischen Leistungen",
+        "Verknüpfung der schulischen Leistungen mit der zukünftigen Tätigkeit als Gärtner/in"
+      ],
+      "target": "Konkrete Massnahmen zur weiteren Verbesserung der schulischen Leistungen",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-DIF-04",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Lernschritt oder persönliche Erkenntnis aus der Situation",
+        "Bezug zur spezifischen Arbeit eines Gärtner/in EFZ",
+        "Warum Pünktlichkeit in diesem Beruf besonders wichtig ist"
+      ],
+      "target": "Lernschritt oder persönliche Erkenntnis aus der Situation",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-DIF-06",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Konkrete Ziele oder Massnahmen zur Verbesserung der Mathematiknote",
+        "Analyse der spezifischen mathematischen Schwächen (z.B. Algebra)",
+        "Langfristige Karriereperspektive im Gartenbau"
+      ],
+      "target": "Konkrete Ziele oder Massnahmen zur Verbesserung der Mathematiknote",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-06-03",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 2,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "Konkrete Situation, in der die Mathematikschwäche hinderlich war",
+        "Erfolg durch regelmäßiges Üben (z. B. verbesserte Note oder praktische Anwendung)",
+        "Zusammenhang zwischen Mathematik und spezifischen Aufgaben im Gartenbau"
+      ],
+      "target": "Konkrete Situation, in der die Mathematikschwäche hinderlich war",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Konkrete messbare Verbesserungsergebnis nach der Anpassung",
+        "Strategie für zukünftige unregelmäßige Geometrien",
+        "Verknüpfung mit spezifischen Aufgaben im Gartenbau"
+      ],
+      "target": "Konkrete messbare Verbesserungsergebnis nach der Anpassung",
+      "asked_for": "Konkrete Situation, in der die Mathematikschwäche hinderlich war",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-SIT-05",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Konkrete Handlungsoptionen bei Zugausfall (z.B. Bus, alternative Route)",
+        "Plan bei Ankunft (z.B. Meldung beim Berufsbildner)",
+        "Verständnis der betrieblichen Bedeutung von Pünktlichkeit"
+      ],
+      "target": "Konkrete Handlungsoptionen bei Zugausfall (z.B. Bus, alternative Route)",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-DIF-03",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Aus einer Absage gezielt zu lernen (z. B. Rückmeldung einholen)",
+        "Konkrete Maßnahmen zur persönlichen Weiterentwicklung nach Absage"
+      ],
+      "target": "Aus einer Absage gezielt zu lernen (z. B. Rückmeldung einholen)",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-08-04",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Langfristige berufliche Perspektive oder persönliche Motivation",
+        "Bezug zu spezifischen Aufgaben oder Projekten im Betrieb Thurgrün Gartenbau AG"
+      ],
+      "target": "Langfristige berufliche Perspektive oder persönliche Motivation",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Verknüpfung der Fragen mit den spezifischen Anforderungen der Lehre",
+        "Information über die Erwartungen an Lernende",
+        "Bezug zu den Tätigkeiten im Gartenbau"
+      ],
+      "target": "Erwartungen an Lernende",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Anknüpfung an vorherige Informationen über den Betrieb",
+        "Frage zur Ausbildung oder zum Team",
+        "Höfliche Formulierung"
+      ],
+      "target": "Anknüpfung an vorherige Informationen über den Betrieb",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-09-06",
+      "level": 2,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Keine Frage zur Arbeitskleidung oder Einarbeitung",
+        "Keine Frage zur konkreten Unterstützung im Betrieb",
+        "Keine Frage zu spezifischen betrieblichen Abläufen"
+      ],
+      "target": "Frage zur Arbeitskleidung oder Einarbeitung",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Dank für das Gespräch",
+        "Bekräftigung des Interesses an der Lehrstelle",
+        "Frage nach dem weiteren Vorgehen"
+      ],
+      "target": "Dank für das Gespräch",
+      "asked_for": "",
+      "evidence_verified": true
+    }
+  ],
+  "llm_calls": 40,
+  "answers": 19,
+  "calls_per_answer": 2.11,
+  "followups": 2,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 103.8
+}

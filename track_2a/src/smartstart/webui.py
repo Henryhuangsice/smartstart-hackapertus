@@ -36,6 +36,9 @@ def _public_state(s: dict) -> dict:
             "evidence": a["evidence"], "strength": a["strength"], "improvement": a["improvement"],
             "scores": {ds.criterion_label(k, s["lang"]): v for k, v in (a.get("scores") or {}).items() if v},
             "exemplars": a.get("exemplars", []),
+            "observed": a.get("observed", []), "missing": a.get("missing", []),
+            "target": a.get("follow_up_target", "") if a["coach_action"] in ("probe", "redirect") else "",
+            "asked_for": e.get("followup_target", ""), "evidence_ok": a.get("evidence_verified", False),
         })
     idx = min(s["idx"], len(s["plan"]) - 1)
     stage = "feedback" if s["finished"] else stage_of(ds, s["plan"][idx])
@@ -101,6 +104,25 @@ class Handler(BaseHTTPRequestHandler):
                 if self.path == "/api/turn":
                     reply = coach.step(s, (req.get("text") or "").strip(), ds=ds)
                     return self._send(200, {"reply": reply, "state": _public_state(s)})
+                if self.path == "/api/discover":
+                    return self._send(200, {"prompt": coach.discovery_prompt(s)})
+                if self.path == "/api/card":
+                    return self._send(200, {"card": coach.make_fact_card(s, req["text"], ds=ds), "state": _public_state(s)})
+                if self.path == "/api/card/confirm":
+                    card = coach.confirm_fact_card(s, req.get("facts") or {}, req.get("answer") or "")
+                    reply = coach.step(s, card["answer"], ds=ds)  # the confirmed answer goes into the interview
+                    return self._send(200, {"card": card, "reply": reply, "state": _public_state(s)})
+                if self.path == "/api/transfer":
+                    return self._send(200, {"transfer": coach.transfer_question(s, int(req["index"]), ds=ds)})
+                if self.path == "/api/transfer/answer":
+                    t = coach.answer_transfer(s, req["text"], ds=ds)
+                    a = t["assessment"]
+                    return self._send(200, {"result": {"question": t["question"], "criterion": t["criterion_label"],
+                        "before": t["before"], "after": t["after"], "status": t["status"], "level": a["quality_level"],
+                        "missing": a.get("missing", []), "strength": a["strength"], "improvement": a["improvement"]},
+                        "state": _public_state(s)})
+                if self.path == "/api/export":
+                    return self._send(200, {"markdown": coach.export_card(s, ds=ds)})
                 if self.path == "/api/revise":
                     res = coach.revise_answer(s, int(req["index"]), req["text"], ds=ds)
                     return self._send(200, {"revision": res, "state": _public_state(s)})

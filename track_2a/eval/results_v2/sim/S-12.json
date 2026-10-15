@@ -1,0 +1,356 @@
+{
+  "scenario_id": "S-12",
+  "lang": "de",
+  "dialect": "ag",
+  "difficulty": "hard",
+  "situation": "assessment",
+  "success_criteria": [
+    "Der Coach beschreibt das Verhalten in der Gruppe mit konkreten Beobachtungen (z. B. wer welche Idee eingebracht hat) statt mit Etiketten (B1, K1).",
+    "Der Coach achtet bei der Kurzpräsentation auf Struktur und Zeit und gibt einen umsetzbaren Tipp (Einstieg – ein Kernpunkt – Schluss) (K2).",
+    "Der Coach würdigt die guten konkreten Beispiele (YouTube, Kurzfilm) als Stärke (R1).",
+    "Der Coach bewertet Herkunft oder Mehrsprachigkeit nicht (L1).",
+    "Die Reflexionsfrage Q-OTH-10 wird gestellt und die Antwort mit der tatsächlichen Beobachtung abgeglichen."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Grüezi, ich bin Thiviyan."
+    },
+    {
+      "role": "coach",
+      "text": "Grüezi Thiviyan, ich bin Lara Hunziker, Berufsbildnerin bei der Pixelfabrik. Im Assessment lernst du uns kennen, erzählst von deiner Motivation und deinen Stärken, und wir schauen uns ein paar Aufgaben an – das dauert ungefähr eine Stunde. Erzähl mir doch, wie läuft der Tag bei dir bisher?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, normaler Schultag, mal e bisschen Pause zum Filmen gha. Im Englisch- und Medienunterricht geht’s voll ab, denn die mache ich megaspannend. Mittagsschlaf mach ich nur kurz, denn ich will weiter Filmmaterial für den Kanal sammle. Abends schneide ich dann alles und poste neue Videos für die Abonnenten."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach viel Energie und Kreativität – perfekt für uns! Wie stellst du dir die Planung vor? Welche Schritte würdest du als Erstes setzen, um den Stand zu entwickeln?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, als Erstes würde ich mit de Idee vom Projekt starten, alles planen – was wir filmen, wann und wie – dann mache ich a Zeitplan, wo alles drinsteht, und verteile die Aufgaben an die Mitschüler, denn das mache ich am liebsten, und dann schaffe ich’s alles einzuknipsen, Schnitt und Post-Produktion."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt super strukturiert! Wie hast du die Gruppenarbeit eben erlebt? Was war deine Rolle?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, in de Projekttage war ich für den Schnitt und den Zeitplan zuständig, hab alles koordiniert, und des is mega spannend gsi, weil ich kontrollieren konnte, dass alles läuft wie geplant."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, du hast das Projekt super im Griff gehabt – das zeigt echt, dass du organisiert und verantwortungsbewusst bist. Erzähl uns jetzt in zwei Minuten von einem Gegenstand, der dir wichtig ist. Was ist das, warum ist er dir wichtig und wie würdest du ihn beschreiben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, der Handy isch der wichtigschte Gegenstand für mich, denn der isch das Werkzeug, mit dem ich all meine Stop-Motion-Videos schneide und meinen YouTube-Kanal baue. Ohni den Handy würd ich nix produzieren und känne nix mit meinen Abonnenten teile – des isch mega spannend für mich. Er fühlt sich wie mein Kreativitäts-Motor aa, und wenn ich ihn zieh, fäng ich aa, neue Ideen z'filmen."
+    },
+    {
+      "role": "coach",
+      "text": "Lara: Das klingt super kreativ und motiviert! Wie würdest du dich in wenigen Sätzen beschreiben?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich bin Thiviyan, 16 Jahr alt, aus Aarau, mache Stop-Motion und Tech-Reviews für meinen YouTube-Kanal, helf im Kulturverein mit dem Video vom Fest, und in der Schnupperlehre bei de Agentur habe ich sofort den Social-Media-Clip geschnitten, weil ich kreativ, technisch versiert und gerne Feedback sofort umsetze – und das ist mega spannend!"
+    },
+    {
+      "role": "coach",
+      "text": "Cool, dass du dich für diesen Job interessiert hast! Erzähl mir doch, warum genau dieser Beruf als Mediamatiker/in dich begeistert."
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, weil Mediamatik genau die Mischung isch us Kreativität, Technik und Organisation – genau so wie beim Schnitt meines Videos oder beim Zeitplan für de Kurzfilm – und ich das am liebsten mache, wie wenn ich mitm YouTube-Kanal arbeite, wo ich alles selber planen und umsetzen kann."
+    },
+    {
+      "role": "coach",
+      "text": "Lara Hunziker, Berufsbildnerin, Content-Producerin bei Pixelfabrik Kommunikation AG: Das klingt super kreativ! Erzähl uns doch von einem eigenen Projekt, das du entwickelt hast – sei es ein Video, eine Website oder eine Social-Media-Kampagne."
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich hab letztens mit drei Mitschüler a Kurzfilm über Littering gedreht – wir haben d'Handycam benutzt, d'Szenen geplant, a Zeitplan gmacht und am Schluss alles gschnitten – des war a richtigs Teamprojekt, und ich war für Schnitt und Zeitplan verantwortlich, also mega organisiert und kreativ gsi."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, dass du so offen mit dem Projektprozess umgehst! Wie gehst du mit Kritik an deinen eigenen Ideen um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, wenns Kritik gibt, hör ich mirs zu und überleg, wie ich's verbessere – des macht alles besser, so wie beim Video vom Kulturverein, wo ich d'Feedback vom Regisseur sofort umgesetzt und's noch spannender gmacht hab."
+    },
+    {
+      "role": "coach",
+      "text": "Haha, das klingt nach echtem Teamgeist und schneller Umsetzung – genau das gefällt uns! Wie gehst du mit engen Zeitpläne bei kreativen Projekten um?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich mache schnell a Plan, teile d'Jobs mit de Team und halte a klare Zeitplan – so wie beim Kurzfilm, wo ich a Zeitplan gmacht und a Tag vor de Shooting a Schnitt begonnen hab, sonst würde alles stressig."
+    },
+    {
+      "role": "coach",
+      "text": "Haha, das klingt nach einer super organisatorischen Herangehensweise! Welche Rolle übernimmst du häufig in einer Gruppe?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich übernehme oft die Leitung, mach den Zeitplan und koordiniere alles – wie beim Kurzfilm-Projekt, wo ich für Schnitt und Organisation zuständig war – und versuch, gleichzeitig die Teammitglieder zu motivieren, damit’s mega spannend läuft."
+    },
+    {
+      "role": "coach",
+      "text": "Haha, das klingt nach echtem Teamgeist! Welche Schwäche möchtest du aktiv verbessern?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich übernehme manchmal zu viel alleine, statt Aufgaben besser zu verteilen – des will ich üben, dass im Team jeder sich wohlfühlt und wir schneller fertig werre."
+    },
+    {
+      "role": "coach",
+      "text": "Wie sah die konkrete Situation aus, in der du zu viel alleine übernommen hast?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, beim letzten Schnupperprojekt in dr Agentur händ üs alleine de Schnitt übernomme, statt z'sage, wer wos macht – danach händ de andere g'meint, die Idee vom Client wäre besser gsi, wenn meh Input gäge. Ich soll nüme alles alleine ziehe, sondern lieber Aufgaben klärer verteile, damit s Team kollaboriert."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, das klingt nach einem wichtigen Lernmoment! Welche beruflichen Ziele hast du?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich will Mediamatiker EFZ lerne, denn üs passt am beschte, und dann möch gärn BM2 mache und später im Video- oder Grafikbereich arbeiten, entweder als Angestellter oder selberständig – das händ mir d'Beispiele vom YouTube-Kanal und dr Fotoshootings gzeigt, wos megaspannend is!"
+    },
+    {
+      "role": "coach",
+      "text": "Haha, total klar – du hast dich für Mediamatiker EFZ entschieden, weil es einfach perfekt zu dir passt, und BM2 ist dein nächster Schritt Richtung Video oder Grafik. Interessierst du dich für den Ablauf der Ausbildung?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, dr Mediamatiker EFZ het s'Medien und Informatik gschtudiert, wo üs genau gfällt, und d'Lehre is praktisch, denn üs mache Videos, Schnitt und Social Media – genau wia im Schnupperjob – und danach will üs gern BM2 mache, weil dr Beruf dr ganze Prozess abdeckt, vom Kreativ bis zum Online."
+    },
+    {
+      "role": "coach",
+      "text": "Cool, danke für deine offenen Worte! Gibt es noch etwas, das du uns gerne mitteilen möchtest?"
+    },
+    {
+      "role": "candidate",
+      "text": "Ag, ich bringe gern eigene Videos und Fotos vom letzten Fotoshoot oder vom YouTube-Clip mit, damit ihr seht, wie ich arbeite – das macht für mich mega spannend und zeigt die Praxis drin. Ich bin froh, dass die Firma ehre Schnupperlehre unterstützt, drum freue ich mich, wenn s Team jetzt noch mitmachen darf – das motiviert mich total."
+    },
+    {
+      "role": "coach",
+      "text": "Danke für deine Offenheit und deine Begeisterung! Es war ein echtes Vergnügen, dich kennenzulernen. Wir freuen uns auf deine Schnupperlehre und darauf, dich im Team zu sehen. Viel Erfolg bei deinem nächsten Schritt – bis dahin!\n\n---\n**Zum Schluss: Du erhältst jetzt dein persönliches Feedback.**\n\n## Deine Stärken\n- «Im Englisch- und Medienunterricht geht’s voll ab, denn die mache ich megaspannend.» – Zeigt Engagement für relevante Fächer.\n- «Der Handy isch der wichtigschte Gegenstand für mich, denn der isch das Werkzeug, mit dem ich all meine Stop-Motion-Videos schneide und meinen YouTube-Kanal baue.» – Verbindet persönliche Leidenschaft mit Berufszielen.\n- «Ich bin Thiviyan, 16 Jahr alt, mache Stop-Motion und Tech-Reviews für meinen YouTube-Kanal, helf im Kulturverein mit dem Video vom Fest, und in der Schnupperlehre bei de Agentur habe ich sofort den Social-Media-Clip geschnitten, weil ich kreativ, technisch versiert und gerne Feedback sofort umsetze.» – Belegt kreative und technische Kompetenzen durch konkrete Beispiele.\n\n## Daran kannst du arbeiten\n- «Ag, ich übernehme manchmal zu viel alleine, statt Aufgaben besser zu verteilen.» – Noch klarere Aufgabenverteilung im Team üben.\n- «Beim letzten Schnupperprojekt in dr Agentur händ üs alleine de Schnitt übernomme, statt z'sage, wer wos macht.» – Aufgaben frühzeitig mit dem Team besprechen.\n- «Ag, ich mache schnell a Plan, teile d'Jobs mit de Team und halte a klare Zeitplan.» – Zeitplanung und Aufgabenverteilung konkretisieren.\n\n## Dein nächster Schritt\nÜbe in der nächsten Woche eine Gruppenarbeit, indem du zuerst gemeinsam das Projektziel definierst und dann die Aufgaben klar verteilt werden.\n\nDu hast heute viel Praxis gezeigt – übe weiter, und du wirst noch sicherer werden.\n\n### Übersicht nach Kriterien\n\n| | |\n|---|---|\n| Klarheit | Gut |\n| Relevanz | Sehr gut |\n| Motivation | Gut |\n| Selbstreflexion | Gut |\n| Kommunikationsfähigkeit | Gut |\n| Konkrete Beispiele | Gut |\n| Auftreten & Wirkung | Gut |\n| Vorbereitung / Betriebskenntnis | Gut |\n| Zielorientierung | Gut |\n| Umgang mit schwierigen Fragen | Gut |\n| Eigeninitiative | Ausbaufähig |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Persönliche Interessen/Hobbys außerhalb der Schule",
+        "Bezug zu spezifischen Fähigkeiten des Mediamatikers",
+        "Motivation für die Berufswahl"
+      ],
+      "target": "Persönliche Interessen/Hobbys außerhalb der Schule",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-OTH-09",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Eigenes Beispiel aus einer Gruppenarbeit in der Schule",
+        "Konkrete Vorgehensweise bei Meinungsverschiedenheiten in der Gruppe",
+        "Erläuterung, wie die Ergebnisse präsentiert werden"
+      ],
+      "target": "Eigenes Beispiel aus einer Gruppenarbeit in der Schule",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-OTH-10",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Verbindung der eigenen Rolle zu spezifischen Aufgaben im Berufsalltag (z. B. Terminplanung, Organisation)",
+        "Persönliche Lernschritte oder Verbesserungsvorschläge für die Zusammenarbeit"
+      ],
+      "target": "Verbindung der eigenen Rolle zu spezifischen Aufgaben im Berufsalltag",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-OTH-11",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Konkrete Beispiele für eigene Stop-Motion-Projekte oder Erfolge",
+        "Zukünftige berufliche Ziele, die über die persönliche Nutzung hinausgehen",
+        "Reflexion über die Rolle des Handys in der Mediaproduktion"
+      ],
+      "target": "Konkrete Beispiele für eigene Stop-Motion-Projekte oder Erfolge",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-02-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Bezug zur Mediamatiker/in-Ausbildung und -Arbeit",
+        "Einschätzung der eigenen Stärken und Schwächen im Kontext des Berufs",
+        "Konkrete Lernziele oder Entwicklungspotenzial"
+      ],
+      "target": "Bezug zur Mediamatiker/in-Ausbildung und -Arbeit",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Langfristige berufliche Perspektive oder Zukunftsbezug",
+        "Bezug auf spezifische Tätigkeiten im Mediamatiker Berufsfeld",
+        "Begründung, warum gerade Pixelfabrik Kommunikation AG"
+      ],
+      "target": "Langfristige berufliche Perspektive oder Zukunftsbezug",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF06-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Verknüpfung des Projekts mit konkreten Anforderungen der Mediamatik-Lehre",
+        "Persönliche Motivation für die Mediamatik-Lehre"
+      ],
+      "target": "Verknüpfung des Projekts mit konkreten Anforderungen der Mediamatik-Lehre",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF06-03",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Eigene emotionale Reaktion auf Kritik",
+        "Detailierter Prozess der Überarbeitung"
+      ],
+      "target": "Eigene emotionale Reaktion auf Kritik",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF06-06",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Auswirkungen der Zeitplanung auf das kreative Ergebnis",
+        "Herausforderungen bei der Umsetzung des Zeitplans",
+        "Reflexion über alternative Vorgehensweisen bei Zeitdruck"
+      ],
+      "target": "Auswirkungen der Zeitplanung auf das kreative Ergebnis",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-07-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Begründung, warum diese Rolle gewählt wird",
+        "Einschätzung der eigenen Stärken und Schwächen in dieser Rolle",
+        "Übertragung auf den Berufsalltag als Mediamatiker/in"
+      ],
+      "target": "Begründung, warum diese Rolle gewählt wird",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 2,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "Konkrete Situation, in der die Schwäche auftrat",
+        "Erläuterung, warum die Schwäche das Team beeinträchtigt",
+        "Erste Massnahme oder bereits erzielter Erfolg"
+      ],
+      "target": "Konkrete Situation, in der die Schwäche auftrat",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-05-03",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Konkrete Strategie oder bereits umgesetzte Massnahme",
+        "Erfolg nach Umsetzung der Verbesserung",
+        "Bezug zur Mediamatiker-Lehre"
+      ],
+      "target": "Konkrete Strategie oder bereits umgesetzte Massnahme",
+      "asked_for": "Konkrete Situation, in der die Schwäche auftrat",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-08-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Persönliche Motivation und persönliche Interessen an der Mediamatiker-Ausbildung",
+        "Klarheit, wie die Ausbildung die persönlichen Interessen konkret unterstützt",
+        "Bezug zu spezifischen Kompetenzen der Mediamatiker-Lehre"
+      ],
+      "target": "Persönliche Motivation und persönliche Interessen an der Mediamatiker-Ausbildung",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-09-04",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Detailierte Kenntnis der Ausbildungsstruktur und -inhalte",
+        "Konkrete Beispiele für Aufgaben im Mediamatiker EFZ"
+      ],
+      "target": "Detailierte Kenntnis der Ausbildungsstruktur und -inhalte",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 4,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    }
+  ],
+  "llm_calls": 32,
+  "answers": 15,
+  "calls_per_answer": 2.13,
+  "followups": 1,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 84.0
+}

@@ -70,3 +70,63 @@ def test_full_interview_under_call_budget():
         if s["lang"] == "de":  # the mock backend only writes German feedback
             assert s["feedback_violations"] == []
         assert coach.calls_per_answer(s) < 5  # FHGR efficiency gate
+
+
+def test_quote_verification():
+    assert coach.verify_quote("ein kleines Python-Skript", "Ich habe ein kleines Python-Skript geschrieben.")
+    assert not coach.verify_quote("Ich habe den Wettbewerb gewonnen", "Ich mag Computer.")
+    assert not coach.verify_quote("", "Ich mag Computer.")
+
+
+def test_same_gap_not_asked_twice():
+    s = coach.new_session("Grüezi", posting_id="P-11")
+    coach.step(s, "Grüezi")
+    coach.step(s, "ja")  # vague → follow-up for a missing element
+    assert s["pending_followup"] and s["pending_followup"]["target"]
+    coach.step(s, "ja")  # still vague → same gap is not asked again, interview moves on
+    assert s["pending_followup"] is None
+
+
+def test_null_is_new_evidence_not_progress():
+    s = coach.new_session("Grüezi", posting_id="P-11")
+    coach.step(s, "Grüezi")
+    coach.step(s, "ja")
+    s["log"][0]["assessment"]["scores"] = {"clarity": None}
+    r = coach.revise_answer(s, 0, "In der Schnupperlehre habe ich ein Python-Skript geschrieben, das Daten sortiert.")
+    v = {c["criterion"]: c["verdict"] for c in r["criteria"]}
+    assert v.get("Klarheit") == "Neu gezeigt"
+
+
+def test_feedback_failure_is_recoverable(monkeypatch=None):
+    s = coach.new_session("Grüezi", posting_id="P-11")
+    coach.step(s, "Grüezi")
+    orig = coach.final_feedback
+    coach.final_feedback = lambda ds, s: (_ for _ in ()).throw(RuntimeError("endpoint down"))
+    try:
+        coach.step(s, "/feedback")
+    finally:
+        coach.final_feedback = orig
+    assert s["finished"] and s.get("feedback_failed")
+    out = coach.step(s, "/feedback")
+    assert not s["feedback_failed"] and "##" in out
+
+
+def test_fact_card_drops_unsupported_facts():
+    s = coach.new_session("Grüezi", posting_id="P-11")
+    coach.step(s, "Grüezi")
+    c = coach.make_fact_card(s, "Im Schulprojekt habe ich die Präsentation von allen zusammengefügt.")
+    assert "result" in c["dropped_unsupported"] and c["facts"]["result"]["text"] == ""
+    assert all(f["verified"] for f in c["facts"].values() if f["text"])
+
+
+def test_transfer_is_new_question_from_own_field():
+    s = coach.new_session("Grüezi", posting_id="P-11")
+    coach.step(s, "Grüezi")
+    while not s["finished"]:
+        coach.step(s, "ja")
+    t = coach.transfer_question(s, 0)
+    q = DS.questions[t["qid"]]
+    bf = q.get("berufsfeld")
+    assert t["qid"] not in {e["qid"] for e in s["log"]}
+    assert not bf or bf.get("key") == DS.postings["P-11"]["occupation"]["berufsfeld_key"]
+    assert "#" in coach.export_card(s)

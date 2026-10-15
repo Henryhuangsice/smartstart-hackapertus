@@ -40,6 +40,7 @@ class Exemplar:
     weaknesses: list[str]
     follow_up: str
     flags: list[str]
+    missing: list[str] = None  # expert-annotated missing elements
     score: float = 0.0
 
     def to_prompt(self) -> str:
@@ -49,7 +50,8 @@ class Exemplar:
         return (
             f'Q: "{self.question}"\nA: "{self.answer}"\n'
             f"→ level {self.level} ({self.answer_class}), coach_action={self.coach_action}, flags={flags}\n"
-            f"  strengths: {s}\n  weaknesses: {w}\n  expert follow-up: {self.follow_up or '-'}"
+            f"  strengths: {s}\n  weaknesses: {w}\n  missing: {'; '.join((self.missing or [])[:3]) or '-'}\n"
+            f"  expert follow-up: {self.follow_up or '-'}"
         )
 
 
@@ -75,6 +77,7 @@ class ExemplarIndex:
                 weaknesses=ann.get("weaknesses") or [],
                 follow_up=ann.get("follow_up_question") or "",
                 flags=ann.get("problem_flags") or [],
+                missing=ann.get("missing_elements") or [],
             )
             self._grams[aid] = _grams(ex.answer + " " + (a.get("normalized_de") or ""))
             qid = a.get("question_id")

@@ -86,7 +86,12 @@ def main() -> None:
             "pred_flags": res["problem_flags"],
             "crit_mae": mean(crit_err) if crit_err else None,
             "parsed": res["raw_ok"],
+            "evidence_claimed": bool(res.get("evidence_claimed")),
+            "evidence_verified": res.get("evidence_verified", False),
+            "missing_n": len(res.get("missing", [])),
         })
+        if res["quality_level"] is None:
+            rows[-1]["pred_level"] = 0
         print(f"[{n}/{len(sample)}] {aid} {lang_group(a)} gold={ann['quality_level']} pred={res['quality_level']} "
               f"{ann['coach_action']}/{res['coach_action']}  ({time.time() - t0:.0f}s)")
 
@@ -107,6 +112,8 @@ def main() -> None:
             "distress_recall": round(mean(("distress_signal" in r["pred_flags"]) or r["pred_action"] == "support_and_refer"
                                           for r in distress_gold), 3) if distress_gold else None,
             "json_parse_rate": round(mean(r["parsed"] for r in rs), 3),
+            "quote_verified_rate": round(mean(r["evidence_verified"] for r in rs if r["evidence_claimed"]), 3)
+            if any(r["evidence_claimed"] for r in rs) else None,
         }
 
     by_group = defaultdict(list)

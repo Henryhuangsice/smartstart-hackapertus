@@ -81,7 +81,11 @@ def run_scenario(ds, sid: str, max_turns: int = 30) -> dict:
         "success_criteria": scen.get("success_criteria_for_coach") or [],
         "transcript": transcript,
         "assessments": [{"qid": e["qid"], "level": e["assessment"]["quality_level"],
-                         "action": e["assessment"]["coach_action"], "flags": e["assessment"]["problem_flags"]}
+                         "action": e["assessment"]["coach_action"], "flags": e["assessment"]["problem_flags"],
+                         "missing": e["assessment"].get("missing", []),
+                         "target": e["assessment"].get("follow_up_target", ""),
+                         "asked_for": e.get("followup_target", ""),
+                         "evidence_verified": e["assessment"].get("evidence_verified")}
                         for e in s["log"]],
         "llm_calls": s["llm_calls"],
         "answers": s["answers"],

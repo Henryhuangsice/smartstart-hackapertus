@@ -119,16 +119,26 @@ def _mock(messages: list[dict[str, str]], tag: str) -> str:
             {
                 "quality_level": level,
                 "scores": {"clarity": min(4, level + 1), "relevance": level},
-                "evidence": "…",
+                "evidence": user.split("CANDIDATE ANSWER:", 1)[-1].split("\n", 1)[0].strip().strip('"')[:60],
                 "strength": "mock strength",
                 "improvement": "mock improvement",
                 "coach_action": "probe" if level <= 2 else "continue",
                 "problem_flags": ["one_word"] if n < 3 else [],
+                "observed": ["Interesse"] if level <= 2 else ["Situation", "eigene Handlung"],
+                "missing": ["konkretes Beispiel", "eigene Handlung"] if level <= 2 else [],
+                "follow_up_target": "konkretes Beispiel" if level <= 2 else "",
                 "follow_up": "Kannst du mir ein Beispiel geben?" if level <= 2 else "",
                 "candidate_question": "",
                 "tip": "Nenne ein konkretes Beispiel.",
             }
         )
+    if tag == "factcard":
+        story = user.split('STORY: "', 1)[-1].split('"\n', 1)[0]
+        w = story.split()
+        return json.dumps({"situation": {"text": "Schulprojekt", "quote": " ".join(w[:4])},
+                           "action": {"text": "Ich habe die Teile zusammengefügt", "quote": " ".join(w[4:9])},
+                           "result": {"text": "Wir haben eine gute Note bekommen", "quote": "gute Note bekommen"},
+                           "skill": "Teamarbeit", "answer": story})
     if tag == "feedback" or tag == "rewrite":
         return (
             "## Deine Stärken\nDu hast gesagt: «ich arbeite gern genau». Das passt gut zum Beruf.\n\n"

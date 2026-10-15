@@ -1,0 +1,423 @@
+{
+  "scenario_id": "S-05",
+  "lang": "it",
+  "dialect": null,
+  "difficulty": "medium",
+  "situation": "apprenticeship_interview",
+  "success_criteria": [
+    "Il coach conduce il colloquio e il feedback in italiano e dà del tu al candidato.",
+    "Il coach non giudica negativamente l'incertezza sulla scelta, ma aiuta a strutturarla con domande.",
+    "Il feedback collega la motivazione a un'esperienza concreta del candidato (stage in fiduciaria o negozio dello zio).",
+    "Il coach segnala al massimo 1–2 punti di miglioramento con un passo concreto (R2, R3).",
+    "Il feedback termina con una frase incoraggiante che sottolinea il carattere di esercizio (A1)."
+  ],
+  "transcript": [
+    {
+      "role": "candidate",
+      "text": "Buongiorno, sono Matteo."
+    },
+    {
+      "role": "coach",
+      "text": "Ciao Matteo, piacere di conoscerti, mi chiamo Davide Pellandini, Formatore e responsabile apprendisti qui alla Banca Popolare del Ceresio-Ticino SA, ti guiderò attraverso il colloquio e ti aiuterò a capire come funziona il nostro percorso di apprendistato. Inizieremo con qualche informazione su di te, la tua scuola e le tue motivazioni, poi parleremo delle tue forze e di alcune situazioni pratiche che potresti incontrare, e alla fine ti farò qualche domanda per capire meglio come ti comporteresti in certi contesti. Come ti sei trovato a trovare la strada per arrivare qui?"
+    },
+    {
+      "role": "candidate",
+      "text": "All'inizio non sapevo proprio cosa volessi fare, ho fatto un po' di stage in banca e in informatica ma mi sono reso conto che programmare tutto il giorno non mi andava, poi ho pensato che qui con tanto di contabilità e sistemi informatici potrebbe andare bene, e il mio orientatore mi ha consigliato proprio l'apprendistato da impiegato commerciale, tipo mi sono trovato grazie a lui."
+    },
+    {
+      "role": "coach",
+      "text": "Benvenuto, grazie per essere qui oggi. Come ti sei sentito/a arrivando qui?"
+    },
+    {
+      "role": "candidate",
+      "text": "Beh, un po' nervoso, perché è il primo colloquio vero e proprio, ma in realtà mi piace parlare con persone nuove, e mi sento anche un po' sicuro perché ho già lavorato in qualche negozio e in banca, quindi ho idea di cosa aspettarmi."
+    },
+    {
+      "role": "coach",
+      "text": "Mi fa piacere che tu sia un po' nervoso, è del tutto normale al primo colloquio vero e proprio. Raccontaci qualcosa di te."
+    },
+    {
+      "role": "candidate",
+      "text": "In realtà, tipo, mi piace un po' tutto, ma ho capito che mi va bene quando ci sono i numeri e l'informatica, e nel negozio dello zio aiuto con la cassa e l'inventario, quindi mi sento un po' preparato."
+    },
+    {
+      "role": "coach",
+      "text": "Mi piace vedere come hai applicato queste competenze in situazioni reali. Come hai usato i numeri e l'informatica per aiutare nel negozio dello zio?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, quando do la cassa uso Excel per fare l'inventario e vedere quante roba abbiamo, e mi piace quando i conti tornano, e quando devo archiviare i documenti uso il computer per scrivere quello che è stato venduto, è più veloce e ordinato."
+    },
+    {
+      "role": "coach",
+      "text": "Interessante come ti appassiona l'organizzazione e l'attenzione ai dettagli! Come hai scoperto questa professione di impiegato/a di commercio AFC?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, l'orientatore mi ha consigliato perché l'apprendistato combina contabilità e informatica, e mi piace quando i conti tornano e l'ordine, e così ho pensato che potesse andare bene per me."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, è una scelta interessante. Perché hai scelto proprio questa professione?"
+    },
+    {
+      "role": "candidate",
+      "text": "Beh, in realtà mi piace quando tutto è in ordine e i conti tornano, e qui c'è anche un sacco di informatica che si usa, tipo le fatture e i sistemi, e mi sento un po' più sicuro che in banca dove ero seduto tutto il giorno."
+    },
+    {
+      "role": "coach",
+      "text": "Mi piace molto la tua passione per l'ordine e l'informatica, e questo è un ottimo punto di partenza. E cosa vorresti fare dopo l'apprendistato per proseguire in questo campo?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, dopo l'apprendistato vorrei fare una specializzazione in informatica di gestione, magari contabilità, perché mi piace quando i numeri si incastrano e l'informatica, e così potrei usare quello che ho imparato nel negozio e anche in banca."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco perfettamente la tua scelta, è una direzione interessante che unisce il mondo bancario e l'informatica. Quali esperienze hai fatto durante gli stage d'orientamento o i tirocini?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, ho fatto due stage tipo uno in una fiduciaria dove ho inserito fatture in un programma e archiviato documenti, ma mi è piaciuto di più quando ho usato il computer per l'inventario; l'altro stage era in un'azienda informatica dove ho installato computer e visto un po' di programmazione, ma ho trovato difficile il codice. In realtà, aiuto il sabato nel negozio dello zio, gestendo la cassa, riordinando scaffali e facendo l'inventario con Excel, quindi mi sento un po' preparato per l'apprendistato."
+    },
+    {
+      "role": "coach",
+      "text": "Hai descritto bene i tuoi stage e il lavoro nel negozio dello zio, che è un ottimo punto di partenza. Che cosa hai imparato concretamente da queste esperienze e come pensi che possano esserti utili nel ruolo di impiegato/a di commercio?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, ho imparato che i numeri devono sempre tornare e che l'ordine aiuta a lavorare più veloce, e nel negozio del zio ho capito come funziona la cassa e l'inventario con Excel, quindi so già gestire i conti e organizzare le merci, che sicuramente serviranno quando dovrò inserire fatture e tenere tutto a posto."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco perfettamente, è bello vedere che hai già delle competenze pratiche. Se non potessi lavorare come impiegato/a di commercio, cosa ti piacerebbe fare invece?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, in realtà mi piacerebbe magari fare qualcosa in contabilità o informatica di gestione, perché mi piace quando i numeri e i computer vanno insieme, e così potrei usare quello che ho imparato nel negozio e nel calcio, tipo mantenere tutto in ordine e organizzato."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco perfettamente, è una scelta interessante. Secondo te, quali compiti fanno parte di questa professione?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, penso che l'impiegato di commercio debba gestire le fatture, tenere l'inventario con Excel, parlare con i clienti e magari anche gestire piccoli pagamenti, perché in negozio del zio ho già fatto la cassa e l'inventario, quindi mi sento un po' pronto per questi compiti."
+    },
+    {
+      "role": "coach",
+      "text": "Hai già qualche esperienza che ti ha dato fiducia con i numeri, vero? Quanto ti senti sicuro o sicura con i numeri?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, con i numeri mi sento un po' sicuro, perché ho sempre gestito l'inventario e la cassa nel negozio dello zio, e anche con le fatture in fiduciaria ho capito come devono andare d'accordo, anche se il tedesco scritto mi dà ancora un po' fastidio."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, hai già una buona base pratica con numeri e gestione di documenti. E tu, quali esperienze hai con programmi come Word o Excel?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, ho usato Excel per l'inventario nel negozio dello zio e per la cassa, quindi mi sento un po' a mio agio con le formule e le tabelle, anche se Word non l'ho usato tanto, in realtà."
+    },
+    {
+      "role": "coach",
+      "text": "Sì, interessante, dimostra già una buona familiarità con gli strumenti di base. Quale qualità ti contraddistingue in modo particolare?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, mi contraddistingue l'essere affidabile, perché quando dico che farò qualcosa, tipo allenamenti o aiuto nel negozio, lo faccio sempre, e valore l'ordine, come quando i conti tornano e ci sono meno errori, quindi so tenere tutto a posto."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, è una situazione che può capitare. Se ti trovi in difficoltà e il tempo stringe, cosa faresti per cercare di risolvere il problema e mantenere la promessa fatta?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, in realtà cercherei di capire subito cosa non va, magari chiederei aiuto a un collega o cercavo su internet soluzioni veloci, perché non mi piace lasciare tutto da fare e preferisco trovare una soluzione anche se devo lavorare un po' più veloce."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco, grazie per questa risposta così matura. Quali sono i tuoi obiettivi professionali?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, vorrei imparare bene l'informatica di gestione, magari un po' di contabilità, perché mi piace l'ordine e i numeri, ma mi confondo ancora un po' quando devo scrivere in tedesco, quindi mi piacerebbe migliorare anche quella parte."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco perfettamente, è una scelta importante e ho molte informazioni che posso condividere. C'è qualcosa sull'apprendistato che vorresti sapere più nel dettaglio?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, vorrei sapere meglio come funziona la parte di informatica applicata all'impiego di commercio, perché ho visto un po' di programmazione nello stage e mi è piaciuto l'idea di usare i computer per aiutare il negozio, ma non so esattamente cosa farò ogni giorno."
+    },
+    {
+      "role": "coach",
+      "text": "L'apprendistato prevede l'uso di sistemi informatici per gestire conti, crediti e consulenze, con rotazione tra la sede di Bellinzona e le filiali, e la possibilità di ottenere la maturità professionale KV BM Fokus. Hai ancora un'altra domanda?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, vorrei capire meglio le ore di scuola e il lavoro, perché lo stage mi piaceva ma non so se posso fare anche il calcio, e se devo scegliere tra una cosa e l'altra cosa cosa devo fare, tipo."
+    },
+    {
+      "role": "coach",
+      "text": "Capisco perfettamente, è una scelta importante e voglio solo che tu ti senta a tuo agio. C'è ancora qualcosa che vorresti dirci?"
+    },
+    {
+      "role": "candidate",
+      "text": "Tipo, in realtà mi piacerebbe sapere anche se durante l'apprendistato posso continuare ad aiutare nel negozio dello zio, perché mi piace e mi aiuta a mantenere l'ordine, e magari un po' di tempo anche per i videogiochi, perché mi rilassano e mi fanno ragionare su strategie, tipo."
+    },
+    {
+      "role": "coach",
+      "text": "Grazie Matteo, è stato un piacere parlare con te. Apprezzo molto la tua sincerità e il tuo entusiasmo. Siamo molto interessati a conoscerti meglio e ti contatteremo per i prossimi passi. Buona giornata!\n\n---\n**Per concludere: ricevi ora il tuo feedback personale.**\n\n## I tuoi punti di forza\n«Ho capito che programmare non mi andava, ma contabilità e informatica mi piacciono.» – Dimostra consapevolezza e motivazione per l'apprendistato commerciale.\n\n«Con i numeri mi sento un po' sicuro.» – Esperienza pratica con inventario e cassa.\n\n## Su cosa puoi ancora lavorare\n«Non so esattamente cosa farò ogni giorno.» – Richiede collegamento tra stage e attività quotidiane dell'apprendistato.\n\n«Non so se posso fare anche il calcio.» – Specificare priorità e aspettative sull'orario di lavoro e di studio.\n\n## Il tuo prossimo passo\nCollega le tue esperienze con Excel e inventario alle operazioni bancarie e ai servizi al cliente della Banca Popolare del Ceresio-Ticino SA.\n\n## Il tuo prossimo passo\nParla con il tuo orientatore per chiedere esempi concreti di attività informatiche e di contabilità nel ruolo di impiegato/a di commercio.\n\n## Il tuo prossimo passo\nPrepara una lista di tre attività che ti piacerebbe fare durante l'apprendistato e spiega come le tue esperienze le collegano.\n\nNon preoccuparti se non sai tutto subito: ogni colloquio è un'opportunità per imparare.\n\n### Panoramica per criterio\n\n| | |\n|---|---|\n| Chiarezza | Buono |\n| Pertinenza | Buono |\n| Motivazione | Buono |\n| Autoriflessione | Buono |\n| Comunicazione | Buono |\n| Esempi concreti | Buono |\n| Atteggiamento & impressione | Buono |\n| Preparazione / conoscenza dell'azienda | Buono |\n| Orientamento agli obiettivi | Da sviluppare |\n| Gestione delle domande difficili | Buono |\n| Iniziativa | Da sviluppare |"
+    }
+  ],
+  "assessments": [
+    {
+      "qid": "Q-01-01",
+      "level": 2,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "saluto e ringraziamento per l'invito",
+        "risposta chiara e diretta alla domanda sul percorso"
+      ],
+      "target": "saluto e ringraziamento per l'invito",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-01-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "saluto e ringraziamento per l'invito",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 2,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "Connessione esplicita tra hobby/esperienze e competenze richieste per l'apprendistato commerciale",
+        "Esempi concreti di situazioni in cui i numeri e l'informatica sono stati applicati con successo"
+      ],
+      "target": "Connessione esplicita tra hobby/esperienze e competenze richieste per l'apprendistato commerciale",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-02-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "Connessione esplicita tra hobby/esperienze e competenze richieste per l'apprendistato commerciale",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-03-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Esperienza pratica o contatto diretto con la professione",
+        "Visione a lungo termine o obiettivi specifici",
+        "Collegamento esplicito con la Banca Popolare del Ceresio-Ticino SA"
+      ],
+      "target": "Esperienza pratica o contatto diretto con la professione",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 2,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "Collegamento a un obiettivo di carriera a lungo termine",
+        "Esempi concreti di cosa si spera di imparare durante l'apprendistato",
+        "Motivazione personale legata al futuro professionale"
+      ],
+      "target": "Collegamento a un obiettivo di carriera a lungo termine",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-03-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Esperienza pratica specifica nel contesto bancario",
+        "Obiettivi di carriera a lungo termine"
+      ],
+      "target": "Esperienza pratica specifica nel contesto bancario",
+      "asked_for": "Collegamento a un obiettivo di carriera a lungo termine",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-06-07",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Esempi di errori o difficoltà specifiche incontrate e superate",
+        "Collegamento esplicito delle esperienze alle competenze richieste per l'impiegato/a di commercio AFC"
+      ],
+      "target": "Esempi di errori o difficoltà specifiche incontrate e superate",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-06-09",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "esempi specifici degli stage d'orientamento",
+        "risultati misurabili degli stage"
+      ],
+      "target": "esempi specifici degli stage d'orientamento",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-DIF-08",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "esempi concreti di contabilità o informatica di gestione da stage o attività",
+        "obiettivi a lungo termine oltre al piacere per i numeri e i computer"
+      ],
+      "target": "esempi concreti di contabilità o informatica di gestione da stage o attività",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-04-04",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Collegamento alle operazioni bancarie specifiche",
+        "Descrizione di servizi al cliente in ambito bancario",
+        "Informazioni sul contesto della Banca Popolare del Ceresio-Ticino SA"
+      ],
+      "target": "Collegamento alle operazioni bancarie specifiche",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF17-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-BF17-03",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Esperienza con Word",
+        "Collegamento diretto con le esigenze della banca"
+      ],
+      "target": "Esperienza con Word",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-05-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-SIT-10",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "esempio concreto di risultato ottenuto",
+        "valutazione realistica delle proprie capacità"
+      ],
+      "target": "esempio concreto di risultato ottenuto",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-08-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [],
+      "target": "",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Esempi specifici di compiti informatici quotidiani",
+        "Conoscenza di processi operativi del negozio",
+        "Collegamento tra stage e apprendistato"
+      ],
+      "target": "Esempi specifici di compiti informatici quotidiani",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-09-02",
+      "level": 2,
+      "action": "probe",
+      "flags": [],
+      "missing": [
+        "Chiarimento su come vengono organizzate le ore di lavoro e di scuola",
+        "Informazioni su eventuali flessibilità o priorità tra impegni",
+        "Esempio di come altri apprendisti hanno gestito la situazione"
+      ],
+      "target": "Come vengono organizzate le ore di lavoro e di scuola durante l'apprendistato?",
+      "asked_for": "",
+      "evidence_verified": true
+    },
+    {
+      "qid": "Q-10-01",
+      "level": 3,
+      "action": "continue",
+      "flags": [],
+      "missing": [
+        "Chiarimento sulle tempistiche di risposta e sul processo di feedback",
+        "Domanda sulle ore di scuola e di lavoro durante l'apprendistato"
+      ],
+      "target": "Chiarimento sulle tempistiche di risposta e sul processo di feedback",
+      "asked_for": "",
+      "evidence_verified": true
+    }
+  ],
+  "llm_calls": 40,
+  "answers": 19,
+  "calls_per_answer": 2.11,
+  "followups": 3,
+  "feedback_violations_first": [],
+  "feedback_violations_final": [],
+  "finished": true,
+  "seconds": 104.8
+}
