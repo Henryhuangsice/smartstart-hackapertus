@@ -763,6 +763,8 @@ def make_fact_card(s: dict, story: str, ds: Dataset | None = None) -> dict[str, 
     facts, dropped = {}, []
     for k in ("situation", "action", "result"):
         f = d.get(k) or {}
+        if not isinstance(f, dict):  # the model sometimes returns a plain string instead of {text, quote}
+            f = {"text": str(f), "quote": ""}
         text, quote = str(f.get("text") or "").strip(), str(f.get("quote") or "").strip()
         ok_quote = verify_quote(quote, story)
         # the fact text itself must be backed: by its verified quote, or almost word-for-word by the story
