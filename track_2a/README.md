@@ -106,6 +106,12 @@ docs/                    architecture diagram, figures
 
 Requirements: Docker (for `make run`); an Apertus 1.5 8B endpoint (local weights ≈ 16 GB, < 32 GB VRAM / unified memory); no API keys needed for local serving.
 
+## Team
+
+<img src="docs/ccnewbee_logo.png" alt="ccnewbee" height="72">
+
+**ccnewbee** — Chu Jia & Sice Huang (University of Zurich). © 2026 Team ccnewbee.
+
 ## Data & licence
 
 Code: Apache-2.0 (see repository root). FHGR/Profolio material in `data/fhgr/` belongs to

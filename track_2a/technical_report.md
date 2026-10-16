@@ -2,7 +2,7 @@
 
 - **Track:** Track 2A — FHGR: AI-Powered Job Interview Coach
 - **Event:** Online (1–16 October 2026)
-- **Team:** SmartStart — Chu Jia, Sice Huang (University of Zurich)
+- **Team:** ccnewbee — Chu Jia, Sice Huang (University of Zurich); project: SmartStart
 - **Demo:** `make run` → web app on `http://localhost:7860` + Aegra API on `http://localhost:2026` (graph `agent`); 2-minute video: see submission
 
 ## 1. Summary
