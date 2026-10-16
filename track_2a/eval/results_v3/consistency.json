@@ -1,0 +1,680 @@
+{
+  "summary": {
+    "n": 15,
+    "per_language": {
+      "de": {
+        "level_acc": 0.333,
+        "action_acc": 0.8,
+        "followup_acc": 0.8
+      },
+      "fr": {
+        "level_acc": 0.533,
+        "action_acc": 0.867,
+        "followup_acc": 0.867
+      },
+      "it": {
+        "level_acc": 0.667,
+        "action_acc": 0.8,
+        "followup_acc": 0.8
+      }
+    },
+    "cross_language": {
+      "de_vs_fr": {
+        "same_level": 0.8,
+        "level_within_1": 1,
+        "same_action": 0.933,
+        "same_followup_decision": 0.933
+      },
+      "de_vs_it": {
+        "same_level": 0.667,
+        "level_within_1": 1,
+        "same_action": 0.867,
+        "same_followup_decision": 0.867
+      }
+    },
+    "repeat": {
+      "n_pairs": 45,
+      "level_diff_le1": 1,
+      "same_level": 1,
+      "same_action": 1
+    },
+    "followup_acc_gap_pp": 6.7
+  },
+  "rows": [
+    {
+      "answer_id": "A-OCC1-0001",
+      "gold_level": 1,
+      "gold_action": "probe",
+      "texts": {
+        "de": "Ehm… das mache ich ehrlich gesagt nicht so gern. Ich will lieber mit den Hunden spazieren und spielen.",
+        "fr": "Euh… je ne le fais pas vraiment ça très volontiers. Je préfère plutôt promener et jouer avec les chiens.",
+        "it": "Ehm… questo non mi piace proprio fare. Preferisco passeggiare e giocare con i cani."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ],
+        "fr": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ],
+        "it": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-OCC1-0008",
+      "gold_level": 2,
+      "gold_action": "probe",
+      "texts": {
+        "de": "Das ist kein Problem, ich kann früh aufstehen. Man muss halt früh ins Bett.",
+        "fr": "Ce n'est pas un problème, je peux me lever tôt. Il faut juste aller au lit tôt.",
+        "it": "Non è un problema, riesco a svegliarmi presto. Bisogna semplicemente andare a letto presto."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ],
+        "fr": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ],
+        "it": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-SIT-0039",
+      "gold_level": 3,
+      "gold_action": "continue",
+      "texts": {
+        "de": "Zuerst würde ich selber nochmals probieren, zum Beispiel im Internet nach dem Fehler suchen. Wenn ich nach einer Weile immer noch nicht weiterkomme, frage ich jemanden aus dem Team, statt ewig allein herumzuprobieren. Ich würde auch früh sagen, dass es knapp wird, damit man planen kann.",
+        "fr": "D'abord, j'essaierais moi-même encore une fois, par exemple en cherchant l'erreur sur Internet. Si après un certain temps je ne progresse toujours pas, je demanderais à quelqu'un de l'équipe, au lieu de rester là à essayer seul pour l'éternité. Je dirais aussi tôt que c'est serré, pour que l'on puisse planifier.",
+        "it": "Prima, cercherei io stesso ancora una volta, per esempio su Internet, l'errore. Se dopo un po' non ci riesco ancora, chiederei a qualcuno del team, invece di provare da solo per sempre. Direi anche presto che la situazione si fa critica, così che si possa pianificare."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 3,
+            "action": "continue"
+          },
+          {
+            "level": 3,
+            "action": "continue"
+          }
+        ],
+        "fr": [
+          {
+            "level": 3,
+            "action": "continue"
+          },
+          {
+            "level": 3,
+            "action": "continue"
+          }
+        ],
+        "it": [
+          {
+            "level": 3,
+            "action": "probe"
+          },
+          {
+            "level": 3,
+            "action": "probe"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-DIF-0020",
+      "gold_level": 4,
+      "gold_action": "continue",
+      "texts": {
+        "de": "Letztes Jahr wollte ich im Projektunterricht eine kleine App programmieren, die unseren Stundenplan anzeigt. Ich habe viel zu spät angefangen, und am Abgabetag lief sie nicht. Ich musste vor der Klasse sagen, dass es nicht funktioniert, das war echt peinlich. Seither mache ich bei Projekten einen Plan mit Zwischenzielen. Beim nächsten Projekt, einem Quiz-Programm, war ich eine Woche früher fertig. So will ich das in der Lehre auch machen.",
+        "fr": "L'année dernière, je voulais programmer une petite application dans le cours de projet qui affichait notre emploi du temps. J'ai commencé beaucoup trop tard, et le jour de la remise, elle ne fonctionnait pas. J'ai dû dire devant la classe que ça ne marchait pas, c'était vraiment gênant. Depuis, je fais un plan avec des étapes intermédiaires pour les projets. Pour le prochain projet, un programme de quiz, j'ai terminé une semaine plus tôt. C'est comme ça que je veux faire dans mon apprentissage.",
+        "it": "L'anno scorso volevo programmare una piccola app nel progetto che mostrasse il nostro orario delle lezioni. Ho iniziato molto tardi, e il giorno della consegna non funzionava. Ho dovuto dire davanti alla classe che non funzionava, è stato davvero imbarazzante. Da allora, per i progetti faccio un piano con traguardi intermedi. Nel prossimo progetto, un programma di quiz, sono finito una settimana prima. Così voglio fare anche nell'apprendistato."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 3,
+            "action": "continue"
+          },
+          {
+            "level": 3,
+            "action": "continue"
+          }
+        ],
+        "fr": [
+          {
+            "level": 3,
+            "action": "continue"
+          },
+          {
+            "level": 3,
+            "action": "continue"
+          }
+        ],
+        "it": [
+          {
+            "level": 3,
+            "action": "continue"
+          },
+          {
+            "level": 3,
+            "action": "continue"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-DIF-0021",
+      "gold_level": 1,
+      "gold_action": "probe",
+      "texts": {
+        "de": "Mathe braucht man eh nicht so. Das macht ja alles die Maschine.",
+        "fr": "Maths, on n'en a pas vraiment besoin. C'est la machine qui fait tout ça.",
+        "it": "La matematica non serve proprio tanto. La macchina fa tutto."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ],
+        "fr": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ],
+        "it": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-OCC1-0061",
+      "gold_level": 2,
+      "gold_action": "probe",
+      "texts": {
+        "de": "Nein, noch nicht.",
+        "fr": "Non, pas encore.",
+        "it": "No, ancora no."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ],
+        "fr": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ],
+        "it": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-DE2-0016",
+      "gold_level": 3,
+      "gold_action": "continue",
+      "texts": {
+        "de": "Man braucht technisches Verständnis und muss sich Sachen räumlich vorstellen können, weil man nach Zeichnungen arbeitet. Man muss sehr genau arbeiten, weil es bei den Teilen manchmal um Hundertstelmillimeter geht. Und Geduld braucht man auch, wenn man lange an einem Teil fräst.",
+        "fr": "Il faut avoir une compréhension technique et être capable de se représenter les choses dans l'espace, car on travaille à partir de dessins. Il faut travailler très précisément, car les pièces peuvent différer de quelques dixièmes de millimètre. Et il faut aussi de la patience, surtout si on fraise longtemps sur une pièce.",
+        "it": "Ci vuole comprensione tecnica e bisogna essere in grado di immaginare le cose nello spazio, perché si lavora su disegni. Bisogna lavorare molto precisamente, perché a volte i pezzi sono questioni di centesimi di millimetro. E serve anche pazienza se si lavora a lungo su un pezzo."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 4,
+            "action": "continue"
+          },
+          {
+            "level": 4,
+            "action": "continue"
+          }
+        ],
+        "fr": [
+          {
+            "level": 4,
+            "action": "continue"
+          },
+          {
+            "level": 4,
+            "action": "continue"
+          }
+        ],
+        "it": [
+          {
+            "level": 3,
+            "action": "continue"
+          },
+          {
+            "level": 3,
+            "action": "continue"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-OCC1-0020",
+      "gold_level": 4,
+      "gold_action": "continue",
+      "texts": {
+        "de": "Das passiert mir ehrlich gesagt recht oft. Ich habe für meine Schwester einen Jupe genäht, und bei der Anprobe war er an der Taille zu eng, weil ich beim Massnehmen nicht genau war. Ich habe dann die Seitennähte aufgetrennt, nochmal gemessen und etwas von der Nahtzugabe rausgelassen. Seitdem messe ich immer zweimal und mache eine Anprobe, bevor ich fertig nähe. Im Atelier ist das sicher noch wichtiger, weil die Kundin am Schluss etwas will, das wirklich passt.",
+        "fr": "Ca m'arrive assez souvent, en fait. J'ai cousu une jupe pour ma sœur, et lors de l'essayage, elle était trop serrée à la taille parce que je n'avais pas été précis(e) lors de la prise de mesures. J'ai alors défait les coutures latérales, refait les mesures et retiré un peu de l'excédent de couture. Depuis, je mesure toujours deux fois et je fais un essai avant de finir la couture. En atelier, c'est sûrement encore plus important, parce que la cliente veut quelque chose qui lui va vraiment à la fin.",
+        "it": "Questo mi succede, a dire il vero, abbastanza spesso. Ho cucito una gonna per mia sorella, e durante la prova era troppo stretta in vita perché non ero stata precisa nel prendere le misure. Ho poi aperto le cuciture laterali, ho ricontrollato le misure e ho tolto un po' del margine di cucitura. Da allora misuro sempre due volte e faccio una prova prima di finire di cucire. Nell'atelier è sicuramente ancora più importante, perché la cliente alla fine vuole qualcosa che le stia davvero bene."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 3,
+            "action": "continue"
+          },
+          {
+            "level": 3,
+            "action": "continue"
+          }
+        ],
+        "fr": [
+          {
+            "level": 3,
+            "action": "continue"
+          },
+          {
+            "level": 3,
+            "action": "continue"
+          }
+        ],
+        "it": [
+          {
+            "level": 4,
+            "action": "continue"
+          },
+          {
+            "level": 4,
+            "action": "continue"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-DE3-0045",
+      "gold_level": 1,
+      "gold_action": "probe",
+      "texts": {
+        "de": "Irgendwo am Arbeiten halt.",
+        "fr": "« Quelque part en train de travailler, quoi. »",
+        "it": "Da qualche parte a lavorare, insomma."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ],
+        "fr": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ],
+        "it": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-DE1-0060",
+      "gold_level": 2,
+      "gold_action": "probe",
+      "texts": {
+        "de": "Ich bin Nora, 15, ich wohne in Thun und gehe in die 9. Klasse Real. Meine Lieblingsfächer sind Hauswirtschaft und Sport. Ähm... ja, das wär's.",
+        "fr": "Je m'appelle Nora, j'ai 15 ans, j'habite à Thoune et je suis en 9ème année de Real. Mes matières préférées sont la tenue ménagère et le sport. Euh… oui, c'est tout.",
+        "it": "Sono Nora, ho 15 anni, abito a Thun e vado in 9ª classe Real. Le mie materie preferite sono economia domestica e sport. Ehm... sì, questo è tutto."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ],
+        "fr": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ],
+        "it": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-DE1-0039",
+      "gold_level": 3,
+      "gold_action": "continue",
+      "texts": {
+        "de": "Ich lese sehr viel und bin oft in der Buchhandlung bei uns im Quartier. Eine Buchhändlerin hat mir mal ein Buch empfohlen, das genau gepasst hat, und da habe ich sie gefragt, wie man das lernt. Danach habe ich auf berufsberatung.ch nachgeschaut.",
+        "fr": "Je lis beaucoup et je vais souvent à la librairie dans notre quartier. Une libraire m'a une fois recommandé un livre qui m'a vraiment plu, et j'ai demandé comment on apprend ça. Ensuite, j'ai regardé sur berufsberatung.ch.",
+        "it": "Leggo molto e spesso vado in libreria nel nostro quartiere. Una libraia mi ha consigliato una volta un libro che mi è piaciuto molto e le ho chiesto come si impara. Dopo ho controllato su berufsberatung.ch."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ],
+        "fr": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ],
+        "it": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-SRC-KT-21",
+      "gold_level": 4,
+      "gold_action": "continue",
+      "texts": {
+        "de": "Ich neige manchmal dazu, zu perfektionistisch zu sein und brauche dann länger als nötig für eine Aufgabe, weil ich immer wieder Kleinigkeiten verbessern möchte. Ich habe aber gelernt, mir bewusst Zeitlimiten zu setzen, damit ich effizienter arbeite und trotzdem eine gute Qualität liefere.",
+        "fr": "Je tends parfois à être trop perfectionniste et j'ai alors besoin de plus de temps que nécessaire pour une tâche, parce que je veux toujours améliorer les petits détails. J'ai cependant appris à me fixer des limites de temps consciemment, afin de travailler plus efficacement et tout de même de fournir une bonne qualité.",
+        "it": "A volte tendo a essere troppo perfezionista e impiego più tempo del necessario per un compito, perché voglio sempre migliorare i dettagli. Ho però imparato a impostarmi dei limiti di tempo consciamente, così da lavorare in modo più efficiente e comunque garantire una buona qualità."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 3,
+            "action": "continue"
+          },
+          {
+            "level": 3,
+            "action": "continue"
+          }
+        ],
+        "fr": [
+          {
+            "level": 3,
+            "action": "continue"
+          },
+          {
+            "level": 3,
+            "action": "continue"
+          }
+        ],
+        "it": [
+          {
+            "level": 3,
+            "action": "continue"
+          },
+          {
+            "level": 3,
+            "action": "continue"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-DIF-0005",
+      "gold_level": 1,
+      "gold_action": "continue",
+      "texts": {
+        "de": "Ehm … bei ein paar. Weiss nicht mehr genau.",
+        "fr": "Euh … chez quelques-uns. Je ne sais plus exactement.",
+        "it": "Ehm … beh, un paio. Non so più esattamente."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ],
+        "fr": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ],
+        "it": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-OCC2-0038",
+      "gold_level": 2,
+      "gold_action": "probe",
+      "texts": {
+        "de": "Ich kann gut damit umgehen, ich bin nicht so empfindlich. Blut macht mir zum Beispiel nichts aus.",
+        "fr": "Je m'en occupe bien, je ne suis pas si sensible. Le sang, par exemple, ne me dérange pas.",
+        "it": "Posso gestirlo bene, non sono così sensibile. Il sangue, per esempio, non mi dà fastidio."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ],
+        "fr": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ],
+        "it": [
+          {
+            "level": 1,
+            "action": "probe"
+          },
+          {
+            "level": 1,
+            "action": "probe"
+          }
+        ]
+      }
+    },
+    {
+      "answer_id": "A-DE3-0039",
+      "gold_level": 3,
+      "gold_action": "continue",
+      "texts": {
+        "de": "Ehrlich gesagt ärgert es mich im ersten Moment schon. Aber dann denke ich darüber nach, ob es stimmt. Mein Sportlehrer hat mir mal gesagt, dass ich im Team zu wenig abgebe. Da hatte er eigentlich recht, und ich habe mehr darauf geachtet.",
+        "fr": "Honnêtement, au début ça m'énerve déjà. Mais ensuite je réfléchis si c'est vrai. Mon prof d'éducation physique m'a dit un jour que je ne donne pas assez dans l'équipe. Il avait en fait raison, et j'y ai fait plus attention.",
+        "it": "Onestamente, all'inizio mi infastidisce già. Ma poi ci penso se sia vero. Il mio insegnante di sport mi ha detto una volta che nel gruppo contribuisco troppo poco. In realtà aveva ragione, e ci ho prestato più attenzione."
+      },
+      "runs": {
+        "de": [
+          {
+            "level": 2,
+            "action": "probe"
+          },
+          {
+            "level": 2,
+            "action": "probe"
+          }
+        ],
+        "fr": [
+          {
+            "level": 3,
+            "action": "continue"
+          },
+          {
+            "level": 3,
+            "action": "continue"
+          }
+        ],
+        "it": [
+          {
+            "level": 3,
+            "action": "continue"
+          },
+          {
+            "level": 3,
+            "action": "continue"
+          }
+        ]
+      }
+    }
+  ],
+  "settings": {
+    "n": 15,
+    "seed": 13,
+    "out": "eval/results_v3"
+  }
+}

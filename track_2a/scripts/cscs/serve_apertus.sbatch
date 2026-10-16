@@ -13,5 +13,5 @@ srun --environment=apertus-vllm \
   vllm serve swiss-ai/Apertus-v1.5-8B \
     --host 0.0.0.0 --port 8000 \
     --chat-template-content-format string \
-    --max-model-len 32768 \
-    --gpu-memory-utilization 0.85
+    --max-model-len 8192 \
+    --gpu-memory-utilization 0.22

@@ -24,6 +24,9 @@ and uses **≈ 2.1 LLM calls per candidate answer** (limit: < 5).
 | Final build: coach-action accuracy (same 100 answers) | – | **0.80** |
 | Final build: feedbacks with guideline violations (6 re-run scenarios) | – | **0 / 6** |
 | Final build: LLM calls per answer (6 scenarios) | – | **2.12** |
+| Final build: peak GPU memory of the whole vLLM process | – | **25.8 GiB** (< 32 GB) |
+| Same follow-up decision for the same answer in de / fr / it | – | **87–93 %** |
+| Repeat runs with identical level and action | – | **100 %** |
 
 v1 → final trade-off: action accuracy 0.83 → 0.80, level accuracy 0.65 → 0.57, in exchange for order-verified quotes, gap-targeted follow-ups, negation-safe experience cards and atomic, retry-safe turns (see report §5).
 

@@ -33,7 +33,10 @@ or the rubric, never taken from the model on trust, and a negation or number fli
 *nicht* geleitet» → "led the team") is rejected. Every turn is atomic, so a model timeout never skips a
 question or logs an answer twice. On the frozen 100-answer set the final build keeps action accuracy at
 **0.80** with JSON/schema validity 0.99; 6 re-run scenarios produce **0/6** guideline violations at **2.12
-calls per answer**; the cost is lower level accuracy than v1 (0.57 vs. 0.65, see §5).
+calls per answer**; the cost is lower level accuracy than v1 (0.57 vs. 0.65, see §5). **Resources:** the
+whole vLLM process peaks at **25.8 GiB GPU memory** (nvidia-smi, < 32 GB limit) with identical accuracy.
+**Consistency:** the same 15 answers in de/fr/it get the same follow-up decision in 87–93 % of cases and
+a level within ±1 in 100 %; repeated runs are 100 % identical.
 
 ## 2. Architecture
 
@@ -87,6 +90,11 @@ student never said or invent a result for a student without work experience.
   one NVIDIA GH200 node on CSCS Clariden (project g238); OpenAI-compatible API reached through an SSH
   tunnel. The coach only needs `LLM_BASE_URL / LLM_API_KEY / LLM_NAME`, so it runs unchanged against any
   on-premise endpoint (`docker compose --profile gpu` starts vLLM on a single consumer GPU, 8B bf16 ≈ 16 GB).
+  **Measured memory:** with `--gpu-memory-utilization 0.22 --max-model-len 8192` the complete vLLM process
+  (weights, KV cache, CUDA graphs, vision encoder) peaks at **26 395 MiB = 25.8 GiB** on GPU 0 during the full
+  E1 run (nvidia-smi every 5 s; `scripts/cscs/serve_apertus.sbatch`). E1 under this limit gives the same
+  scores as with the default setting (action 0.80, level 0.57, ±1 0.98): the setting only shrinks the KV
+  cache, not the model. The longest prompt (final feedback) is ≈ 5 k tokens, well inside 8 192.
   Note: in October 2026 Apertus 1.5 is not yet supported by released MLX / transformers versions; on a
   MacBook (M4 Pro) the swiss-ai transformers branch loaded the model but MPS bf16 produced corrupted text
   and fp32 exceeded memory, which is why we served it with vLLM.
@@ -162,8 +170,21 @@ transcripts it marks **100 %** of the scenario success criteria as met and rates
 relevance, appropriateness and feedback quality **4.96/5** on average (easy 5.0, medium 5.0, hard 4.8;
 de 4.95, fr 5.0, it 5.0; language consistency 5.0).
 
-**Consistency.** Results are stable across languages (action accuracy 0.76–0.88; judge 4.95–5.0),
-difficulty levels and situations (apprenticeship, online, trial, phone, follow-up, assessment).
+**E4 — Consistency (FHGR: 25 %).** 15 German expert-annotated answers (stratified by level) are
+translated by Apertus into French and Italian with content and weaknesses kept, then assessed in all three
+languages, each twice (`eval/eval_consistency.py`).
+
+| | de | fr | it |
+|---|---|---|---|
+| Action accuracy vs. expert | 0.80 | 0.87 | 0.80 |
+| Same follow-up decision as German | – | 0.93 | 0.87 |
+| Same level as German / within ±1 | – | 0.80 / 1.00 | 0.67 / 1.00 |
+
+The follow-up decision differs by at most **6.7 points** between languages for the *same content*, and
+levels never move by more than one step. All 45 repeated assessments returned the identical level and
+action (temperature 0). On the native 100-answer set the gap is larger (action 0.72 de – 0.88 it), which
+points to differences between the language sub-sets rather than to language bias of the coach. Results are
+also stable across difficulty levels and situations (judge 4.8–5.0).
 
 ## 6. Limitations
 
