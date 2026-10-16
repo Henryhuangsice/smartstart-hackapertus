@@ -11,14 +11,14 @@ Young people preparing for their first apprenticeship interview rarely get repea
 practice. **SmartStart** is an Apertus-1.5-8B interview coach that runs a realistic, adaptive interview
 in **German, French or Italian** (Swiss-German dialect input understood) and ends with personal,
 guideline-compliant feedback. Instead of one large prompt, SmartStart combines (i) a deterministic
-interview state machine that follows the FHGR interview flow, (ii) **retrieval of FHGR expert-annotated
+interview state machine that follows the FHGR interview flow, (ii) **retrieval of FHGR FHGR-annotated
 answers as calibration anchors**, (iii) a **two-call loop per answer** (assess → interviewer turn) and
 (iv) a **rule checker for the FHGR feedback guidelines** that triggers a single rewrite only when needed.
 
-**Headline results** (Apertus 1.5 8B, vLLM on one GH200 at CSCS):
-expert-exemplar retrieval raises the accuracy of the coach's next-action decision from **0.44 to 0.83**
-(100 expert-annotated answers, de/fr/it/Swiss German) and detects all distress cases (recall 1.0 vs. 0.0);
-quality levels are within ±1 of the expert in **99 %** of cases; all **28 FHGR scenarios** run end-to-end
+**Headline results, first version v1** (Apertus 1.5 8B, vLLM on one GH200 at CSCS; final-build numbers below):
+annotated-exemplar retrieval raises the accuracy of the coach's next-action decision from **0.44 to 0.83**
+(100 FHGR-annotated answers, de/fr/it/Swiss German) and detects both distress cases in the sample (recall 1.0 vs. 0.0, n = 2);
+quality levels are within ±1 of the reference in **99 %** of cases; all **28 FHGR scenarios** run end-to-end
 with **2.11 LLM calls per candidate answer** (limit < 5) and 27/28 final feedbacks pass all automatic
 guideline checks.
 
@@ -47,7 +47,7 @@ a level within ±1 in 100 %; repeated runs are 100 % identical.
 | LangGraph graph served by Aegra (`agent`, port 2026); session state persisted per thread in PostgreSQL, Redis job queue | `src/main.py`, `docker-compose.yml` | – |
 | Language & dialect detection (stop-word / Mundart-marker heuristic) | `smartstart/langdetect.py` | 0 |
 | Interview planner: FHGR flow introduction → motivation → strengths/weaknesses → situational → candidate questions → closing; occupation-specific questions via the posting's `berufsfeld`; conditional questions (Stellwerk, absences) only if the profile justifies them; FHGR scenario plans; free-text occupation wish matched to a posting | `smartstart/planner.py` | 0 |
-| **Exemplar retrieval** over 706 expert-annotated answers (char-trigram Jaccard — robust across de/fr/it and dialect spelling; same question first; diverse quality levels; leave-one-out in evaluation) | `smartstart/retrieval.py` | 0 |
+| **Exemplar retrieval** over 706 FHGR-annotated answers (char-trigram Jaccard — robust across de/fr/it and dialect spelling; same question first; diverse quality levels; leave-one-out in evaluation) | `smartstart/retrieval.py` | 0 |
 | **Assess**: JSON with rubric levels (1–4 / null), evidence quote, strength, improvement, coach action (`continue / probe / redirect / support_and_refer`), problem flags, **observed / missing elements and one follow-up target**, follow-up, coaching tip; one JSON retry; the quote is kept only if it is found in the answer (normalised substring or ≥ 90 % token overlap) | `smartstart/coach.py` | **1 per answer** |
 | Deterministic policy: ≤ 1 follow-up per question, ≤ 4 per interview; the same gap is never asked twice; nothing missing and level ≥ 3 ⇒ continue instead of probing; politeness gaps (greeting, thanks, invitation) are filtered out, so follow-ups always target substance; candidate questions answered only from posting facts; explicit distress signal ⇒ supportive mode with referral to a real person (L3) | `smartstart/coach.py` | 0 |
 | **Interviewer** turn in the persona of the posting's Berufsbildner/in, du/tu form | `smartstart/coach.py` | **1 per answer** |
@@ -72,7 +72,7 @@ Two feedback modes: `end` (realistic interview, feedback at the end — default)
 (adds the assessment's one-line tip after each answer, at no extra LLM cost).
 
 **What is new.** (1) The FHGR annotations are used *at inference time* as few-shot calibration anchors
-selected per question and per answer — no fine-tuning, yet the coach inherits the experts' judgement of
+selected per question and per answer — no fine-tuning, yet the coach inherits the annotators' judgement of
 when to probe. (2) Control flow is deterministic and only language generation is delegated to the LLM,
 which keeps the call budget fixed (2 per answer) and behaviour reproducible. (3) The FHGR feedback
 guidelines are enforced twice: in the prompt and by a lexical checker that triggers a targeted rewrite.
@@ -116,17 +116,17 @@ didactic; no personal data. No other data was used and no model was trained.
 The official LLM-as-judge benchmark is hidden, so we built three proxy experiments
 (`make eval`; raw results in `eval/results/`).
 
-**E1 — Assessment vs. FHGR experts.** 100 annotated answers (25 each: de, fr, it, Swiss German;
+**E1 — Assessment vs. FHGR reference annotations.** 100 annotated answers (25 each: de, fr, it, Swiss German;
 stratified by quality level). Leave-one-out: an answer's own annotation is never retrieved.
 
 | Setup | Level acc | ±1 acc | Level MAE | **Action acc** | Follow-up acc | Criteria MAE | Distress recall |
 |---|---|---|---|---|---|---|---|
 | Baseline (rubric only, no retrieval) | 0.59 | 0.97 | 0.45 | 0.44 | 0.79 | 0.54 | 0.00 |
-| **SmartStart v1 (expert-exemplar retrieval)** | **0.65** | **0.99** | **0.36** | **0.83** | **0.87** | **0.46** | **1.00** |
+| **SmartStart v1 (annotated-exemplar retrieval)** | **0.65** | **0.99** | **0.36** | **0.83** | **0.87** | **0.46** | **1.00** |
 | SmartStart v2 (+ gap-targeted follow-ups, verified quotes) | 0.57 | 0.98 | 0.47 | 0.81 | 0.84 | 0.50 | 0.50 |
 | **SmartStart v3 = final** (+ ordered quotes, schema check, atomic turns) | 0.57 | 0.98 | 0.47 | 0.80 | 0.84 | 0.50 | 0.50 |
 
-![Figure 2 — Agreement with FHGR experts, with and without expert-exemplar retrieval.](docs/figures/assess_ablation.png)
+![Figure 2 — Agreement with FHGR reference annotations, with and without annotated-exemplar retrieval.](docs/figures/assess_ablation.png)
 
 Retrieval helps in every language group; the largest effect is on *what to do next* (action accuracy
 +0.39), which is exactly the decision that makes an interview adaptive. Per language (ours):
@@ -170,13 +170,13 @@ transcripts it marks **100 %** of the scenario success criteria as met and rates
 relevance, appropriateness and feedback quality **4.96/5** on average (easy 5.0, medium 5.0, hard 4.8;
 de 4.95, fr 5.0, it 5.0; language consistency 5.0).
 
-**E4 — Consistency (FHGR: 25 %).** 15 German expert-annotated answers (stratified by level) are
+**E4 — Consistency (FHGR: 25 %).** 15 German FHGR-annotated answers (stratified by level) are
 translated by Apertus into French and Italian with content and weaknesses kept, then assessed in all three
 languages, each twice (`eval/eval_consistency.py`).
 
 | | de | fr | it |
 |---|---|---|---|
-| Action accuracy vs. expert | 0.80 | 0.87 | 0.80 |
+| Action accuracy vs. reference | 0.80 | 0.87 | 0.80 |
 | Same follow-up decision as German | – | 0.93 | 0.87 |
 | Same level as German / within ±1 | – | 0.80 / 1.00 | 0.67 / 1.00 |
 
@@ -190,7 +190,7 @@ also stable across difficulty levels and situations (judge 4.8–5.0).
 
 - **Judge ceiling / self-preference:** E3 uses the same model family as the coach and saturates near
   5/5; its comments sometimes evaluate the candidate rather than the coach. We therefore treat E1
-  (agreement with human experts) as the primary evidence and E3 as a sanity check.
+  (agreement with the FHGR reference annotations, which are synthetic and not yet expert-reviewed) as the primary evidence and E3 as a sanity check.
 - German quality-level accuracy is the lowest group (v1 0.52, v2/v3 0.40); most errors are 3-vs-4 on strong
   answers. v2/v3 distress recall is 0.50 on only two test cases: the French case is flagged (which switches
   the app to supportive mode), the Italian one is read as badmouthing — this needs a larger test set.
@@ -232,7 +232,7 @@ also stable across difficulty levels and situations (judge 4.8–5.0).
 - A teacher dashboard over the per-session rubric levels stored in PostgreSQL.
 - Split v2 assessment into a short scoring call and a gap-extraction call to recover v1 level accuracy
   within the < 5 call budget.
-- LoRA-tuning the assessor on the expert annotations; a study with real classes; an independent judge.
+- LoRA-tuning the assessor on expert-reviewed annotations; a study with real classes; an independent judge.
 
 ## License
 

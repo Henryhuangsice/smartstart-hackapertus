@@ -6,7 +6,7 @@ SmartStart lets young people in Switzerland (14–16) practise a realistic appre
 interview in **German, French or Italian** (Swiss-German dialect input understood) and
 get personal, constructive feedback that follows the FHGR/Profolio rubric (11 criteria)
 and the 27 FHGR feedback guidelines. It is built on **Apertus 1.5 · 8B**, runs on
-consumer hardware (tested on a MacBook Pro M4 Pro, 48 GB unified memory; < 32 GB VRAM)
+a single GPU under the 32 GB limit (measured peak of the whole vLLM process: 25.8 GiB on one CSCS GH200 GPU; not yet tested on a consumer card)
 and uses **≈ 2.1 LLM calls per candidate answer** (limit: < 5).
 
 ![Architecture](docs/architecture.png)
@@ -16,9 +16,9 @@ and uses **≈ 2.1 LLM calls per candidate answer** (limit: < 5).
 
 | | Baseline (no retrieval) | **SmartStart** |
 |---|---|---|
-| Coach-action accuracy vs. FHGR experts (100 answers, de/fr/it/gsw) | 0.44 | **0.83** |
-| Quality level within ±1 of expert | 0.97 | **0.99** |
-| Distress-signal recall | 0.00 | **1.00** |
+| v1 coach-action accuracy vs. FHGR reference annotations (100 answers, de/fr/it/gsw; final build: 0.80) | 0.44 | **0.83** |
+| v1 quality level within ±1 of reference (final build: 0.98) | 0.97 | **0.99** |
+| v1 distress-signal recall (n = 2; final build: 0.50) | 0.00 | **1.00** |
 | LLM calls per candidate answer (28 scenarios, limit < 5) | – | **2.11** |
 | FHGR scenario success criteria met (LLM judge) | – | **100 %** |
 | Final build: coach-action accuracy (same 100 answers) | – | **0.80** |
@@ -30,7 +30,7 @@ and uses **≈ 2.1 LLM calls per candidate answer** (limit: < 5).
 
 v1 → final trade-off: action accuracy 0.83 → 0.80, level accuracy 0.65 → 0.57, in exchange for order-verified quotes, gap-targeted follow-ups, negation-safe experience cards and atomic, retry-safe turns (see report §5).
 
-**Learning loops (v2):** gap-targeted follow-ups (one named missing element, never the same gap twice) ·
+**Learning loops (v2):** gap-targeted follow-ups (one named missing element, the same gap is not asked twice) ·
 *No example?* → an **experience card** from school, sport or hobby built only from the student's own
 words · *Practise this answer again* with a deterministic before/after rubric comparison ·
 *Try a new question* (transfer practice for the weakest criterion) · *Download card* (Markdown practice card).
@@ -41,7 +41,7 @@ words · *Practise this answer again* with a deterministic before/after rubric c
 |---|---|---|
 | 1 | Language / dialect detection (de · fr · it · gsw) | no |
 | 2 | Interview state machine: introduction → motivation → strengths/weaknesses → situational → candidate questions → closing → feedback; questions planned for the posting's occupational field and the candidate profile | no |
-| 3 | **Retrieval of expert-annotated answers** (706 FHGR annotations) to the same question as calibration anchors | no |
+| 3 | **Retrieval of annotated answers** (706 FHGR reference annotations, synthetic) to the same question as calibration anchors | no |
 | 4 | **Assess** the answer: rubric levels, verified evidence quote, observed / missing elements, coach action (continue / probe / redirect / support_and_refer), problem flags | **1 call** |
 | 5 | Deterministic policy: gap-targeted follow-up (max. 1 per question, 4 per interview, no repeated gap, no politeness gaps) or next question; answer the candidate's own questions from the posting facts | no |
 | 6 | **Interviewer turn** in persona (Berufsbildner/in from the posting), du/tu form | **1 call** |
